@@ -1,28 +1,50 @@
-.App {
+/* Style the navbar */
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Navbar links */
+#navbar a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
   text-align: center;
+  padding: 14px;
+  text-decoration: none;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+/* Page content */
+.content {
+  padding: 16px;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
-.App-title {
-  font-size: 1.5em;
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
 }
 
-.App-intro {
-  font-size: large;
+.logo {
+  display: inline;
+  vertical-align: top;
+  left: 10px;
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  fill: white !important;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.logo svg path {
+  fill: white !important;
+}
+
+.logo svg text {
+  fill: white !important;
 }
