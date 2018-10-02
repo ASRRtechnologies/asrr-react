@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
-import lowpoly from '../images/lowpoly.svg';
+import lowpoly from '../images/lowpoly.jpg';
+import techy from '../images/techy.png';
 
 var sectionStyle = {
 	width: "100%",
-	height: "400px",
+	height: "650px",
 	backgroundImage: `url(${lowpoly})`
 };
 
@@ -14,6 +15,7 @@ class Clients extends Component {
 				<div className="customer-logos" style={sectionStyle}>
 
 				</div>
+				<img src={techy}/>
 			</div>
 		);
 	}
