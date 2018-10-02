@@ -68,7 +68,8 @@ h2 {
 /*Landing*/
 .landing-wrapper {
     width: 100%;
-    padding-top: 0;
+    padding: 0;
+    margin: 0;
     display: inline-block;
     background-image: url("./images/lowpoly.jpg")
 }
@@ -86,7 +87,6 @@ h2 {
     height: 400px;
     margin-left: 5%;
     width: 40%;
-
 }
 
 .logoslider-wrapper {
@@ -96,7 +96,7 @@ h2 {
     margin-left: auto;
     margin-right: auto;
     color: white;
-    display: inline-block;
+    margin-top: -5px;
 }
 
 .logoslider {
