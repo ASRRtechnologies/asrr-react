@@ -8,6 +8,8 @@ class Menu extends Component {
 				<img class="logo" src={logo} alt="logo"/>
 				<a href="#home">Home</a>
 				<a href="#news">Services</a>
+				<a href="#news">Portfolio</a>
+				<a href="#news">Demos</a>
 				<a href="#contact">Contact</a>
 			</div>
 		);

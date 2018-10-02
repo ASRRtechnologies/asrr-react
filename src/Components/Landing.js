@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import lowpoly from '../images/lowpoly.jpg';
-import techy from '../images/techy.png';
 import browser from '../images/browserflat.png';
+
 
 var sectionStyle = {
 	width: "100%",
@@ -16,16 +16,20 @@ var landingStyle = {
 
 };
 
+
 class Clients extends Component {
 	render() {
 		return (
-			<div class="landing" style={sectionStyle} className="Landing">
-				<div class="landing-wrapper">
-					<h1>ASRR delivers expert problem analytics and solutions in web, desktop, app and many more
+			<div class="row" style={sectionStyle} className="Landing">
+				<div class="column landing-wrapper">
+					<h1 class="">ASRR delivers expert problem analytics and solutions in web, desktop, app and many more
 						environments.</h1>
-					<img style={landingStyle} src={browser} alt="background"/>
+					{/*<SimpleSlider class="landing-slider"/>*/}
 				</div>
-				<img src={techy} alt="background"/>
+
+				<div class="column">
+					<img style={landingStyle} src={browser} alt="browser"/>
+				</div>
 			</div>
 		);
 	}
