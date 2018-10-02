@@ -6,7 +6,7 @@ import "../../node_modules/slick-carousel/slick/slick-theme.css";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
 var iconStyle = {
-	alignContent: "center"
+	marginLeft: "1em"
 
 
 };
@@ -57,13 +57,15 @@ export default class SimpleSlider extends Component {
 		return (
 			<div class="logoslider-wrapper">
 				<h2> Technologies we use <FontAwesomeIcon icon={["fab", "html5"]}/></h2>
-				<Slider {...settings} class="logoslider">
-					{this.state.itemArray.map((item, index) => {
-						return <div style={iconStyle}><FontAwesomeIcon size={"5x"}
-						                                               icon={["fab", item.toLowerCase().replace('fa', '')]}/>
-						</div>
-					})}
-				</Slider>
+				<div class="logoslider-container">
+					<Slider {...settings} class="logoslider">
+						{this.state.itemArray.map((item) => {
+							return <div style={iconStyle}><FontAwesomeIcon size={"5x"}
+							                                               icon={["fab", item.toLowerCase().replace('fa', '')]}/>
+							</div>
+						})}
+					</Slider>
+				</div>
 			</div>
 		);
 	}

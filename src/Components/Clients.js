@@ -4,9 +4,6 @@ class Landing extends Component {
 	render() {
 		return (
 			<div className="">
-				<div className="header">
-
-				</div>
 			</div>
 		);
 	}

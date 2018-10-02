@@ -2,7 +2,6 @@
 
 body {
     font-family: 'Source Sans Pro', serif;
-
 }
 
 h1 {
@@ -64,24 +63,16 @@ h2 {
     padding-left: 1em;
 }
 
-.logo svg path {
-    fill: white !important;
-}
 
-.logo svg text {
-    fill: white !important;
-}
-
-/*general funcitons*/
-.row {
-    display: flex;
-}
-
-.column {
-    flex: 50%;
-}
 
 /*Landing*/
+.landing-wrapper {
+    width: 100%;
+    padding-top: 0;
+    display: inline-block;
+    background-image: url("./images/lowpoly.jpg")
+}
+
 .landing-wrapper h1 {
     color: white;
     width: 40%;
@@ -105,6 +96,7 @@ h2 {
     margin-left: auto;
     margin-right: auto;
     color: white;
+    display: inline-block;
 }
 
 .logoslider {
@@ -118,39 +110,56 @@ h2 {
     align-content: center;
 }
 
+.logoslider-container {
+    padding-left: 4em;
+}
+
 .logoslider div {
     align-content: center;
-}
-
-
-article.clients {
-    float: left;
-    display: table-cell;
-    vertical-align: middle;
     text-align: center;
-    width: 203px;
-    height: 150px;
-    margin-right: 15px;
-    margin-bottom: 15px;
-    border: 1px solid #4d4d4d;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-}
-
-article.clients * {
-    vertical-align: middle;
-}
-
-article.clients span {
     display: inline-block;
-    height: 100%;
-    width: 1px;
+    margin-left: 50px;
 }
 
-article.clients img {
-    width: 100%
+#one {
+    float: left;
+    color: white;
+    margin-left: 5%;
+    width: 40%;
+    vertical-align: center;
+    display: inline-block;
 }
 
-/*slider*/
+#one h1 {
+    width: 80%;
+}
+
+#two {
+    overflow: hidden;
+    min-height: 300px;
+    padding: 50px;
+
+}
+
+#two img {
+    width: 100%;
+    float: right;
+    max-width: 800px;
+}
+
+/*make landing responsive*/
+@media screen and (max-width: 900px) {
+    #one {
+        float: none;
+        margin-right: 0;
+        width: auto;
+        border: 0;
+    }
+
+    #two {
+        min-height: 150px;
+    }
+}
+
+
 
