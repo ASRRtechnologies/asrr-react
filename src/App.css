@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+body {
+  font-family: 'Source Sans Pro', serif;
+}
 /* Style the navbar */
 #navbar {
   overflow: hidden;
@@ -39,6 +44,7 @@
   height: 50px;
   margin-right: 20px;
   fill: white !important;
+  padding-left: 1em;
 }
 
 .logo svg path {
@@ -47,4 +53,33 @@
 
 .logo svg text {
   fill: white !important;
+}
+
+article.clients {
+  float: left;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  width: 203px;
+  height: 150px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #4d4d4d;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+article.clients * {
+  vertical-align: middle;
+}
+
+article.clients span {
+  display: inline-block;
+  height: 100%;
+  width: 1px;
+}
+
+article.clients img {
+  width: 100%
 }

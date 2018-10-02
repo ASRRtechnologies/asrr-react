@@ -7,7 +7,7 @@ class Menu extends Component {
 			<div id="navbar" className="Menu">
 				<img class="logo" src={logo} alt="logo"/>
 				<a href="#home">Home</a>
-				<a href="#news">Pricing</a>
+				<a href="#news">Services</a>
 				<a href="#contact">Contact</a>
 			</div>
 		);
