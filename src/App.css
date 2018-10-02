@@ -1,141 +1,156 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 
 body {
-  font-family: 'Source Sans Pro', serif;
+    font-family: 'Source Sans Pro', serif;
 
 }
 
 h1 {
-  font-size: 30px;
-  padding-top: 2em;
-  margin-left: 5%;
-  margin-top: 0;
+    font-size: 30px;
+    padding-top: 2em;
+    margin-left: 5%;
+    margin-top: 0;
 }
 
 h2 {
-  font-size: 20px;
-  padding-top: 1em;
-  margin-left: 5%;
-  margin-top: 0;
+    font-size: 20px;
+    padding-top: 1em;
+    margin-left: 5%;
+    margin-top: 0;
 }
 
 /* Style the navbar */
 #navbar {
-  overflow: hidden;
-  background-color: #1F3335;
+    overflow: hidden;
+    background-color: #1F3335;
 }
 
 /* Navbar links */
 #navbar a {
-  float: right;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 25px;
-  text-decoration: none;
-  font-size: 20px;
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 25px;
+    text-decoration: none;
+    font-size: 20px;
 }
 
 /* Page content */
 .content {
-  padding: 16px;
+    padding: 16px;
 }
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + .content {
-  padding-top: 60px;
+    padding-top: 60px;
 }
 
 .logo {
-  display: inline;
-  vertical-align: top;
-  left: 10px;
-  width: 90px;
-  height: 70px;
-  margin-right: 20px;
-  fill: white !important;
-  padding-left: 1em;
+    display: inline;
+    vertical-align: top;
+    left: 10px;
+    width: 90px;
+    height: 70px;
+    margin-right: 20px;
+    fill: white !important;
+    padding-left: 1em;
 }
 
 .logo svg path {
-  fill: white !important;
+    fill: white !important;
 }
 
 .logo svg text {
-  fill: white !important;
+    fill: white !important;
 }
 
 /*general funcitons*/
 .row {
-  display: flex;
+    display: flex;
 }
 
 .column {
-  flex: 50%;
+    flex: 50%;
 }
 
 /*Landing*/
 .landing-wrapper h1 {
-  color: white;
-  width: 40%;
-  font-weight: lighter;
-  float: left;
+    color: white;
+    width: 40%;
+    font-weight: lighter;
+    float: left;
 }
 
 .landing-slider {
-  color: white;
-  float: left;
-  height: 400px;
-  margin-left: 5%;
-  width: 40%;
+    color: white;
+    float: left;
+    height: 400px;
+    margin-left: 5%;
+    width: 40%;
 
 }
 
 .logoslider-wrapper {
-  background-color: #1F3335;
-  margin: 0;
-  padding: 0;
+    background-color: #1F3335;
+    padding: 0;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
 }
 
 .logoslider {
-  width: 60%;
-  margin-left: auto;
-  margin-right: auto;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 40px;
+    display: block;
+    float: right;
+    color: white;
+    align-content: center;
+}
+
+.logoslider div {
+    align-content: center;
 }
 
 
 article.clients {
-  float: left;
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-  width: 203px;
-  height: 150px;
-  margin-right: 15px;
-  margin-bottom: 15px;
-  border: 1px solid #4d4d4d;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
+    float: left;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: 203px;
+    height: 150px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #4d4d4d;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
 }
 
 article.clients * {
-  vertical-align: middle;
+    vertical-align: middle;
 }
 
 article.clients span {
-  display: inline-block;
-  height: 100%;
-  width: 1px;
+    display: inline-block;
+    height: 100%;
+    width: 1px;
 }
 
 article.clients img {
-  width: 100%
+    width: 100%
 }
+
+/*slider*/
+
