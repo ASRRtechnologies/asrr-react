@@ -1,41 +1,27 @@
 import React, {Component} from "react";
 import Slider from "react-slick";
-import "../../node_modules/slick-carousel/slick/slick.css";
-import "../../node_modules/slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
 var iconStyle = {
 	marginLeft: "1em"
-
-
 };
 
 export default class SimpleSlider extends Component {
 	constructor() {
 		super();
-
-
-		// const item = [];
-		// item.push(
-		// 	<div>
-		// 		<FontAwesomeIcon size={"10x"} icon={["fab", iconName]} />
-		// 	</div>
-		// );
-
 		this.state = {
 			itemArray: ["faHtml5", "faCss3", "faJs", "faJava", "faWindows", "faLinux", "faGithub", "faGit", "faReact", "faAndroid", "faApp-Store-Ios", "faApple", "faNode", "faNode-Js", "faPaypal", "faFacebook", "faTwitter", "faSnapchat", "faAws", "faChrome"]
 		};
-
-
 	}
-
 
 	render() {
 		const settings = {
 			infinite: true,
 			speed: 500,
-			slidesToShow: 5,
+			slidesToShow: 6,
 			slidesToScroll: 1,
 			autoplay: true,
 			autoplaySpeed: 2000,
@@ -43,6 +29,11 @@ export default class SimpleSlider extends Component {
 			dots: false,
 			pauseOnHover: true,
 			responsive: [{
+				breakpoint: 1024,
+				settings: {
+					slidesToShow: 5
+				}
+			}, {
 				breakpoint: 768,
 				settings: {
 					slidesToShow: 4
@@ -56,7 +47,7 @@ export default class SimpleSlider extends Component {
 		};
 		return (
 			<div class="logoslider-wrapper">
-				<h2> Technologies we use <FontAwesomeIcon icon={["fab", "html5"]}/></h2>
+				<h2> Technologies we use</h2>
 				<div class="logoslider-container">
 					<Slider {...settings} class="logoslider">
 						{this.state.itemArray.map((item) => {
