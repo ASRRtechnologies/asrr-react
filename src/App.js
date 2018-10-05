@@ -26,11 +26,13 @@ import {
 	faReact,
 	faSnapchat,
 	faTwitter,
-	faWindows
+	faWindows,
+	faLinkedin
 } from '@fortawesome/free-brands-svg-icons'
 import Services from "./Components/Services";
+import Footer from "./Components/Footer"
 
-library.add(faHtml5, faCss3, faJs, faJava, faWindows, faLinux, faGithub, faGit, faReact, faAndroid, faAppStoreIos, faApple, faNode, faNodeJs, faPaypal, faFacebook, faTwitter, faSnapchat, faAws, faChrome);
+library.add(faHtml5, faCss3, faJs, faJava, faWindows, faLinux, faGithub, faGit, faReact, faAndroid, faAppStoreIos, faApple, faNode, faNodeJs, faPaypal, faFacebook, faTwitter, faSnapchat, faAws, faChrome, faLinkedin);
 
 class App extends Component {
   render() {
@@ -41,6 +43,7 @@ class App extends Component {
 	      <SimpleSlider/>
 		  <Services/>
 	      <Clients/>
+		  <Footer/>
       </div>
     );
   }

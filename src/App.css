@@ -292,13 +292,29 @@ h2 {
 
 .flex-container > div > h1 {
     padding: 1em 5px 0.5em 5px;
+    max-width: 1167px;
 }
 
 .flex-container > div > p {
-    padding-left: 20px;
-    padding-bottom: 20px;
+    padding: 0 20px 20px 20px;
     font-size: 15px;
 }
+
+/*footer*/
+.footer {
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #1F3335;
+    color: white;
+    text-align: center;
+}
+
+.footer > div > a {
+    padding: 5px;
+}
+
 /*make landing responsive*/
 @media screen and (max-width: 900px) {
     #one {
