@@ -1,12 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import url('fonts/fonts.css');
 
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+
+
+}
+s
 body {
-    font-family: 'Source Sans Pro', serif;
+    font-family: 'proxima_nova_ltthin', serif;
 }
 
 h1 {
     font-size: 30px;
-    padding-top: 2em;
+    font-family: 'proxima_nova_altbold', serif;
+    padding-top: 1em;
     margin-left: 5%;
     margin-top: 0;
 }
@@ -167,17 +177,6 @@ h2 {
     padding: 16px;
 }
 
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-    padding-top: 60px;
-}
 
 .logo {
     display: inline;
@@ -206,6 +205,8 @@ h2 {
     width: 40%;
     font-weight: lighter;
     float: left;
+    padding-top: 2em;
+
 }
 
 .landing-slider {
@@ -274,6 +275,30 @@ h2 {
     max-width: 800px;
 }
 
+/*services*/
+.flex-container {
+    display: inline-flex;
+    flex-wrap: wrap;
+
+}
+
+.flex-container > div {
+    background-color: #f1f1f1;
+    width: 48%;
+    margin: 10px auto 10px auto;
+    text-align: left;
+    font-size: 30px;
+}
+
+.flex-container > div > h1 {
+    padding: 1em 5px 0.5em 5px;
+}
+
+.flex-container > div > p {
+    padding-left: 20px;
+    padding-bottom: 20px;
+    font-size: 15px;
+}
 /*make landing responsive*/
 @media screen and (max-width: 900px) {
     #one {

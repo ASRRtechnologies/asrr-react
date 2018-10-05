@@ -28,6 +28,7 @@ import {
 	faTwitter,
 	faWindows
 } from '@fortawesome/free-brands-svg-icons'
+import Services from "./Components/Services";
 
 library.add(faHtml5, faCss3, faJs, faJava, faWindows, faLinux, faGithub, faGit, faReact, faAndroid, faAppStoreIos, faApple, faNode, faNodeJs, faPaypal, faFacebook, faTwitter, faSnapchat, faAws, faChrome);
 
@@ -38,6 +39,7 @@ class App extends Component {
 	      <Menu/>
 	      <Landing/>
 	      <SimpleSlider/>
+		  <Services/>
 	      <Clients/>
       </div>
     );
