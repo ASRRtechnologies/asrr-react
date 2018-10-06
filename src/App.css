@@ -294,16 +294,14 @@ a {
 }
 
 .flex-container > div {
-    background-color: #f1f1f1;
-    width: 48%;
+    background-color: #FFF;
+    width: 24%;
     margin: 10px auto 10px auto;
     font-size: 30px;
-    text-align: center
 }
 
-.flex-container > div > h1 {
-    margin: 0;
-    padding: 0 5px 0 5px;
+.flex-container > div > h2 {
+    padding-bottom: 5px;
     max-width: 1167px;
 }
 
@@ -312,12 +310,15 @@ a {
     font-size: 15px;
     width: 80%;
     margin: auto;
+    text-align: justify;
+
 }
 
 .flex-container > div > img {
     width: 40%;
     margin: auto;
     display: block;
+    max-width: 200px;
 }
 
 /*diagonal*/
@@ -367,7 +368,14 @@ a {
     #landing-image {
         min-height: 150px;
     }
+
+    .flex-container > div {
+        width: 48%;
+    }
+
 }
+
+
 
 
 
