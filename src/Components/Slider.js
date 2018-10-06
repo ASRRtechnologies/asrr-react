@@ -13,7 +13,7 @@ export default class SimpleSlider extends Component {
 	constructor() {
 		super();
 		this.state = {
-			itemArray: ["faHtml5", "faCss3", "faJs", "faJava", "faWindows", "faLinux", "faGithub", "faGit", "faReact", "faAndroid", "faApp-Store-Ios", "faApple", "faNode", "faNode-Js", "faPaypal", "faFacebook", "faTwitter", "faSnapchat", "faAws", "faChrome"]
+			itemArray: ["faHtml5", "faCss3-Alt", "faJs", "faJava", "faWindows", "faLinux", "faGithub", "faGit", "faReact", "faAndroid", "faApple", "faNode", "faNode-Js", "faPaypal", "faFacebook", "faTwitter", "faSnapchat", "faAws", "faChrome"]
 		};
 	}
 

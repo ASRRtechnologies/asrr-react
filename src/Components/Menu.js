@@ -8,7 +8,7 @@ class Menu extends Component {
                 <header className="header">
                     <img className="logo" src={logo} alt="logo"/>
                     <input className="menu-btn" type="checkbox" id="menu-btn"/>
-                    <label className="menu-icon" htmlFor="menu-btn"><span className="navicon"></span></label>
+	                <label className="menu-icon" htmlFor="menu-btn"><span className="navicon"/></label>
                     <ul className="menu">
                         <li><a href="#work">Our Work</a></li>
                         <li><a href="#about">About</a></li>

@@ -5,17 +5,15 @@
     margin: 0;
     padding: 0;
     font-size: 100%;
-
-
 }
-s
+
 body {
-    font-family: 'proxima_nova_ltthin', serif;
+    font-family: 'Proxima Nova', "Times New Roman", serif;
 }
 
 h1 {
     font-size: 30px;
-    font-family: 'proxima_nova_altbold', serif;
+    font-family: 'proxima_nova_altbold', "Times New Roman", serif;
     padding-top: 1em;
     margin-left: 5%;
     margin-top: 0;
@@ -28,22 +26,10 @@ h2 {
     margin-top: 0;
 }
 
-/*!* Style the navbar *!*/
-/*#navbar {*/
-/*overflow: hidden;*/
-/*background-color: #1F3335;*/
-/*}*/
+a {
+    color: inherit;
+}
 
-/*!* Navbar links *!*/
-/*#navbar a {*/
-/*float: right;*/
-/*display: block;*/
-/*color: #f2f2f2;*/
-/*text-align: center;*/
-/*padding: 25px;*/
-/*text-decoration: none;*/
-/*font-size: 20px;*/
-/*}*/
 
 .header {
     background-color: #1F3335;
@@ -206,7 +192,6 @@ h2 {
     font-weight: lighter;
     float: left;
     padding-top: 2em;
-
 }
 
 .landing-slider {
@@ -225,6 +210,10 @@ h2 {
     margin-right: auto;
     color: white;
     margin-top: -5px;
+}
+
+.logoslider-wrapper > h2 {
+    padding-bottom: 1em;
 }
 
 .logoslider {
@@ -249,7 +238,7 @@ h2 {
     margin-left: 50px;
 }
 
-#one {
+#landing-text {
     float: left;
     color: white;
     margin-left: 5%;
@@ -258,21 +247,21 @@ h2 {
     display: inline-block;
 }
 
-#one h1 {
+#landing-text h1 {
     width: 80%;
+    justify-content: end;
 }
 
-#two {
+#landing-image {
     overflow: hidden;
     min-height: 300px;
     padding: 50px;
 
 }
 
-#two img {
+#landing-image img {
     width: 100%;
     float: right;
-    max-width: 800px;
 }
 
 /*services*/
@@ -300,6 +289,26 @@ h2 {
     font-size: 15px;
 }
 
+/*diagonal*/
+.diagonal {
+    background: teal;
+    z-index: 1;
+    padding: 3em;
+}
+
+.diagonal:before {
+    -webkit-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+    -webkit-transform-origin: 3% 0;
+    transform-origin: 3% 0;
+    top: 0;
+    left: -25%;
+    z-index: -1;
+    width: 150%;
+    height: 75%;
+    background: inherit;
+}
+
 /*footer*/
 .footer {
     right: 0;
@@ -317,14 +326,14 @@ h2 {
 
 /*make landing responsive*/
 @media screen and (max-width: 900px) {
-    #one {
+    #landing-text {
         float: none;
         margin-right: 0;
         width: auto;
         border: 0;
     }
 
-    #two {
+    #landing-image {
         min-height: 150px;
     }
 }
