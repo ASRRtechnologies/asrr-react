@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import browser from '../images/browserflattrimmed.png';
 
 
-class Clients extends Component {
+class Landing extends Component {
 	render() {
 		return (
 			<div class="landing-wrapper">
@@ -20,4 +20,4 @@ class Clients extends Component {
 	}
 }
 
-export default Clients;
+export default Landing;

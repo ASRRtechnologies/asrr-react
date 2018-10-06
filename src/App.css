@@ -39,6 +39,7 @@ a {
     z-index: 3;
     color: white;
     font-size: 20px;
+    top: 0;
 }
 
 .header ul {
@@ -303,6 +304,7 @@ a {
 .flex-container > div > h2 {
     padding-bottom: 5px;
     max-width: 1167px;
+    padding-left: 10px;
 }
 
 .flex-container > div > p {
