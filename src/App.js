@@ -1,11 +1,5 @@
 import React, {Component} from 'react';
-import Menu from './Components/Menu';
-import Landing from './Components/Landing';
-import Clients from './Components/Clients';
-import './App.css';
-import SimpleSlider from "./Components/Slider";
-
-import {library} from '@fortawesome/fontawesome-svg-core'
+import {library} from '@fortawesome/fontawesome-svg-core';
 import {
 	faAndroid,
 	faApple,
@@ -19,6 +13,7 @@ import {
 	faHtml5,
 	faJava,
 	faJs,
+	faLinkedin,
 	faLinux,
 	faNode,
 	faNodeJs,
@@ -26,11 +21,15 @@ import {
 	faReact,
 	faSnapchat,
 	faTwitter,
-	faWindows,
-	faLinkedin
+	faWindows
 } from '@fortawesome/free-brands-svg-icons'
+import Menu from './Components/Menu';
+import Landing from './Components/Landing';
+import Clients from './Components/Clients';
+import SimpleSlider from "./Components/Slider";
 import Services from "./Components/Services";
 import Footer from "./Components/Footer"
+import './App.css';
 
 library.add(faHtml5, faCss3, faJs, faJava, faWindows, faLinux, faGithub, faGit, faReact, faAndroid, faAppStoreIos, faApple, faNode, faNodeJs, faPaypal, faFacebook, faTwitter, faSnapchat, faAws, faChrome, faLinkedin);
 

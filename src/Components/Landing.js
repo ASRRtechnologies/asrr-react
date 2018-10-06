@@ -7,7 +7,8 @@ class Clients extends Component {
 		return (
 			<div class="landing-wrapper">
 				<div id="one">
-					<h1>ASRR delivers expert problem analytics and solutions in web, desktop, app and many more
+					<h1>ASRR delivers expert problem analytics and solutions in web/app development, desktop
+						applications and many more
 						environments.</h1>
 				</div>
 

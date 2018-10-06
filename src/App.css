@@ -5,10 +5,8 @@
     margin: 0;
     padding: 0;
     font-size: 100%;
-
-
 }
-s
+
 body {
     font-family: 'proxima_nova_ltthin', serif;
 }
@@ -28,22 +26,10 @@ h2 {
     margin-top: 0;
 }
 
-/*!* Style the navbar *!*/
-/*#navbar {*/
-/*overflow: hidden;*/
-/*background-color: #1F3335;*/
-/*}*/
+a {
+    color: inherit;
+}
 
-/*!* Navbar links *!*/
-/*#navbar a {*/
-/*float: right;*/
-/*display: block;*/
-/*color: #f2f2f2;*/
-/*text-align: center;*/
-/*padding: 25px;*/
-/*text-decoration: none;*/
-/*font-size: 20px;*/
-/*}*/
 
 .header {
     background-color: #1F3335;
@@ -260,6 +246,7 @@ h2 {
 
 #one h1 {
     width: 80%;
+    justify-content: end;
 }
 
 #two {
@@ -298,6 +285,26 @@ h2 {
 .flex-container > div > p {
     padding: 0 20px 20px 20px;
     font-size: 15px;
+}
+
+/*diagonal*/
+.diagonal {
+    background: teal;
+    z-index: 1;
+    padding: 3em;
+}
+
+.diagonal:before {
+    -webkit-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+    -webkit-transform-origin: 3% 0;
+    transform-origin: 3% 0;
+    top: 0;
+    left: -25%;
+    z-index: -1;
+    width: 150%;
+    height: 75%;
+    background: inherit;
 }
 
 /*footer*/
