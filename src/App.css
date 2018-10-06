@@ -8,12 +8,12 @@
 }
 
 body {
-    font-family: 'proxima_nova_ltthin', serif;
+    font-family: 'Proxima Nova', "Times New Roman", serif;
 }
 
 h1 {
     font-size: 30px;
-    font-family: 'proxima_nova_altbold', serif;
+    font-family: 'proxima_nova_altbold', "Times New Roman", serif;
     padding-top: 1em;
     margin-left: 5%;
     margin-top: 0;
@@ -192,7 +192,6 @@ a {
     font-weight: lighter;
     float: left;
     padding-top: 2em;
-
 }
 
 .landing-slider {
@@ -211,6 +210,10 @@ a {
     margin-right: auto;
     color: white;
     margin-top: -5px;
+}
+
+.logoslider-wrapper > h2 {
+    padding-bottom: 1em;
 }
 
 .logoslider {
@@ -235,7 +238,7 @@ a {
     margin-left: 50px;
 }
 
-#one {
+#landing-text {
     float: left;
     color: white;
     margin-left: 5%;
@@ -244,22 +247,21 @@ a {
     display: inline-block;
 }
 
-#one h1 {
+#landing-text h1 {
     width: 80%;
     justify-content: end;
 }
 
-#two {
+#landing-image {
     overflow: hidden;
     min-height: 300px;
     padding: 50px;
 
 }
 
-#two img {
+#landing-image img {
     width: 100%;
     float: right;
-    max-width: 800px;
 }
 
 /*services*/
@@ -324,14 +326,14 @@ a {
 
 /*make landing responsive*/
 @media screen and (max-width: 900px) {
-    #one {
+    #landing-text {
         float: none;
         margin-right: 0;
         width: auto;
         border: 0;
     }
 
-    #two {
+    #landing-image {
         min-height: 150px;
     }
 }
