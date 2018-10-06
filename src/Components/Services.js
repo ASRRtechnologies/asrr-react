@@ -7,9 +7,9 @@ import phone from "../images/services/phone.svg";
 class Services extends Component {
     render() {
         return (
-	        <div className="clients-wrapper">
+	        <div className="services-wrapper">
                 <div>
-                    <h1>We specialize in the following services</h1>
+	                <h1>What we do</h1>
                 </div>
 
                 <div className="flex-container">

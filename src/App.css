@@ -294,6 +294,7 @@ a {
     flex-wrap: wrap;
 }
 
+
 .flex-container > div {
     background-color: #FFF;
     width: 24%;
@@ -321,6 +322,39 @@ a {
     margin: auto;
     display: block;
     max-width: 200px;
+}
+
+/*client list*/
+.clientGrid {
+    background-color: #1F3335;
+    color: white;
+    margin: 0;
+}
+
+.clientGrid h2, p {
+    margin: 0;
+    text-align: center;
+
+}
+
+.clientGrid img {
+    width: 33%;
+    max-height: 100px;
+    max-width: 200px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    vertical-align: middle;
+
+}
+
+.clientGrid p {
+    padding: 10px 0 15px 0;
+}
+
+.centerWrapper {
+    margin: auto;
+    max-width: 600px;
 }
 
 /*diagonal*/
@@ -360,6 +394,11 @@ a {
 
 /*make landing responsive*/
 @media screen and (max-width: 900px) {
+    h2 {
+        text-align: left;
+    }
+
+
     #landing-text {
         float: none;
         margin-right: 0;
