@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import {Link, Route} from 'react-router-dom';
+import Fade from 'react-reveal/Fade';
+
 
 import {library} from '@fortawesome/fontawesome-svg-core';
 import {
@@ -37,10 +39,18 @@ library.add(faHtml5, faCss3Alt, faJs, faJava, faWindows, faLinux, faGithub, faGi
 
 const Homepage = () => (
 	<div>
-		<Landing/>
-		<SimpleSlider/>
-		<Services/>
-		<Clients/>
+		<Fade bottom>
+			<Landing/>
+		</Fade>
+		<Fade bottom>
+			<SimpleSlider/>
+		</Fade>
+		<Fade bottom>
+			<Services/>
+		</Fade>
+		<Fade bottom>
+			<Clients/>
+		</Fade>
 	</div>
 );
 
@@ -84,42 +94,44 @@ const Contact = () => (
 );
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-	      <div>
-		      <header className="header">
-			      <Link to="/"><img className="logo" src={logo} alt="logo"/></Link>
-			      <input className="menu-btn" type="checkbox" id="menu-btn"/>
-			      <label className="menu-icon" htmlFor="menu-btn"><span className="navicon"/></label>
-			      <ul className="menu">
-				      <li><Link to="/">Home</Link></li>
-				      <li><Link to="/portfolio">Portfolio</Link></li>
-				      <li><Link to="/about">About</Link></li>
-				      <li><Link to="/careers">Careers</Link>
-					      <ul>
-						      <li><Link to="/">Home</Link></li>
-						      <li><Link to="/portfolio">Portfolio</Link></li>
-						      <li><Link to="/about">About</Link></li>
-					      </ul>
+	render() {
+		return (
+			<div className="App">
+				<div>
+					<header className="header">
+						<Link to="/"><img className="logo" src={logo} alt="logo"/></Link>
+						<input className="menu-btn" type="checkbox" id="menu-btn"/>
+						<label className="menu-icon" htmlFor="menu-btn"><span className="navicon"/></label>
+						<ul className="menu">
+							<li><Link to="/">Home</Link></li>
+							<li><Link to="/portfolio">Portfolio</Link></li>
+							<li><Link to="/about">About</Link></li>
+							<li><Link to="/careers">Careers</Link>
+								<ul>
+									<li><Link to="/">Home</Link></li>
+									<li><Link to="/portfolio">Portfolio</Link></li>
+									<li><Link to="/about">About</Link></li>
+								</ul>
 
 
-				      </li>
-				      <li><Link to="/contact">Contact</Link></li>
-			      </ul>
-		      </header>
-	      </div>
+							</li>
+							<li><Link to="/contact">Contact</Link></li>
+						</ul>
+					</header>
+				</div>
 
-	      <Route path="/" exact component={Homepage}/>
-	      <Route path="/portfolio" component={Portfolio}/>
-	      <Route path="/about" component={About}/>
-	      <Route path="/careers" component={Careers}/>
-	      <Route path="/contact" component={Contact}/>
+				<Route path="/" exact component={Homepage}/>
+				<Route path="/portfolio" component={Portfolio}/>
+				<Route path="/about" component={About}/>
+				<Route path="/careers" component={Careers}/>
+				<Route path="/contact" component={Contact}/>
 
-	      <Footer/>
-      </div>
-    );
-  }
+				<Fade bottom>
+					<Footer/>
+				</Fade>
+			</div>
+		);
+	}
 }
 
 export default App;

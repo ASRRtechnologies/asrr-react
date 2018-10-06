@@ -9,6 +9,7 @@
 
 body {
     font-family: 'Proxima Nova', "Times New Roman", serif;
+    background-color: #1F3335;
 }
 
 h1 {
@@ -289,6 +290,10 @@ a {
 }
 
 /*services*/
+.services-wrapper {
+    background-color: white;
+}
+
 .flex-container {
     display: inline-flex;
     flex-wrap: wrap;
