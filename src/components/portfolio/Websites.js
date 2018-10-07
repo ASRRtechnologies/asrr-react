@@ -4,7 +4,7 @@ class Websites extends Component {
 	render() {
 		return (
 			<div className="websites">
-				test
+				test2
 			</div>
 		);
 	}
