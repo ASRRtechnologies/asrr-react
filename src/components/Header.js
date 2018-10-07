@@ -4,7 +4,7 @@ import ReactModal from "react-modal";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 import Language from "../Language";
-import logo from "../logo.svg";
+import logo from "../images/logo.svg";
 
 class Header extends Component {
     constructor() {
