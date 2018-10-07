@@ -28,6 +28,7 @@ import {
 	faTwitter,
 	faWindows
 } from '@fortawesome/free-brands-svg-icons';
+import {faLanguage} from '@fortawesome/free-solid-svg-icons';
 import {translate} from 'react-multi-lang';
 import Landing from './Components/Landing';
 import Clients from './Components/Clients';
@@ -36,9 +37,9 @@ import Services from "./Components/Services";
 import Footer from "./Components/Footer"
 import './App.css';
 import logo from "./logo.svg";
-import Language from './Language'
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
-library.add(faHtml5, faCss3Alt, faJs, faJava, faWindows, faLinux, faGithub, faGit, faReact, faAndroid, faAppStoreIos, faApple, faNode, faNodeJs, faPaypal, faFacebook, faTwitter, faSnapchat, faAws, faChrome, faLinkedin);
+library.add(faLanguage, faHtml5, faCss3Alt, faJs, faJava, faWindows, faLinux, faGithub, faGit, faReact, faAndroid, faAppStoreIos, faApple, faNode, faNodeJs, faPaypal, faFacebook, faTwitter, faSnapchat, faAws, faChrome, faLinkedin);
 
 const Homepage = () => (
 	<div>
@@ -99,9 +100,6 @@ const Contact = () => (
 class App extends Component {
 	constructor() {
 		super();
-
-		Language.initialize();
-
 		this.state = {
 			showModal: false
 		};
@@ -128,7 +126,9 @@ class App extends Component {
 						<Link to="/"><img className="logo" src={logo} alt="logo"/></Link>
 						<input className="menu-btn" type="checkbox" id="menu-btn"/>
 						<label className="menu-icon" htmlFor="menu-btn"><span className="navicon"/></label>
-						<a class="rounded" onClick={this.handleOpenModal}>Trigger Modal</a>
+						<span className="translate-wrapper">
+							<a className="translate-button rounded" onClick={this.handleOpenModal}>
+								<FontAwesomeIcon icon={["fas", "language"]}/></a></span>
 						<ul className="menu">
 							<li><Link to="/">Home</Link></li>
 							<li><Link to="/portfolio">Portfolio</Link></li>
@@ -149,8 +149,13 @@ class App extends Component {
 				<ReactModal
 					isOpen={this.state.showModal}
 					contentLabel="Minimal Modal Example"
+					className="modal"
 				>
-					<button onClick={this.handleCloseModal}>Close Modal</button>
+					<div className="modal-container">
+						<a className="rounded">Nederlands</a>
+						<a className="rounded">English</a>
+						<a className="rounded" onClick={this.handleCloseModal}>Close Modal</a>
+					</div>
 				</ReactModal>
 
 
