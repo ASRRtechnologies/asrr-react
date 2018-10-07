@@ -124,7 +124,7 @@ class App extends Component {
 						<Link to="/"><img className="logo" src={logo} alt="logo"/></Link>
 						<input className="menu-btn" type="checkbox" id="menu-btn"/>
 						<label className="menu-icon" htmlFor="menu-btn"><span className="navicon"/></label>
-						<button onClick={this.handleOpenModal}>Trigger Modal</button>
+						<a class="rounded" onClick={this.handleOpenModal}>Trigger Modal</a>
 						<ul className="menu">
 							<li><Link to="/">Home</Link></li>
 							<li><Link to="/portfolio">Portfolio</Link></li>
