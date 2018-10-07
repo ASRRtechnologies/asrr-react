@@ -12,9 +12,10 @@ class Language {
 
     static initialize() {
         setDefaultTranslations({en, nl});
-        const localString = locale().toLowerCase();
 
         if (!Language.loadPreferredLanguage()) {
+            const localString = locale().toLowerCase();
+
             if (localString.includes("en")) {
                 setDefaultLanguage('en');
             } else if (localString.includes("nl")) {
