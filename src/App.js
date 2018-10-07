@@ -107,7 +107,7 @@ class App extends Component {
                 <Header/>
 
                 <Switch>
-                    <Route path="/" exact component={Homepage}/>
+                    <Route path="/" exact component={Homepage()}/>
                     <Route path="/portfolio" component={Portfolio}/>
                     <Route path="/services" component={Services}/>
                     <Route path="/about" component={About}/>

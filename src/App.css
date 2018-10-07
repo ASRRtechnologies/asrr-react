@@ -278,7 +278,7 @@ a.rounded:hover {
     padding-top: 60px;
     margin: 0;
     display: inline-block;
-    background-image: url("./images/lowpoly.jpg")
+    background-image: url("images/backgrounds/lowpoly.jpg")
 }
 
 .landing-wrapper h1 {
