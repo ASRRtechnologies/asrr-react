@@ -7,9 +7,21 @@ import nl from './translations/nl.json'
 
 class Language {
 
+    /**
+     * The default language.
+     * @type {string}
+     */
     static DEFAULT_LANGUAGE = 'en';
+
+    /**
+     * Name of the language cookie.
+     * @type {string}
+     */
     static COOKIE_NAME = 'lang';
 
+    /**
+     * Initializes the language.
+     */
     static initialize() {
         setDefaultTranslations({en, nl});
 
@@ -26,6 +38,11 @@ class Language {
         }
     }
 
+    /**
+     * Loads and sets the preferred language.
+     * @returns {boolean} {@code true} if there exists a stored language
+     *              cookie, {@code false otherwise}
+     */
     static loadPreferredLanguage() {
         let storedLocale = Cookie.load(Language.COOKIE_NAME);
         if (storedLocale !== undefined) {
