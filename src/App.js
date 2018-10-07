@@ -5,27 +5,27 @@ import {translate} from 'react-multi-lang';
 
 import {library} from '@fortawesome/fontawesome-svg-core';
 import {
-    faAndroid,
-    faApple,
-    faAppStoreIos,
-    faAws,
-    faChrome,
-    faCss3Alt,
-    faFacebook,
-    faGit,
-    faGithub,
-    faHtml5,
-    faJava,
-    faJs,
-    faLinkedin,
-    faLinux,
-    faNode,
-    faNodeJs,
-    faPaypal,
-    faReact,
-    faSnapchat,
-    faTwitter,
-    faWindows
+	faAndroid,
+	faApple,
+	faAppStoreIos,
+	faAws,
+	faChrome,
+	faCss3Alt,
+	faFacebook,
+	faGit,
+	faGithub,
+	faHtml5,
+	faJava,
+	faJs,
+	faLinkedin,
+	faLinux,
+	faNode,
+	faNodeJs,
+	faPaypal,
+	faReact,
+	faSnapchat,
+	faTwitter,
+	faWindows
 } from '@fortawesome/free-brands-svg-icons';
 import {faLanguage} from '@fortawesome/free-solid-svg-icons';
 
@@ -35,8 +35,10 @@ import Landing from './components/Landing';
 import Clients from './components/Clients';
 import SimpleSlider from "./components/Slider";
 import Services from "./components/Services";
-import Header from "./components/Header"
-import Footer from "./components/Footer"
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+
+import Websites from "./components/portfolio/Websites";
 
 library.add(faLanguage, faHtml5, faCss3Alt, faJs, faJava, faWindows, faLinux, faGithub, faGit, faReact, faAndroid, faAppStoreIos, faApple, faNode, faNodeJs, faPaypal, faFacebook, faTwitter, faSnapchat, faAws, faChrome, faLinkedin);
 
@@ -59,10 +61,7 @@ const Homepage = () => (
 
 const Portfolio = () => (
     <div>
-        <Landing/>
-        <Landing/>
-        <Landing/>
-        <Landing/>
+	    <Websites/>
     </div>
 );
 

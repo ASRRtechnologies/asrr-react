@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import kroontje from "../images/clients/kroontje.svg";
 import form from "../images/clients/form_logo-diap.svg";
+import {Link} from "react-router-dom";
 
 class Clients extends Component {
 	render() {
@@ -16,7 +17,7 @@ class Clients extends Component {
 					</div>
 				</div>
 				<div className="centerButton-wrapper">
-					<a className="rounded centerButton">Test</a>
+					<Link to="/Portfolio" className="rounded centerButton">Portfolio</Link>
 				</div>
 			</div>
 		);
