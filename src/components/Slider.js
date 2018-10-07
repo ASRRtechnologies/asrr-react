@@ -46,9 +46,9 @@ export default class SimpleSlider extends Component {
 			}]
 		};
 		return (
-			<div class="logoslider-wrapper">
+			<div className="logoslider-wrapper">
 				<h2> Technologies we use</h2>
-				<div class="logoslider-container">
+				<div className="logoslider-container">
 					<Slider {...settings} class="logoslider">
 						{this.state.itemArray.map((item) => {
 							return <div style={iconStyle}><FontAwesomeIcon size={"5x"}
