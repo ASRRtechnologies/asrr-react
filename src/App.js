@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Link, Route} from 'react-router-dom';
+import {Link, Route, Switch} from 'react-router-dom';
 import Fade from 'react-reveal/Fade';
 
 
@@ -120,11 +120,13 @@ class App extends Component {
 					</header>
 				</div>
 
-				<Route path="/" exact component={Homepage}/>
-				<Route path="/portfolio" component={Portfolio}/>
-				<Route path="/about" component={About}/>
-				<Route path="/careers" component={Careers}/>
-				<Route path="/contact" component={Contact}/>
+				<Switch>
+					<Route path="/" exact component={Homepage}/>
+					<Route path="/portfolio" component={Portfolio}/>
+					<Route path="/about" component={About}/>
+					<Route path="/careers" component={Careers}/>
+					<Route path="/contact" component={Contact}/>
+				</Switch>
 
 				<Fade bottom>
 					<Footer/>
