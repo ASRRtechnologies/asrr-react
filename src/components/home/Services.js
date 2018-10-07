@@ -1,8 +1,8 @@
 import React, {Component} from "react";
-import laptop from "../images/services/laptop.svg";
-import router from "../images/services/router.svg";
-import computer from "../images/services/computer.svg";
-import phone from "../images/services/phone.svg";
+import laptop from "../../images/services/laptop.svg";
+import router from "../../images/services/router.svg";
+import computer from "../../images/services/computer.svg";
+import phone from "../../images/services/phone.svg";
 
 class Services extends Component {
     render() {

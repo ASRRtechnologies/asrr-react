@@ -31,10 +31,10 @@ import {faLanguage} from '@fortawesome/free-solid-svg-icons';
 
 import './App.css';
 import Language from './Language'
-import Landing from './components/Landing';
-import Clients from './components/Clients';
-import SimpleSlider from "./components/Slider";
-import Services from "./components/Services";
+import Landing from './components/home/Landing';
+import Clients from './components/home/Clients';
+import SimpleSlider from "./components/home/Slider";
+import Services from "./components/home/Services";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
@@ -109,6 +109,7 @@ class App extends Component {
                 <Switch>
                     <Route path="/" exact component={Homepage}/>
                     <Route path="/portfolio" component={Portfolio}/>
+                    <Route path="/services" component={Services}/>
                     <Route path="/about" component={About}/>
                     <Route path="/careers" component={Careers}/>
                     <Route path="/contact" component={Contact}/>

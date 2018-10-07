@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import browser from '../images/browserflattrimmed.png';
+import browser from '../../images/browserflattrimmed.png';
 
 
 class Landing extends Component {

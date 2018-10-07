@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import kroontje from "../images/clients/kroontje.svg";
-import form from "../images/clients/form_logo-diap.svg";
+import kroontje from "../../images/clients/kroontje.svg";
+import form from "../../images/clients/form_logo-diap.svg";
 import {Link} from "react-router-dom";
 
 class Clients extends Component {
