@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import browser from '../images/browserflattrimmed.png';
+import {translate} from 'react-multi-lang';
 
 
 class Landing extends Component {
@@ -7,9 +8,9 @@ class Landing extends Component {
 		return (
 			<div className="landing-wrapper">
 				<div id="landing-text">
-					<h1>ASRR delivers expert problem analytics and solutions in web/app development, desktop
-						applications and many more
-						environments.</h1>
+					<h1>{this.props.t('landing.headline')}</h1>
+
+
 					</div>
 
 				<div id="landing-image">
@@ -20,4 +21,4 @@ class Landing extends Component {
 	}
 }
 
-export default Landing;
+export default translate(Landing);

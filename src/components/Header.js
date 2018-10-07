@@ -28,6 +28,7 @@ class Header extends Component {
     selectPreferredLanguage(language) {
         Language.selectPreferredLanguage(language);
         this.handleCloseModal();
+	    window.location.reload();
     }
 
     render() {
