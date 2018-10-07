@@ -36,6 +36,7 @@ import Services from "./Components/Services";
 import Footer from "./Components/Footer"
 import './App.css';
 import logo from "./logo.svg";
+import Language from './Language'
 
 library.add(faHtml5, faCss3Alt, faJs, faJava, faWindows, faLinux, faGithub, faGit, faReact, faAndroid, faAppStoreIos, faApple, faNode, faNodeJs, faPaypal, faFacebook, faTwitter, faSnapchat, faAws, faChrome, faLinkedin);
 
@@ -98,6 +99,9 @@ const Contact = () => (
 class App extends Component {
 	constructor() {
 		super();
+
+		Language.initialize();
+
 		this.state = {
 			showModal: false
 		};
