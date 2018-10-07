@@ -50,13 +50,13 @@ class Header extends Component {
                         className="modal"
                     >
                         <div className="modal-container">
-                            <a onClick={this.selectPreferredLanguage.bind(this, 'nl')} className="rounded">
+                            <a onClick={this.selectPreferredLanguage.bind(this, 'nl')} className="rounded resp">
                                 Nederlands
                             </a>
-                            <a onClick={this.selectPreferredLanguage.bind(this, 'en')} className="rounded">
+                            <a onClick={this.selectPreferredLanguage.bind(this, 'en')} className="rounded resp">
                                 English
                             </a>
-                            <a className="rounded" onClick={this.handleCloseModal}>
+                            <a className="rounded resp" onClick={this.handleCloseModal}>
                                 Close Modal
                             </a>
                         </div>

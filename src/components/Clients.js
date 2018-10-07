@@ -15,8 +15,8 @@ class Clients extends Component {
 						<a><img src={kroontje} alt="Logo Kroontje"/></a>
 					</div>
 				</div>
-				<div>
-					<a className="rounded">Test</a>
+				<div className="centerButton-wrapper">
+					<a className="rounded centerButton">Test</a>
 				</div>
 			</div>
 		);

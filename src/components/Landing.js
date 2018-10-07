@@ -10,7 +10,7 @@ class Landing extends Component {
 					<h1>ASRR delivers expert problem analytics and solutions in web/app development, desktop
 						applications and many more
 						environments.</h1>
-				</div>
+					</div>
 
 				<div id="landing-image">
 					<img src={browser} alt="browser"/>
