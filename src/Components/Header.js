@@ -39,9 +39,9 @@ class Header extends Component {
                     <label className="menu-icon" htmlFor="menu-btn"><span className="navicon"/></label>
 
                     <span className="translate-wrapper">
-                    <a className="translate-button rounded" onClick={this.handleOpenModal}>
+                        <a className="translate-button rounded" onClick={this.handleOpenModal}>
                             <FontAwesomeIcon icon={["fas", "language"]}/>
-                    </a>
+                        </a>
                     </span>
 
                     <ReactModal
@@ -50,10 +50,15 @@ class Header extends Component {
                         className="modal"
                     >
                         <div className="modal-container">
-                            <a onClick={this.selectPreferredLanguage.bind(this, 'nl')}
-                               className="rounded">Nederlands</a>
-                            <a onClick={this.selectPreferredLanguage.bind(this, 'en')} className="rounded">English</a>
-                            <a className="rounded" onClick={this.handleCloseModal}>Close Modal</a>
+                            <a onClick={this.selectPreferredLanguage.bind(this, 'nl')} className="rounded">
+                                Nederlands
+                            </a>
+                            <a onClick={this.selectPreferredLanguage.bind(this, 'en')} className="rounded">
+                                English
+                            </a>
+                            <a className="rounded" onClick={this.handleCloseModal}>
+                                Close Modal
+                            </a>
                         </div>
                     </ReactModal>
 
