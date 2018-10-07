@@ -39,7 +39,6 @@ class Language {
      * @param language the new language
      */
     static selectPreferredLanguage(language) {
-        console.log(language);
         Cookie.save(Language.COOKIE_NAME, language, {maxAge: 3600 * 24 * 365});
         setDefaultLanguage(language);
     }
