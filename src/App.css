@@ -457,24 +457,27 @@ a.rounded:hover {
 }
 
 .websites {
-    padding: 3em;
+    padding-top: 3em;
     color: white;
+
 }
 
 .websites h1 {
-    padding: 1em 0;
+    padding: 1em 0 0 3em;
     margin: 0;
+
 }
 
 .portfolio-container {
     display: inline-flex;
     flex-wrap: wrap;
     width: 100%;
+    margin: 0;
 }
 
 
 .portfolio-container > div {
-    background-color: #58130E;
+    background-color: #1F3335;
     width: 30%;
     margin: 10px auto 10px auto;
     font-size: 30px;
@@ -504,6 +507,11 @@ a.rounded:hover {
     display: block;
 }
 
+.background-wrapper {
+    width: 100%;
+    background-image: url("./images/lowpolyblue.svg")
+
+}
 
 /*footer*/
 .footer {
