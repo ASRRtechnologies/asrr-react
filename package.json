@@ -10,7 +10,7 @@
     "browser-locale": "^1.0.3",
     "jquery": "^3.3.1",
     "react": "^16.5.2",
-    "react-cookie": "^3.0.4",
+    "react-cookies": "^0.1.0",
     "react-dom": "^16.5.2",
     "react-modal": "^3.6.1",
     "react-multi-lang": "^1.0.2",
