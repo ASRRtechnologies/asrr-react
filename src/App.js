@@ -30,13 +30,13 @@ import {
 import {faLanguage} from '@fortawesome/free-solid-svg-icons';
 
 import './App.css';
-import Landing from './Components/Landing';
-import Clients from './Components/Clients';
-import SimpleSlider from "./Components/Slider";
-import Services from "./Components/Services";
-import Header from "./Components/Header"
-import Footer from "./Components/Footer"
 import Language from './Language'
+import Landing from './components/Landing';
+import Clients from './components/Clients';
+import SimpleSlider from "./components/Slider";
+import Services from "./components/Services";
+import Header from "./components/Header"
+import Footer from "./components/Footer"
 
 library.add(faLanguage, faHtml5, faCss3Alt, faJs, faJava, faWindows, faLinux, faGithub, faGit, faReact, faAndroid, faAppStoreIos, faApple, faNode, faNodeJs, faPaypal, faFacebook, faTwitter, faSnapchat, faAws, faChrome, faLinkedin);
 
