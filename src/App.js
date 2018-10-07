@@ -24,13 +24,16 @@ import {
 	faSnapchat,
 	faTwitter,
 	faWindows
-} from '@fortawesome/free-brands-svg-icons'
+} from '@fortawesome/free-brands-svg-icons';
+
+import { translate, setLanguage, getLanguage } from 'react-multi-lang';
+
+import './App.css';
 import Landing from './Components/Landing';
 import Clients from './Components/Clients';
 import SimpleSlider from "./Components/Slider";
 import Services from "./Components/Services";
 import Footer from "./Components/Footer"
-import './App.css';
 import logo from "./logo.svg";
 
 library.add(faHtml5, faCss3Alt, faJs, faJava, faWindows, faLinux, faGithub, faGit, faReact, faAndroid, faAppStoreIos, faApple, faNode, faNodeJs, faPaypal, faFacebook, faTwitter, faSnapchat, faAws, faChrome, faLinkedin);
@@ -88,6 +91,7 @@ class App extends Component {
     return (
       <div className="App">
 	      <div>
+              {this.props.t('landing.title')}
 		      <header className="header">
 			      <Link to="/"><img className="logo" src={logo} alt="logo"/></Link>
 			      <input className="menu-btn" type="checkbox" id="menu-btn"/>
@@ -122,4 +126,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default translate(App);
