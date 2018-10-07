@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {Link, Route, Switch} from 'react-router-dom';
 import Fade from 'react-reveal/Fade';
 import ReactModal from 'react-modal';
-
+import {translate} from 'react-multi-lang';
 
 import {library} from '@fortawesome/fontawesome-svg-core';
 import {
@@ -28,17 +28,18 @@ import {
     faTwitter,
     faWindows
 } from '@fortawesome/free-brands-svg-icons';
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faLanguage} from '@fortawesome/free-solid-svg-icons';
-import {translate} from 'react-multi-lang';
+
+import './App.css';
 import Landing from './Components/Landing';
 import Clients from './Components/Clients';
 import SimpleSlider from "./Components/Slider";
 import Services from "./Components/Services";
 import Footer from "./Components/Footer"
-import './App.css';
-import logo from "./logo.svg";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import Language from './Language'
+
+import logo from "./logo.svg";
 
 library.add(faLanguage, faHtml5, faCss3Alt, faJs, faJava, faWindows, faLinux, faGithub, faGit, faReact, faAndroid, faAppStoreIos, faApple, faNode, faNodeJs, faPaypal, faFacebook, faTwitter, faSnapchat, faAws, faChrome, faLinkedin);
 
