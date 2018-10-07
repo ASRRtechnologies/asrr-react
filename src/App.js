@@ -26,7 +26,8 @@ import {
 	faSnapchat,
 	faTwitter,
 	faWindows
-} from '@fortawesome/free-brands-svg-icons'
+} from '@fortawesome/free-brands-svg-icons';
+import { setTranslations, setDefaultLanguage, translate } from 'react-multi-lang';
 import Landing from './Components/Landing';
 import Clients from './Components/Clients';
 import SimpleSlider from "./Components/Slider";
@@ -136,4 +137,4 @@ class App extends Component {
 	}
 }
 
-export default App;
+export default translate(App);
