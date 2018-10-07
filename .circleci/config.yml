@@ -35,4 +35,4 @@ jobs:
 
     # run tests!
     - run:
-        command: ./run.sh
+        command: .circleci/run.sh
