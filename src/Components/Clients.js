@@ -10,9 +10,9 @@ class Clients extends Component {
 				<p>Find the work we've done in the past in our portfolio</p>
 				<div className="centerWrapper">
 					<div>
-						<a href="http://hetkroontjeweebosch.nl"><img src={kroontje}/></a>
-						<a href="https://form.nl"><img src={form}/></a>
-						<a><img src={kroontje}/></a>
+						<a href="http://hetkroontjeweebosch.nl"><img src={kroontje} alt="Logo Kroontje"/></a>
+						<a href="https://form.nl"><img src={form} alt="Logo Form"/></a>
+						<a><img src={kroontje} alt="Logo Kroontje"/></a>
 					</div>
 				</div>
 				<div>
