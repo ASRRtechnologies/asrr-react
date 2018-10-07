@@ -399,6 +399,10 @@ a.rounded:hover {
     max-width: 200px;
 }
 
+.full-width {
+    width: 100%
+}
+
 /*client list*/
 .clientGrid {
     background-color: #1F3335;
@@ -451,6 +455,55 @@ a.rounded:hover {
     height: 75%;
     background: inherit;
 }
+
+.websites {
+    padding: 3em;
+    color: white;
+}
+
+.websites h1 {
+    padding: 1em 0;
+    margin: 0;
+}
+
+.portfolio-container {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+.portfolio-container > div {
+    background-color: #58130E;
+    width: 30%;
+    margin: 10px auto 10px auto;
+    font-size: 30px;
+    border-radius: 4px;
+    padding: 1%;
+
+}
+
+.portfolio-container > div > h2 {
+    padding-bottom: 5px;
+    margin-left: 0;
+    max-width: 1167px;
+}
+
+.portfolio-container > div > p {
+    padding: 0 10px 10px 10px;
+    font-size: 15px;
+    width: 100%;
+    margin: auto;
+    text-align: justify;
+
+}
+
+.portfolio-container > div > img {
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+
 
 /*footer*/
 .footer {
