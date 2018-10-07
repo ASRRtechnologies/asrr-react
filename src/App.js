@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Link, Route, Switch} from 'react-router-dom';
 import Fade from 'react-reveal/Fade';
+import ReactModal from 'react-modal';
 
 
 import {library} from '@fortawesome/fontawesome-svg-core';
@@ -27,7 +28,7 @@ import {
 	faTwitter,
 	faWindows
 } from '@fortawesome/free-brands-svg-icons';
-import { setTranslations, setDefaultLanguage, translate } from 'react-multi-lang';
+import {translate} from 'react-multi-lang';
 import Landing from './Components/Landing';
 import Clients from './Components/Clients';
 import SimpleSlider from "./Components/Slider";
@@ -95,6 +96,26 @@ const Contact = () => (
 );
 
 class App extends Component {
+	constructor() {
+		super();
+		this.state = {
+			showModal: false
+		};
+
+		this.handleOpenModal = this.handleOpenModal.bind(this);
+		this.handleCloseModal = this.handleCloseModal.bind(this);
+	}
+
+	handleOpenModal() {
+		this.setState({showModal: true});
+	}
+
+	handleCloseModal() {
+		this.setState({showModal: false});
+	}
+
+
+
 	render() {
 		return (
 			<div className="App">
@@ -103,6 +124,7 @@ class App extends Component {
 						<Link to="/"><img className="logo" src={logo} alt="logo"/></Link>
 						<input className="menu-btn" type="checkbox" id="menu-btn"/>
 						<label className="menu-icon" htmlFor="menu-btn"><span className="navicon"/></label>
+						<button onClick={this.handleOpenModal}>Trigger Modal</button>
 						<ul className="menu">
 							<li><Link to="/">Home</Link></li>
 							<li><Link to="/portfolio">Portfolio</Link></li>
@@ -113,13 +135,20 @@ class App extends Component {
 									<li><Link to="/portfolio">Portfolio</Link></li>
 									<li><Link to="/about">About</Link></li>
 								</ul>
-
-
 							</li>
 							<li><Link to="/contact">Contact</Link></li>
 						</ul>
 					</header>
 				</div>
+
+
+				<ReactModal
+					isOpen={this.state.showModal}
+					contentLabel="Minimal Modal Example"
+				>
+					<button onClick={this.handleCloseModal}>Close Modal</button>
+				</ReactModal>
+
 
 				<Switch>
 					<Route path="/" exact component={Homepage}/>
