@@ -399,6 +399,10 @@ a.rounded:hover {
     max-width: 200px;
 }
 
+.full-width {
+    width: 100%
+}
+
 /*client list*/
 .clientGrid {
     background-color: #1F3335;
@@ -452,6 +456,63 @@ a.rounded:hover {
     background: inherit;
 }
 
+.websites {
+    padding-top: 3em;
+    color: white;
+
+}
+
+.websites h1 {
+    padding: 1em 0 0.4em  3em;
+    margin: 0;
+
+}
+
+.portfolio-container {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0;
+}
+
+
+.portfolio-container > div {
+    background-color: #1F3335;
+    width: 30%;
+    margin: 10px auto 10px auto;
+    font-size: 30px;
+    border-radius: 4px;
+    padding: 1%;
+
+}
+
+.portfolio-container > div > h2 {
+    padding-bottom: 5px;
+    margin-left: 0;
+    max-width: 1167px;
+}
+
+.portfolio-container > div > p {
+    padding: 0 10px 10px 0px;
+    font-size: 15px;
+    width: 100%;
+    margin: auto;
+    text-align: justify;
+
+}
+
+.portfolio-container > div > img {
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+
+.background-wrapper {
+    width: 100%;
+    background-image: url("./images/lowpolyblue.svg")
+
+}
+
 /*footer*/
 .footer {
     right: 0;
@@ -484,6 +545,17 @@ a.rounded:hover {
         width: 48%;
     }
 
+    .portfolio-container > div {
+        width: 45%;
+    }
+
+
+}
+
+@media screen and (max-width: 600px) {
+    .portfolio-container > div {
+        width: 90%;
+    }
 }
 
 

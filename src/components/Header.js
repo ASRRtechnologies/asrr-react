@@ -64,9 +64,9 @@ class Header extends Component {
                     </ReactModal>
 
                     <ul className="menu">
-                        <li><Link to="/portfolio">Portfolio</Link></li>
                         <li><Link to="/about">About</Link></li>
-                        <li><Link to="/careers">Careers</Link>
+                        <li><Link to="/portfolio">Portfolio</Link></li>
+                        <li><Link to="/services">Services</Link>
                             <ul>
                                 <li><Link to="/">Home</Link></li>
                                 <li><Link to="/portfolio">Portfolio</Link></li>
