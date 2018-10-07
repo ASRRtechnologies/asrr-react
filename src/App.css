@@ -209,6 +209,37 @@ a.rounded:hover {
     display: block
 }
 
+/*translate button*/
+.translate-wrapper {
+    height: 100%;
+    line-height: 43px;
+    float: right;
+}
+
+.translate-button {
+    bottom: 0px;
+}
+
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 1000;
+
+}
+
+.modal-container {
+    padding: 3em;
+    background-color: #1F3335;
+    border-radius: 25px;
+}
 
 /* Page content */
 .content {
