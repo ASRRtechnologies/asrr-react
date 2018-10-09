@@ -512,16 +512,19 @@ a.rounded:hover {
 
 .item-container {
     width: 100%;
-    padding: 0 1em;
+    padding: 0 0;
     text-align: center;
 }
 
 .item-cards > div {
     background-color: darkslategrey;
-    width: 300px;
+    width: 23%;
     margin: 10px 10px 10px auto;
     border-radius: 4px;
     display: inline-block;
+    top: 0;
+    bottom: 0;
+    vertical-align: top;
 }
 
 .item-cards > div> h3 {
@@ -532,6 +535,11 @@ a.rounded:hover {
     background-color: white;
     color: #1F3335;
 }
+
+.card-description > p {
+    padding: 10px;
+}
+
 
 .card-links > a {
     padding: 3px

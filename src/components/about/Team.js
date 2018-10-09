@@ -3,6 +3,7 @@ import Fade from 'react-reveal/Fade';
 import {translate} from 'react-multi-lang';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
+
 class Team extends Component {
     render() {
         return (
