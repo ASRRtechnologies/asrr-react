@@ -3,6 +3,7 @@ import laptop from "../../images/services/laptop.svg";
 import router from "../../images/services/router.svg";
 import computer from "../../images/services/computer.svg";
 import phone from "../../images/services/phone.svg";
+import {translate} from "react-multi-lang"
 
 class Services extends Component {
     render() {
@@ -16,22 +17,22 @@ class Services extends Component {
                     <div>
 	                    <img src={laptop}/>
 	                    <h2>Webdesign</h2>
-                        <p>Responsive and beautiful websites, like the one you're on now. From the ground up, using html5, css, frameworks such as ReactJS, or choose one of our existing templates.</p>
+	                    <p>{this.props.t('home.web')}</p>
                     </div>
                     <div>
 	                    <img src={phone}/>
 	                    <h2>App Development</h2>
-                        <p>We can develop both Android an IOS apps that have seamless integrations to your our our custom back-end.</p>
+	                    <p>{this.props.t('home.app')}</p>
                     </div>
                     <div>
 	                    <img src={router}/>
 	                    <h2>Custom back-end applications</h2>
-                        <p>The back-ends we deliver are Rest-ful, meaning that one backend can be used for your website, app and desktop application. We use Java, Spring, Spring-Boot and SQL.</p>
+	                    <p>{this.props.t('home.backend')}</p>
                     </div>
                     <div>
 	                    <img src={computer}/>
 	                    <h2>Windows Desktop Applications</h2>
-                        <p>We can create beautiful custom desktop applications using C#, to automate and speed up complex operations.</p>
+	                    <p>{this.props.t('home.desktop')}</p>
                     </div>
                 </div>
             </div>
@@ -39,4 +40,4 @@ class Services extends Component {
     }
 }
 
-export default Services;
+export default translate(Services);

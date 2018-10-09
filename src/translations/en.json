@@ -1,6 +1,10 @@
 {
   "home": {
-    "headline": "ASRR delivers expert problem analytics and solutions in web/app development, desktop applications and many more environments."
+    "headline": "ASRR delivers expert problem analytics and solutions in web/app development, desktop applications and many more environments.",
+    "web": "Responsive and beautiful websites, like the one you're on now. From the ground up, using html5, css, frameworks such as ReactJS, or choose one of our existing templates.",
+    "app": "We can develop both Android an IOS apps that have seamless integrations to your our our custom back-end.",
+    "backend": "The back-ends we deliver are Rest-ful, meaning that one backend can be used for your website, app and desktop application. We use Java, Spring, Spring-Boot and SQL.",
+    "desktop": "We can create beautiful custom desktop applications using C#, to automate and speed up complex operations."
   },
   "about": {
     "headline": "Meet the team",

@@ -1,5 +1,6 @@
 {
   "name": "asrr-react",
+  "homepage": "http://asrr.nl/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
