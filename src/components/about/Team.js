@@ -1,47 +1,41 @@
 import React, {Component} from 'react';
 import Fade from 'react-reveal/Fade';
+import {translate} from 'react-multi-lang';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
 class Team extends Component {
     render() {
         return (
             <div className="team-component white">
-                <h1>{this.props.section}</h1>
+                <h1>{this.props.t(this.props.section)}</h1>
                 <Fade bottom>
                     <div className="item-container">
                         <div className="item-cards">
                             <Fade bottom>
-                                <div>
-                                    <h2>Amar Ramdas</h2>
-                                    <h3>CEO</h3>
-                                    <p>Front end, back end</p>
-                                </div>
-                                <div>
-                                    <h2>Satyam Mohan</h2>
-                                    <h3>CTO</h3>
-                                    <p>Back end</p>
-                                </div>
-                                <div>
-                                    <h2>Ré-Angelo Jarvis</h2>
-                                    <h3>CMO</h3>
-                                    <p>Front end, back end</p>
-                                </div>
-                                <div>
-                                    <h2>Rayel Hardwarsing</h2>
-                                    <h3>CFO</h3>
-                                    <p>Front end, back end</p>
-                                </div>
-
-
-
+                                {this.props.items.map((item) => {
+                                    return <div>
+                                        <h2>{item.fullName}</h2>
+                                        <h3>{item.jobTitle}</h3>
+                                        <div className="card-description">
+                                            <p>Background: {item.background}</p>
+                                            <p>Tasks: {item.tasks}</p>
+                                            <p>Languages: {item.languages}</p>
+                                        </div>
+                                        <div className="card-links">
+                                            <a href={"http://github.com/" + item.github}><FontAwesomeIcon
+                                                icon={["fab", "github"]}/></a>
+                                            <a href={item.linkedin}><FontAwesomeIcon icon={["fab", "linkedin"]}/></a>
+                                        </div>
+                                    </div>
+                                })}
                             </Fade>
                         </div>
                     </div>
                 </Fade>
 
-                <h1>Desktop</h1>
             </div>
         );
     }
 }
 
-export default Team;
+export default translate(Team);

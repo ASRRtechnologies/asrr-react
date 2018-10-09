@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import browser from '../../images/sectionimages/browserflattrimmed.png';
 import {translate} from 'react-multi-lang';
 
 class Landing extends Component {

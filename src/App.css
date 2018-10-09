@@ -507,20 +507,34 @@ a.rounded:hover {
     width: 100%;
     margin: auto;
     display: block;
+
 }
 
 .item-container {
     width: 100%;
-    align-items: center ;
+    padding: 0 1em;
+    text-align: center;
 }
 
 .item-cards > div {
     background-color: darkslategrey;
     width: 300px;
-    margin: 10px auto 10px auto;
+    margin: 10px 10px 10px auto;
     border-radius: 4px;
-    padding: 1%;
     display: inline-block;
+}
+
+.item-cards > div> h3 {
+    padding-left: 15px;
+}
+
+.card-description {
+    background-color: white;
+    color: #1F3335;
+}
+
+.card-links > a {
+    padding: 3px
 }
 
 
