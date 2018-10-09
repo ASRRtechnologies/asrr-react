@@ -431,10 +431,12 @@ a.rounded:hover {
     padding: 10px 0 15px 0;
 }
 
-.centerWrapper {
+.centerWrapper600px {
     margin: auto;
     max-width: 600px;
 }
+
+
 
 /*diagonal*/
 .diagonal {
@@ -507,10 +509,29 @@ a.rounded:hover {
     display: block;
 }
 
+.item-container {
+    width: 100%;
+    align-items: center ;
+}
+
+.item-cards > div {
+    background-color: darkslategrey;
+    width: 300px;
+    margin: 10px auto 10px auto;
+    border-radius: 4px;
+    padding: 1%;
+    display: inline-block;
+}
+
+
 .background-wrapper {
     width: 100%;
     background-image: url("./images/lowpolyblue.svg")
 
+}
+
+.white {
+    color: white;
 }
 
 /*footer*/

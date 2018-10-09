@@ -9,7 +9,7 @@ class Clients extends Component {
 			<div className="clientGrid">
 				<h2>Don't just take our word for it</h2>
 				<p>Find the work we've done in the past in our portfolio</p>
-				<div className="centerWrapper">
+				<div className="centerWrapper600px">
 					<div>
 						<a href="http://hetkroontjeweebosch.nl"><img src={kroontje} alt="Logo Kroontje"/></a>
 						<a href="https://form.nl"><img src={form} alt="Logo Form"/></a>
