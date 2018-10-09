@@ -40,7 +40,7 @@ class Header extends Component {
                     <label className="menu-icon" htmlFor="menu-btn"><span className="navicon"/></label>
 
                     <span className="translate-wrapper">
-                        <a className="translate-button rounded" onClick={this.handleOpenModal}>
+                        <a className="translate-button rounded" onClick={this.handleOpenModal} role="button">
                             <FontAwesomeIcon icon={["fas", "language"]}/>
                         </a>
                     </span>
@@ -51,13 +51,13 @@ class Header extends Component {
                         className="modal"
                     >
                         <div className="modal-container">
-                            <a onClick={this.selectPreferredLanguage.bind(this, 'nl')} className="rounded resp">
+                            <a href="#" onClick={this.selectPreferredLanguage.bind(this, 'nl')} className="rounded resp">
                                 Nederlands
                             </a>
-                            <a onClick={this.selectPreferredLanguage.bind(this, 'en')} className="rounded resp">
+                            <a href="#" onClick={this.selectPreferredLanguage.bind(this, 'en')} className="rounded resp">
                                 English
                             </a>
-                            <a className="rounded resp" onClick={this.handleCloseModal}>
+                            <a href="#" className="rounded resp" onClick={this.handleCloseModal}>
                                 Close Modal
                             </a>
                         </div>
