@@ -516,6 +516,7 @@ a.rounded:hover {
     text-align: center;
 }
 
+
 .item-cards > div {
     background-color: darkslategrey;
     width: 23%;
@@ -592,6 +593,9 @@ a.rounded:hover {
         width: 45%;
     }
 
+    .item-cards > div {
+        width: 46%;
+    }
 
 }
 
