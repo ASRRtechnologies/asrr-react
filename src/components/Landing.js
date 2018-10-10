@@ -2,10 +2,6 @@ import React, {Component} from 'react';
 import {translate} from 'react-multi-lang';
 
 class Landing extends Component {
-	constructor() {
-		super();
-	}
-
 	render() {
 		let divStyle = {
 			backgroundImage: 'url(' + this.props.background + ')',

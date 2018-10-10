@@ -65,7 +65,7 @@ const support = [    {
         jobTitle: "Marketing Trainee",
         background: "Commercial Economics",
         tasks: "Researching marketing opportunities for the company and contacting potential customers",
-        languages: "English, Dutch, Russian",
+        languages: "English, Dutch, Spanish",
         linkedin: "https://www.linkedin.com/in/amitniteshramdas/",
         github: "lalal"
     }
