@@ -13,6 +13,7 @@ class Clients extends Component {
 					<div>
 						<a href="http://hetkroontjeweebosch.nl"><img src={kroontje} alt="Logo Kroontje"/></a>
 						<a href="https://form.nl"><img src={form} alt="Logo Form"/></a>
+						{/*eslint-disable-next-line*/}
 						<a><img src={kroontje} alt="Logo Kroontje"/></a>
 					</div>
 				</div>

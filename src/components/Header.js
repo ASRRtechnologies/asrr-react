@@ -28,7 +28,7 @@ class Header extends Component {
     selectPreferredLanguage(language) {
         Language.selectPreferredLanguage(language);
         this.handleCloseModal();
-	    window.location.reload();
+        window.location.reload();
     }
 
     render() {
@@ -40,6 +40,7 @@ class Header extends Component {
                     <label className="menu-icon" htmlFor="menu-btn"><span className="navicon"/></label>
 
                     <span className="translate-wrapper">
+                        {/*eslint-disable-next-line*/}
                         <a className="translate-button rounded" onClick={this.handleOpenModal} role="button">
                             <FontAwesomeIcon icon={["fas", "language"]}/>
                         </a>
@@ -51,12 +52,17 @@ class Header extends Component {
                         className="modal"
                     >
                         <div className="modal-container">
-                            <a href="#" onClick={this.selectPreferredLanguage.bind(this, 'nl')} className="rounded resp">
+                            {/*eslint-disable-next-line*/}
+                            <a href="#" onClick={this.selectPreferredLanguage.bind(this, 'nl')}
+                               className="rounded resp">
                                 Nederlands
                             </a>
-                            <a href="#" onClick={this.selectPreferredLanguage.bind(this, 'en')} className="rounded resp">
+                            {/*eslint-disable-next-line*/}
+                            <a href="#" onClick={this.selectPreferredLanguage.bind(this, 'en')}
+                               className="rounded resp">
                                 English
                             </a>
+                            {/*eslint-disable-next-line*/}
                             <a href="#" className="rounded resp" onClick={this.handleCloseModal}>
                                 Close Modal
                             </a>

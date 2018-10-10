@@ -13,10 +13,10 @@ class Footer extends Component {
 					<a href="https://www.facebook.com/asrrwebdesign/"><FontAwesomeIcon icon={["fab", "facebook"]}/></a>
 				</div>
 				<div>
-					<a>FAQ</a>
-					<a>Licenses</a>
-					<a>Privacy</a>
-					<a>Cookies</a>
+					<a href="/faq">FAQ</a>
+					<a href="/licenses">Licenses</a>
+					<a href="/privacy">Privacy</a>
+					<a href="/cookies">Cookies</a>
 				</div>
 			</div>
 		);
