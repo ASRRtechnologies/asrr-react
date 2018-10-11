@@ -87,6 +87,7 @@ class App extends Component {
 					<Route path="/team" component={About}/>
 					<Route path="/careers" component={Careers}/>
 					<Route path="/contact" component={Contact}/>
+					<Route path='/github' component={() => window.location = 'https://github.com/ASRRWebdesign'}/>
 				</Switch>
 
 				<Fade bottom>
