@@ -510,6 +510,12 @@ a.rounded:hover {
 
 }
 
+.grid-container > h1 {
+    text-align:center;
+    padding-left: 0;
+    margin: 0
+}
+
 .item-container {
     width: 100%;
     padding: 0 0;

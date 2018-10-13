@@ -13,7 +13,7 @@ class Home extends Component {
 		return (
 			<div>
 				<Fade bottom>
-					<Landing header="home.headline" background={lowPolyRed} image={browser}/>
+					<Landing header="home.headline" subtitle="home.subtitle" background={lowPolyRed} image={browser}/>
 				</Fade>
 				<Fade bottom>
 					<SimpleSlider/>

@@ -7,13 +7,11 @@ import ServiceGrid from "../services/ServiceGrid";
 const services = [
     {
         logo: "",
-        service: "Webdevelopment",
-        description: "To create beautiful responsive "
+        service: "web",
     },
     {
         logo: "",
-        service: "App development",
-        description: "lalala ldldldl dldldldl dlldl"
+        service: "app",
     }
 ];
 
@@ -22,10 +20,10 @@ class Services extends Component {
         return (
             <div>
                 <Fade bottom>
-                    <Landing header="services.headline" background={purple}/>
+                    <Landing header="services.headline" subtitle="home.subtitle" background={purple}/>
                 </Fade>
                 <Fade bottom>
-                    <ServiceGrid section="service.section" items={services}/>
+                    <ServiceGrid section="services.section" items={services}/>
                 </Fade>
             </div>
         );

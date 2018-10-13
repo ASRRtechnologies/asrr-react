@@ -9,5 +9,17 @@
   "about": {
     "headline": "Meet the team",
     "founders": "Founders"
+  },
+  "services" : {
+    "section": "Services",
+    "web": {
+      "name": "Web Design",
+      "description": "We create beautiful and responsive websites using HTML, CSS, JavaScript and frameworks like ReactJS and Polymer. We can create everything from a simple static image with some information for your clients, to complex webshops with automated systems, integrating seamlessly with our custom back-ends or an existing API you might have already."
+    },
+    "app": {
+      "name": "App Design",
+      "description": ""
+    }
+
   }
 }

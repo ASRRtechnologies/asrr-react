@@ -7,7 +7,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 class ServiceGrid extends Component {
     render() {
         return (
-            <div className="team-component white">
+            <div className="grid-container white">
                 <h1>{this.props.t(this.props.section)}</h1>
                 <Fade bottom>
                     <div className="item-container">
@@ -15,9 +15,9 @@ class ServiceGrid extends Component {
                             <Fade bottom>
                                 {this.props.items.map((item) => {
                                     return <div>
-                                        <h2>{item.service}</h2>
+                                        <h2>{this.props.t('services.' + item.service + ".name")}</h2>
                                         <div className="card-description">
-                                            <p>{item.description}</p>
+                                            <p>{this.props.t('services.' + item.service + ".description")}</p>
                                         </div>
                                     </div>
                                 })}

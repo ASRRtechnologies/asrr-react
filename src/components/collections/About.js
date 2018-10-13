@@ -44,8 +44,8 @@ const founders = [
         fullName: "Rayel Hardwarsing",
         jobTitle: "CFO",
         background: "Econometrics",
-        tasks: "Finances, Data Analysis",
-        languages: "R, C#, MatLab, Python",
+        tasks: "Finances, Data Analysis, Database Design",
+        languages: "Java, SQL, R, C#, MatLab, Python",
         github: "RayelH",
         linkedin: ""
     }];
@@ -79,7 +79,7 @@ class About extends Component {
         return (
             <div>
                 <Fade bottom>
-                    <Landing header="about.headline" background={orange} image={team}/>
+                    <Landing header="about.headline" subtitle="home.subtitle" background={orange} image={team}/>
                 </Fade>
                 <Fade bottom>
                     <Team section="about.founders" items={founders}/>
