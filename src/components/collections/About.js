@@ -70,6 +70,16 @@ const support = [
         languages: "English, Dutch, Spanish",
         linkedin: "https://www.linkedin.com/in/amitniteshramdas/",
         github: "lalal"
+    },
+    {
+        name: "Azat",
+        fullName: "Azat Arica",
+        jobTitle: "Developer & DB Engineer",
+        background: "Electrical Engineering",
+        tasks: "Writing code for our projects and designing databases.",
+        languages: "English, Dutch",
+        linkedin: "https://www.linkedin.com/in/azatarica/",
+        github: "azatt"
     }
 
 ];
@@ -79,7 +89,7 @@ class About extends Component {
         return (
             <div>
                 <Fade bottom>
-                    <Landing header="about.headline" subtitle="home.subtitle" background={orange} image={team}/>
+                    <Landing header="about.headline" subtitle="about.subtitle" background={orange} image={team}/>
                 </Fade>
                 <Fade bottom>
                     <Team section="about.founders" items={founders}/>
