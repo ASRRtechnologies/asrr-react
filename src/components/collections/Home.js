@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Fade from "react-reveal/Fade";
-import Landing from "../home/Landing";
+import Landing from "../Landing";
 import SimpleSlider from "../home/Slider";
 import Services from "../home/Services";
 import Clients from "../home/Clients";

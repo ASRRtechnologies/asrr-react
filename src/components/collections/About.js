@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Fade from "react-reveal/Fade";
-import Landing from "../home/Landing";
-import lowPolyOrange from "../../images/backgrounds/lowpolyorange.svg";
+import Landing from "../Landing";
+import orange from "../../images/backgrounds/orange.svg";
 import team from "../../images/sectionimages/team.png"
 import Team from "../about/Team";
 
@@ -49,7 +49,9 @@ const founders = [
         github: "RayelH",
         linkedin: ""
     }];
-const support = [    {
+
+const support = [
+    {
         name: "Amy",
         fullName: "Amy Mkrtsjan",
         jobTitle: "HR Advisor",
@@ -77,7 +79,7 @@ class About extends Component {
         return (
             <div>
                 <Fade bottom>
-                    <Landing header="about.headline" background={lowPolyOrange} image={team}/>
+                    <Landing header="about.headline" background={orange} image={team}/>
                 </Fade>
                 <Fade bottom>
                     <Team section="about.founders" items={founders}/>

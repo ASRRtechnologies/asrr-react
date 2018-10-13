@@ -31,13 +31,14 @@ import {faLanguage} from '@fortawesome/free-solid-svg-icons';
 
 import './App.css';
 import Language from './Language'
-import Services from "./components/home/Services";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 import Websites from "./components/portfolio/Websites";
 import Home from "./components/collections/Home";
 import About from "./components/collections/About";
+import Services from "./components/collections/Services";
+
 
 library.add(faLanguage, faHtml5, faCss3Alt, faJs, faJava, faWindows, faLinux, faGithub, faGit, faReact, faAndroid, faAppStoreIos, faApple, faNode, faNodeJs, faPaypal, faFacebook, faTwitter, faSnapchat, faAws, faChrome, faLinkedin);
 
