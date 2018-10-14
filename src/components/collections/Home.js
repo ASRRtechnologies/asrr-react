@@ -7,6 +7,7 @@ import Clients from "../home/Clients";
 import lowPolyRed from "../../images/backgrounds/lowpoly.jpg";
 import browser from '../../images/sectionimages/browserflattrimmed.png';
 
+//comment
 
 class Home extends Component {
 	render() {
