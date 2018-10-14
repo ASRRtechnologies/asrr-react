@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import Fade from 'react-reveal/Fade';
 import {translate} from 'react-multi-lang';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+
+// import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
 
 class ServiceGrid extends Component {
