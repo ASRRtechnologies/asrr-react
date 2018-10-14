@@ -1,6 +1,7 @@
 {
   "home": {
     "headline": "ASRR delivers expert problem analytics and solutions in web/app development, desktop applications and many more environments.",
+    "subtitle": "Subtitle la la la",
     "web": "Responsive and beautiful websites, like the one you're on now. From the ground up, using html5, css, frameworks such as ReactJS, or choose one of our existing templates.",
     "app": "We can develop both Android an IOS apps that have seamless integrations to your our our custom back-end.",
     "backend": "The back-ends we deliver are Rest-ful, meaning that one backend can be used for your website, app and desktop application. We use Java, Spring, Spring-Boot and SQL.",
@@ -8,6 +9,19 @@
   },
   "about": {
     "headline": "Meet the team",
+    "subtitle": "ASRR was founded in 2016, starting out as a webdesign company. We combine our broad areas of expertise gathered during our studies and apply it to all things software. Combining that with strong connections to many skilled developers, engineers and designers we deliver what ASRR stands for: High quality service and efficient work speeds at a very affordable price.",
     "founders": "Founders"
+  },
+  "services" : {
+    "section": "Services",
+    "web": {
+      "name": "Web Design",
+      "description": "We create beautiful and responsive websites using HTML, CSS, JavaScript and frameworks like ReactJS and Polymer. We can create everything from a simple static image with some information for your clients, to complex webshops with automated systems, integrating seamlessly with our custom back-ends or an existing API you might have already."
+    },
+    "app": {
+      "name": "App Design",
+      "description": ""
+    }
+
   }
 }

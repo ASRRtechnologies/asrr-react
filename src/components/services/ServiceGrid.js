@@ -4,7 +4,7 @@ import {translate} from 'react-multi-lang';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
 
-class Team extends Component {
+class ServiceGrid extends Component {
     render() {
         return (
             <div className="grid-container white">
@@ -15,17 +15,9 @@ class Team extends Component {
                             <Fade bottom>
                                 {this.props.items.map((item) => {
                                     return <div>
-                                        <h2>{item.fullName}</h2>
-                                        <h3>{item.jobTitle}</h3>
+                                        <h2>{this.props.t('services.' + item.service + ".name")}</h2>
                                         <div className="card-description">
-                                            <p>Background: {item.background}</p>
-                                            <p>Tasks: {item.tasks}</p>
-                                            <p>Languages: {item.languages}</p>
-                                        </div>
-                                        <div className="card-links">
-                                            <a href={"http://github.com/" + item.github}><FontAwesomeIcon
-                                                icon={["fab", "github"]}/></a>
-                                            <a href={item.linkedin}><FontAwesomeIcon icon={["fab", "linkedin"]}/></a>
+                                            <p>{this.props.t('services.' + item.service + ".description")}</p>
                                         </div>
                                     </div>
                                 })}
@@ -39,4 +31,4 @@ class Team extends Component {
     }
 }
 
-export default translate(Team);
+export default translate(ServiceGrid);

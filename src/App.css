@@ -347,6 +347,12 @@ a.rounded:hover {
     justify-content: end;
 }
 
+#landing-text p {
+    text-align: left;
+    width: 80%;
+    padding-left: 1.7em;
+}
+
 #landing-image {
     overflow: hidden;
     min-height: 300px;
@@ -508,6 +514,12 @@ a.rounded:hover {
     margin: auto;
     display: block;
 
+}
+
+.grid-container > h1 {
+    text-align:center;
+    padding-left: 0;
+    margin: 0
 }
 
 .item-container {

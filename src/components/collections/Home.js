@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Fade from "react-reveal/Fade";
-import Landing from "../home/Landing";
+import Landing from "../Landing";
 import SimpleSlider from "../home/Slider";
 import Services from "../home/Services";
 import Clients from "../home/Clients";
@@ -13,7 +13,7 @@ class Home extends Component {
 		return (
 			<div>
 				<Fade bottom>
-					<Landing header="home.headline" background={lowPolyRed} image={browser}/>
+					<Landing header="home.headline" subtitle="home.subtitle" background={lowPolyRed} image={browser}/>
 				</Fade>
 				<Fade bottom>
 					<SimpleSlider/>

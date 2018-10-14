@@ -10,6 +10,7 @@ class Landing extends Component {
 			<div className="landing-wrapper" style={divStyle}>
 				<div id="landing-text">
 					<h1>{this.props.t(this.props.header)}</h1>
+                    <p>{this.props.t(this.props.subtitle)}</p>
 				</div>
 
 				<div id="landing-image">

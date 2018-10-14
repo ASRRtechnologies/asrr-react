@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Fade from "react-reveal/Fade";
-import Landing from "../home/Landing";
-import lowPolyOrange from "../../images/backgrounds/lowpolyorange.svg";
+import Landing from "../Landing";
+import orange from "../../images/backgrounds/orange.svg";
 import team from "../../images/sectionimages/team.png"
 import Team from "../about/Team";
 
@@ -44,12 +44,14 @@ const founders = [
         fullName: "Rayel Hardwarsing",
         jobTitle: "CFO",
         background: "Econometrics",
-        tasks: "Finances, Data Analysis",
-        languages: "R, C#, MatLab, Python",
+        tasks: "Finances, Data Analysis, Database Design",
+        languages: "Java, SQL, R, C#, MatLab, Python",
         github: "RayelH",
         linkedin: ""
     }];
-const support = [    {
+
+const support = [
+    {
         name: "Amy",
         fullName: "Amy Mkrtsjan",
         jobTitle: "HR Advisor",
@@ -68,6 +70,16 @@ const support = [    {
         languages: "English, Dutch, Spanish",
         linkedin: "https://www.linkedin.com/in/amitniteshramdas/",
         github: "lalal"
+    },
+    {
+        name: "Azat",
+        fullName: "Azat Arica",
+        jobTitle: "Developer & DB Engineer",
+        background: "Electrical Engineering",
+        tasks: "Writing code for our projects and designing databases.",
+        languages: "English, Dutch",
+        linkedin: "https://www.linkedin.com/in/azatarica/",
+        github: "azatt"
     }
 
 ];
@@ -77,7 +89,7 @@ class About extends Component {
         return (
             <div>
                 <Fade bottom>
-                    <Landing header="about.headline" background={lowPolyOrange} image={team}/>
+                    <Landing header="about.headline" subtitle="about.subtitle" background={orange} image={team}/>
                 </Fade>
                 <Fade bottom>
                     <Team section="about.founders" items={founders}/>
