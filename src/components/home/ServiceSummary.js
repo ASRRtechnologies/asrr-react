@@ -26,7 +26,7 @@ class ServiceSummary extends Component {
 		return (
 			<div className="services-wrapper">
 				<div>
-					<h1> What we do</h1>
+					<h1>{this.props.t('home.services.headline')}</h1>
 
 					<div className="flex-container">
 						<div>
@@ -58,8 +58,8 @@ class ServiceSummary extends Component {
 				<hr/>
 
 				<div>
-					<h1>Why ASRR?</h1>
-					<p>Why choose ASRR instead of a conventional freelancer (ZZP) or an internal IT employee?</p>
+					<h1>{this.props.t('home.why.headline')}</h1>
+					<p>{this.props.t('home.why.subtitle')}</p>
 					<Cards category="home.why" items={why}/>
 				</div>
 
