@@ -460,28 +460,6 @@ a.rounded:hover {
     max-width: 600px;
 }
 
-
-
-/*diagonal*/
-.diagonal {
-    background: teal;
-    z-index: 1;
-    padding: 3em;
-}
-
-.diagonal:before {
-    -webkit-transform: rotate(-3deg);
-    transform: rotate(-3deg);
-    -webkit-transform-origin: 3% 0;
-    transform-origin: 3% 0;
-    top: 0;
-    left: -25%;
-    z-index: -1;
-    width: 150%;
-    height: 75%;
-    background: inherit;
-}
-
 .websites {
     padding-top: 3em;
     color: white;
@@ -556,6 +534,10 @@ a.rounded:hover {
     top: 0;
     bottom: 0;
     vertical-align: top;
+}
+
+.item-cards > div > h2 {
+    padding-bottom: 10px;
 }
 
 .item-cards > div> h3 {
