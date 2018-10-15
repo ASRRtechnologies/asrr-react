@@ -13,5 +13,6 @@
 ![GitHub repo size in bytes](https://img.shields.io/github/repo-size/badges/shields.svg)
 
 
-
 The new and improved ASRR Website, made using ReactJS
+
+Using components and translations to keep code clean!
