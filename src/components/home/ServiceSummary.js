@@ -26,13 +26,6 @@ class ServiceSummary extends Component {
 		return (
 			<div className="services-wrapper">
 				<div>
-					<h1>Why ASRR?</h1>
-					<p>Why choose ASRR instead of a conventional freelancer (ZZP) or an internal IT employee?</p>
-					<Cards category="why" items={why}/>
-				</div>
-
-				<hr/>
-				<div>
 					<h1> What we do</h1>
 
 					<div className="flex-container">
@@ -57,6 +50,14 @@ class ServiceSummary extends Component {
 							<p>{this.props.t('home.desktop')}</p>
 						</div>
 					</div>
+				</div>
+
+				<hr/>
+
+				<div>
+					<h1>Why ASRR?</h1>
+					<p>Why choose ASRR instead of a conventional freelancer (ZZP) or an internal IT employee?</p>
+					<Cards category="why" items={why}/>
 				</div>
 
 			</div>
