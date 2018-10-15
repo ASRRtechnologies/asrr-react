@@ -13,8 +13,8 @@ class Cards extends Component {
 					<div className="item-container">
 						<div className="item-cards white">
 							<Fade bottom>
-								{this.props.items.map((item) => {
-									return <div className="drop-shadow">
+								{this.props.items.map((item, index) => {
+									return <div key={index} className="drop-shadow">
 										<h2>{this.props.t(this.props.category + '.' + item.service + ".name")}</h2>
 										<div className="card-description">
 											<p>{this.props.t(this.props.category + '.' + item.service + ".description")}</p>

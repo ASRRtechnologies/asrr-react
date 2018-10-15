@@ -30,7 +30,7 @@
       },
       "transparency": {
         "name": "Transparency",
-        "description": "We strive to create a clear feedback loop to the client, showing the actions that were undertaken in a clear and concise way. Furthermore, after an initial analysis, we can forecast a prospected amount of hours the work will take, so that there won't be any surprises afterwards."
+        "description": "We strive to create a clear feedback loop to the client, showing the actions that were undertaken in a clear and concise way (Scrum, Agile). Furthermore, after an initial analysis, we can forecast a prospected amount of hours the work will take, so that there won't be any surprises afterwards."
       },
       "integrations": {
         "name": "Integrations with existing systems",
