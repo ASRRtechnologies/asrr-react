@@ -345,6 +345,7 @@ a.rounded:hover {
 #landing-text h1 {
     width: 80%;
     justify-content: end;
+    padding-bottom: 0.5em;
 }
 
 #landing-text p {

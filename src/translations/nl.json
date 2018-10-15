@@ -1,11 +1,11 @@
 {
   "home" : {
-    "headline": "ASRR levert expertise in probleemanalyse & -oplossingen in verschillende ICT omgevingen.",
+    "headline": "ASRR vertaalt de vraag van de klant naar op maat gemaakte (IT-) oplossingen.",
+    "subtitle": "Bij ons huurt u een oplossing in; wij combineren een multidisciplinair team om zo de het beste product te leveren, zonder compromis.",
     "web": "ASRR maakt flexibele en mooie websites, zoals de website waar u zich nu op bevindt. Hierbij gebruiken we HTML5, CSS en frameworks zoals ReactJS om de website van de grond op te bouwen, of je kunt een van onze bestaande templates kiezen",
     "app": "We kunnen zowel Android als IOS applicaties ontwikkelen, die moeiteloos integreren met uw of onze custom back-end",
     "backend": "De back-ends die wij leveren zijn 'Rest-ful', wat betekent dat één backend gebruikt kan worden als de hersenen achter uw website, app, desktop applicatie en meer. We gebruiken hiervoor Java, Spring, Spring-Boot en SQL.",
     "desktop": "We kunnen prachtige op maat gemaakte Windows desktopapplicaties schrijven in C#, om complexe taken te automatiseren en versnellen"
-
   },
   "about": {
     "headline": "Maak kennis met het team",
