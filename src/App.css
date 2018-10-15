@@ -578,6 +578,15 @@ hr {
     color: white;
 }
 
+.grey {
+    background-color: darkslategrey;
+}
+
+.grey:hover {
+    background-color: #1F3335;
+    border-color: #58130e;
+}
+
 .drop-shadow {
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);

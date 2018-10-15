@@ -3,7 +3,7 @@ import Fade from "react-reveal/Fade";
 import Landing from "../Landing";
 import midblue from "../../images/backgrounds/midblue.svg";
 import team from "../../images/sectionimages/team.png"
-import Team from "../about/Team";
+import TeamCards from "../about/TeamCards";
 
 const founders = [
     {
@@ -84,7 +84,7 @@ const support = [
 
 ];
 
-class About extends Component {
+class Team extends Component {
     render() {
         return (
             <div>
@@ -92,14 +92,14 @@ class About extends Component {
 	                <Landing header="about.headline" subtitle="about.subtitle" background={midblue} image={team}/>
                 </Fade>
                 <Fade bottom>
-                    <Team section="about.founders" items={founders}/>
+	                <TeamCards section="about.founders" items={founders}/>
                 </Fade>
                 <Fade bottom>
-                    <Team section="Support" items={support}/>
+	                <TeamCards section="Support" items={support}/>
                 </Fade>
             </div>
         );
     }
 }
 
-export default About;
+export default Team;

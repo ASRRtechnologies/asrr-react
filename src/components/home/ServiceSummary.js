@@ -5,6 +5,7 @@ import computer from "../../images/services/computer.svg";
 import phone from "../../images/services/phone.svg";
 import {translate} from "react-multi-lang"
 import Cards from "../Cards";
+import {Link} from "react-router-dom";
 
 const why = [
 	{
@@ -53,6 +54,10 @@ class ServiceSummary extends Component {
 
 						</div>
 					</div>
+
+					<div className="centerButton-wrapper">
+						<Link to="/Services" className="rounded centerButton grey">To Services</Link>
+					</div>
 				</div>
 
 				<hr/>
@@ -61,6 +66,10 @@ class ServiceSummary extends Component {
 					<h1>{this.props.t('home.why.headline')}</h1>
 					<p>{this.props.t('home.why.subtitle')}</p>
 					<Cards category="home.why" items={why}/>
+
+					<div className="centerButton-wrapper">
+						<Link to="/Team" className="rounded centerButton grey">Meet the Team</Link>
+					</div>
 				</div>
 
 			</div>
