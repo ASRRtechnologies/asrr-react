@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Fade from "react-reveal/Fade";
 import Landing from "../Landing";
 import SimpleSlider from "../home/Slider";
-import Services from "../home/Services";
+import ServiceSummary from "../home/ServiceSummary";
 import Clients from "../home/Clients";
 import lowPolyRed from "../../images/backgrounds/lowpoly.jpg";
 import browser from '../../images/sectionimages/browserflattrimmed.png';
@@ -20,7 +20,7 @@ class Home extends Component {
 					<SimpleSlider/>
 				</Fade>
 				<Fade bottom>
-					<Services/>
+					<ServiceSummary/>
 				</Fade>
 				<Fade bottom>
 					<Clients/>

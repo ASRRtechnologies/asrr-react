@@ -51,6 +51,13 @@ a.rounded:hover {
     border-color: rgba(255, 255, 255, 1);
 }
 
+hr {
+    border-color: #58130e;
+    background-color: #58130e;
+    width: 80%;
+    margin: 1em auto;
+}
+
 .centerButton-wrapper{
     margin: auto;
     text-align: center;
@@ -177,7 +184,7 @@ a.rounded:hover {
 
 /* 48em = 768px */
 
-@media (min-width: 48em) {
+@media (min-width: 52em) {
     .header li {
         float: left;
     }
@@ -351,7 +358,7 @@ a.rounded:hover {
 #landing-text p {
     text-align: left;
     width: 80%;
-    padding-left: 1.7em;
+    padding-left: 5%;
 }
 
 #landing-image {
@@ -369,6 +376,23 @@ a.rounded:hover {
 /*services*/
 .services-wrapper {
     background-color: white;
+    text-align: center;
+}
+
+.services-wrapper > h1 {
+    margin-left: 0;
+}
+
+.services-wrapper p {
+    padding: 1em;
+}
+
+.services-wrapper ul {
+    padding-bottom: 1em;
+}
+
+.services-wrapper ul li:before{
+    content: '✓';
 }
 
 .flex-container {
@@ -443,28 +467,6 @@ a.rounded:hover {
     max-width: 600px;
 }
 
-
-
-/*diagonal*/
-.diagonal {
-    background: teal;
-    z-index: 1;
-    padding: 3em;
-}
-
-.diagonal:before {
-    -webkit-transform: rotate(-3deg);
-    transform: rotate(-3deg);
-    -webkit-transform-origin: 3% 0;
-    transform-origin: 3% 0;
-    top: 0;
-    left: -25%;
-    z-index: -1;
-    width: 150%;
-    height: 75%;
-    background: inherit;
-}
-
 .websites {
     padding-top: 3em;
     color: white;
@@ -502,7 +504,7 @@ a.rounded:hover {
 }
 
 .portfolio-container > div > p {
-    padding: 0 10px 10px 0px;
+    padding: 0 10px 10px 0;
     font-size: 15px;
     width: 100%;
     margin: auto;
@@ -541,8 +543,13 @@ a.rounded:hover {
     vertical-align: top;
 }
 
+.item-cards > div > h2 {
+    padding-bottom: 4px;
+}
+
 .item-cards > div> h3 {
     padding-left: 15px;
+    padding-bottom: 5px;
 }
 
 .card-description {
@@ -568,6 +575,15 @@ a.rounded:hover {
 
 .white {
     color: white;
+}
+
+.drop-shadow {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.drop-shadow:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 /*footer*/

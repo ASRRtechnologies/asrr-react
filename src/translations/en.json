@@ -12,6 +12,22 @@
     "subtitle": "ASRR was founded in 2016, starting out as a webdesign company. We combine our broad areas of expertise gathered during our studies and apply it to all things software. Combining that with strong connections to many skilled developers, engineers and designers we deliver what ASRR stands for: High quality service and efficient work speeds at a very affordable price.",
     "founders": "Founders"
   },
+  "why": {
+    "title": "Why ASRR?",
+    "subtitle": "Why choose ASRR instead of a conventional freelancer (ZZP) or an internal IT employee?",
+    "multi": {
+      "name": "Multidisciplinary team",
+      "description": "While one developer might be able to get something outside of the scope of their expertise to work, it quickly becomes messy with larger and more complex projects. This is where our service makes a difference, by combining the diverse knowledge of our developers to tailor to the customers needs, using the best practices and state of the art techniques."  },
+    "transparency": {
+      "name": "Transparency",
+      "description": "We strive to create a clear feedback loop to the client, showing the actions that were undertaken in a clear and concise way. Furthermore, after an initial analysis, we can forecast a prospected amount of hours the work will take, so that there won't be any surprises afterwards."
+    },
+    "integrations": {
+      "name": "Integrations with existing systems",
+      "description": "Beceause the software we write is REST-ful, it becomes very easy to integrate in existing systems. There won't be any digging into legacy code, as we create a simple API interface to get and send data to and from the new system."
+    }
+  }
+  ,
   "services" : {
     "section": "Services",
     "web": {
