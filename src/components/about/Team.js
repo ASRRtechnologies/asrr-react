@@ -13,8 +13,8 @@ class Team extends Component {
                     <div className="item-container">
                         <div className="item-cards">
                             <Fade bottom>
-                                {this.props.items.map((item) => {
-                                    return <div>
+	                            {this.props.items.map((item, index) => {
+		                            return <div key={index}>
                                         <h2>{item.fullName}</h2>
                                         <h3>{item.jobTitle}</h3>
                                         <div className="card-description">

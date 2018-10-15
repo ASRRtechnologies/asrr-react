@@ -14,8 +14,8 @@ class ServiceGrid extends Component {
                     <div className="item-container">
                         <div className="item-cards">
                             <Fade bottom>
-                                {this.props.items.map((item) => {
-                                    return <div className="drop-shadow">
+	                            {this.props.items.map((item, index) => {
+		                            return <div key={index} className="drop-shadow">
                                         <h2>{this.props.t('services.' + item.service + ".name")}</h2>
                                         <div className="card-description">
                                             <p>{this.props.t('services.' + item.service + ".description")}</p>
