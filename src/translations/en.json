@@ -46,7 +46,7 @@
   },
   "services" : {
     "headline": "Find out what we can do for you!",
-    "subtitle": "",
+    "subtitle": "The key in our services is that they are custom tailored to your wishes. You come to us with a problem or wish, we will find out what is needed to accomplish it and provide you with an expert team that can develop the solution.",
     "section": "Services",
     "web": {
       "name": "Web Design",
@@ -61,8 +61,8 @@
       "description": "Using C# and Windows Forms, we can automate and improve your workflow. We have created custom applications in the past for clients who, for example needed access to a custom database and to be reminded of certain tasks, while also giving them the ability to analyze their portfolio. The more time we save you by automating your daily tasks, the more money you will save on personnel costs, and lets you focus on the things that matter."
     },
     "backend": {
-      "name": "Custom Back-End Applications",
-      "description": "Our custom back-ends are RESTful, which means that they can be seen as a contained API. This in turn lets you connect them to your existing systems, an app, a website, a desktop application or even open them up for the public if you so desire. These back-ends are usually written in Java or C#, and can then be hosted on a (virtual) private server, or a local machine."
+      "name": "Back-End Applications",
+      "description": "Every system needs a brain. Think of login systems, a social media platform and webshops. This is where a back-end application comes in. Our custom back-ends are RESTful, which means that they can be seen as a contained API. This in turn lets you connect them to your existing systems, an app, a website, a desktop application or even open them up for the public if you so desire. These back-ends are usually written in Java or C#, and can then be hosted on a (virtual) private server, or a local machine."
     },
     "data-analysis": {
       "name": "Big Data",

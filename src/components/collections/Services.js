@@ -39,7 +39,8 @@ class Services extends Component {
 		return (
 			<div>
 				<Fade bottom>
-					<Landing header="services.headline" subtitle="home.subtitle" background={purple} image={server}/>
+					<Landing header="services.headline" subtitle="services.subtitle" background={purple}
+					         image={server}/>
 				</Fade>
 				<Fade bottom>
 					<ServiceGrid section="services.section" items={services}/>
