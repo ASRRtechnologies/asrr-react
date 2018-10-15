@@ -372,6 +372,10 @@ a.rounded:hover {
     text-align: center;
 }
 
+.services-wrapper > h1 {
+    margin-left: 0;
+}
+
 .services-wrapper p {
     padding: 1em;
 }

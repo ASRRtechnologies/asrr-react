@@ -18,7 +18,7 @@ const why = [
 ];
 
 
-class Services extends Component {
+class ServiceSummary extends Component {
     render() {
         return (
             <div className="services-wrapper">
@@ -72,4 +72,4 @@ class Services extends Component {
     }
 }
 
-export default translate(Services);
+export default translate(ServiceSummary);
