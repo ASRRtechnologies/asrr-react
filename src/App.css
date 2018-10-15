@@ -10,6 +10,7 @@
 body {
     font-family: 'Montserrat', serif;
     background-color: #1F3335;
+    padding-top: 64px;
 }
 
 h1 {
@@ -283,7 +284,7 @@ hr {
 /*Landing*/
 .landing-wrapper {
     width: 100%;
-    padding-top: 60px;
+    /*padding-top: 60px;*/
     margin: 0;
     display: inline-block;
     background-repeat: no-repeat;

@@ -49,6 +49,14 @@ const Portfolio = () => (
 	</div>
 );
 
+const NoMatch = ({location}) => (
+	<div>
+		<h3>
+			Page <code>{location.pathname}</code> was not found
+		</h3>
+	</div>
+);
+
 
 const Careers = () => (
 	<div>
@@ -89,6 +97,7 @@ class App extends Component {
 					<Route path="/careers" component={Careers}/>
 					<Route path="/contact" component={Contact}/>
 					<Route path='/github' component={() => window.location = 'https://github.com/ASRRWebdesign'}/>
+					<Route component={NoMatch}/>
 				</Switch>
 
 				<Fade bottom>
