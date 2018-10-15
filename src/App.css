@@ -56,9 +56,7 @@ hr {
     background-color: #58130e;
     width: 80%;
     margin: 1em auto;
-
 }
-
 
 .centerButton-wrapper{
     margin: auto;
@@ -506,7 +504,7 @@ hr {
 }
 
 .portfolio-container > div > p {
-    padding: 0 10px 10px 0px;
+    padding: 0 10px 10px 0;
     font-size: 15px;
     width: 100%;
     margin: auto;
