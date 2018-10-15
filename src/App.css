@@ -471,9 +471,7 @@ hr {
 }
 
 .websites {
-    padding-top: 3em;
     color: white;
-
 }
 
 .websites h1 {
@@ -604,6 +602,12 @@ hr {
     padding: 5px;
 }
 
+/*404*/
+.noref {
+    padding: auto;
+
+}
+
 /*make landing responsive*/
 @media screen and (max-width: 900px) {
     #landing-text {
@@ -641,7 +645,9 @@ hr {
     }
 }
 
-
-
-
-
+.glitch {
+    font-size: 100px;
+    position: relative;
+    width: 400px;
+    margin: 0 auto;
+}

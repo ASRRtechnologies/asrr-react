@@ -38,6 +38,7 @@ import Websites from "./components/portfolio/Websites";
 import Home from "./components/collections/Home";
 import About from "./components/collections/About";
 import Services from "./components/collections/Services";
+import NoRef from "./components/404";
 
 
 library.add(faLanguage, faHtml5, faCss3Alt, faJs, faJava, faWindows, faLinux, faGithub, faGit, faReact, faAndroid, faAppStoreIos, faApple, faNode, faNodeJs, faPaypal, faFacebook, faTwitter, faSnapchat, faAws, faChrome, faLinkedin);
@@ -51,9 +52,7 @@ const Portfolio = () => (
 
 const NoMatch = ({location}) => (
 	<div>
-		<h3>
-			Page <code>{location.pathname}</code> was not found
-		</h3>
+		<NoRef location={location}/>
 	</div>
 );
 
