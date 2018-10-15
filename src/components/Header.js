@@ -63,7 +63,7 @@ class Header extends Component {
 						<a className="translate-button rounded" onClick={this.handleOpenModal} role="button"
 						   style={{padding: "0"}}>
                             <img alt="current language flag" src={src} width="50px" height="18px"
-                                 style={{verticalAlign: "middle", padding: "8px 0 8px 0"}}/>
+                                 style={{verticalAlign: "middle", padding: "5px 0 8px 0"}}/>
                         </a>
                     </span>
 
