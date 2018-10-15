@@ -4,7 +4,7 @@ import router from "../../images/services/router.svg";
 import computer from "../../images/services/computer.svg";
 import phone from "../../images/services/phone.svg";
 import {translate} from "react-multi-lang"
-import ServiceGrid from "../services/ServiceGrid";
+import Cards from "../Cards";
 
 const why = [
     {
@@ -24,7 +24,7 @@ class Services extends Component {
             <div className="services-wrapper">
                 <h1>Why ASRR?</h1>
                 <p>Why choose ASRR instead of a conventional freelancer (ZZP) or an internal IT employee?</p>
-                <ServiceGrid section="home.why" items={why}/>
+	            <Cards items={why}/>
                 <ul>
                     <li><b>Multidisciplinary team</b>
                         <p>While one developer might be able to get something outside of the scope of their expertise to
