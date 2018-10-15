@@ -51,6 +51,15 @@ a.rounded:hover {
     border-color: rgba(255, 255, 255, 1);
 }
 
+hr {
+    border-color: #58130e;
+    background-color: #58130e;
+    width: 80%;
+    margin: 1em auto;
+
+}
+
+
 .centerButton-wrapper{
     margin: auto;
     text-align: center;
