@@ -52,10 +52,11 @@ a.rounded:hover {
 }
 
 hr {
-    border-color: #58130e;
-    background-color: #58130e;
-    width: 80%;
+    background-color: #1F3335;
+    width: 60%;
     margin: 1em auto;
+    height: 1px;
+    border: none;
 }
 
 .centerButton-wrapper{

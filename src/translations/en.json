@@ -29,6 +29,8 @@
   }
   ,
   "services" : {
+    "headline": "Find out what we can do for you!",
+    "subtitle": "",
     "section": "Services",
     "web": {
       "name": "Web Design",
