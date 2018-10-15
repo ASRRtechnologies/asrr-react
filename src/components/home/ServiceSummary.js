@@ -14,7 +14,10 @@ const why = [
     {
         logo: "",
         service: "through",
-    }
+    },
+	{
+		service: "integrations"
+	}
 ];
 
 
@@ -24,7 +27,7 @@ class ServiceSummary extends Component {
             <div className="services-wrapper">
                 <h1>Why ASRR?</h1>
                 <p>Why choose ASRR instead of a conventional freelancer (ZZP) or an internal IT employee?</p>
-	            <Cards items={why}/>
+	            <Cards category="why" items={why}/>
                 <ul>
                     <li><b>Multidisciplinary team</b>
                         <p>While one developer might be able to get something outside of the scope of their expertise to
