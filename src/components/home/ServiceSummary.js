@@ -31,23 +31,26 @@ class ServiceSummary extends Component {
 					<div className="flex-container">
 						<div>
 							<img src={laptop} alt="webdesign"/>
-							<h2>Webdesign</h2>
-							<p>{this.props.t('home.web')}</p>
+							<h2>{this.props.t('home.services.web.name')}</h2>
+							<p>{this.props.t('home.services.web.description')}</p>
 						</div>
 						<div>
 							<img src={phone} alt="app development"/>
-							<h2>App Development</h2>
-							<p>{this.props.t('home.app')}</p>
+							<h2>{this.props.t('home.services.app.name')}</h2>
+							<p>{this.props.t('home.services.app.description')}</p>
+
 						</div>
 						<div>
 							<img src={router} alt="back-ends"/>
-							<h2>Custom back-end applications</h2>
-							<p>{this.props.t('home.backend')}</p>
+							<h2>{this.props.t('home.services.backend.name')}</h2>
+							<p>{this.props.t('home.services.backend.description')}</p>
+
 						</div>
 						<div>
 							<img src={computer} alt="desktop"/>
-							<h2>Windows Desktop Applications</h2>
-							<p>{this.props.t('home.desktop')}</p>
+							<h2>{this.props.t('home.services.desktop.name')}</h2>
+							<p>{this.props.t('home.services.desktop.description')}</p>
+
 						</div>
 					</div>
 				</div>
@@ -57,7 +60,7 @@ class ServiceSummary extends Component {
 				<div>
 					<h1>Why ASRR?</h1>
 					<p>Why choose ASRR instead of a conventional freelancer (ZZP) or an internal IT employee?</p>
-					<Cards category="why" items={why}/>
+					<Cards category="home.why" items={why}/>
 				</div>
 
 			</div>
