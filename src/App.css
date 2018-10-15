@@ -52,10 +52,11 @@ a.rounded:hover {
 }
 
 hr {
-    border-color: #58130e;
-    background-color: #58130e;
-    width: 80%;
+    background-color: #1F3335;
+    width: 60%;
     margin: 1em auto;
+    height: 1px;
+    border: none;
 }
 
 .centerButton-wrapper{
@@ -285,7 +286,8 @@ hr {
     padding-top: 60px;
     margin: 0;
     display: inline-block;
-    background-image: url("images/backgrounds/lowpoly.jpg")
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .landing-wrapper h1 {
@@ -630,6 +632,10 @@ hr {
 
 @media screen and (max-width: 600px) {
     .portfolio-container > div {
+        width: 90%;
+    }
+
+    .item-cards > div {
         width: 90%;
     }
 }
