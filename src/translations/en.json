@@ -18,9 +18,9 @@
     "multi": {
       "name": "Multidisciplinary team",
       "description": "While one developer might be able to get something outside of the scope of their expertise to work, it quickly becomes messy with larger and more complex projects. This is where our service makes a difference, by combining the diverse knowledge of our developers to tailor to the customers needs, using the best practices and state of the art techniques."  },
-    "app": {
-      "name": "App Design",
-      "description": ""
+    "transparency": {
+      "name": "Transparency",
+      "description": "We strive to create a clear feedback loop to the client, showing the actions that were undertaken in a clear and concise way. Furthermore, after an initial analysis, we can forecast a prospected amount of hours the work will take, so that there won't be any surprises afterwards."
     },
     "integrations": {
       "name": "Integrations with existing systems",
