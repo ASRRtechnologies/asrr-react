@@ -1,17 +1,26 @@
 import React, {Component} from "react";
 import {Link} from "react-router-dom";
 import ReactModal from "react-modal";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 import Language from "../Language";
 import logo from "../images/logo.svg";
 
+import {getLanguage} from "react-multi-lang";
+
+import nlFlag from "../images/flags/nl.svg";
+import enFlag from "../images/flags/en.svg";
+
 class Header extends Component {
 	constructor() {
 		super();
+
 		this.state = {
-			showModal: false
+			showModal: false,
+			languageImage: getLanguage()
 		};
+
+
+		console.log(getLanguage().toString());
 
 		this.handleOpenModal = this.handleOpenModal.bind(this);
 		this.handleCloseModal = this.handleCloseModal.bind(this);
@@ -31,7 +40,17 @@ class Header extends Component {
 		window.location.reload();
 	}
 
+	componentDidMount() {
+		if (getLanguage().toString() === 'nl') {
+			this.setState({languageImage: nlFlag});
+		} else if (getLanguage().toString() === 'en') {
+			this.setState({languageImage: enFlag});
+		}
+	}
+
 	render() {
+		var src = this.state.languageImage;
+		console.log(src);
 		return (
 			<div>
 				<header className="header">
@@ -41,8 +60,10 @@ class Header extends Component {
 
 					<span className="translate-wrapper">
                         {/*eslint-disable-next-line*/}
-						<a className="translate-button rounded" onClick={this.handleOpenModal} role="button">
-                            <FontAwesomeIcon icon={["fas", "language"]}/>
+						<a className="translate-button rounded" onClick={this.handleOpenModal} role="button"
+						   style={{padding: "0"}}>
+                            <img alt="current language flag" src={src} width="50px" height="18px"
+                                 style={{verticalAlign: "middle", padding: "8px 0 8px 0"}}/>
                         </a>
                     </span>
 
@@ -55,16 +76,16 @@ class Header extends Component {
 							{/*eslint-disable-next-line*/}
 							<a href="#" onClick={this.selectPreferredLanguage.bind(this, 'nl')}
 							   className="rounded resp">
-								Nederlands
+								<img style={{width: "20px"}} src={nlFlag} alt="dutch flag"/> Nederlands
 							</a>
 							{/*eslint-disable-next-line*/}
 							<a href="#" onClick={this.selectPreferredLanguage.bind(this, 'en')}
 							   className="rounded resp">
-								English
+								<img style={{width: "20px"}} src={enFlag} alt="english flag"/> English
 							</a>
 							{/*eslint-disable-next-line*/}
 							<a href="#" className="rounded resp" onClick={this.handleCloseModal}>
-								Close Modal
+								Cancel
 							</a>
 						</div>
 					</ReactModal>
