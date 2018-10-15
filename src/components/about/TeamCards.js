@@ -4,7 +4,7 @@ import {translate} from 'react-multi-lang';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
 
-class Team extends Component {
+class TeamCards extends Component {
     render() {
         return (
             <div className="grid-container white">
@@ -13,8 +13,8 @@ class Team extends Component {
                     <div className="item-container">
                         <div className="item-cards">
                             <Fade bottom>
-                                {this.props.items.map((item) => {
-                                    return <div>
+	                            {this.props.items.map((item, index) => {
+		                            return <div key={index}>
                                         <h2>{item.fullName}</h2>
                                         <h3>{item.jobTitle}</h3>
                                         <div className="card-description">
@@ -39,4 +39,4 @@ class Team extends Component {
     }
 }
 
-export default translate(Team);
+export default translate(TeamCards);

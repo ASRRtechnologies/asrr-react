@@ -10,6 +10,7 @@
 body {
     font-family: 'Montserrat', serif;
     background-color: #1F3335;
+    padding-top: 64px;
 }
 
 h1 {
@@ -283,7 +284,7 @@ hr {
 /*Landing*/
 .landing-wrapper {
     width: 100%;
-    padding-top: 60px;
+    /*padding-top: 60px;*/
     margin: 0;
     display: inline-block;
     background-repeat: no-repeat;
@@ -470,9 +471,7 @@ hr {
 }
 
 .websites {
-    padding-top: 3em;
     color: white;
-
 }
 
 .websites h1 {
@@ -579,6 +578,15 @@ hr {
     color: white;
 }
 
+.grey {
+    background-color: darkslategrey;
+}
+
+.grey:hover {
+    background-color: #1F3335;
+    border-color: #58130e;
+}
+
 .drop-shadow {
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
@@ -601,6 +609,12 @@ hr {
 
 .footer > div > a {
     padding: 5px;
+}
+
+/*404*/
+.noref {
+    padding: auto;
+
 }
 
 /*make landing responsive*/
@@ -640,7 +654,9 @@ hr {
     }
 }
 
-
-
-
-
+.glitch {
+    font-size: 100px;
+    position: relative;
+    width: 400px;
+    margin: 0 auto;
+}

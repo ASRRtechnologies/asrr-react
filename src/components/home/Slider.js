@@ -50,8 +50,8 @@ export default class SimpleSlider extends Component {
 				<h2> Technologies we use</h2>
 				<div className="logoslider-container">
 					<Slider {...settings} class="logoslider">
-						{this.state.itemArray.map((item) => {
-							return <div style={iconStyle}><FontAwesomeIcon size={"5x"}
+						{this.state.itemArray.map((item, index) => {
+							return <div key={index} style={iconStyle}><FontAwesomeIcon size={"5x"}
 							                                               icon={["fab", item.toLowerCase().replace('fa', '')]}/>
 							</div>
 						})}

@@ -2,35 +2,51 @@
   "home": {
     "headline": "ASRR translates the needs of the client into custom tailored solutions.",
     "subtitle": "With ASRR, you hire a solution. We combine the skills of our multidisciplinary team of developers to create the best product for you, without any concessions.",
-    "web": "Responsive and beautiful websites, like the one you're on now. From the ground up, using html5, css, frameworks such as ReactJS, or choose one of our existing templates.",
-    "app": "We can develop both Android an IOS apps that have seamless integrations to your our our custom back-end.",
-    "backend": "The back-ends we deliver are Rest-ful, meaning that one backend can be used for your website, app and desktop application. We use Java, Spring, Spring-Boot and SQL.",
-    "desktop": "We can create beautiful custom desktop applications using C#, to automate and speed up complex operations."
+    "services": {
+      "headline": "What we do",
+      "web": {
+        "name": "Webdesign",
+        "description": "Responsive and beautiful websites, like the one you're on now. From the ground up, using html5, css, frameworks such as ReactJS, or choose one of our existing templates."
+      },
+      "app": {
+        "name": "App Development",
+        "description": "We can develop both Android an IOS apps that have seamless integrations to your our our custom back-end."
+      },
+      "backend": {
+        "name": "Custom Back-End Applications",
+        "description": "The back-ends we deliver are Rest-ful, meaning that one backend can be used for your website, app and desktop application. We use Java, Spring, Spring-Boot and SQL."
+      },
+      "desktop": {
+        "name": "Windows Desktop Applications",
+        "description": "We can create beautiful custom desktop applications using C#, to automate and speed up complex operations."
+      }
+    },
+    "why": {
+      "headline": "Why ASRR?",
+      "subtitle": "Why choose ASRR instead of a conventional freelancer (ZZP) or an internal IT employee?",
+      "multi": {
+        "name": "Multidisciplinary team",
+        "description": "While one developer might be able to get something outside of the scope of their expertise to work, it quickly becomes messy with larger and more complex projects. This is where our service makes a difference, by combining the diverse knowledge of our developers to tailor to the customers needs, using the best practices and state of the art techniques."
+      },
+      "transparency": {
+        "name": "Transparency",
+        "description": "We strive to create a clear feedback loop to the client, showing the actions that were undertaken in a clear and concise way (Scrum, Agile). Furthermore, after an initial analysis, we can forecast a prospected amount of hours the work will take, so that there won't be any surprises afterwards."
+      },
+      "integrations": {
+        "name": "Integrations with existing systems",
+        "description": "Beceause the software we write is REST-ful, it becomes very easy to integrate in existing systems. There won't be any digging into legacy code, as we create a simple API interface to get and send data to and from the new system."
+      }
+    }
   },
   "about": {
     "headline": "Meet the team",
-    "subtitle": "ASRR was founded in 2016, starting out as a webdesign company. We combine our broad areas of expertise gathered during our studies and apply it to all things software. Combining that with strong connections to many skilled developers, engineers and designers we deliver what ASRR stands for: High quality service and efficient work speeds at a very affordable price.",
+    "subtitle": "The power of ASRR is based around two main components: Diversity and Teamwork. As you can read below, our team consists of a very diverse set of academically schooled members. We apply our different backgrounds into one passion we have in common: Technology. With our already incorporated team, we can selectively pick the right collection of skill-sets from our developers – complementing each other to get the job done as efficiently as possible.",
+    "more": "ASRR was founded in 2016, starting out as a webdesign company. We combine our broad areas of expertise gathered during our studies and apply it to all things software. Combining that with strong connections to many skilled developers, engineers and designers we deliver what ASRR stands for: High quality service and efficient work speeds at a very affordable price.",
     "founders": "Founders"
   },
-  "why": {
-    "title": "Why ASRR?",
-    "subtitle": "Why choose ASRR instead of a conventional freelancer (ZZP) or an internal IT employee?",
-    "multi": {
-      "name": "Multidisciplinary team",
-      "description": "While one developer might be able to get something outside of the scope of their expertise to work, it quickly becomes messy with larger and more complex projects. This is where our service makes a difference, by combining the diverse knowledge of our developers to tailor to the customers needs, using the best practices and state of the art techniques."  },
-    "transparency": {
-      "name": "Transparency",
-      "description": "We strive to create a clear feedback loop to the client, showing the actions that were undertaken in a clear and concise way. Furthermore, after an initial analysis, we can forecast a prospected amount of hours the work will take, so that there won't be any surprises afterwards."
-    },
-    "integrations": {
-      "name": "Integrations with existing systems",
-      "description": "Beceause the software we write is REST-ful, it becomes very easy to integrate in existing systems. There won't be any digging into legacy code, as we create a simple API interface to get and send data to and from the new system."
-    }
-  }
-  ,
   "services" : {
     "headline": "Find out what we can do for you!",
-    "subtitle": "",
+    "subtitle": "The key in our services is that they are custom tailored to your wishes. You come to us with a problem or wish, we will find out what is needed to accomplish it and provide you with an expert team that can develop the solution.",
     "section": "Services",
     "web": {
       "name": "Web Design",
@@ -38,7 +54,35 @@
     },
     "app": {
       "name": "App Design",
-      "description": ""
+      "description": "We deliver both custom iOS and Android applications. Using React-Native, we can create apps orders of magnitudes quicker than the conventional way, with native components and custom integrations with your or our servers."
+    },
+    "desktop": {
+      "name": "Desktop Applications",
+      "description": "Using C# and Windows Forms, we can automate and improve your workflow. We have created custom applications in the past for clients who, for example needed access to a custom database and to be reminded of certain tasks, while also giving them the ability to analyze their portfolio. The more time we save you by automating your daily tasks, the more money you will save on personnel costs, and lets you focus on the things that matter."
+    },
+    "backend": {
+      "name": "Back-End Applications",
+      "description": "Every system needs a brain. Think of login systems, a social media platform and webshops. This is where a back-end application comes in. Our custom back-ends are RESTful, which means that they can be seen as a contained API. This in turn lets you connect them to your existing systems, an app, a website, a desktop application or even open them up for the public if you so desire. These back-ends are usually written in Java or C#, and can then be hosted on a (virtual) private server, or a local machine."
+    },
+    "data-analysis": {
+      "name": "Big Data",
+      "description": "You hear about it everywhere, Big Data, but what can it do for you? Applying the more analytical side of our skill set, we can create complex algorithms and models to create insights in customer behaviors, but also get some conclusive results from big data sets such as an intellectual property database or data scraped from the web."
+    },
+    "database": {
+      "name": "Database Design and Setup",
+      "description": "Every company needs data storage. However, ordinary file systems are often cluttered and don't allow for easy filtering. Furthermore, with complex projects, simple file systems simply won't allow you to achieve your goals. This is where databases come in. We use SQL, SQLite and MongoDB to manage and store your data, which can then be accessed using a custom back-end"
+    },
+    "bim": {
+      "name": "AutoDesk/BIM Plugins",
+      "description": "Using C# we can create custom plugins for AutoDesk applications, such as Revit."
+    },
+    "vps": {
+      "name": "Virtual Private Servers",
+      "description": "We offer various custom tailored servers, that can cloud compute any intensive programs you might have, or even host a back-end server application to handle any API requests. We specialize in both setting up and maintaining these cloud computers."
+    },
+    "consultancy": {
+      "name": "Consultancy",
+      "description": "As software development and integrations is what we specialize in, we can offer various forms of advice for both internal work flow setups, and solving complex IT jobs"
     }
 
   }

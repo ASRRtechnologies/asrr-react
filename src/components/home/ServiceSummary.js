@@ -5,6 +5,7 @@ import computer from "../../images/services/computer.svg";
 import phone from "../../images/services/phone.svg";
 import {translate} from "react-multi-lang"
 import Cards from "../Cards";
+import {Link} from "react-router-dom";
 
 const why = [
 	{
@@ -26,38 +27,49 @@ class ServiceSummary extends Component {
 		return (
 			<div className="services-wrapper">
 				<div>
-					<h1> What we do</h1>
+					<h1>{this.props.t('home.services.headline')}</h1>
 
 					<div className="flex-container">
 						<div>
 							<img src={laptop} alt="webdesign"/>
-							<h2>Webdesign</h2>
-							<p>{this.props.t('home.web')}</p>
+							<h2>{this.props.t('home.services.web.name')}</h2>
+							<p>{this.props.t('home.services.web.description')}</p>
 						</div>
 						<div>
 							<img src={phone} alt="app development"/>
-							<h2>App Development</h2>
-							<p>{this.props.t('home.app')}</p>
+							<h2>{this.props.t('home.services.app.name')}</h2>
+							<p>{this.props.t('home.services.app.description')}</p>
+
 						</div>
 						<div>
 							<img src={router} alt="back-ends"/>
-							<h2>Custom back-end applications</h2>
-							<p>{this.props.t('home.backend')}</p>
+							<h2>{this.props.t('home.services.backend.name')}</h2>
+							<p>{this.props.t('home.services.backend.description')}</p>
+
 						</div>
 						<div>
 							<img src={computer} alt="desktop"/>
-							<h2>Windows Desktop Applications</h2>
-							<p>{this.props.t('home.desktop')}</p>
+							<h2>{this.props.t('home.services.desktop.name')}</h2>
+							<p>{this.props.t('home.services.desktop.description')}</p>
+
 						</div>
+					</div>
+
+					<div className="centerButton-wrapper">
+						<Link to="/Services" className="rounded centerButton grey">To Services</Link>
 					</div>
 				</div>
 
 				<hr/>
 
 				<div>
-					<h1>Why ASRR?</h1>
-					<p>Why choose ASRR instead of a conventional freelancer (ZZP) or an internal IT employee?</p>
-					<Cards category="why" items={why}/>
+					<h1>{this.props.t('home.why.headline')}</h1>
+					<p>{this.props.t('home.why.subtitle')}</p>
+					<Cards category="home.why" items={why}/>
+
+					<div className="centerButton-wrapper">
+						<Link to="/Team" className="rounded centerButton grey">Meet the Team</Link>
+					</div>
 				</div>
 
 			</div>
