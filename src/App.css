@@ -653,6 +653,10 @@ hr {
     .item-cards > div {
         width: 90%;
     }
+
+    .flex-container > div {
+        width: 90%;
+    }
 }
 
 .glitch {
