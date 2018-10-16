@@ -26,6 +26,17 @@ class Websites extends Component {
                                     <img src={kroontje} alt="Website Kroontje"/>
                                     <h2>Eethuys 't Kroontje</h2>
                                 </div>
+
+	                            <div>
+		                            <img src={kroontje} alt="Website Kroontje"/>
+		                            <h2>Eethuys 't Kroontje</h2>
+	                            </div>
+
+	                            <div>
+		                            <img src={kroontje} alt="Website Kroontje"/>
+		                            <h2>Eethuys 't Kroontje</h2>
+	                            </div>
+
                             </Fade>
                         </div>
                     </div>

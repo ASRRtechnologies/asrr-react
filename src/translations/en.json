@@ -62,7 +62,7 @@
     },
     "backend": {
       "name": "Back-End Applications",
-      "description": "Every system needs a brain. Think of login systems, a social media platform and webshops. This is where a back-end application comes in. Our custom back-ends are RESTful, which means that they can be seen as a contained API. This in turn lets you connect them to your existing systems, an app, a website, a desktop application or even open them up for the public if you so desire. These back-ends are usually written in Java or C#, and can then be hosted on a (virtual) private server, or a local machine."
+      "description": "Every system needs a brain. Think of login systems, a social media platform and webshops. This is where a back-end application comes in. Our custom back-ends are RESTful, which means that they can be seen as a contained API. This in turn lets you connect them to your existing systems, an app, a website, a desktop application or even open them up for the public if you so desire. These back-ends are usually written in Java or C#, and can then be hosted on a virtual private server, or a dedicated server."
     },
     "data-analysis": {
       "name": "Big Data",
