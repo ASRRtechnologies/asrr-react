@@ -368,12 +368,12 @@ hr {
     overflow: hidden;
     min-height: 300px;
     padding: 50px;
-
 }
 
 #landing-image img {
     width: 100%;
     float: right;
+
 }
 
 /*services*/
