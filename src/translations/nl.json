@@ -14,7 +14,7 @@
       },
       "backend": {
         "name": "Custom Back-End Applications",
-        "description": "De back-ends die wij leveren zijn 'Rest-ful', wat betekent dat één backend gebruikt kan worden als de hersenen achter uw website, app, desktop applicatie en meer. We gebruiken hiervoor Java, Spring, Spring-Boot en SQL."
+        "description": "De back-ends die wij leveren zijn 'REST-ful', wat betekent dat één backend gebruikt kan worden als de hersenen achter uw website, app, desktop applicatie en meer. We gebruiken hiervoor Java, Spring, Spring-Boot en SQL."
       },
       "desktop": {
         "name": "Windows Desktop Applicaties",
@@ -33,20 +33,19 @@
         "description": "We streven ernaar om duidelijke feedback te geven, die zelfs een leek een complex inzicht kan geven in het probleem en de situatie. We gebruiken hiervoor bijvoorbeeld Scrum en Agile. Verder kunnen we na een initiële analyse een voorspelling doen over de geschatte aantal uren die we nodig hebben, zodat er achteraf geen verassingen komen in de prijs."
       },
       "integrations": {
-        "name": "Integrations with existing systems",
-        "description": "Beceause the software we write is REST-ful, it becomes very easy to integrate in existing systems. There won't be any digging into legacy code, as we create a simple API interface to get and send data to and from the new system."
+        "name": "Integratie met huidige systemen",
+        "description": "Omdat de software die wij leveren REST-ful is, is het erg gemakkelijk te integreren met bestaande systemen. Er hoeft hiervoor dus niet meer gegraven worden in legacy code, maar kan deze interactie met een simpele API interface worden voldaan."
       }
     }
   },
   "about": {
     "headline": "Maak kennis met het team",
-    "subtitle": "The power of ASRR is based around two main components: Diversity and Teamwork. As you can read below, our team consists of a very diverse set of academically schooled members. We apply our different backgrounds into one passion we have in common: Technology. With our already incorporated team, we can selectively pick the right collection of skill-sets from our developers – complementing each other to get the job done as efficiently as possible.",
-    "more": "ASRR was founded in 2016, starting out as a webdesign company. We combine our broad areas of expertise gathered during our studies and apply it to all things software. Combining that with strong connections to many skilled developers, engineers and designers we deliver what ASRR stands for: High quality service and efficient work speeds at a very affordable price.",
+    "subtitle": "De kracht van ASRR ligt bij twee componenten: Diversiteit en Teamwork. Zoals hieronder te lezen is, bestaat ons team uit een erg diverse set van academisch geschoolde vennoten. We passsen onze verschillende achtergronde toe bij een gedeelde passie: Technologie. Met ons al ingewerkte team kunnen we selectief de juiste mensen leveren die elkaar aanvullen, om zo de juiste oplossing te bieden.",
     "founders": "Oprichters"
   },
   "services": {
-    "headline": "Find out what we can do for you!",
-    "subtitle": "The key in our services is that they are custom tailored to your wishes. You come to us with a problem or wish, we will find out what is needed to accomplish it and provide you with an expert team that can develop the solution.",
+    "headline": "Kom erachter wat we voor u kunnen doen!",
+    "subtitle": "De crux van onze services is dat ze op maat gemaakt zijn op basis van het probleem. U kunt naar ons toe komen met een probleem of wens, wij vogelen uit wat er daarvoor allemaal nodig is, en leveren een team van experts die samen de juiste oplossing kunnen ontwikkelen.",
     "section": "Services",
     "web": {
       "name": "Web Design",
