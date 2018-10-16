@@ -6,19 +6,19 @@
       "headline": "What we do",
       "web": {
         "name": "Webdesign",
-        "description": "Responsive and beautiful websites, like the one you're on now. From the ground up, using html5, css, frameworks such as ReactJS, or choose one of our existing templates."
+        "description": "Responsive and beautiful websites, like the one you're on now. From the ground up, using HTML5, CSS, frameworks such as ReactJS, or choose one of our existing templates."
       },
       "app": {
         "name": "App Development",
-        "description": "We can develop both Android an IOS apps that have seamless integrations to your our our custom back-end."
+        "description": "We can develop both Android an iOS apps that have seamless integrations with microservices."
       },
       "backend": {
-        "name": "Custom Back-End Applications",
-        "description": "The back-ends we deliver are Rest-ful, meaning that one backend can be used for your website, app and desktop application. We use Java, Spring, Spring-Boot and SQL."
+        "name": "Microservices",
+        "description": "The microservices we deliver are RESTful, meaning that one microservice can be used for your website, app and desktop application."
       },
       "desktop": {
         "name": "Windows Desktop Applications",
-        "description": "We can create beautiful custom desktop applications using C#, to automate and speed up complex operations."
+        "description": "We can create beautiful desktop applications using C#, to automate and speed up complex operations."
       }
     },
     "why": {
