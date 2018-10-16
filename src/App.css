@@ -414,6 +414,7 @@ hr {
 .flex-container > div > h2 {
     padding-bottom: 5px;
     max-width: 1167px;
+    margin-left: 0;
 }
 
 .flex-container > div > p {
