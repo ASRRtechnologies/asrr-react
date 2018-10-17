@@ -471,25 +471,53 @@ hr {
 }
 
 .websites {
-    color: white;
+
 }
 
 .websites h1 {
     padding: 1em 0 0.4em  3em;
     margin: 0;
+    color:whitesmoke;
+
 
 }
+
+.web-header {
+    background-color: #334749;
+}
+
+.websites h2 {
+    padding: 1em 0 0.4em  3em;
+    margin: 0;
+    color: #36454f;
+}
+
+
 
 .portfolio-container {
     display: inline-flex;
     flex-wrap: wrap;
     width: 100%;
     margin: 0;
+
 }
 
 
 .portfolio-container > div {
-    background-color: #1F3335;
+    /*background-color: #1F3335;*/
+    background-color: transparent;
+    fill-opacity: 0.8;
+    width: 30%;
+    margin: 10px auto 10px auto;
+    font-size: 30px;
+    border-radius: 4px;
+    padding: 1%;
+
+}
+
+.portfolio-container > div:hover {
+    /*background-color: #1F3335;*/
+    background-color: transparent;
     width: 30%;
     margin: 10px auto 10px auto;
     font-size: 30px;
@@ -570,9 +598,16 @@ hr {
 
 .background-wrapper {
     width: 100%;
-    background-image: url("./images/lowpolyblue.svg")
+    height: 800px;
+    /*background-image: url("./images/lowpolyblue.svg")*/
+    background-color: #FFFFFF;
+    transition: transform .2s;
 
 }
+
+
+
+
 
 .white {
     color: white;

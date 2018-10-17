@@ -8,37 +8,21 @@ class Websites extends Component {
         return (
             <div className="websites">
                 <ClientGrid/>
-                <h1>Web</h1>
+
+                <div className="web-header">
+                    <h1>Websites</h1>
+                </div>
+
                 <Fade bottom>
                     <div className="background-wrapper">
                         <div className="portfolio-container">
                             <Fade bottom>
-                                <div>
-                                    <img src={kroontje} alt="Website Kroontje"/>
-                                    <h2>Eethuys 't Kroontje</h2>
-                                    {/*<p>The website for Eethuys 't Kroontje was one of the first websites we actually built. It was made using a very simple and responsive design. If you're looking for good food in a relaxing environment, check out their site by clicking the image above. If you're curious to a super secret prototype we made, click this.</p>*/}
-                                </div>
-
-                                <div>
-                                    <img src={kroontje} alt="Website Kroontje"/>
-                                    <h2>Eethuys 't Kroontje</h2>
-                                </div>
-
-                                <div>
-                                    <img src={kroontje} alt="Website Kroontje"/>
-                                    <h2>Eethuys 't Kroontje</h2>
-                                </div>
-
-	                            <div>
-		                            <img src={kroontje} alt="Website Kroontje"/>
-		                            <h2>Eethuys 't Kroontje</h2>
-	                            </div>
-
-	                            <div>
-		                            <img src={kroontje} alt="Website Kroontje"/>
-		                            <h2>Eethuys 't Kroontje</h2>
-	                            </div>
-
+                                {this.props.items.map((item, index) => {
+                                    return <div key={index} className="drop-shadow">
+                                        <img src={item.image} alt="Website Kroontje"/>
+                                        <h2>{item.name}</h2>
+                                    </div>
+                                })}
                             </Fade>
                         </div>
                     </div>
