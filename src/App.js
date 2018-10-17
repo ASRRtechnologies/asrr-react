@@ -39,6 +39,7 @@ import Home from "./components/collections/Home";
 import Team from "./components/collections/Team";
 import Services from "./components/collections/Services";
 import NoRef from "./components/404";
+import Contact from "./components/collections/Contact";
 
 
 library.add(faLanguage, faHtml5, faCss3Alt, faJs, faJava, faWindows, faLinux, faGithub, faGit, faReact, faAndroid, faAppStoreIos, faApple, faNode, faNodeJs, faPaypal, faFacebook, faTwitter, faSnapchat, faAws, faChrome, faLinkedin);
@@ -67,15 +68,6 @@ const Careers = () => (
 	</div>
 );
 
-const Contact = () => (
-	<div>
-		<ul>
-			<li>San Francisco</li>
-			<li>Istanbul</li>
-			<li>Tokyo</li>
-		</ul>
-	</div>
-);
 
 class App extends Component {
 	constructor() {
