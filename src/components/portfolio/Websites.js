@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import kroontje from '../../images/portfolio/kroontje.png';
 import Fade from 'react-reveal/Fade';
+import {translate} from "react-multi-lang";
 
 
 
@@ -10,7 +10,7 @@ class Websites extends Component {
             <div className="websites">
 
                 <div className="web-header">
-                    <h1>Websites</h1>
+                    <h1>{this.props.t(this.props.section)}</h1>
                 </div>
                 <Fade bottom>
                     <div className="background-wrapper">
@@ -26,11 +26,9 @@ class Websites extends Component {
                         </div>
                     </div>
                 </Fade>
-
-                <h1>Desktop</h1>
             </div>
         );
     }
 }
 
-export default Websites;
+export default translate(Websites);
