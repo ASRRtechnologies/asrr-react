@@ -7,6 +7,9 @@ import Websites from "../portfolio/Websites";
 
 import kroontje from "../../images/portfolio/kroontje.png";
 import moves4vitality from "../../images/portfolio/m4v.png";
+import BusinessCases from "../portfolio/BusinessCases";
+import ClientGrid from "../ClientGrid";
+import Achievements from "../portfolio/Achievements";
 
 
 var websites = [
@@ -62,6 +65,11 @@ class Portfolio extends Component {
                 <Fade bottom>
 	                <Landing header="portfolio.headline" subtitle="portfolio.subtitle" background={orange}
 	                         image={team}/>
+                </Fade>
+                <Fade bottom>
+                    <ClientGrid/>
+                    <Achievements/>
+                    <BusinessCases/>
                 </Fade>
                 <Fade bottom>
 	                <Websites section="portfolio.websites" items={websites}/>

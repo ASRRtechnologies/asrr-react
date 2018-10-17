@@ -2,14 +2,10 @@ import React, {Component} from 'react';
 import Fade from 'react-reveal/Fade';
 import {translate} from "react-multi-lang";
 
-
-import ClientGrid from "../ClientGrid";
-
 class Websites extends Component {
     render() {
         return (
             <div className="websites">
-                <ClientGrid/>
 
                 <div className="web-header">
                     <h1>{this.props.t(this.props.section)}</h1>
