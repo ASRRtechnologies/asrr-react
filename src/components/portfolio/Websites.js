@@ -1,11 +1,13 @@
 import React, {Component} from 'react';
 import kroontje from '../../images/portfolio/kroontje.png';
 import Fade from 'react-reveal/Fade';
+import ClientGrid from "../ClientGrid";
 
 class Websites extends Component {
     render() {
         return (
             <div className="websites">
+                <ClientGrid/>
                 <h1>Web</h1>
                 <Fade bottom>
                     <div className="background-wrapper">
