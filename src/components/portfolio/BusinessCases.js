@@ -10,7 +10,6 @@ class BusinessCases extends Component {
                     <hr/>
                     <div className="row-container">
                         <div>
-                            <img/>
                         </div>
                         <div>
                             <h2>FORM Architectuur & Engineering</h2>
