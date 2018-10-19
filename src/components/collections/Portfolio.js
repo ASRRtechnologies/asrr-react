@@ -1,8 +1,10 @@
 import React, {Component} from 'react';
 import Fade from "react-reveal/Fade";
 import Landing from "../Landing";
-import orange from "../../images/backgrounds/orange.svg";
+import blue from "../../images/backgrounds/midblue.svg";
 import red from "../../images/backgrounds/lowpoly.jpg";
+import orange from "../../images/backgrounds/orange.svg";
+
 import portfolio from "../../images/sectionimages/portfolio.png"
 import Websites from "../portfolio/Websites";
 
@@ -60,7 +62,7 @@ class Portfolio extends Component {
         return (
 	        <div className="portfolio-wrapper">
                 <Fade bottom>
-	                <Landing header="portfolio.headline" subtitle="portfolio.subtitle" background={orange}
+	                <Landing header="portfolio.headline" subtitle="portfolio.subtitle" background={blue}
 	                         image={portfolio} />
                 </Fade>
                 <Fade bottom>

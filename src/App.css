@@ -373,6 +373,10 @@ hr {
     width: 100%;
     float: right;
 
+    max-width: 58em;
+
+    /*height: auto;*/
+    /*max-height: 600px;*/
 }
 
 /*services*/
@@ -490,6 +494,7 @@ hr {
 .achievements h1 {
     text-align: center;
     margin: 0;
+    padding-bottom: 1em;
 }
 
 .portfolio-container {
@@ -553,7 +558,7 @@ hr {
 }
 
 .row-container > div {
-    width: 33%;
+    width: 33.3333%;
     display: inline-block;
     vertical-align: top;
 }
@@ -666,6 +671,11 @@ hr {
 .noref {
     padding: auto;
 
+}
+
+.parallax {
+    background: no-repeat fixed;
+    background-size: cover;
 }
 
 /*make landing responsive*/
