@@ -481,9 +481,6 @@ hr {
     margin: 0;
 }
 
-.web-header {
-    background-color: #334749;
-}
 
 .websites h2 {
     padding: 1em 0;
@@ -560,10 +557,31 @@ hr {
 
 .row-container > div {
     /*width: 100%;*/
-    width: 33.3333%;
+    width: 30%;
     display: block;
     vertical-align: top;
-    padding: 1em;
+    padding: 1.5%;
+}
+
+.double > div {
+    width: 45%;
+}
+
+.business-cases > div {
+    margin: auto;
+    padding: 1em 3em;
+}
+
+.business-cases li {
+    list-style-type: none;
+}
+
+.business-cases > div > p {
+    text-align: justify;
+}
+
+.center-header > h1 {
+    text-align: center;
 }
 
 .row-container h2 {
@@ -571,17 +589,22 @@ hr {
     margin: 0
 }
 
-.grid-container > h1 {
-    text-align: center;
-    padding-left: 0;
-    margin: 0
+.row-container p {
+    text-align: left;
 }
+
 
 .row-container > div > img {
     width: 40%;
     margin: auto;
     display: block;
     max-width: 200px;
+}
+
+.grid-container > h1 {
+    text-align: center;
+    padding-left: 0;
+    margin: 0
 }
 
 .item-container {
