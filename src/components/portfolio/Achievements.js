@@ -3,6 +3,7 @@ import top from '../../images/achievements/top.svg';
 import webDesign from '../../images/achievements/web-design.svg';
 import webHosting from '../../images/achievements/web-hosting.svg';
 import {translate} from "react-multi-lang";
+import CountUp from 'react-countup';
 
 class Achievements extends Component {
     render() {
@@ -13,19 +14,24 @@ class Achievements extends Component {
                     <div className="row-container">
                         <div>
 	                        <img src={top} alt="happy customers"/>
-                            <h2>9 happy customers</h2>
+	                        <h2><CountUp duration={10} end={9}/> {this.props.t("portfolio.achievements.happy")}</h2>
                         </div>
                         <div>
 	                        <img src={webDesign} alt="websites"/>
 
-	                        <h2>10+ commercial websites<br/>
-		                        2 full stack web shops<br/>
-		                        2 side projects</h2>
+	                        <h2><CountUp duration={10}
+	                                     end={10}/>+ {this.props.t("portfolio.achievements.commercial")}<br/>
+		                        <CountUp duration={20} end={30000}/>+ {this.props.t("portfolio.achievements.pageViews")}<br/>
+		                        <CountUp duration={3} end={2}/> {this.props.t("portfolio.achievements.fullStack")}<br/>
+		                        <CountUp duration={3} end={2}/> {this.props.t("portfolio.achievements.sideProjects")}
+	                        </h2>
                         </div>
                         <div>
 	                        <img src={webHosting} alt="servers"/>
 
-                            <h2>2 ASRR Servers</h2>
+	                        <h2><CountUp duration={3} end={2}/> ASRR Servers<br/>
+		                        <CountUp duration={20} end={17531}/>+ {this.props.t("portfolio.achievements.upTime")}
+	                        </h2>
                         </div>
                     </div>
 
