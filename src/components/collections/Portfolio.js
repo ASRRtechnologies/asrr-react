@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import Fade from "react-reveal/Fade";
 import Landing from "../Landing";
 import blue from "../../images/backgrounds/midblue.svg";
-import red from "../../images/backgrounds/lowpoly.jpg";
 import orange from "../../images/backgrounds/orange.svg";
 
 import portfolio from "../../images/sectionimages/portfolio.png"
@@ -78,7 +77,7 @@ class Portfolio extends Component {
 	                <Websites section="portfolio.websites" items={websites} background={orange}/>
                 </Fade>
                 <Fade bottom>
-                    <Websites section="portfolio.desktop" items={desktop} background={red}/>
+	                <Websites section="portfolio.desktop" items={desktop} background={blue}/>
                 </Fade>
             </div>
         );
