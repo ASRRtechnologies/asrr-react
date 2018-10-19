@@ -19,7 +19,7 @@ class TeamCards extends Component {
                                         <h3>{item.jobTitle}</h3>
                                         <div className="card-description">
                                             <p>Background: {item.background}</p>
-                                            <p>Tasks: {item.tasks}</p>
+	                                        <p>Expertise: {item.tasks}</p>
                                             <p>Languages: {item.languages}</p>
                                         </div>
                                         <div className="card-links">
