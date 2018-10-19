@@ -16,47 +16,43 @@ import Achievements from "../portfolio/Achievements";
 var websites = [
     {
         name: "Kroontje",
-        image: kroontje
+	    image: kroontje,
+	    url: "www.hetkroontjeweebosch.nl"
     },
     {
         name: "Moves4Vitality",
-        image: moves4vitality
+	    image: moves4vitality,
+	    url: "www.moves4vitality.nl"
     },
     {
         name: "Milanotassen",
-        image: kroontje
+	    image: kroontje,
+	    url: "milanotassenhaagsemarkt.nl"
     },
     {
         name: "TheWindowShop",
-        image: kroontje
+	    image: kroontje,
+	    url: "asrr.nl/portfolio/samples/thewindowshop/index.html"
     },
     {
         name: "MustiqueSuites",
-        image: kroontje
-    }
+	    image: kroontje,
+	    url: "mustiquesuites.com"
+    },
+	{
+		name: "ASRR Old",
+		url: "asrr.nl"
+	}
 ];
 
 var desktop = [
     {
-        name: "DesktopKroontje",
-        image: kroontje
-    },
-    {
-        name: "Moves4Vitality",
-        image: moves4vitality
-    },
-    {
-        name: "LALALALA",
-        image: kroontje
-    },
-    {
-        name: "TheWindowShop",
-        image: kroontje
-    },
-    {
-        name: "MustiqueSuites",
-        image: kroontje
-    }
+	    name: "FORM",
+	    url: "form.nl"
+    }, {
+		name: "MAPPER",
+		url: "mapper.nl"
+	}
 ];
 
 class Portfolio extends Component {
