@@ -66,7 +66,7 @@ class Portfolio extends Component {
 	                         image={portfolio} />
                 </Fade>
                 <Fade bottom>
-	                <ClientGrid headline="portfolio.clientheadline" subtitle="portfolio.clientsubtitle"/>
+	                <ClientGrid headline="portfolio.clientHeadline" subtitle="portfolio.clientSubtitle"/>
                 </Fade>
                 <Fade bottom>
                     <Achievements/>
