@@ -8,7 +8,7 @@ class Websites extends Component {
 			backgroundImage: 'url(' + this.props.background + ')',
 		};
 		return (
-			<div className="websites">
+			<div className="websites white">
 
 				<div className="web-header">
 					<h1>{this.props.t(this.props.section)}</h1>

@@ -477,8 +477,9 @@ hr {
 }
 
 .websites h1 {
-    padding: 1em 0 0.4em 3em;
+    padding: 1em 0;
     margin: 0;
+    text-align: center
 }
 
 
@@ -567,6 +568,10 @@ hr {
     width: 45%;
 }
 
+.business-cases > div > h1 {
+    margin: 0;
+}
+
 .business-cases > div {
     margin: auto;
     padding: 1em 3em;
@@ -582,6 +587,7 @@ hr {
 
 .center-header > h1 {
     text-align: center;
+    margin: 0;
 }
 
 .row-container h2 {

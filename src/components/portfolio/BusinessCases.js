@@ -18,7 +18,6 @@ class BusinessCases extends Component {
 	                        </ul>
                         </div>
 		                <div>
-
 			                <p>
 				                For FORM, we set up a windows server. As most of our client data is confidential, we
 				                can't say much about the contents of this server. What we can tell is what we've done.
