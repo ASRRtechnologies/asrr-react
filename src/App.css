@@ -437,7 +437,6 @@ hr {
 
 /*client list*/
 .clientGrid {
-    background-color: #1F3335;
     color: white;
     margin: 0;
 }
@@ -538,6 +537,8 @@ hr {
 
 }
 
+
+
 .grid-container > h1 {
     text-align: center;
     padding-left: 0;
@@ -589,6 +590,11 @@ hr {
 
 .white {
     color: white;
+}
+
+.background-white {
+    background-color: white;
+    color: black;
 }
 
 .grey {

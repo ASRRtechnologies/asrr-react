@@ -69,7 +69,11 @@ class Portfolio extends Component {
                 </Fade>
                 <Fade bottom>
                     <ClientGrid/>
+                </Fade>
+                <Fade bottom>
                     <Achievements/>
+                </Fade>
+                <Fade bottom>
                     <BusinessCases/>
                 </Fade>
                 <Fade bottom>

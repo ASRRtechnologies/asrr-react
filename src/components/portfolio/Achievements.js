@@ -4,7 +4,7 @@ import Fade from 'react-reveal/Fade';
 class Achievements extends Component {
     render() {
         return (
-            <div className="achievements white">
+            <div className="achievements background-white">
                 <Fade bottom>
                     {/*TODO: Make data smart*/}
                     <h1>What we've done so far</h1>

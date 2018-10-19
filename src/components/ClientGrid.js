@@ -10,6 +10,7 @@ class ClientGrid extends Component {
 	render() {
 		return (
             <div className="centerWrapper600px">
+
                 <div class="clientGrid">
                     <a href="http://hetkroontjeweebosch.nl"><img src={kroontje} alt="Logo Kroontje"/></a>
                     <a href="https://form.nl"><img src={form} alt="Logo Form"/></a>
