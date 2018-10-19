@@ -60,12 +60,13 @@ hr {
     border: none;
 }
 
-.centerButton-wrapper{
+.centerButton-wrapper {
     margin: auto;
     text-align: center;
     padding: 1em;
 
 }
+
 .centerButton {
     margin: auto;
     background-color: #58130E;
@@ -77,7 +78,6 @@ hr {
         margin: 0.2em auto;
     }
 }
-
 
 .header {
     background-color: #1F3335;
@@ -269,7 +269,6 @@ hr {
     padding: 16px;
 }
 
-
 .logo {
     display: inline;
     vertical-align: top;
@@ -394,7 +393,7 @@ hr {
     padding-bottom: 1em;
 }
 
-.services-wrapper ul li:before{
+.services-wrapper ul li:before {
     content: '✓';
 }
 
@@ -402,7 +401,6 @@ hr {
     display: inline-flex;
     flex-wrap: wrap;
 }
-
 
 .flex-container > div {
     background-color: #FFF;
@@ -475,7 +473,7 @@ hr {
 }
 
 .websites h1 {
-    padding: 1em 0 0.4em  3em;
+    padding: 1em 0 0.4em 3em;
     margin: 0;
 }
 
@@ -484,7 +482,7 @@ hr {
 }
 
 .websites h2 {
-    padding: 1em 0 0.4em  3em;
+    padding: 1em 0 0.4em 3em;
     margin: 0;
     color: #36454f;
 }
@@ -495,7 +493,6 @@ hr {
     width: 100%;
     margin: 0;
 }
-
 
 .portfolio-container > div {
     /*background-color: #1F3335;*/
@@ -542,7 +539,7 @@ hr {
 }
 
 .grid-container > h1 {
-    text-align:center;
+    text-align: center;
     padding-left: 0;
     margin: 0
 }
@@ -552,7 +549,6 @@ hr {
     padding: 0 0;
     text-align: center;
 }
-
 
 .item-cards > div {
     background-color: darkslategrey;
@@ -569,7 +565,7 @@ hr {
     padding-bottom: 4px;
 }
 
-.item-cards > div> h3 {
+.item-cards > div > h3 {
     padding-left: 15px;
     padding-bottom: 5px;
 }
@@ -583,21 +579,13 @@ hr {
     padding: 10px;
 }
 
-
 .card-links > a {
     padding: 3px
 }
 
-
 .background-wrapper {
     width: 100%;
-    background-image: url("./images/backgrounds/midblue.svg")
-
 }
-
-
-
-
 
 .white {
     color: white;
@@ -614,7 +602,7 @@ hr {
 
 .drop-shadow {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
 }
 
 .drop-shadow:hover {

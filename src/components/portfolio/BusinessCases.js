@@ -4,7 +4,7 @@ import Fade from 'react-reveal/Fade';
 class BusinessCases extends Component {
     render() {
         return (
-            <div className="businesscases">
+            <div className="businesscases white">
                 <Fade bottom>
                     <h1>Business Cases</h1>
                     <hr/>

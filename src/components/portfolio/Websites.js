@@ -4,8 +4,11 @@ import {translate} from "react-multi-lang";
 
 class Websites extends Component {
     render() {
+        let divStyle = {
+            backgroundImage: 'url(' + this.props.background + ')',
+        };
         return (
-            <div className="websites">
+            <div className="websites" style={divStyle}>
 
                 <div className="web-header">
                     <h1>{this.props.t(this.props.section)}</h1>
