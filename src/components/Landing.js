@@ -7,7 +7,7 @@ class Landing extends Component {
 			backgroundImage: 'url(' + this.props.background + ')',
 		};
 		return (
-			<div className="landing-wrapper" style={divStyle}>
+			<div className="landing-wrapper parallax" style={divStyle}>
 				<div id="landing-text">
 					<h1>{this.props.t(this.props.header)}</h1>
                     <p>{this.props.t(this.props.subtitle)}</p>

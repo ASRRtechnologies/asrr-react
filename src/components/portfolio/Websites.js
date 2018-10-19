@@ -1,51 +1,39 @@
 import React, {Component} from 'react';
-import kroontje from '../../images/portfolio/kroontje.png';
 import Fade from 'react-reveal/Fade';
+import {translate} from "react-multi-lang";
 
 class Websites extends Component {
-    render() {
-        return (
-            <div className="websites">
-                <h1>Web</h1>
-                <Fade bottom>
-                    <div className="background-wrapper">
-                        <div className="portfolio-container">
-                            <Fade bottom>
-                                <div>
-                                    <img src={kroontje} alt="Website Kroontje"/>
-                                    <h2>Eethuys 't Kroontje</h2>
-                                    {/*<p>The website for Eethuys 't Kroontje was one of the first websites we actually built. It was made using a very simple and responsive design. If you're looking for good food in a relaxing environment, check out their site by clicking the image above. If you're curious to a super secret prototype we made, click this.</p>*/}
-                                </div>
+	render() {
+		let divStyle = {
+			backgroundImage: 'url(' + this.props.background + ')',
+		};
+		return (
+			<div className="websites white">
 
-                                <div>
-                                    <img src={kroontje} alt="Website Kroontje"/>
-                                    <h2>Eethuys 't Kroontje</h2>
-                                </div>
+				<div className="web-header">
+					<h1>{this.props.t(this.props.section)}</h1>
+				</div>
 
-                                <div>
-                                    <img src={kroontje} alt="Website Kroontje"/>
-                                    <h2>Eethuys 't Kroontje</h2>
-                                </div>
-
-	                            <div>
-		                            <img src={kroontje} alt="Website Kroontje"/>
-		                            <h2>Eethuys 't Kroontje</h2>
-	                            </div>
-
-	                            <div>
-		                            <img src={kroontje} alt="Website Kroontje"/>
-		                            <h2>Eethuys 't Kroontje</h2>
-	                            </div>
-
-                            </Fade>
-                        </div>
-                    </div>
-                </Fade>
-
-                <h1>Desktop</h1>
-            </div>
-        );
-    }
+				<Fade bottom>
+					<div className="background-wrapper parallax" style={divStyle}>
+						<div className="portfolio-container">
+							<Fade bottom>
+								{this.props.items.map((item, index) => {
+									return <div key={index} className="drop-shadow">
+										<a href={"http://" + item.url}>
+											<img src={"http://qs.jin.fi/?url=http://" + item.url}
+											     alt="Website Kroontje"/>
+											<h2>{item.name}</h2>
+										</a>
+									</div>
+								})}
+							</Fade>
+						</div>
+					</div>
+				</Fade>
+			</div>
+		);
+	}
 }
 
-export default Websites;
+export default translate(Websites);

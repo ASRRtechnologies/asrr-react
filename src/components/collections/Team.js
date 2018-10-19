@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Fade from "react-reveal/Fade";
 import Landing from "../Landing";
-import midblue from "../../images/backgrounds/midblue.svg";
+import orange from "../../images/backgrounds/orange.svg";
 import team from "../../images/sectionimages/team.png"
 import TeamCards from "../about/TeamCards";
 
@@ -89,7 +89,7 @@ class Team extends Component {
         return (
             <div>
                 <Fade bottom>
-	                <Landing header="about.headline" subtitle="about.subtitle" background={midblue} image={team}/>
+	                <Landing header="about.headline" subtitle="about.subtitle" background={orange} image={team}/>
                 </Fade>
                 <Fade bottom>
 	                <TeamCards section="about.founders" items={founders}/>

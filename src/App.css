@@ -60,12 +60,13 @@ hr {
     border: none;
 }
 
-.centerButton-wrapper{
+.centerButton-wrapper {
     margin: auto;
     text-align: center;
     padding: 1em;
 
 }
+
 .centerButton {
     margin: auto;
     background-color: #58130E;
@@ -77,7 +78,6 @@ hr {
         margin: 0.2em auto;
     }
 }
-
 
 .header {
     background-color: #1F3335;
@@ -269,7 +269,6 @@ hr {
     padding: 16px;
 }
 
-
 .logo {
     display: inline;
     vertical-align: top;
@@ -374,6 +373,10 @@ hr {
     width: 100%;
     float: right;
 
+    max-width: 58em;
+
+    /*height: auto;*/
+    /*max-height: 600px;*/
 }
 
 /*services*/
@@ -394,7 +397,7 @@ hr {
     padding-bottom: 1em;
 }
 
-.services-wrapper ul li:before{
+.services-wrapper ul li:before {
     content: '✓';
 }
 
@@ -402,7 +405,6 @@ hr {
     display: inline-flex;
     flex-wrap: wrap;
 }
-
 
 .flex-container > div {
     background-color: #FFF;
@@ -439,9 +441,9 @@ hr {
 
 /*client list*/
 .clientGrid {
-    background-color: #1F3335;
     color: white;
     margin: 0;
+    padding-bottom: 1em;
 }
 
 .clientGrid h2, p {
@@ -471,13 +473,26 @@ hr {
 }
 
 .websites {
-    color: white;
+
 }
 
 .websites h1 {
-    padding: 1em 0 0.4em  3em;
+    padding: 1em 0;
     margin: 0;
+    text-align: center
+}
 
+
+.websites h2 {
+    padding: 1em 0;
+    margin: 0;
+    color: WHITE;
+}
+
+.achievements h1 {
+    text-align: center;
+    margin: 0;
+    padding-bottom: 1em;
 }
 
 .portfolio-container {
@@ -487,10 +502,21 @@ hr {
     margin: 0;
 }
 
-
 .portfolio-container > div {
+    /*background-color: #1F3335;*/
     background-color: #1F3335;
+    fill-opacity: 0.8;
     width: 30%;
+    margin: 10px auto 10px auto;
+    font-size: 30px;
+    border-radius: 4px;
+    padding: 1%;
+
+}
+
+.portfolio-container > div:hover {
+    /*background-color: #1F3335;*/
+    background-color: rgba(0, 0, 0, 0.5);
     margin: 10px auto 10px auto;
     font-size: 30px;
     border-radius: 4px;
@@ -513,6 +539,10 @@ hr {
 
 }
 
+.portfolio-container > div > a > img {
+    width: 100%;
+}
+
 .portfolio-container > div > img {
     width: 100%;
     margin: auto;
@@ -520,8 +550,65 @@ hr {
 
 }
 
+.row-container {
+    display: inline-flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.row-container > div {
+    /*width: 100%;*/
+    width: 30%;
+    display: block;
+    vertical-align: top;
+    padding: 1.5%;
+}
+
+.double > div {
+    width: 45%;
+}
+
+.business-cases > div > h1 {
+    margin: 0;
+}
+
+.business-cases > div {
+    margin: auto;
+    padding: 1em 3em;
+}
+
+.business-cases li {
+    list-style-type: none;
+}
+
+.business-cases > div > p {
+    text-align: justify;
+}
+
+.center-header > h1 {
+    text-align: center;
+    margin: 0;
+}
+
+.row-container h2 {
+    text-align: center;
+    margin: 0
+}
+
+.row-container p {
+    text-align: left;
+}
+
+
+.row-container > div > img {
+    width: 40%;
+    margin: auto;
+    display: block;
+    max-width: 200px;
+}
+
 .grid-container > h1 {
-    text-align:center;
+    text-align: center;
     padding-left: 0;
     margin: 0
 }
@@ -531,7 +618,6 @@ hr {
     padding: 0 0;
     text-align: center;
 }
-
 
 .item-cards > div {
     background-color: darkslategrey;
@@ -548,7 +634,7 @@ hr {
     padding-bottom: 4px;
 }
 
-.item-cards > div> h3 {
+.item-cards > div > h3 {
     padding-left: 15px;
     padding-bottom: 5px;
 }
@@ -562,20 +648,21 @@ hr {
     padding: 10px;
 }
 
-
 .card-links > a {
     padding: 3px
 }
 
-
 .background-wrapper {
     width: 100%;
-    background-image: url("./images/lowpolyblue.svg")
-
 }
 
 .white {
     color: white;
+}
+
+.background-white {
+    background-color: white;
+    color: black;
 }
 
 .grey {
@@ -589,7 +676,7 @@ hr {
 
 .drop-shadow {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
 }
 
 .drop-shadow:hover {
@@ -618,6 +705,11 @@ hr {
 
 }
 
+.parallax {
+    background: no-repeat fixed;
+    background-size: cover;
+}
+
 /*make landing responsive*/
 @media screen and (max-width: 900px) {
     #landing-text {
@@ -641,6 +733,10 @@ hr {
 
     .item-cards > div {
         width: 46%;
+    }
+
+    .row-container > div {
+        width: 100%;
     }
 
 }

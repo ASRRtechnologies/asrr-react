@@ -44,7 +44,7 @@
     "more": "ASRR was founded in 2016, starting out as a webdesign company. We combine our broad areas of expertise gathered during our studies and apply it to all things software. Combining that with strong connections to many skilled developers, engineers and designers we deliver what ASRR stands for: High quality service and efficient work speeds at a very affordable price.",
     "founders": "Founders"
   },
-  "services" : {
+  "services": {
     "headline": "Find out what we can do for you!",
     "subtitle": "The key in our services is that they are custom tailored to your wishes. You come to us with a problem or wish, we will find out what is needed to accomplish it and provide you with an expert team that can develop the solution.",
     "section": "Services",
@@ -84,6 +84,25 @@
       "name": "Consultancy",
       "description": "As software development and integrations is what we specialize in, we can offer various forms of advice for both internal work flow setups, and solving complex IT jobs"
     }
-
+  },
+  "portfolio": {
+    "headline": "Take a look at some of the work we've done before",
+    "subtitle": "We've had various projects in diverse fields.",
+    "clientHeadline": "Some of the companies we've worked for",
+    "clientSubtitle": "Click on a logo to go to their website",
+    "achievements": {
+      "happy": "Happy Customers",
+      "commercial": "Commercial Websites",
+      "pageViews": "Cumulative Page Views",
+      "fullStack": "Full Stack Web Shops",
+      "sideProjects": "Community Side Projects",
+      "upTime": "Hours uptime since setup"
+    },
+    "businessCases": {
+      "form1": "For FORM, we set up a windows server. As most of our client data is confidential, we can't say much about the contents of this server. What we can tell is what we've done. First off, we set up the server from scratch, providing remote desktop capabilities, opening up the correct ports for API access and installing the required programs.",
+      "form2": "Next, we set up one of our continuous deployment systems for their internal product. This system automatically closes the program using the code and downloads the latest version whenever a new stable build is available on their private GitHub repository. The project is then built locally in the required folder and is automatically signed. After all tests have passed, the back-end spins up again and is ready to handle requests again."
+    },
+    "websites": "Websites",
+    "desktop": "Desktop Applications"
   }
 }
