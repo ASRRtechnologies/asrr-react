@@ -548,8 +548,8 @@ hr {
 }
 
 .row-container {
-
-    margin: auto;
+    display: inline-flex;
+    width: 100%;
 }
 
 .row-container > div {
@@ -569,9 +569,11 @@ hr {
     margin: 0
 }
 
-.row-container img {
-    max-width: 40%;
+.row-container > div > img {
+    width: 40%;
     margin: auto;
+    display: block;
+    max-width: 200px;
 }
 
 .item-container {

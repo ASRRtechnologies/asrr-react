@@ -3,6 +3,7 @@ import Fade from 'react-reveal/Fade';
 import top from '../../images/achievements/top.svg';
 import webdesign from '../../images/achievements/web-design.svg';
 import webhosting from '../../images/achievements/web-hosting.svg';
+import {translate} from "react-multi-lang";
 
 class Achievements extends Component {
     render() {
@@ -29,10 +30,11 @@ class Achievements extends Component {
                             <h2>2 ASRR Servers</h2>
                         </div>
                     </div>
+
                 </Fade>
             </div>
         );
     }
 }
 
-export default Achievements;
+export default translate(Achievements);
