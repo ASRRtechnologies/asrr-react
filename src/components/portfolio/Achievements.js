@@ -6,14 +6,12 @@ import {translate} from "react-multi-lang";
 import CountUp from 'react-countup';
 
 function diff_hours(dt2, dt1) {
-
-	var diff = (dt2.getTime() - dt1.getTime()) / 1000;
+	let diff = (dt2.getTime() - dt1.getTime()) / 1000;
 	diff /= (60 * 60);
 	return Math.abs(Math.round(diff));
-
 }
 
-var diff;
+let diff;
 
 class Achievements extends Component {
 	constructor() {
@@ -30,16 +28,18 @@ class Achievements extends Component {
                     <div className="row-container">
                         <div>
 	                        <img src={top} alt="happy customers"/>
-	                        <h2><CountUp duration={10} end={9}/> {this.props.t("portfolio.achievements.happy")}</h2>
+	                        <h2><CountUp duration={10} end={9}/> {this.props.t("portfolio.achievements.happy")}<br/>
+		                        <CountUp duration={3}
+		                                 end={2}/> {this.props.t("portfolio.achievements.sideProjects")}<br/>
+		                        <CountUp duration={3} end={2}/> {this.props.t("portfolio.achievements.fullStack")}</h2>
+
                         </div>
                         <div>
 	                        <img src={webDesign} alt="websites"/>
 
 	                        <h2><CountUp duration={10}
 	                                     end={10}/>+ {this.props.t("portfolio.achievements.commercial")}<br/>
-		                        <CountUp duration={20} end={30000}/>+ {this.props.t("portfolio.achievements.pageViews")}<br/>
-		                        <CountUp duration={3} end={2}/> {this.props.t("portfolio.achievements.fullStack")}<br/>
-		                        <CountUp duration={3} end={2}/> {this.props.t("portfolio.achievements.sideProjects")}
+		                        <CountUp duration={20} end={30000}/>+ {this.props.t("portfolio.achievements.pageViews")}
 	                        </h2>
                         </div>
                         <div>
