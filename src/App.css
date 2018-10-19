@@ -555,12 +555,15 @@ hr {
 .row-container {
     display: inline-flex;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .row-container > div {
+    /*width: 100%;*/
     width: 33.3333%;
-    display: inline-block;
+    display: block;
     vertical-align: top;
+    padding: 1em;
 }
 
 .row-container h2 {
@@ -701,6 +704,10 @@ hr {
 
     .item-cards > div {
         width: 46%;
+    }
+
+    .row-container > div {
+        width: 100%;
     }
 
 }
