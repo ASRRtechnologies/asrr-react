@@ -62,13 +62,13 @@ var desktop = [
 class Portfolio extends Component {
     render() {
         return (
-            <div>
+	        <div className="portfolio-wrapper">
                 <Fade bottom>
 	                <Landing header="portfolio.headline" subtitle="portfolio.subtitle" background={orange}
 	                         image={portfolio} />
                 </Fade>
                 <Fade bottom>
-                    <ClientGrid/>
+	                <ClientGrid headline="portfolio.clientheadline" subtitle="portfolio.clientsubtitle"/>
                 </Fade>
                 <Fade bottom>
                     <Achievements/>

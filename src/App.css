@@ -439,6 +439,7 @@ hr {
 .clientGrid {
     color: white;
     margin: 0;
+    padding-bottom: 1em;
 }
 
 .clientGrid h2, p {
@@ -536,8 +537,6 @@ hr {
     display: block;
 
 }
-
-
 
 .grid-container > h1 {
     text-align: center;
