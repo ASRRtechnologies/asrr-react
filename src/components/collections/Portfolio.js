@@ -51,8 +51,8 @@ var desktop = [
 	    name: "FORM",
 	    url: "form.nl"
     }, {
-		name: "MAPPER",
-		url: "mapper.nl"
+		name: "ASRR",
+		url: "asrr.nl"
 	}
 ];
 
