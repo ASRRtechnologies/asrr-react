@@ -5,7 +5,23 @@ import webHosting from '../../images/achievements/web-hosting.svg';
 import {translate} from "react-multi-lang";
 import CountUp from 'react-countup';
 
+function diff_hours(dt2, dt1) {
+
+	var diff = (dt2.getTime() - dt1.getTime()) / 1000;
+	diff /= (60 * 60);
+	return Math.abs(Math.round(diff));
+
+}
+
+var diff;
+
 class Achievements extends Component {
+	constructor() {
+		super();
+		const dt1 = new Date("February 16, 2016 08:11:00");
+		const dt2 = new Date();
+		diff = diff_hours(dt1, dt2);
+	}
     render() {
         return (
             <div className="achievements background-white">
@@ -30,7 +46,7 @@ class Achievements extends Component {
 	                        <img src={webHosting} alt="servers"/>
 
 	                        <h2><CountUp duration={3} end={2}/> ASRR Servers<br/>
-		                        <CountUp duration={20} end={17531}/>+ {this.props.t("portfolio.achievements.upTime")}
+		                        <CountUp duration={20} end={diff}/>+ {this.props.t("portfolio.achievements.upTime")}
 	                        </h2>
                         </div>
                     </div>
