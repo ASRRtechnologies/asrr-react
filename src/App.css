@@ -695,6 +695,10 @@ hr {
     text-align: center;
 }
 
+.footer > div {
+    padding: 0.5em 0;
+}
+
 .footer > div > a {
     padding: 5px;
 }

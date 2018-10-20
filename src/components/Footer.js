@@ -18,6 +18,12 @@ class Footer extends Component {
 					<a href="/privacy">Privacy</a>
 					<a href="/cookies">Cookies</a>
 				</div>
+				<div>
+					<a className="rounded" href="tel:+31641633358"><FontAwesomeIcon icon={["fas", "phone"]}/> 06 416 333
+						58</a>
+					<a className="rounded" href="mailto:contact@asrr.nl"><FontAwesomeIcon
+						icon={["fas", "envelope"]}/> contact@asrr.nl</a>
+				</div>
 			</div>
 		);
 	}
