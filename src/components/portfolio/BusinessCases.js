@@ -11,7 +11,7 @@ class BusinessCases extends Component {
 	                <div className="row-container double business-cases">
                         <div>
 	                        <h2>{this.props.t("portfolio.businessCases.form.name")}</h2>
-	                        <h3>{this.props.t("portfolio.businessCases.features")}</h3>
+	                        <h3>{this.props.t("portfolio.features")}</h3>
 	                        <ul>
 		                        <li>{this.props.t("portfolio.businessCases.form.features.1")}</li>
 		                        <li>{this.props.t("portfolio.businessCases.form.features.2")}</li>
