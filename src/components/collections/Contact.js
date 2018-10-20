@@ -4,13 +4,21 @@ import Landing from "../Landing";
 import green from "../../images/backgrounds/green.svg";
 import contact from "../../images/sectionimages/contact.svg";
 
+const button =
+	{
+		text: "Call us",
+		href: "tel:0641633358",
+		fa: ["fas", "phone"]
+	};
+
 
 class Contact extends Component {
     render() {
         return (
             <div>
                 <Fade bottom>
-	                <Landing header="contact.headline" subtitle="contact.subtitle" background={green} image={contact}/>
+	                <Landing header="contact.headline" subtitle="contact.subtitle" background={green} image={contact}
+	                         button={button}/>
                 </Fade>
             </div>
         );

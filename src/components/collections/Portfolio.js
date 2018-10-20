@@ -56,13 +56,20 @@ var desktop = [
 	}
 ];
 
+const button =
+	{
+		text: "Call us",
+		href: "tel:0641633358",
+		fa: ["fas", "phone"]
+	};
+
 class Portfolio extends Component {
     render() {
         return (
 	        <div className="portfolio-wrapper">
                 <Fade bottom>
 	                <Landing header="portfolio.headline" subtitle="portfolio.subtitle" background={blue}
-	                         image={portfolio} />
+	                         image={portfolio} button={button}/>
                 </Fade>
                 <Fade bottom>
 	                <ClientGrid headline="portfolio.clientHeadline" subtitle="portfolio.clientSubtitle"/>

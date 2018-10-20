@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Fade from "react-reveal/Fade";
 import Landing from "../Landing";
 import orange from "../../images/backgrounds/orange.svg";
-import team from "../../images/sectionimages/team.png"
+import team from "../../images/sectionimages/team-orange.svg"
 import TeamCards from "../about/TeamCards";
 
 const founders = [
@@ -84,15 +84,23 @@ const support = [
 
 ];
 
+const button =
+	{
+		text: "Contact Us",
+		href: "/Contact",
+		fa: ["fas", "envelope"]
+	};
+
 class Team extends Component {
     render() {
         return (
             <div>
                 <Fade bottom>
-	                <Landing header="about.headline" subtitle="about.subtitle" background={orange} image={team}/>
+	                <Landing header="about.headline" subtitle="about.subtitle" background={orange} image={team}
+	                         button={button}/>
                 </Fade>
                 <Fade bottom>
-	                <TeamCards section="about.founders" items={founders}/>
+	                <TeamCards id="team" section="about.founders" items={founders}/>
                 </Fade>
                 <Fade bottom>
 	                <TeamCards section="Support" items={support}/>

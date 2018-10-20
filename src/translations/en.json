@@ -87,7 +87,7 @@
   },
   "portfolio": {
     "headline": "Take a look at some of the work we've done before",
-    "subtitle": "We've had various projects in diverse fields.",
+    "subtitle": "We've had various projects in diverse fields. Feel free to contact us if you have any questions about what we did, or how we can help you!",
     "clientHeadline": "Some of the companies we've worked for",
     "clientSubtitle": "Click on a logo to go to their website",
     "achievements": {
@@ -104,5 +104,9 @@
     },
     "websites": "Websites",
     "desktop": "Desktop Applications"
+  },
+  "contact": {
+    "headline": "Get in touch!",
+    "subtitle": "Every project is different, and we'll offer a unique solution for you. That's why you should not hesitate to contact us with a problem you might have, and we'll offer some free advice. We are very flexible in both the fields in which the project can be applied, as wel as offering a package that fits your financial situation"
   }
 }
