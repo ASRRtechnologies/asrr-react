@@ -349,6 +349,7 @@ hr {
     width: 40%;
     vertical-align: center;
     display: inline-block;
+    padding-bottom: 2em;
 }
 
 #landing-text h1 {
@@ -361,6 +362,12 @@ hr {
     text-align: left;
     width: 80%;
     padding-left: 5%;
+    padding-bottom: 1.5em;
+}
+
+#landing-text a {
+    margin: 0 5%;
+    background-color: #1F3335;
 }
 
 #landing-image {
@@ -695,6 +702,10 @@ hr {
     text-align: center;
 }
 
+.footer > div {
+    padding: 0.5em 0;
+}
+
 .footer > div > a {
     padding: 5px;
 }
@@ -717,6 +728,8 @@ hr {
         margin-right: 0;
         width: auto;
         border: 0;
+        padding-bottom: 0;
+
     }
 
     #landing-image {

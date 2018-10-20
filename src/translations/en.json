@@ -46,7 +46,7 @@
   },
   "services": {
     "headline": "Find out what we can do for you!",
-    "subtitle": "The key in our services is that they are custom tailored to your wishes. You come to us with a problem or wish, we will find out what is needed to accomplish it and provide you with an expert team that can develop the solution.",
+    "subtitle": "The key in our services is that they are custom tailored to your wishes. You come to us with a problem or wish, we will find out what is needed to accomplish it and provide you with an expert team that can develop the solution. Don't forget to check out our portfolio to see our past projects!",
     "section": "Services",
     "web": {
       "name": "Web Design",
@@ -87,10 +87,11 @@
   },
   "portfolio": {
     "headline": "Take a look at some of the work we've done before",
-    "subtitle": "We've had various projects in diverse fields.",
+    "subtitle": "We've had various projects in diverse fields. Feel free to contact us if you have any questions about what we did, or how we can help you!",
     "clientHeadline": "Some of the companies we've worked for",
     "clientSubtitle": "Click on a logo to go to their website",
     "achievements": {
+      "headline": "What we've done so far",
       "happy": "Happy Customers",
       "commercial": "Commercial Websites",
       "pageViews": "Cumulative Page Views",
@@ -99,10 +100,26 @@
       "upTime": "Hours uptime since setup"
     },
     "businessCases": {
-      "form1": "For FORM, we set up a windows server. As most of our client data is confidential, we can't say much about the contents of this server. What we can tell is what we've done. First off, we set up the server from scratch, providing remote desktop capabilities, opening up the correct ports for API access and installing the required programs.",
-      "form2": "Next, we set up one of our continuous deployment systems for their internal product. This system automatically closes the program using the code and downloads the latest version whenever a new stable build is available on their private GitHub repository. The project is then built locally in the required folder and is automatically signed. After all tests have passed, the back-end spins up again and is ready to handle requests again."
+      "headline": "Business Cases",
+      "form": {
+        "name": "FORM Architecture and Engineering",
+        "features": {
+          "1": "Server Setup",
+          "2": "Continuous Deployment",
+          "3": "Back-End Shell"
+        },
+        "description": {
+          "1": "For FORM, we set up a windows server. As most of our client data is confidential, we can't say much about the contents of this server. What we can tell is what we've done. First off, we set up the server from scratch, providing remote desktop capabilities, opening up the correct ports for API access and installing the required programs.",
+          "2": "Next, we set up one of our continuous deployment systems for their internal product. This system automatically closes the program using the code and downloads the latest version whenever a new stable build is available on their private GitHub repository. The project is then built locally in the required folder and is automatically signed. After all tests have passed, the back-end spins up again and is ready to handle requests again."
+        }
+      }
     },
+    "features": "Features",
     "websites": "Websites",
     "desktop": "Desktop Applications"
+  },
+  "contact": {
+    "headline": "Get in touch!",
+    "subtitle": "Every project is different, and we'll offer a unique solution for you. That's why you should not hesitate to contact us with a problem you might have, and we'll offer some free advice. We are very flexible in both the fields in which the project can be applied, as wel as offering a package that fits your financial situation"
   }
 }

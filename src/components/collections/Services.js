@@ -34,13 +34,20 @@ const services = [
 	}
 ];
 
+const button =
+	{
+		text: "Portfolio",
+		href: "/Portfolio",
+		fa: ["fas", "images"]
+	};
+
 class Services extends Component {
 	render() {
 		return (
 			<div>
 				<Fade bottom>
 					<Landing header="services.headline" subtitle="services.subtitle" background={purple}
-					         image={server}/>
+					         image={server} button={button}/>
 				</Fade>
 				<Fade bottom>
 					<ServiceGrid section="services.section" items={services}/>
