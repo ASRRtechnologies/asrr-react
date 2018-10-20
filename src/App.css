@@ -374,16 +374,13 @@ hr {
     overflow: hidden;
     min-height: 300px;
     padding: 50px;
+    max-height: 700px;
 }
 
 #landing-image img {
     width: 100%;
     float: right;
-
     max-width: 58em;
-
-    /*height: auto;*/
-    /*max-height: 600px;*/
 }
 
 /*services*/
