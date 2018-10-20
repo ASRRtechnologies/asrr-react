@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import Fade from "react-reveal/Fade";
 import Landing from "../Landing";
-import midblue from "../../images/backgrounds/midblue.svg";
-import team from "../../images/sectionimages/server.svg";
+import green from "../../images/backgrounds/green.svg";
+import contact from "../../images/sectionimages/contact.svg";
 
 
 class Contact extends Component {
@@ -10,7 +10,7 @@ class Contact extends Component {
         return (
             <div>
                 <Fade bottom>
-	                <Landing header="contact.headline" subtitle="contact.subtitle" background={midblue} image={team}/>
+	                <Landing header="contact.headline" subtitle="contact.subtitle" background={green} image={contact}/>
                 </Fade>
             </div>
         );
