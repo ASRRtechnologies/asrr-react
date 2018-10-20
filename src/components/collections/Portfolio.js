@@ -58,9 +58,9 @@ var desktop = [
 
 const button =
 	{
-		text: "Call us",
-		href: "tel:0641633358",
-		fa: ["fas", "phone"]
+		text: "Contact us",
+		href: "/Contact",
+		fa: ["fas", "envelope"]
 	};
 
 class Portfolio extends Component {

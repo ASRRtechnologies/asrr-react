@@ -86,9 +86,9 @@ const support = [
 
 const button =
 	{
-		text: "Contact Us",
-		href: "/Contact",
-		fa: ["fas", "envelope"]
+		text: "Services",
+		href: "/Services",
+		fa: ["fas", "cogs"]
 	};
 
 class Team extends Component {

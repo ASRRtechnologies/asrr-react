@@ -36,9 +36,9 @@ const services = [
 
 const button =
 	{
-		text: "More",
-		href: "#services",
-		fa: ["fas", "chevron-circle-down"]
+		text: "Portfolio",
+		href: "/Portfolio",
+		fa: ["fas", "images"]
 	};
 
 class Services extends Component {
