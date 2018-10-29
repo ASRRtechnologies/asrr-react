@@ -6,3 +6,5 @@
 The new and improved ASRR Website, made using ReactJS
 
 Using components and translations to keep code clean!
+
+Trigger build
