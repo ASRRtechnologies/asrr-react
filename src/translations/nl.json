@@ -29,14 +29,16 @@
         "description": "Waar één developer misschien wel in staat is om code te schrijven voor iets wat net buiten zijn expertise ligt, wordt dit al snel een rommeltje bij grotere en complexe projecten. Dat geld dat aan het begin gedacht wordt bespaard te worden, wordt uiteindelijk dubbel verloren met extra tijd bij het verder bouwen op slordige code. Dit is waar ASRR een verschil maakt; door het combineren van de diverse kennis kunnen wij overal nette code afleveren, met de nieuwste technieken."
       },
       "transparency": {
-        "name": "Transparantheid",
+        "name": "Transparantie",
         "description": "We streven ernaar om duidelijke feedback te geven, die zelfs een leek een complex inzicht kan geven in het probleem en de situatie. We gebruiken hiervoor bijvoorbeeld Scrum en Agile. Verder kunnen we na een initiële analyse een voorspelling doen over de geschatte aantal uren die we nodig hebben, zodat er achteraf geen verassingen komen in de prijs."
       },
       "integrations": {
         "name": "Integratie met huidige systemen",
         "description": "Omdat de software die wij leveren REST-ful is, is het erg gemakkelijk te integreren met bestaande systemen. Er hoeft hiervoor dus niet meer gegraven worden in legacy code, maar kan deze interactie met een simpele API interface worden voldaan."
       }
-    }
+    },
+    "clientheadline": "U hoeft ons niet zomaar te geloven...",
+    "clientsubtitle": "Neem een kijkje bij het werk dat we in het verleden hebben gedaan in onze portfolio"
   },
   "about": {
     "headline": "Maak kennis met het team",

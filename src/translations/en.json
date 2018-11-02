@@ -36,7 +36,10 @@
         "name": "Integrations with existing systems",
         "description": "Beceause the software we write is REST-ful, it becomes very easy to integrate in existing systems. There won't be any digging into legacy code, as we create a simple API interface to get and send data to and from the new system."
       }
-    }
+    },
+    "clientheadline": "Don't just take our word for it",
+    "clientsubtitle": "Find the work we've done in the past in our portfolio"
+
   },
   "about": {
     "headline": "Meet the team",
