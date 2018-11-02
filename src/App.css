@@ -459,7 +459,8 @@ hr {
 .clientGrid img {
     width: 33%;
     max-height: 100px;
-    max-width: 200px;
+    object-fit: contain;
+    height: auto;
     top: 0;
     bottom: 0;
     margin: auto;
