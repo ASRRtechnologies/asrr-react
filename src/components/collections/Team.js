@@ -25,7 +25,7 @@ const founders = [
         tasks: "Back-end, Technology Research, Reverse Engineering",
         languages: "Java, Spring, Spring-Boot, C, C#, JS",
         github: "Satyam126",
-        linkedin: ""
+	    linkedin: "https://www.linkedin.com/in/satyam-mohan-26188a174/"
     },
 
     {
@@ -36,7 +36,7 @@ const founders = [
         tasks: "Marketing, App-Development",
         languages: "JS, ReactJS, React-Native, Python",
         github: "HesusDios",
-        linkedin: ""
+	    linkedin: "https://www.linkedin.com/in/reangelojarvis/"
     },
 
     {
@@ -47,7 +47,7 @@ const founders = [
         tasks: "Finances, Data Analysis, Database Design",
         languages: "Java, SQL, R, C#, MatLab, Python",
         github: "RayelH",
-        linkedin: ""
+	    linkedin: "https://www.linkedin.com/in/rayel-hardwarsing-371b16133/"
     }];
 
 const support = [
@@ -59,7 +59,7 @@ const support = [
         tasks: "Advise on matters around human resources as well as general advise for the company",
         languages: "English, Dutch, Russian",
         linkedin: "https://www.linkedin.com/in/amarramdas/",
-        github: "lalal"
+	    github: "none"
     },
     {
         name: "Amit",
@@ -69,7 +69,7 @@ const support = [
         tasks: "Researching marketing opportunities for the company and contacting potential customers",
         languages: "English, Dutch, Spanish",
         linkedin: "https://www.linkedin.com/in/amitniteshramdas/",
-        github: "lalal"
+	    github: "none"
     },
     {
         name: "Azat",
