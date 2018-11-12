@@ -9,7 +9,7 @@ import ScrollToTop from "./components/ScrollToTop";
 
 ReactDOM.render(
 	<Router>
-		<Analytics id="UA-90768292-2" debug>
+		<Analytics id="UA-90768292-2">
 			<ScrollToTop>
 				<App/>
 			</ScrollToTop>
