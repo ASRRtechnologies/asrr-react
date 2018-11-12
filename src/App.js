@@ -48,15 +48,8 @@ import Services from "./components/collections/Services";
 import NoRef from "./components/404";
 import Portfolio from "./components/collections/Portfolio";
 import Contact from "./components/collections/Contact";
-import ReactGA from 'react-ga';
 
 library.add(faLanguage, faImages, faCogs, faUsers, faChevronCircleDown, faPhone, faEnvelope, faHtml5, faCss3Alt, faJs, faJava, faWindows, faLinux, faGithub, faGit, faReact, faAndroid, faAppStoreIos, faApple, faNode, faNodeJs, faPaypal, faFacebook, faTwitter, faSnapchat, faAws, faChrome, faLinkedin);
-
-function initializeReactGA() {
-	ReactGA.initialize('UA-90768292-1');
-	ReactGA.pageview(window.location.pathname + window.location.search);
-}
-
 
 const NoMatch = ({location}) => (
 	<div>
@@ -68,7 +61,6 @@ class App extends Component {
 	constructor() {
 		super();
 		Language.initialize();
-		initializeReactGA();
 	}
 
 	render() {
