@@ -21,6 +21,7 @@
     "react-reveal": "^1.2.2",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
+    "react-router-ga": "^1.0.0",
     "react-scripts": "^2.0.4",
     "react-slick": "^0.23.1",
     "slick-carousel": "^1.8.1"

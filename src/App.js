@@ -49,27 +49,13 @@ import NoRef from "./components/404";
 import Portfolio from "./components/collections/Portfolio";
 import Contact from "./components/collections/Contact";
 
-
 library.add(faLanguage, faImages, faCogs, faUsers, faChevronCircleDown, faPhone, faEnvelope, faHtml5, faCss3Alt, faJs, faJava, faWindows, faLinux, faGithub, faGit, faReact, faAndroid, faAppStoreIos, faApple, faNode, faNodeJs, faPaypal, faFacebook, faTwitter, faSnapchat, faAws, faChrome, faLinkedin);
-
 
 const NoMatch = ({location}) => (
 	<div>
 		<NoRef location={location}/>
 	</div>
 );
-
-
-const Careers = () => (
-	<div>
-		<ul>
-			<li>San Francisco</li>
-			<li>Istanbul</li>
-			<li>Tokyo</li>
-		</ul>
-	</div>
-);
-
 
 class App extends Component {
 	constructor() {
@@ -87,7 +73,6 @@ class App extends Component {
 					<Route path="/portfolio" component={Portfolio}/>
 					<Route path="/services" component={Services}/>
 					<Route path="/team" component={Team}/>
-					<Route path="/careers" component={Careers}/>
 					<Route path="/contact" component={Contact}/>
 					<Route path='/github' component={() => window.location = 'https://github.com/ASRRWebdesign'}/>
 					<Route component={NoMatch}/>

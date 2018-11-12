@@ -8,7 +8,7 @@ class ClientGrid extends Component {
 	render() {
 		return (
 			<div className="centerWrapper600px white">
-                <div class="clientGrid">
+				<div className="clientGrid">
 	                <h2>{this.props.t(this.props.headline)}</h2>
 	                <p>{this.props.t(this.props.subtitle)}</p>
                     <a href="http://hetkroontjeweebosch.nl"><img src={kroontje} alt="Logo Kroontje"/></a>
