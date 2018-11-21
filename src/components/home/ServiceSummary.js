@@ -39,7 +39,7 @@ class ServiceSummary extends Component {
 							<img src={phone} alt="app development"/>
 							<h2>{this.props.t('home.services.app.name')}</h2>
 							<p>{this.props.t('home.services.app.description')}</p>
-
+							
 						</div>
 						<div>
 							<img src={router} alt="back-ends"/>
