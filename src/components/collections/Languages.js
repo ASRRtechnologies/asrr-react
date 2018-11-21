@@ -1,25 +1,30 @@
 import React, {Component} from 'react';
 import Fade from "react-reveal/Fade";
-import Landing from "../Landing";
-import blue from "../../images/backgrounds/midblue.svg";
-import orange from "../../images/backgrounds/orange.svg";
+import LanguageGrid from "../LanguageGrid";
+import html5 from "../../images/languages/html5.png";
+import css3 from "../../images/languages/css3.png";
 
-import portfolio from "../../images/sectionimages/portfolio.png"
-import Websites from "../portfolio/Websites";
-
-import BusinessCases from "../portfolio/BusinessCases";
-import ClientGrid from "../ClientGrid";
-import Achievements from "../portfolio/Achievements";
-
+const languages = [
+    {
+        image: html5,
+        name: "HTML5",
+    },
+    {
+        image: css3,
+        name: "CSS3",
+    }
+];
 
 class Languages extends Component {
     render() {
         return (
 	        <div className="portfolio-wrapper">
-
+                <Fade bottom>
+                <LanguageGrid items={languages}/>
+                </Fade>
             </div>
         );
     }
 }
 
-export default Portfolio;
+export default Languages;

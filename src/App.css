@@ -644,6 +644,15 @@ hr {
     padding-bottom: 5px;
 }
 
+.language-item {
+    width: 20%;
+    display: inline-flex;
+}
+
+.language-item > div > img {
+    max-width: 100px;
+}
+
 .card-description {
     background-color: white;
     color: #1F3335;
