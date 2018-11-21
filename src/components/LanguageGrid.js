@@ -15,7 +15,8 @@ class LanguageGrid extends Component {
                             <Fade bottom>
                                 {this.props.items.map((item, index) => {
                                     return <div key={index}>
-                                        <img src={item.image}/>
+                                        <img src={item.image} alt={item.name}/>
+                                        <p>{item.name}</p>
                                     </div>
                                 })}
                             </Fade>
