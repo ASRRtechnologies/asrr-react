@@ -6,6 +6,7 @@ import ServiceSummary from "../home/ServiceSummary";
 import Clients from "../home/Clients";
 import lowPolyRed from "../../images/backgrounds/lowpoly.jpg";
 import browser from '../../images/sectionimages/browserflattrimmed.png';
+import Languages from "./Languages";
 
 const button =
 	{
@@ -30,6 +31,9 @@ class Home extends Component {
 				</Fade>
 				<Fade bottom>
 					<Clients/>
+				</Fade>
+				<Fade bottom>
+					<Languages/>
 				</Fade>
 			</div>
 		);

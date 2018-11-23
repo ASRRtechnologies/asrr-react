@@ -487,7 +487,6 @@ hr {
     text-align: center
 }
 
-
 .websites h2 {
     padding: 1em 0;
     margin: 0;
@@ -604,7 +603,6 @@ hr {
     text-align: left;
 }
 
-
 .row-container > div > img {
     width: 40%;
     margin: auto;
@@ -644,18 +642,18 @@ hr {
     padding-bottom: 5px;
 }
 
-.language-item {
+.logo-item {
     display: inline-block;
 
 }
 
-.language-item > div {
+.logo-item > div {
     display: inline-block;
     width: 20%;
 
 }
 
-.language-item > div > img {
+.logo-item > div > img {
     max-width: 100px;
     padding: 1em;
 }

@@ -11,7 +11,7 @@ class LogoGrid extends Component {
             <div className="grid-container">
                 <Fade bottom>
                     <div className="item-container white">
-                        <div className="language-item">
+                        <div className="logo-item">
                             <Fade bottom>
                                 {this.props.items.map((item, index) => {
                                     return <div key={index}>

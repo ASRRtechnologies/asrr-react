@@ -57,10 +57,8 @@ class Languages extends Component {
         return (
             <div className="portfolio-wrapper">
                 <Fade bottom>
-                    <LogoGrid items={languages}/>
-                </Fade>
-                <Fade bottom>
-                    <LogoGrid items={frameworks}/>
+                    <LogoGrid className="white" items={languages}/>
+                    <LogoGrid className="white" items={frameworks}/>
                 </Fade>
             </div>
         );
