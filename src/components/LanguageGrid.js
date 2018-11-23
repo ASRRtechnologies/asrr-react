@@ -5,7 +5,7 @@ import {translate} from 'react-multi-lang';
 // import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
 
-class LanguageGrid extends Component {
+class LogoGrid extends Component {
     render() {
         return (
             <div className="grid-container">
@@ -23,10 +23,9 @@ class LanguageGrid extends Component {
                         </div>
                     </div>
                 </Fade>
-
             </div>
         );
     }
 }
 
-export default translate(LanguageGrid);
+export default translate(LogoGrid);

@@ -619,9 +619,9 @@ hr {
 }
 
 .item-container {
-    width: 100%;
     padding: 0 0;
     text-align: center;
+    width: 100%;
 }
 
 .item-cards > div {
@@ -645,12 +645,19 @@ hr {
 }
 
 .language-item {
+    display: inline-block;
+
+}
+
+.language-item > div {
+    display: inline-block;
     width: 20%;
-    display: inline-flex;
+
 }
 
 .language-item > div > img {
     max-width: 100px;
+    padding: 1em;
 }
 
 .card-description {
