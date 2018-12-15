@@ -1,6 +1,5 @@
 import React, {Component} from "react";
 import {Link} from "react-router-dom";
-import ReactModal from "react-modal";
 
 import Language from "../Language";
 import logo from "../images/logo.svg";
@@ -15,42 +14,39 @@ class Header extends Component {
 		super();
 
 		this.state = {
-			showModal: false,
 			languageImage: getLanguage()
 		};
 
-
 		console.log(getLanguage().toString());
+        this.handleFlagClick = this.handleFlagClick.bind(this);
+    }
 
-		this.handleOpenModal = this.handleOpenModal.bind(this);
-		this.handleCloseModal = this.handleCloseModal.bind(this);
-	}
+    static selectPreferredLanguage(language) {
+        Language.selectPreferredLanguage(language);
+        window.location.reload();
+    }
 
-	handleOpenModal() {
-		this.setState({showModal: true});
-	}
-
-	handleCloseModal() {
-		this.setState({showModal: false});
-	}
-
-	selectPreferredLanguage(language) {
-		Language.selectPreferredLanguage(language);
-		this.handleCloseModal();
-		window.location.reload();
+    handleFlagClick() {
+        if (getLanguage().toString() === 'nl') {
+            console.log("nl found");
+            Header.selectPreferredLanguage('en');
+            console.log(getLanguage().toString())
+        } else if (getLanguage().toString() === 'en') {
+            Header.selectPreferredLanguage('nl')
+        }
 	}
 
 	componentDidMount() {
 		if (getLanguage().toString() === 'nl') {
-			this.setState({languageImage: nlFlag});
+            this.setState({languageImage: enFlag});
 		} else if (getLanguage().toString() === 'en') {
-			this.setState({languageImage: enFlag});
+            this.setState({languageImage: nlFlag});
 		}
 	}
 
 	render() {
-		var src = this.state.languageImage;
-		console.log(src);
+        const src = this.state.languageImage;
+        console.log(src);
 		return (
 			<div>
 				<header className="header">
@@ -60,35 +56,12 @@ class Header extends Component {
 
 					<span className="translate-wrapper">
                         {/*eslint-disable-next-line*/}
-						<a className="translate-button rounded" onClick={this.handleOpenModal} role="button"
-						   style={{padding: "0"}}>
+                        <a className="translate-button rounded" onClick={this.handleFlagClick} role="button"
+                           style={{padding: "0"}}>
                             <img alt="current language flag" src={src} width="50px" height="18px"
                                  style={{verticalAlign: "middle", padding: "5px 0 8px 0"}}/>
                         </a>
                     </span>
-
-					<ReactModal
-						isOpen={this.state.showModal}
-						contentLabel="Minimal Modal Example"
-						className="modal"
-					>
-						<div className="modal-container">
-							{/*eslint-disable-next-line*/}
-							<a href="#" onClick={this.selectPreferredLanguage.bind(this, 'nl')}
-							   className="rounded resp">
-								<img style={{width: "20px"}} src={nlFlag} alt="dutch flag"/> Nederlands
-							</a>
-							{/*eslint-disable-next-line*/}
-							<a href="#" onClick={this.selectPreferredLanguage.bind(this, 'en')}
-							   className="rounded resp">
-								<img style={{width: "20px"}} src={enFlag} alt="english flag"/> English
-							</a>
-							{/*eslint-disable-next-line*/}
-							<a href="#" className="rounded resp" onClick={this.handleCloseModal}>
-								Cancel
-							</a>
-						</div>
-					</ReactModal>
 
 					<ul className="menu">
 						<li><Link to="/">Home</Link></li>
