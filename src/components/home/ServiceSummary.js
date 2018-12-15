@@ -35,24 +35,24 @@ class ServiceSummary extends Component {
 						<div>
 							<img src={laptop} alt="webdesign"/>
 							<h2>{this.props.t('home.services.web.name')}</h2>
-							<p><ReadMoreReact text={this.props.t('home.services.web.description')} /></p>
+                            <div><ReadMoreReact text={this.props.t('home.services.web.description')}/></div>
 						</div>
 						<div>
 							<img src={phone} alt="app development"/>
 							<h2>{this.props.t('home.services.app.name')}</h2>
-							<p><ReadMoreReact text={this.props.t('home.services.app.description')} /></p>
+                            <div><ReadMoreReact text={this.props.t('home.services.app.description')}/></div>
 							
 						</div>
 						<div>
 							<img src={router} alt="back-ends"/>
 							<h2>{this.props.t('home.services.backend.name')}</h2>
-							<p><ReadMoreReact text={this.props.t('home.services.backend.description')} /></p>
+                            <div><ReadMoreReact text={this.props.t('home.services.backend.description')}/></div>
 
 						</div>
 						<div>
 							<img src={computer} alt="desktop"/>
 							<h2>{this.props.t('home.services.desktop.name')}</h2>
-							<p><ReadMoreReact text={this.props.t('home.services.desktop.description')} /></p>
+                            <div><ReadMoreReact text={this.props.t('home.services.desktop.description')}/></div>
 
 						</div>
 					</div>

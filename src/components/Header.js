@@ -18,7 +18,7 @@ class Header extends Component {
 		};
 
 		console.log(getLanguage().toString());
-        this.handleFlagClick = this.handleFlagClick.bind(this);
+        Header.handleFlagClick = Header.handleFlagClick.bind(this);
     }
 
     static selectPreferredLanguage(language) {
@@ -26,7 +26,7 @@ class Header extends Component {
         window.location.reload();
     }
 
-    handleFlagClick() {
+    static handleFlagClick() {
         if (getLanguage().toString() === 'nl') {
             console.log("nl found");
             Header.selectPreferredLanguage('en');
@@ -56,7 +56,7 @@ class Header extends Component {
 
 					<span className="translate-wrapper">
                         {/*eslint-disable-next-line*/}
-                        <a className="translate-button rounded" onClick={this.handleFlagClick} role="button"
+                        <a className="translate-button rounded" onClick={Header.handleFlagClick} role="button"
                            style={{padding: "0"}}>
                             <img alt="current language flag" src={src} width="50px" height="18px"
                                  style={{verticalAlign: "middle", padding: "5px 0 8px 0"}}/>

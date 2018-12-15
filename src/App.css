@@ -423,7 +423,7 @@ hr {
     margin-left: 0;
 }
 
-.flex-container > div > p {
+.flex-container > div > div {
     padding: 0 20px 20px 20px;
     font-size: 15px;
     width: 80%;
@@ -663,7 +663,7 @@ hr {
     color: #1F3335;
 }
 
-.card-description > p {
+.card-description > div {
     padding: 10px;
 }
 

@@ -18,7 +18,9 @@ class Cards extends Component {
 									return <div key={index} className="drop-shadow">
 										<h2>{this.props.t(this.props.category + '.' + item.service + ".name")}</h2>
 										<div className="card-description">
-											<p><ReadMoreReact text={this.props.t(this.props.category + '.' + item.service + ".description")} /></p>
+                                            <div><ReadMoreReact
+                                                text={this.props.t(this.props.category + '.' + item.service + ".description")}/>
+                                            </div>
 										</div>
 									</div>
 								})}
