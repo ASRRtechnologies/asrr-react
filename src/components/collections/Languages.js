@@ -29,28 +29,28 @@ const languages = [
         name: "C#",
     }
 ];
-const frameworks = [
-    {
-        image: html5,
-        name: "HTML5",
-    },
-    {
-        image: css3,
-        name: "CSS3",
-    },
-    {
-        image: js,
-        name: "JavaScript",
-    },
-    {
-        image: java,
-        name: "Java",
-    },
-    {
-        image: csharp,
-        name: "C#",
-    }
-];
+// const frameworks = [
+//     {
+//         image: html5,
+//         name: "HTML5",
+//     },
+//     {
+//         image: css3,
+//         name: "CSS3",
+//     },
+//     {
+//         image: js,
+//         name: "JavaScript",
+//     },
+//     {
+//         image: java,
+//         name: "Java",
+//     },
+//     {
+//         image: csharp,
+//         name: "C#",
+//     }
+// ];
 
 class Languages extends Component {
     render() {
@@ -58,7 +58,7 @@ class Languages extends Component {
             <div className="portfolio-wrapper">
                 <Fade bottom>
                     <LogoGrid className="white" items={languages}/>
-                    <LogoGrid className="white" items={frameworks}/>
+                    {/*<LogoGrid className="white" items={frameworks}/>*/}
                 </Fade>
             </div>
         );
