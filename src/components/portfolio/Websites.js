@@ -21,8 +21,8 @@ class Websites extends Component {
 								{this.props.items.map((item, index) => {
 									return <div key={index} className="drop-shadow">
 										<a href={"http://" + item.url}>
-											<img src={"http://qs.jin.fi/?url=http://" + item.url}
-											     alt="Website Kroontje"/>
+											<img src={item.image}
+											     alt="Website"/>
 											<h2>{item.name}</h2>
 										</a>
 									</div>
