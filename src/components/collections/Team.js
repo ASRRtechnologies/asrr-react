@@ -9,10 +9,10 @@ const founders = [
     {
         name: "Amar",
         fullName: "Amar Ramdas",
-        jobTitle: "CEO",
+        jobTitle: "Lead Developer",
         background: "Applied Physics",
         tasks: "Project lead, Front-end, back-end",
-        languages: "C#, JS, HTML, CSS, MATLAB, VBA, .NET",
+        languages: "C#, Java, JS, HTML, CSS, MATLAB, VBA, .NET, ReactJS, React Native",
         github: "Amar97",
         linkedin: "https://www.linkedin.com/in/amarramdas/"
     },
@@ -20,10 +20,10 @@ const founders = [
     {
         name: "Satyam",
         fullName: "Satyam Mohan",
-        jobTitle: "CTO",
+        jobTitle: "Technical Expert",
         background: "Computer Science",
         tasks: "Back-end, Technology Research, Reverse Engineering",
-        languages: "Java, Spring, Spring-Boot, C, C#, JS",
+        languages: "Java, Spring, Spring-Boot, C, C++, C#, JS",
         github: "Satyam126",
 	    linkedin: "https://www.linkedin.com/in/satyam-mohan-26188a174/"
     },
@@ -31,7 +31,7 @@ const founders = [
     {
         name: "Reangelo",
         fullName: "Ré-Angelo Jarvis",
-        jobTitle: "CMO",
+        jobTitle: "Public Relations & Developer",
         background: "Biofarmacy",
         tasks: "Marketing, App-Development",
         languages: "JS, ReactJS, React-Native, Python",
@@ -40,9 +40,9 @@ const founders = [
     },
 
     {
-        name: "RAyel",
+        name: "Rayel",
         fullName: "Rayel Hardwarsing",
-        jobTitle: "CFO",
+        jobTitle: "Finances & Developer",
         background: "Econometrics",
         tasks: "Finances, Data Analysis, Database Design",
         languages: "Java, SQL, R, C#, MatLab, Python",
