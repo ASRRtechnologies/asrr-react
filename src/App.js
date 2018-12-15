@@ -48,6 +48,7 @@ import Services from "./components/collections/Services";
 import NoRef from "./components/404";
 import Portfolio from "./components/collections/Portfolio";
 import Contact from "./components/collections/Contact";
+import Languages from "./components/collections/Languages";
 
 library.add(faLanguage, faImages, faCogs, faUsers, faChevronCircleDown, faPhone, faEnvelope, faHtml5, faCss3Alt, faJs, faJava, faWindows, faLinux, faGithub, faGit, faReact, faAndroid, faAppStoreIos, faApple, faNode, faNodeJs, faPaypal, faFacebook, faTwitter, faSnapchat, faAws, faChrome, faLinkedin);
 
@@ -74,6 +75,7 @@ class App extends Component {
 					<Route path="/services" component={Services}/>
 					<Route path="/team" component={Team}/>
 					<Route path="/contact" component={Contact}/>
+					<Route path="/Languages" component={Languages}/>
 					<Route path='/github' component={() => window.location = 'https://github.com/ASRRWebdesign'}/>
 					<Route component={NoMatch}/>
 				</Switch>

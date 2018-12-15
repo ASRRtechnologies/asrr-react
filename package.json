@@ -24,6 +24,7 @@
     "react-router-ga": "^1.0.0",
     "react-scripts": "^2.0.4",
     "react-slick": "^0.23.1",
+    "read-more-react": "^1.0.6",
     "slick-carousel": "^1.8.1"
   },
   "scripts": {

@@ -423,7 +423,7 @@ hr {
     margin-left: 0;
 }
 
-.flex-container > div > p {
+.flex-container > div > div {
     padding: 0 20px 20px 20px;
     font-size: 15px;
     width: 80%;
@@ -486,7 +486,6 @@ hr {
     margin: 0;
     text-align: center
 }
-
 
 .websites h2 {
     padding: 1em 0;
@@ -604,7 +603,6 @@ hr {
     text-align: left;
 }
 
-
 .row-container > div > img {
     width: 40%;
     margin: auto;
@@ -619,9 +617,9 @@ hr {
 }
 
 .item-container {
-    width: 100%;
     padding: 0 0;
     text-align: center;
+    width: 100%;
 }
 
 .item-cards > div {
@@ -644,12 +642,28 @@ hr {
     padding-bottom: 5px;
 }
 
+.logo-item {
+    display: inline-block;
+
+}
+
+.logo-item > div {
+    display: inline-block;
+    width: 20%;
+
+}
+
+.logo-item > div > img {
+    max-width: 100px;
+    padding: 1em;
+}
+
 .card-description {
     background-color: white;
     color: #1F3335;
 }
 
-.card-description > p {
+.card-description > div {
     padding: 10px;
 }
 
@@ -771,4 +785,15 @@ hr {
     position: relative;
     width: 400px;
     margin: 0 auto;
+}
+
+.read-more-button {
+    color: #4D429F;
+}
+
+.service-image {
+    height: 150px;
+    padding: 1em;
+    max-width: 250px;
+
 }
