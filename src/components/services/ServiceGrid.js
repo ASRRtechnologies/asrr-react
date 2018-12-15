@@ -17,6 +17,7 @@ class ServiceGrid extends Component {
                             <Fade bottom>
 	                            {this.props.items.map((item, index) => {
 		                            return <div key={index} className="drop-shadow">
+                                        <img src={item.image} class="service-image" alt={item.service + " image"}/>
                                         <h2>{this.props.t('services.' + item.service + ".name")}</h2>
                                         <div className="card-description">
                                             <p><ReadMoreReact text={this.props.t('services.' + item.service + ".description")} min={30} ideal={35} max={40} /></p>

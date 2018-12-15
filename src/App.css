@@ -790,3 +790,10 @@ hr {
 .read-more-button {
     color: #4D429F;
 }
+
+.service-image {
+    height: 150px;
+    padding: 1em;
+    max-width: 250px;
+
+}
