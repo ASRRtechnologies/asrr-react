@@ -7,6 +7,8 @@ import {translate} from "react-multi-lang"
 import Cards from "../Cards";
 import {Link} from "react-router-dom";
 
+import ReadMoreReact from 'read-more-react';
+
 const why = [
 	{
 		logo: "",
@@ -33,24 +35,24 @@ class ServiceSummary extends Component {
 						<div>
 							<img src={laptop} alt="webdesign"/>
 							<h2>{this.props.t('home.services.web.name')}</h2>
-							<p>{this.props.t('home.services.web.description')}</p>
+							<p><ReadMoreReact text={this.props.t('home.services.web.description')} /></p>
 						</div>
 						<div>
 							<img src={phone} alt="app development"/>
 							<h2>{this.props.t('home.services.app.name')}</h2>
-							<p>{this.props.t('home.services.app.description')}</p>
+							<p><ReadMoreReact text={this.props.t('home.services.app.description')} /></p>
 							
 						</div>
 						<div>
 							<img src={router} alt="back-ends"/>
 							<h2>{this.props.t('home.services.backend.name')}</h2>
-							<p>{this.props.t('home.services.backend.description')}</p>
+							<p><ReadMoreReact text={this.props.t('home.services.backend.description')} /></p>
 
 						</div>
 						<div>
 							<img src={computer} alt="desktop"/>
 							<h2>{this.props.t('home.services.desktop.name')}</h2>
-							<p>{this.props.t('home.services.desktop.description')}</p>
+							<p><ReadMoreReact text={this.props.t('home.services.desktop.description')} /></p>
 
 						</div>
 					</div>

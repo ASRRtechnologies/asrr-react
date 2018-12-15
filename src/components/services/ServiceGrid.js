@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Fade from 'react-reveal/Fade';
 import {translate} from 'react-multi-lang';
+import ReadMoreReact from "read-more-react";
 
 // import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
@@ -18,7 +19,7 @@ class ServiceGrid extends Component {
 		                            return <div key={index} className="drop-shadow">
                                         <h2>{this.props.t('services.' + item.service + ".name")}</h2>
                                         <div className="card-description">
-                                            <p>{this.props.t('services.' + item.service + ".description")}</p>
+                                            <p><ReadMoreReact text={this.props.t('services.' + item.service + ".description")} min={30} ideal={35} max={40} /></p>
                                         </div>
                                     </div>
                                 })}

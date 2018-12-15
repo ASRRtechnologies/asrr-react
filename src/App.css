@@ -786,3 +786,7 @@ hr {
     width: 400px;
     margin: 0 auto;
 }
+
+.read-more-button {
+    color: #4D429F;
+}

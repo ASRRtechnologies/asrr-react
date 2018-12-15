@@ -19,6 +19,8 @@ import ClientGrid from "../ClientGrid";
 import Achievements from "../portfolio/Achievements";
 
 
+
+
 var websites = [
     {
         name: "Kroontje",
@@ -86,8 +88,6 @@ class Portfolio extends Component {
                 </Fade>
                 <Fade bottom>
                     <Achievements/>
-                </Fade>
-                <Fade bottom>
                     <BusinessCases/>
                 </Fade>
                 <Fade bottom>
