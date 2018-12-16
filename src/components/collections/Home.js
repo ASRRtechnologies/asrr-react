@@ -10,7 +10,7 @@ import Languages from "./Languages";
 
 const button =
 	{
-		text: "Meet the team",
+		text: "buttons.home",
 		href: "/team",
 		fa: ["fas", "users"]
 	};
