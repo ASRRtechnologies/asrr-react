@@ -4,6 +4,7 @@ import Landing from "../Landing";
 import orange from "../../images/backgrounds/orange.svg";
 import team from "../../images/sectionimages/team-orange.svg"
 import TeamCards from "../about/TeamCards";
+import InternalButton from "../InternalButton";
 
 const founders = [
     {
@@ -97,7 +98,7 @@ class Team extends Component {
             <div>
                 <Fade bottom>
 	                <Landing header="about.headline" subtitle="about.subtitle" background={orange} image={team}
-	                         button={button}/>
+	                />
                 </Fade>
                 <Fade bottom>
 	                <TeamCards id="team" section="about.founders" items={founders}/>
@@ -105,6 +106,9 @@ class Team extends Component {
                 <Fade bottom>
 	                <TeamCards section="Support" items={support}/>
                 </Fade>
+	            <Fade bottom>
+		            <InternalButton button={button}/>
+	            </Fade>
             </div>
         );
     }

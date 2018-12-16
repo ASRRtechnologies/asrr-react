@@ -798,3 +798,9 @@ hr {
     max-width: 250px;
 
 }
+
+.internal-button {
+    display: block;
+    margin: auto;
+    padding: 1em;
+}
