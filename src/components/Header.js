@@ -28,9 +28,7 @@ class Header extends Component {
 
     static handleFlagClick() {
         if (getLanguage().toString() === 'nl') {
-            console.log("nl found");
             Header.selectPreferredLanguage('en');
-            console.log(getLanguage().toString())
         } else if (getLanguage().toString() === 'en') {
             Header.selectPreferredLanguage('nl')
         }
@@ -46,7 +44,6 @@ class Header extends Component {
 
 	render() {
         const src = this.state.languageImage;
-        console.log(src);
 		return (
 			<div>
 				<header className="header">

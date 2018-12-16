@@ -19,8 +19,6 @@ import ClientGrid from "../ClientGrid";
 import Achievements from "../portfolio/Achievements";
 
 
-
-
 var websites = [
     {
         name: "Kroontje",
@@ -64,7 +62,7 @@ var desktop = [
     }, {
         name: "ASRR",
         image: asrrold,
-        url: "asrr.nl"
+		url: "vps.asrr.nl"
     }
 ];
 
