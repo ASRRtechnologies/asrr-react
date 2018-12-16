@@ -1,4 +1,11 @@
 {
+  "header": {
+    "home": "Home",
+    "about": "About ASRR",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
+  },
   "home": {
     "headline": "ASRR translates the needs of the client into custom tailored solutions, specializing in innovative software development.",
     "subtitle": "With ASRR, you hire a solution. We combine the skills of our multidisciplinary team of developers to create the best product for you, without any concessions.",

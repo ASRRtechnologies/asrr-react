@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 import Language from "../Language";
 import logo from "../images/logo.svg";
 
-import {getLanguage} from "react-multi-lang";
+import {getLanguage, translate} from "react-multi-lang";
 
 import nlFlag from "../images/flags/nl.svg";
 import enFlag from "../images/flags/en.svg";
@@ -64,11 +64,11 @@ class Header extends Component {
                     </span>
 
 					<ul className="menu">
-						<li><Link to="/">Home</Link></li>
-						<li><Link to="/team">The Team</Link></li>
-						<li><Link to="/services">Services</Link></li>
-						<li><Link to="/portfolio">Portfolio</Link></li>
-						<li><Link to="/contact">Contact</Link></li>
+						<li><Link to="/">{this.props.t("header.home")}</Link></li>
+						<li><Link to="/team">{this.props.t("header.about")}</Link></li>
+						<li><Link to="/services">{this.props.t("header.services")}</Link></li>
+						<li><Link to="/portfolio">{this.props.t("header.portfolio")}</Link></li>
+						<li><Link to="/contact">{this.props.t("header.contact")}</Link></li>
 					</ul>
 				</header>
 			</div>
@@ -76,4 +76,4 @@ class Header extends Component {
 	}
 }
 
-export default Header;
+export default translate(Header);
