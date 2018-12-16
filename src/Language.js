@@ -1,6 +1,6 @@
 import locale from 'browser-locale';
 import Cookie from 'react-cookies'
-import {setDefaultTranslations, setDefaultLanguage} from 'react-multi-lang'
+import {setDefaultLanguage, setDefaultTranslations} from 'react-multi-lang'
 
 import en from './translations/en.json'
 import nl from './translations/nl.json'
@@ -11,7 +11,7 @@ class Language {
      * The default language.
      * @type {string}
      */
-    static DEFAULT_LANGUAGE = 'en';
+    static DEFAULT_LANGUAGE = 'nl';
 
     /**
      * Name of the language cookie.
