@@ -87,7 +87,7 @@ const support = [
 
 const button =
 	{
-		text: "Services",
+		text: "buttons.services",
 		href: "/Services",
 		fa: ["fas", "cogs"]
 	};

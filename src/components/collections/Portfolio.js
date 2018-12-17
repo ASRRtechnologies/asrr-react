@@ -69,7 +69,7 @@ var desktop = [
 
 const button =
 	{
-		text: "Contact us",
+		text: "buttons.contact",
 		href: "/Contact",
 		fa: ["fas", "envelope"]
 	};

@@ -8,7 +8,10 @@
   },
   "buttons": {
     "home": "Meet the team",
-    "service": "Full list of services"
+    "service": "Full list of services",
+    "contact": "To contact page",
+    "portfolio": "See our portfolio",
+    "services": "To services"
   },
   "home": {
     "headline": "ASRR translates the needs of the client into custom tailored solutions, specializing in innovative software development.",

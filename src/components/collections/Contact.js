@@ -6,9 +6,9 @@ import contact from "../../images/sectionimages/contact.svg";
 
 const button =
 	{
-		text: "Call us",
-		href: "tel:0641633358",
-		fa: ["fas", "phone"]
+		text: "buttons.contact",
+		href: "mailto:contact@asrr.nl",
+		fa: ["fas", "envelope"]
 	};
 
 

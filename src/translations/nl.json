@@ -8,7 +8,10 @@
   },
   "buttons": {
     "home": "Ontmoet het team",
-    "service": "Volledige lijst van services"
+    "service": "Volledige lijst van diensten",
+    "contact": "Naar contactpagina",
+    "portfolio": "Bekijk onze referenties",
+    "services": "Naar diensten"
   },
   "home": {
     "headline": "ASRR vertaalt de vraag van de klant naar op maat gemaakte oplossingen met een specialisme in innovatieve softwareontwikkeling.",

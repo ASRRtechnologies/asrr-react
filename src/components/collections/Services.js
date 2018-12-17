@@ -53,7 +53,7 @@ const services = [
 
 const button =
 	{
-		text: "Portfolio",
+		text: "buttons.portfolio",
 		href: "/Portfolio",
 		fa: ["fas", "images"]
 	};
