@@ -18,7 +18,7 @@ class ContactMethods extends Component {
 								{this.props.items.map((item, index) => {
 									return <div key={index} className="drop-shadow">
 										<img src={item.image} className="service-image" alt={item.service + " image"}/>
-										<h2>{this.props.t('contact.' + item.service + ".name")}</h2>
+										<h2 style={{margin: 0}}>{this.props.t('contact.' + item.service + ".name")}</h2>
 										<div className="card-description">
 											<div><ReadMoreReact
 												text={this.props.t('contact.' + item.service + ".description")}
@@ -26,8 +26,8 @@ class ContactMethods extends Component {
 											</div>
 
 											{item.buttons.map((obj, index2) => {
-												return <div><a href={obj.href}
-												               className="rounded centerButton grey"><FontAwesomeIcon
+												return <div key={index2}><a href={obj.href}
+												                            className="rounded centerButton grey"><FontAwesomeIcon
 													icon={obj.fa}/> {obj.text}
 												</a></div>
 											})}

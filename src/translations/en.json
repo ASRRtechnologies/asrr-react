@@ -137,6 +137,10 @@
   },
   "contact": {
     "headline": "Get in touch!",
-    "subtitle": "Every project is different, and we'll offer a unique solution for you. That's why you should not hesitate to contact us with a problem you might have, and we'll offer some free advice. We are very flexible in both the fields in which the project can be applied, as wel as offering a package that fits your financial situation"
+    "subtitle": "Every project is different, and we'll offer a unique solution for you. That's why you should not hesitate to contact us with a problem you might have, and we'll offer some free advice. We are very flexible in both the fields in which the project can be applied, as wel as offering a package that fits your financial situation",
+    "phone": {
+      "name": "Call us!",
+      "description": "jaj"
+    }
   }
 }
