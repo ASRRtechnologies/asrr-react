@@ -8,21 +8,6 @@ import {Link} from "react-router-dom";
 
 import ReadMoreReact from 'read-more-react';
 
-const why = [
-	{
-		logo: "",
-		service: "multi",
-	},
-	{
-		logo: "",
-		service: "transparency",
-	},
-	{
-		service: "integrations"
-	},
-];
-
-
 class ServiceSummary extends Component {
 	render() {
 		return (

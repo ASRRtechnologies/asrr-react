@@ -4,12 +4,13 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {translate} from "react-multi-lang";
 
 var iconStyle = {
 	marginLeft: "1em"
 };
 
-export default class SimpleSlider extends Component {
+class SimpleSlider extends Component {
 	constructor() {
 		super();
 		this.state = {
@@ -47,7 +48,7 @@ export default class SimpleSlider extends Component {
 		};
 		return (
 			<div className="logoslider-wrapper">
-				<h2> Technologies we use</h2>
+				<h2>{this.props.t('home.techslider')}</h2>
 				<div className="logoslider-container">
 					<Slider {...settings} class="logoslider">
 						{this.state.itemArray.map((item, index) => {
@@ -61,3 +62,5 @@ export default class SimpleSlider extends Component {
 		);
 	}
 }
+
+export default translate(SimpleSlider);
