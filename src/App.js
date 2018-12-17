@@ -25,6 +25,7 @@ import {
 	faReact,
 	faSnapchat,
 	faTwitter,
+	faWhatsapp,
 	faWindows
 } from '@fortawesome/free-brands-svg-icons';
 import {
@@ -50,7 +51,7 @@ import Portfolio from "./components/collections/Portfolio";
 import Contact from "./components/collections/Contact";
 import Languages from "./components/collections/Languages";
 
-library.add(faLanguage, faImages, faCogs, faUsers, faChevronCircleDown, faPhone, faEnvelope, faHtml5, faCss3Alt, faJs, faJava, faWindows, faLinux, faGithub, faGit, faReact, faAndroid, faAppStoreIos, faApple, faNode, faNodeJs, faPaypal, faFacebook, faTwitter, faSnapchat, faAws, faChrome, faLinkedin);
+library.add(faWhatsapp, faLanguage, faImages, faCogs, faUsers, faChevronCircleDown, faPhone, faEnvelope, faHtml5, faCss3Alt, faJs, faJava, faWindows, faLinux, faGithub, faGit, faReact, faAndroid, faAppStoreIos, faApple, faNode, faNodeJs, faPaypal, faFacebook, faTwitter, faSnapchat, faAws, faChrome, faLinkedin);
 
 const NoMatch = ({location}) => (
 	<div>

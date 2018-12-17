@@ -7,11 +7,11 @@ class Footer extends Component {
 			<div className="footer">
 				<div>
 					{/*<h2>Find us on</h2>*/}
-					<a className="rounded" href="http://github.com/asrrwebdesign"><FontAwesomeIcon
+					<a className="rounded" href="http://github.com/asrrtechnologies"><FontAwesomeIcon
 						icon={["fab", "github"]}/></a>
-					<a className="rounded" href="https://www.linkedin.com/company/asrr-webdesign"><FontAwesomeIcon
+					<a className="rounded" href="https://www.linkedin.com/company/asrr"><FontAwesomeIcon
 						icon={["fab", "linkedin"]}/></a>
-					<a className="rounded" href="https://www.facebook.com/asrrwebdesign/"><FontAwesomeIcon
+					<a className="rounded" href="https://www.facebook.com/asrrtech/"><FontAwesomeIcon
 						icon={["fab", "facebook"]}/></a>
 				</div>
 				<div>

@@ -649,13 +649,14 @@ hr {
 
 .logo-item > div {
     display: inline-block;
-    width: 20%;
-
+    width: 30%;
+    padding: 0;
 }
 
 .logo-item > div > img {
-    max-width: 100px;
-    padding: 1em;
+    max-width: 5em;
+    margin: 0.5em;
+    max-height: 5em;
 }
 
 .card-description {
@@ -796,4 +797,10 @@ hr {
     padding: 1em;
     max-width: 250px;
 
+}
+
+.internal-button {
+    display: block;
+    margin: auto;
+    padding: 1em;
 }

@@ -58,7 +58,8 @@ class ServiceSummary extends Component {
 					</div>
 
 					<div className="centerButton-wrapper">
-						<Link to="/Services" className="rounded centerButton grey">To Services</Link>
+						<Link to="/Services"
+						      className="rounded centerButton grey">{this.props.t('buttons.service')}</Link>
 					</div>
 				</div>
 
@@ -70,7 +71,7 @@ class ServiceSummary extends Component {
 					<Cards category="home.why" items={why}/>
 
 					<div className="centerButton-wrapper">
-						<Link to="/Team" className="rounded centerButton grey">Meet the Team</Link>
+						<Link to="/Team" className="rounded centerButton grey">{this.props.t('buttons.home')}</Link>
 					</div>
 				</div>
 

@@ -1,4 +1,18 @@
 {
+  "header": {
+    "home": "Home",
+    "about": "About ASRR",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
+  },
+  "buttons": {
+    "home": "Meet the team",
+    "service": "Full list of services",
+    "contact": "To contact page",
+    "portfolio": "See our portfolio",
+    "services": "To services"
+  },
   "home": {
     "headline": "ASRR translates the needs of the client into custom tailored solutions, specializing in innovative software development.",
     "subtitle": "With ASRR, you hire a solution. We combine the skills of our multidisciplinary team of developers to create the best product for you, without any concessions.",
@@ -123,6 +137,18 @@
   },
   "contact": {
     "headline": "Get in touch!",
-    "subtitle": "Every project is different, and we'll offer a unique solution for you. That's why you should not hesitate to contact us with a problem you might have, and we'll offer some free advice. We are very flexible in both the fields in which the project can be applied, as wel as offering a package that fits your financial situation"
+    "subtitle": "Every project is different, and we'll offer a unique solution for you. That's why you should not hesitate to contact us with a problem you might have, and we'll offer some free advice. We are very flexible in both the fields in which the project can be applied, as wel as offering a package that fits your financial situation",
+    "phone": {
+      "name": "Call us!",
+      "description": "Feel free to call us with any questions or further inquiries."
+    },
+    "social": {
+      "name": "Find us on social media",
+      "description": "You can send us a message using Facebook Messenger and one of our colleagues will get back to you shortly."
+    },
+    "mail": {
+      "name": "Mail us",
+      "description": "You can always send an email to the company wide contact channel."
+    }
   }
 }

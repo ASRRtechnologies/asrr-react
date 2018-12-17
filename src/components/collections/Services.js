@@ -13,6 +13,7 @@ import database from "../../images/services/database.svg"
 import data from "../../images/services/data.svg"
 import bim from "../../images/services/bim.svg"
 import consultancy from "../../images/services/consultancy.svg"
+import InternalButton from "../InternalButton";
 
 
 const services = [
@@ -52,7 +53,7 @@ const services = [
 
 const button =
 	{
-		text: "Portfolio",
+		text: "buttons.portfolio",
 		href: "/Portfolio",
 		fa: ["fas", "images"]
 	};
@@ -63,10 +64,13 @@ class Services extends Component {
 			<div>
 				<Fade bottom>
 					<Landing header="services.headline" subtitle="services.subtitle" background={purple}
-					         image={server} button={button}/>
+					         image={server}/>
 				</Fade>
 				<Fade bottom>
 					<ServiceGrid section="services.section" items={services}/>
+				</Fade>
+				<Fade bottom>
+					<InternalButton button={button}/>
 				</Fade>
 			</div>
 		);
