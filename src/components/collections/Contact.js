@@ -34,12 +34,12 @@ const services = [
 		buttons: [
 			{
 				text: "Facebook",
-				href: "mailto:contact@asrr.nl",
+				href: "http://m.me/asrrtech",
 				fa: ["fab", "facebook"]
 			},
 			{
 				text: "LinkedIn",
-				href: "mailto:contact@asrr.nl",
+				href: "https://www.linkedin.com/company/asrr/",
 				fa: ["fab", "linkedin"]
 			}
 		]

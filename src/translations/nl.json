@@ -135,6 +135,18 @@
   },
   "contact": {
     "headline": "Neem contact met ons op!",
-    "subtitle": "Elk project is anders en vereist een unieke oplossing; twijfel daarom dus niet om contact met ons op te nemen voor wat gratis advies. We zijn erg flexibel in zowel de velden waarin we producten draaien als in het aanbieden van een pakket dat kwa prijs en complexiteit bij uw bedrijf past."
+    "subtitle": "Elk project is anders en vereist een unieke oplossing; twijfel daarom dus niet om contact met ons op te nemen voor wat gratis advies. We zijn erg flexibel in zowel de velden waarin we producten draaien als in het aanbieden van een pakket dat kwa prijs en complexiteit bij uw bedrijf past.",
+    "phone": {
+      "name": "Neem telefonisch contact op",
+      "description": "U kunt telefonisch contact opnemen via het onderstaande nummer"
+    },
+    "social": {
+      "name": "Vind ons op social media",
+      "description": "Stuur ons een berichtje via fb messenger voor het snelste antwoord!"
+    },
+    "mail": {
+      "name": "Mail ons",
+      "description": "Voor verdere vragen of voorstellen kunt u ons ook mailen."
+    }
   }
 }
