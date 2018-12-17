@@ -25,6 +25,11 @@ const services = [
 				text: "06 416 333 58",
 				href: "tel:0641633358",
 				fa: ["fas", "phone"]
+			},
+			{
+				text: "WhatsApp",
+				href: "https://wa.me/31641633358",
+				fa: ["fab", "whatsapp"]
 			}
 		]
 	},
