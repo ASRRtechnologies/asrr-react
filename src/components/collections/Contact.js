@@ -16,32 +16,59 @@ import social from "../../images/contact/social.svg";
 // 	};
 
 const services = [
-	{
-		image: mail,
-		service: "mail",
-	},
+
 	{
 		image: phone,
 		service: "phone",
+		buttons: [
+			{
+				text: "06 416 333 58",
+				href: "tel:0641633358",
+				fa: ["fas", "phone"]
+			}
+		]
 	},
 	{
 		image: social,
-		service: "social"
+		service: "social",
+		buttons: [
+			{
+				text: "Facebook",
+				href: "mailto:contact@asrr.nl",
+				fa: ["fab", "facebook"]
+			},
+			{
+				text: "LinkedIn",
+				href: "mailto:contact@asrr.nl",
+				fa: ["fab", "linkedin"]
+			}
+		]
+	},
+	{
+		image: mail,
+		service: "mail",
+		buttons: [
+			{
+				text: "contact@asrr.nl",
+				href: "mailto:contact@asrr.nl",
+				fa: ["fas", "envelope"]
+			}
+		]
 	}
 ];
 
 class Contact extends Component {
-    render() {
-        return (
-            <div>
-                <Fade bottom>
-	                <Landing header="contact.headline" subtitle="contact.subtitle" background={green} image={contact}
-	                />
-	                <ContactMethods items={services}/>
-                </Fade>
-            </div>
-        );
-    }
+	render() {
+		return (
+			<div>
+				<Fade bottom>
+					<Landing header="contact.headline" subtitle="contact.subtitle" background={green} image={contact}
+					/>
+					<ContactMethods items={services}/>
+				</Fade>
+			</div>
+		);
+	}
 }
 
 export default Contact;
