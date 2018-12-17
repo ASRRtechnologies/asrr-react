@@ -17,7 +17,7 @@
     "headline": "ASRR vertaalt de vraag van de klant naar op maat gemaakte oplossingen met een specialisme in innovatieve softwareontwikkeling.",
     "subtitle": "Wij zijn een jong, multidisciplinair team dat bestaat uit experts die elkaar aanvullen om zo een duurzame en complete oplossing te leveren. We luisteren naar u als klant, verdiepen ons in uw visie op uw product en leveren daarna de beste maatwerkoplossing.",
     "services": {
-      "headline": "Wat we doen",
+      "headline": "Wat kan ASRR voor u doen?",
       "web": {
         "name": "Webdesign",
         "description": "ASRR maakt flexibele en mooie websites, zoals de website waar u zich nu op bevindt. Hierbij gebruiken we HTML5, CSS en frameworks zoals ReactJS om de website van de grond op te bouwen, of je kunt een van onze bestaande templates kiezen"
@@ -35,6 +35,7 @@
         "description": "We kunnen prachtige op maat gemaakte Windows desktopapplicaties schrijven in C#, om complexe taken te automatiseren en versnellen"
       }
     },
+    "techslider": "Technologieën waar wij op bouwen",
     "why": {
       "headline": "Waarom ASRR?",
       "subtitle": "Waarom zou u ASRR kiezen in plaats van een gewone ZZP'er of een interne IT'er?",
