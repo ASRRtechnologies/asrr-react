@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Fade from "react-reveal/Fade";
 import Landing from "../Landing";
 import orange from "../../images/backgrounds/orange.svg";
-import team from "../../images/sectionimages/team-orange.svg"
+import team from "../../images/sectionimages/team.svg"
 import TeamCards from "../about/TeamCards";
 import Why from "../about/Why";
 
