@@ -18,9 +18,9 @@ class TeamCards extends Component {
                                         <h2>{item.fullName}</h2>
                                         <h3>{item.jobTitle}</h3>
                                         <div className="card-description">
-                                            <p>Background: {item.background}</p>
-	                                        <p>Expertise: {item.tasks}</p>
-                                            <p>Languages: {item.languages}</p>
+	                                        <div>Background: {item.background}</div>
+	                                        <div>Expertise: {item.tasks}</div>
+	                                        <div>Languages: {item.languages}</div>
                                         </div>
                                         <div className="card-links">
                                             <a href={"http://github.com/" + item.github}><FontAwesomeIcon
