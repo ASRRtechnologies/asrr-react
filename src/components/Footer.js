@@ -21,6 +21,8 @@ class Footer extends Component {
 						icon={["fas", "envelope"]}/> contact@asrr.nl</a>
 				</div>
 				<div>
+					<a href="http://vps.asrr.nl/algemene-voorwaarden/algemene-voorwaarden-asrr.pdf">Algemene
+						Voorwaarden</a>
 					<a href="/faq">FAQ</a>
 					<a href="/licenses">Licenses</a>
 					<a href="/privacy">Privacy</a>
