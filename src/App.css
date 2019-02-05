@@ -9,14 +9,14 @@
 
 body {
     font-family: 'Montserrat', serif;
-    background-color: #1F3335;
+    background-color: #1A1A1A;
     padding-top: 64px;
 }
 
 h1 {
     font-size: 30px;
     font-family: 'Montserrat', serif;
-    font-weight: bold;
+    font-weight: 600;
     padding-top: 1em;
     margin-left: 5%;
     margin-top: 0;
@@ -53,7 +53,7 @@ a.rounded:hover {
 }
 
 hr {
-    background-color: #1F3335;
+    background-color: #1A1A1A;
     width: 60%;
     margin: 1em auto;
     height: 1px;
@@ -80,7 +80,7 @@ hr {
 }
 
 .header {
-    background-color: #1F3335;
+    background-color: #1A1A1A;
     box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
     position: fixed;
     width: 100%;
@@ -95,7 +95,7 @@ hr {
     padding: 0;
     list-style-type: none;
     overflow: hidden;
-    background-color: #1F3335;
+    background-color: #1A1A1A;
 }
 
 .header li a {
@@ -186,32 +186,13 @@ hr {
 
 /* 48em = 768px */
 
-@media (min-width: 52em) {
-    .header li {
-        float: left;
-    }
-
-    .header li a {
-        padding: 20px 30px;
-    }
-
-    .header .menu {
-        clear: none;
-        float: right;
-        max-height: none;
-    }
-
-    .header .menu-icon {
-        display: none;
-    }
-}
 
 /*dropdown menu bar*/
 .header ul ul {
     display: none;
     position: absolute;
     top: 100%;
-    background: #1F3335;
+    background: #1A1A1A;
     padding: 0
 }
 
@@ -260,7 +241,7 @@ hr {
 
 .modal-container {
     padding: 3em;
-    background-color: #1F3335;
+    background-color: #1A1A1A;
     border-radius: 25px;
 }
 
@@ -293,9 +274,12 @@ hr {
 .landing-wrapper h1 {
     color: white;
     width: 40%;
-    font-weight: lighter;
+    font-size: 40px;
+    font-weight: 800;
     float: left;
     padding-top: 2em;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 .landing-slider {
@@ -307,7 +291,7 @@ hr {
 }
 
 .logoslider-wrapper {
-    background-color: #1F3335;
+    background-color: #1A1A1A;
     padding: 0 0 30px 0;
     width: 100%;
     margin-left: auto;
@@ -355,7 +339,7 @@ hr {
 #landing-text h1 {
     width: 80%;
     justify-content: end;
-    padding-bottom: 0.5em;
+    padding-bottom: 0.25em;
 }
 
 #landing-text p {
@@ -367,7 +351,7 @@ hr {
 
 #landing-text a {
     margin: 0 5%;
-    background-color: #1F3335;
+    background-color: #1A1A1A;
 }
 
 #landing-image {
@@ -507,8 +491,8 @@ hr {
 }
 
 .portfolio-container > div {
-    /*background-color: #1F3335;*/
-    background-color: #1F3335;
+    /*background-color: #1A1A1A;*/
+    background-color: #1A1A1A;
     fill-opacity: 0.8;
     width: 30%;
     margin: 10px auto 10px auto;
@@ -519,7 +503,7 @@ hr {
 }
 
 .portfolio-container > div:hover {
-    /*background-color: #1F3335;*/
+    /*background-color: #1A1A1A;*/
     background-color: rgba(0, 0, 0, 0.5);
     margin: 10px auto 10px auto;
     font-size: 30px;
@@ -661,7 +645,7 @@ hr {
 
 .card-description {
     background-color: white;
-    color: #1F3335;
+    color: #1A1A1A;
 }
 
 .card-description > div {
@@ -690,7 +674,7 @@ hr {
 }
 
 .grey:hover {
-    background-color: #1F3335;
+    background-color: #1A1A1A;
     border-color: #58130e;
 }
 
@@ -710,7 +694,7 @@ hr {
     bottom: 0;
     left: 0;
     padding: 1rem;
-    background-color: #1F3335;
+    background-color: #1A1A1A;
     color: white;
     text-align: center;
 }
@@ -735,6 +719,12 @@ hr {
 }
 
 /*make landing responsive*/
+@media screen and (max-width: 1345px) {
+    .landing-wrapper h1 {
+        font-size: 30px
+    }
+}
+
 @media screen and (max-width: 900px) {
     #landing-text {
         float: none;
@@ -778,6 +768,27 @@ hr {
 
     .flex-container > div {
         width: 90%;
+    }
+
+}
+
+@media screen and (min-width: 940px) {
+    .header li {
+        float: left;
+    }
+
+    .header li a {
+        padding: 20px 30px;
+    }
+
+    .header .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+
+    .header .menu-icon {
+        display: none;
     }
 }
 

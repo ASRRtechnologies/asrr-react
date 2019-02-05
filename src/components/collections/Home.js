@@ -23,15 +23,21 @@ class Home extends Component {
 					<Landing header="home.headline" subtitle="home.subtitle" background={lowPolyRed} image={browser}
 					         button={button}/>
 				</Fade>
-				<Fade bottom>
-					<SimpleSlider/>
-				</Fade>
+
+                <Fade bottom>
+                    <Clients/>
+                </Fade>
+
 				<Fade bottom>
 					<ServiceSummary/>
 				</Fade>
-				<Fade bottom>
-					<Clients/>
-				</Fade>
+
+                {/*TODO: business case*/}
+
+                <Fade bottom>
+                    <SimpleSlider/>
+                </Fade>
+
 				<Fade bottom>
 					<Languages/>
 				</Fade>
