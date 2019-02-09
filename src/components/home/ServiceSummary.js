@@ -13,7 +13,7 @@ class ServiceSummary extends Component {
 		return (
 			<div className="services-wrapper">
                 <div>
-                    <h1 style={{maxWidth: "90%"}}>{this.props.t('home.services.tagline')}</h1>
+                    <h1 style={{maxWidth: "90%", margin: "auto"}}>{this.props.t('home.services.tagline')}</h1>
                     <p style={{
                         width: "700px",
                         margin: "auto",

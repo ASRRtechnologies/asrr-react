@@ -10,7 +10,8 @@ class ClientGrid extends Component {
 			<div className="centerWrapper600px white">
 				<div className="clientGrid">
 	                <h2>{this.props.t(this.props.headline)}</h2>
-                    <a href="http://hetkroontjeweebosch.nl"><img src={kroontje} alt="Logo Kroontje"/></a>
+                    {/*eslint-disable-next-line*/}
+                    <a><img src={kroontje} alt="Logo Kroontje"/></a>
                     <a href="https://form.nl"><img src={form} alt="Logo Form"/></a>
                     {/*eslint-disable-next-line*/}
 	                <a><img src={m4v} className="m4v" alt="Logo Moves 4 Vitality"/></a>
