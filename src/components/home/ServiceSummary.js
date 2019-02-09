@@ -21,7 +21,7 @@ class ServiceSummary extends Component {
                     }}>{this.props.t('home.services.tagsubtitle')}</p>
                 </div>
 				<div>
-					<h1>{this.props.t('home.services.headline')}</h1>
+                    <h2>{this.props.t('home.services.headline')}</h2>
 
 					<div className="flex-container">
 						<div>
@@ -55,7 +55,7 @@ class ServiceSummary extends Component {
 						      className="rounded centerButton grey">{this.props.t('buttons.service')}</Link>
 					</div>
 				</div>
-				<hr/>
+                <br/>
 			</div>
 		);
 	}

@@ -374,8 +374,10 @@ hr {
     text-align: center;
 }
 
-.services-wrapper h1 {
+.services-wrapper h2 {
     margin-left: 0;
+    font-weight: 600;
+    padding-bottom: 0.5em;
 }
 
 .services-wrapper p {
@@ -393,6 +395,7 @@ hr {
 .flex-container {
     display: inline-flex;
     flex-wrap: wrap;
+    width: 80%;
 }
 
 .flex-container > div {
@@ -420,7 +423,7 @@ hr {
     width: 40%;
     margin: auto;
     display: block;
-    max-width: 200px;
+    max-width: 80px;
 }
 
 .full-width {
