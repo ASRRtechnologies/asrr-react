@@ -9,14 +9,14 @@
 }
 
 body {
-    font-family: 'Montserrat', serif;
+    font-family: 'Roboto', serif;
     background-color: #1A1A1A;
     padding-top: 64px;
 }
 
 h1 {
     font-size: 30px;
-    font-family: 'Montserrat', serif;
+    font-family: 'Roboto', serif;
     font-weight: 800;
     padding-top: 1em;
     margin-left: 5%;
@@ -39,7 +39,7 @@ a.rounded {
     padding: 0.3em 1.2em;
     margin: 0 0.1em 0.1em 0;
     border: 0.16em solid rgba(255, 255, 255, 0);
-    border-radius: 2em;
+    border-radius: 6px;
     box-sizing: border-box;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;

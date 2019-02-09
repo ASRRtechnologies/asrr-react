@@ -13,8 +13,12 @@ class ServiceSummary extends Component {
 		return (
 			<div className="services-wrapper">
                 <div>
-                    <h1>{this.props.t('home.services.tagline')}</h1>
-                    <p>{this.props.t('home.services.tagsubtitle')}</p>
+                    <h1 style={{maxWidth: "90%"}}>{this.props.t('home.services.tagline')}</h1>
+                    <p style={{
+                        width: "700px",
+                        margin: "auto",
+                        maxWidth: "90%"
+                    }}>{this.props.t('home.services.tagsubtitle')}</p>
                 </div>
 				<div>
 					<h1>{this.props.t('home.services.headline')}</h1>
@@ -51,11 +55,7 @@ class ServiceSummary extends Component {
 						      className="rounded centerButton grey">{this.props.t('buttons.service')}</Link>
 					</div>
 				</div>
-
 				<hr/>
-
-
-
 			</div>
 		);
 	}
