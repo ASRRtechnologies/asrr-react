@@ -12,6 +12,10 @@ class ServiceSummary extends Component {
 	render() {
 		return (
 			<div className="services-wrapper">
+                <div>
+                    <h1>{this.props.t('home.services.tagline')}</h1>
+                    <p>{this.props.t('home.services.tagsubtitle')}</p>
+                </div>
 				<div>
 					<h1>{this.props.t('home.services.headline')}</h1>
 
@@ -21,13 +25,14 @@ class ServiceSummary extends Component {
 							<h2>{this.props.t('home.services.web.name')}</h2>
                             <div><ReadMoreReact text={this.props.t('home.services.web.description')}/></div>
 						</div>
-						<div>
+
+                        <div>
 							<img src={phone} alt="app development"/>
 							<h2>{this.props.t('home.services.app.name')}</h2>
                             <div><ReadMoreReact text={this.props.t('home.services.app.description')}/></div>
-							
 						</div>
-						<div>
+
+                        <div>
 							<img src={router} alt="back-ends"/>
 							<h2>{this.props.t('home.services.backend.name')}</h2>
                             <div><ReadMoreReact text={this.props.t('home.services.backend.description')}/></div>
