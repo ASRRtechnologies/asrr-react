@@ -72,7 +72,7 @@ hr {
 
 .centerButton {
     margin: auto;
-    background-color: #58130E;
+    background-color: #1A1A1A;
 }
 
 @media all and (max-width: 30em) {
@@ -91,6 +91,11 @@ hr {
     color: white;
     font-size: 20px;
     top: 0;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: auto;
 }
 
 .header ul {
@@ -406,7 +411,7 @@ hr {
 .flex-container {
     display: inline-flex;
     flex-wrap: wrap;
-    width: 80%;
+    max-width: 900px;
 }
 
 .flex-container > div {
