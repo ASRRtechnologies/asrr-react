@@ -25,10 +25,10 @@ class Landing extends Component {
 
         let hrStyle = {
             color: "#1A1A1A",
-            border: "1px solid #1A1A1A",
+	        border: "2px solid #1A1A1A",
             borderColor: "#1A1A1A",
             backgroundColor: "#1A1A1A",
-            borderRadius: "3px",
+	        borderRadius: "5px",
             marginLeft: "5%",
             width: "15%",
 

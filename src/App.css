@@ -12,6 +12,7 @@ body {
     font-family: 'Roboto', serif;
     background-color: #1A1A1A;
     padding-top: 64px;
+    color: #343434;
 }
 
 h1 {
@@ -370,14 +371,24 @@ hr {
 
 /*services*/
 .services-wrapper {
+    color: #343434;
     background-color: white;
     text-align: center;
+}
+
+.services-wrapper hr {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.services-wrapper > div {
+    padding-top: 2em;
+    padding-bottom: 1em;
 }
 
 .services-wrapper h2 {
     margin-left: 0;
     font-weight: 600;
-    padding-bottom: 0.5em;
+    padding-bottom: 2em;
 }
 
 .services-wrapper p {
@@ -668,7 +679,7 @@ hr {
 
 .background-white {
     background-color: white;
-    color: black;
+    color: #343434;
 }
 
 .grey {

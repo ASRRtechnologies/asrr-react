@@ -20,6 +20,7 @@ class ServiceSummary extends Component {
                         maxWidth: "90%"
                     }}>{this.props.t('home.services.tagsubtitle')}</p>
                 </div>
+				<hr/>
 				<div>
                     <h2>{this.props.t('home.services.headline')}</h2>
 
