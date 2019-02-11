@@ -428,9 +428,9 @@ hr {
 }
 
 .flex-container > div > div {
-    padding: 0 20px 20px 20px;
+    padding: 0 10px 10px 10px;
     font-size: 15px;
-    width: 80%;
+    width: 90%;
     margin: auto;
     text-align: center;
 }
