@@ -93,7 +93,7 @@ hr {
     top: 0;
 }
 
-.header-content {
+.max1200 {
     max-width: 1200px;
     margin: auto;
 }
@@ -336,11 +336,11 @@ hr {
 #landing-text {
     float: left;
     color: white;
-    margin-left: 5%;
     width: 40%;
     vertical-align: center;
     display: inline-block;
     padding-bottom: 2em;
+    padding-left: 0.5em;
 }
 
 #landing-text h1 {

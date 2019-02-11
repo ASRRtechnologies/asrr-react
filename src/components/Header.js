@@ -47,7 +47,7 @@ class Header extends Component {
 		return (
 			<div>
 				<header className="header">
-					<div className="header-content">
+					<div className="max1200">
 						<Link to="/"><img className="logo" src={logo} alt="logo"/></Link>
 						<input className="menu-btn" type="checkbox" id="menu-btn"/>
 						<label className="menu-icon" htmlFor="menu-btn"><span className="navicon"/></label>
