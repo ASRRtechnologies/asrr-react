@@ -98,6 +98,11 @@ hr {
     margin: auto;
 }
 
+.max900 {
+    max-width: 900px;
+    margin: auto;
+}
+
 .header ul {
     margin: 0;
     padding: 0;
@@ -193,7 +198,6 @@ hr {
 }
 
 /* 48em = 768px */
-
 
 /*dropdown menu bar*/
 .header ul ul {
@@ -710,24 +714,83 @@ hr {
     right: 0;
     bottom: 0;
     left: 0;
-    padding: 1rem;
     background-color: #1A1A1A;
     color: white;
     text-align: center;
+    padding: 1rem 0 2em;
+
 }
 
-.footer > div {
-    padding: 0.5em 0;
+.footer-logo {
+    max-height: 34px;
+    float: left;
+    padding-left: 5px
 }
 
-.footer > div > a {
+.footer > div > div {
+    display: inline-block;
+    float: left;
+    max-height: 50px;
+    padding-top: 1.5em;
+    padding-bottom: 1.25em;
+}
+
+.footer > div > div > a {
     padding: 5px;
+    display: table-cell;
+    vertical-align: bottom;
+}
+
+.footer hr {
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: auto;
+    width: 100%
+}
+
+.footer .right > a {
+    float: right;
+}
+
+.footer .right {
+    text-align: right;
+}
+
+.footer .right-responsive {
+    text-align: right;
+}
+
+.footer .blue > a {
+    text-decoration: none;
+    color: #36D4ED;
+    padding: 0 10px;
+    float: left;
+    display: inline-block
+}
+
+.footer .social {
+    font-size: 26px;
+    padding: 0.6em 0;
+}
+
+.half-width {
+    width: 50%
+}
+
+.quarter-width {
+    width: 25%
+}
+
+.three-quarter-width {
+    width: 75%
+}
+
+.full-width-900 {
+    width: 50%;
 }
 
 /*404*/
 .noref {
     padding: auto;
-
 }
 
 .parallax {
@@ -770,6 +833,23 @@ hr {
 
     .row-container > div {
         width: 100%;
+    }
+
+    .full-width-900 {
+        width: 100%;
+        margin: auto;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer .right-responsive {
+        text-align: center;
+        padding-top: 0;
+    }
+
+    .footer .blue > a {
+        float: none;
+        padding-bottom: 0;
     }
 
 }

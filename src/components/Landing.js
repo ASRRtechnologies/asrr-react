@@ -19,9 +19,13 @@ class Landing extends Component {
 	}
 
 	render() {
-		let divStyle = {
-			backgroundImage: 'url(' + this.props.background + ')',
-		};
+		let divStyle;
+
+		if (this.props.color) {
+			divStyle = {backgroundColor: this.props.color}
+		} else {
+			divStyle = {backgroundImage: 'url(' + this.props.background + ')'}
+		}
 
 		let hrStyle = {
 			color: "#1A1A1A",
