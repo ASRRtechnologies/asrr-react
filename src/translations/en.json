@@ -24,17 +24,13 @@
         "name": "Web Applications",
         "description": "Custom, responsive and beautiful web applications, suited for anything you might need. Built on the latest and greatest frameworks."
       },
-      "app": {
-        "name": "App Development",
-        "description": "We can develop both Android an iOS apps that have seamless integrations with microservices."
-      },
       "backend": {
         "name": "Microservices",
         "description": "The microservices we deliver are RESTful, meaning that one microservice can be used for your website, app and desktop application."
       },
       "desktop": {
-        "name": "Windows Desktop Applications",
-        "description": "We can create beautiful desktop applications using C#, to automate and speed up complex operations."
+        "name": "Data Analytics / Business Intelligence",
+        "description": "Our databases are designed in a way that allow for seamless integration with business analytics tools such as PowerBI"
       }
     },
     "techslider": "Technologies we use",

@@ -22,7 +22,6 @@ class Home extends Component {
 					         color={false}
 					         button={button}/>
 				</Fade>
-				<hr/>
                 <Fade bottom>
                     <Clients/>
                 </Fade>
