@@ -14,13 +14,15 @@
     "services": "To services"
   },
   "home": {
-    "headline": "ASRR translates the needs of the client into custom tailored solutions, specializing in innovative software development.",
+    "headline": "ASRR Develops Innovative Enterprise Software Solutions",
     "subtitle": "With ASRR, you hire a solution. We combine the skills of our multidisciplinary team of developers to create the best product for you, without any concessions.",
     "services": {
-      "headline": "What we do",
+      "tagline": "Enterprise quality on any scale",
+      "tagsubtitle": "From small businesses to multinational companies, using our microservices we ensure the best quality possible for every situation by creating scalable solutions",
+      "headline": "We offer the following services",
       "web": {
-        "name": "Webdesign",
-        "description": "Responsive and beautiful websites, like the one you're on now. From the ground up, using HTML5, CSS, frameworks such as ReactJS, or choose one of our existing templates."
+        "name": "Web Applications",
+        "description": "Custom, responsive and beautiful web applications, suited for anything you might need. Built on the latest and greatest frameworks."
       },
       "app": {
         "name": "App Development",
@@ -52,7 +54,7 @@
         "description": "Beceause the software we write is REST-ful, it becomes very easy to integrate in existing systems. There won't be any digging into legacy code, as we create a simple API interface to get and send data to and from the new system."
       }
     },
-    "clientheadline": "Don't just take our word for it",
+    "clientheadline": "Some of our clients",
     "clientsubtitle": "Find the work we've done in the past in our portfolio"
 
   },

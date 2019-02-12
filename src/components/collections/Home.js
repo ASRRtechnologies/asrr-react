@@ -1,12 +1,10 @@
 import React, {Component} from 'react';
 import Fade from "react-reveal/Fade";
 import Landing from "../Landing";
-import SimpleSlider from "../home/Slider";
 import ServiceSummary from "../home/ServiceSummary";
 import Clients from "../home/Clients";
 import lowPolyRed from "../../images/backgrounds/lowpoly.jpg";
 import browser from '../../images/sectionimages/browserflattrimmed.png';
-import Languages from "./Languages";
 
 const button =
 	{
@@ -21,19 +19,26 @@ class Home extends Component {
 			<div>
 				<Fade bottom>
 					<Landing header="home.headline" subtitle="home.subtitle" background={lowPolyRed} image={browser}
+					         color={false}
 					         button={button}/>
 				</Fade>
-				<Fade bottom>
-					<SimpleSlider/>
-				</Fade>
+				<hr/>
+                <Fade bottom>
+                    <Clients/>
+                </Fade>
+
 				<Fade bottom>
 					<ServiceSummary/>
 				</Fade>
+
+                {/*TODO: business case*/}
+
+                <Fade bottom>
+	                {/*<SimpleSlider/>*/}
+                </Fade>
+
 				<Fade bottom>
-					<Clients/>
-				</Fade>
-				<Fade bottom>
-					<Languages/>
+					{/*<Languages/>*/}
 				</Fade>
 			</div>
 		);
