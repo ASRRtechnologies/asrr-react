@@ -14,25 +14,23 @@
     "services": "Naar diensten"
   },
   "home": {
-    "headline": "ASRR vertaalt de vraag van de klant naar op maat gemaakte oplossingen met een specialisme in innovatieve softwareontwikkeling.",
+    "headline": "ASRR Ontwikkelt Innovatieve Enterprise Software Oplossingen",
     "subtitle": "Wij zijn een jong, multidisciplinair team dat bestaat uit experts die elkaar aanvullen om zo een duurzame en complete oplossing te leveren. We luisteren naar u als klant, verdiepen ons in uw visie op uw product en leveren daarna de beste maatwerkoplossing.",
     "services": {
+      "tagline": "Enterprise kwaliteit op iedere schaal",
+      "tagsubtitle": "Van MKB'er tot multinational, onze microservices verzekeren de beste kwaliteit in elke situatie door opschaalbare oplossingen te creëren.",
       "headline": "Wat kan ASRR voor u doen?",
       "web": {
-        "name": "Webdesign",
-        "description": "ASRR maakt flexibele en mooie websites, zoals de website waar u zich nu op bevindt. Hierbij gebruiken we HTML5, CSS en frameworks zoals ReactJS om de website van de grond op te bouwen, of je kunt een van onze bestaande templates kiezen"
-      },
-      "app": {
-        "name": "App Ontwikkeling",
-        "description": "We kunnen zowel Android als IOS applicaties ontwikkelen, die moeiteloos integreren met uw of onze custom back-end"
+        "name": "Web Applicaties",
+        "description": "ASRR maakt mooie en responsive websites, met offline beschikbaarheid en geen laadtijden tussen de pagina's."
       },
       "backend": {
-        "name": "Custom Back-End Applications",
-        "description": "De back-ends die wij leveren zijn 'REST-ful', wat betekent dat één backend gebruikt kan worden als de hersenen achter uw website, app, desktop applicatie en meer. We gebruiken hiervoor Java, Spring, Spring-Boot en SQL."
+        "name": "Maatwerk Back-End Applicaties",
+        "description": "Met onze al bestaande microservices zorgen we ervoor dat we alleen hoeven te focussen op het maatwerk, waardoor we lagere tarieven kunnen handhaven en de systemen goed getest zijn."
       },
       "desktop": {
-        "name": "Windows Desktop Applicaties",
-        "description": "We kunnen prachtige op maat gemaakte Windows desktopapplicaties schrijven in C#, om complexe taken te automatiseren en versnellen"
+        "name": "Data Analytics / Business Intelligence",
+        "description": "Onze databases zijn zo ingericht dat er gemakkelijk business insights uit vergaard kunnen worden, wat wij ook aanbieden met PowerBI Dashboards"
       }
     },
     "techslider": "Technologieën waar wij op bouwen",
@@ -52,7 +50,7 @@
         "description": "Omdat de software die wij leveren REST-ful is, is het erg gemakkelijk te integreren met bestaande systemen. Er hoeft hiervoor dus niet meer gegraven worden in legacy code, maar kan deze interactie met een simpele API interface worden voldaan."
       }
     },
-    "clientheadline": "U hoeft ons niet zomaar te geloven...",
+    "clientheadline": "Onze klanten",
     "clientsubtitle": "Neem een kijkje bij het werk dat we in het verleden hebben gedaan in onze portfolio"
   },
   "about": {
