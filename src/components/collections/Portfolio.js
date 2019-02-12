@@ -57,8 +57,6 @@ var desktop = [
 	{
 		name: "FORM",
 		image: form,
-
-
 		url: "form.nl"
 	}, {
 		name: "ASRR",
