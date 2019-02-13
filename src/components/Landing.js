@@ -49,6 +49,7 @@ class Landing extends Component {
 					</div>
 
 					<div id="landing-image">
+
 						<img src={this.props.image} alt="browser"/>
 					</div>
 				</div>
