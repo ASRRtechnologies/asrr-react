@@ -912,3 +912,9 @@ hr {
     margin: auto;
     padding: 1em;
 }
+
+.landing-canvas {
+    width: 100%;
+    height: 90%;
+    /*background-color: #000000;*/
+}

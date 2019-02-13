@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {translate} from 'react-multi-lang';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import Particles from "react-particles-js";
 
 class Landing extends Component {
 
@@ -19,13 +20,8 @@ class Landing extends Component {
 	}
 
 	render() {
-		let divStyle;
+		let divStyle = {height: "800px"};
 
-		if (this.props.color) {
-			divStyle = {backgroundColor: this.props.color}
-		} else {
-			divStyle = {backgroundImage: 'url(' + this.props.background + ')'}
-		}
 
 		let hrStyle = {
 			color: "#1A1A1A",
@@ -47,11 +43,73 @@ class Landing extends Component {
 						<p>{this.props.t(this.props.subtitle)}</p>
 						{this.renderButton()}
 					</div>
-
-					<div id="landing-image">
-
-						<img src={this.props.image} alt="browser"/>
+					<div className="landing-canvas">
+						<Particles
+							height="800px"
+							width="600px"
+							params={{
+								"fps_limit": 28,
+								"particles": {
+									"number": {
+										"value": 200,
+										"density": {
+											"enable": false
+										}
+									},
+									"line_linked": {
+										"enable": true,
+										"distance": 30,
+										"opacity": 0.4
+									},
+									"move": {
+										"speed": 1
+									},
+									"opacity": {
+										"anim": {
+											"enable": true,
+											"opacity_min": 0.05,
+											"speed": 2,
+											"sync": false
+										},
+										"value": 0.4
+									}
+								},
+								"polygon": {
+									"enable": true,
+									"scale": 0.75,
+									"type": "inline",
+									"move": {
+										"radius": 2
+									},
+									"url": "/assr-landing-path.svg",
+									"inline": {
+										"arrangement": "equidistant"
+									},
+									"draw": {
+										"enable": true,
+										"stroke": {
+											"color": "rgba(255, 255, 255, .2)"
+										}
+									}
+								},
+								"retina_detect": false,
+								"interactivity": {
+									"events": {
+										"onhover": {
+											"enable": true,
+											"mode": "bubble"
+										},
+									},
+									"modes": {
+										"bubble": {
+											"size": 6,
+											"distance": 40
+										}
+									}
+								}
+							}}/>
 					</div>
+
 				</div>
 			</div>
 		);
