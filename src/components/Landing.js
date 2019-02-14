@@ -13,14 +13,12 @@ class Landing extends Component {
 		} else {
 			return (
 				null
-
 			);
 		}
 	}
 
 	render() {
 		let divStyle = {height: "800px"};
-
 
 		let hrStyle = {
 			color: "#1A1A1A",
@@ -30,7 +28,6 @@ class Landing extends Component {
 			borderRadius: "5px",
 			marginLeft: "5%",
 			width: "15%",
-
 		};
 
 		return (
@@ -42,8 +39,6 @@ class Landing extends Component {
 						<p>{this.props.t(this.props.subtitle)}</p>
 						{this.renderButton()}
 					</div>
-
-
 				</div>
 			</div>
 		);
