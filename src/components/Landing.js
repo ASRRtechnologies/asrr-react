@@ -13,12 +13,19 @@ class Landing extends Component {
 		} else {
 			return (
 				null
+
 			);
 		}
 	}
 
 	render() {
-		let divStyle = {height: "800px"};
+		let divStyle;
+
+		if (this.props.color) {
+			divStyle = {backgroundColor: this.props.color}
+		} else {
+			divStyle = {backgroundImage: 'url(' + this.props.background + ')'}
+		}
 
 		let hrStyle = {
 			color: "#1A1A1A",
@@ -28,6 +35,7 @@ class Landing extends Component {
 			borderRadius: "5px",
 			marginLeft: "5%",
 			width: "15%",
+
 		};
 
 		return (
@@ -38,6 +46,10 @@ class Landing extends Component {
 						<hr style={hrStyle}/>
 						<p>{this.props.t(this.props.subtitle)}</p>
 						{this.renderButton()}
+					</div>
+
+					<div id="landing-image">
+						<img src={this.props.image} alt="browser"/>
 					</div>
 				</div>
 			</div>
