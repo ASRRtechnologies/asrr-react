@@ -35,7 +35,7 @@ class Home extends Component {
 									},
 									"line_linked": {
 										"enable": true,
-										"distance": 50,
+										"distance": window.screen.availHeight * 0.05,
 										"opacity": 0.5
 									},
 									"move": {
@@ -49,6 +49,16 @@ class Home extends Component {
 											"sync": false
 										},
 										"value": 0.4
+									},
+									"color": {
+										"value": "#3928E4" //set colors randomly
+									},
+									"shape": {
+										"stroke": {
+											"width": 1,
+											"color": "#FFB826"
+										},
+
 									}
 								},
 								"polygon": {
@@ -65,7 +75,8 @@ class Home extends Component {
 									"draw": {
 										"enable": false,
 										"stroke": {
-											"color": "rgba(255, 255, 255, .2)"
+											"color": "#3928E4",
+
 										}
 									}
 								},
@@ -86,6 +97,7 @@ class Home extends Component {
 								}
 							}}/>
 						<Particles
+							height="600px"
 							params={{
 								"particles": {
 									"number": {
