@@ -22,7 +22,8 @@ class ParticleLanding extends Component {
 
 	render() {
 		let divStyle = {
-			height: "70%"
+            height: "70%",
+            top: "0"
 		};
 
 		let hrStyle = {
