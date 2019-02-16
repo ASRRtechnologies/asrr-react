@@ -83,8 +83,9 @@ hr {
 }
 
 .header {
-    background-color: #1A1A1A;
-    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+    background-color: transparent;
+    /*background-color: #1A1A1A;*/
+    /*box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);*/
     position: fixed;
     width: 100%;
     z-index: 3;
