@@ -47,7 +47,7 @@ class ParticleLanding extends Component {
 		};
 
 		return (
-			<div style={divStyle}>
+            <div className="landing-gradient" style={divStyle}>
 				<div>
 					<Particles
 
@@ -77,15 +77,15 @@ class ParticleLanding extends Component {
 										"speed": this.state.dots / 10,
 										"sync": false
 									},
-									"value": 0.4
+                                    "value": 0.8
 								},
 								"color": {
-									"value": "#3928E4" //set colors randomly
+                                    "value": "#FFFFFF" //set colors randomly
 								},
 								"shape": {
 									"stroke": {
 										"width": 1,
-										"color": "#FFB826"
+                                        "color": "#FFF"
 									},
 
 								}

@@ -917,3 +917,7 @@ hr {
     width: 100%;
     /*background-color: #000000;*/
 }
+
+.landing-gradient {
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+}
