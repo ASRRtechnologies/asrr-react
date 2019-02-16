@@ -10,16 +10,13 @@ import nlFlag from "../images/flags/nl.svg";
 import enFlag from "../images/flags/en.svg";
 
 class Header extends Component {
-	constructor() {
-		super();
-
-		this.state = {
-			languageImage: getLanguage()
-		};
-
-		console.log(getLanguage().toString());
-		Header.handleFlagClick = Header.handleFlagClick.bind(this);
-	}
+    listenScrollEvent = e => {
+        if (window.scrollY < 400) {
+            this.setState({color: 'transparent'})
+        } else {
+            this.setState({color: '#1A1A1A'})
+        }
+    };
 
 	static selectPreferredLanguage(language) {
 		Language.selectPreferredLanguage(language);
@@ -34,19 +31,34 @@ class Header extends Component {
 		}
 	}
 
+    constructor() {
+        super();
+
+        this.state = {
+            languageImage: getLanguage(),
+            color: 'transparent'
+        };
+
+        console.log(getLanguage().toString());
+        Header.handleFlagClick = Header.handleFlagClick.bind(this);
+    }
+
 	componentDidMount() {
 		if (getLanguage().toString() === 'nl') {
 			this.setState({languageImage: enFlag});
 		} else if (getLanguage().toString() === 'en') {
 			this.setState({languageImage: nlFlag});
 		}
-	}
+
+        window.addEventListener('scroll', this.listenScrollEvent)
+
+    }
 
 	render() {
 		const src = this.state.languageImage;
 		return (
 			<div>
-				<header className="header">
+                <header className="header" style={{backgroundColor: this.state.color}}>
 					<div className="max1200">
 						<Link to="/"><img className="logo" src={logo} alt="logo"/></Link>
 						<input className="menu-btn" type="checkbox" id="menu-btn"/>
