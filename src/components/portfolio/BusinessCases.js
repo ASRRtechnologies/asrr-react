@@ -1,12 +1,10 @@
 import React, {Component} from 'react';
-import Fade from 'react-reveal/Fade';
 import {translate} from "react-multi-lang";
 
 class BusinessCases extends Component {
     render() {
         return (
 	        <div className="background-white center-header">
-                <Fade bottom>
 	                <h1>{this.props.t("portfolio.businessCases.headline")}</h1>
 	                <div className="row-container double business-cases">
                         <div>
@@ -28,7 +26,6 @@ class BusinessCases extends Component {
 			                </p>
                         </div>
                     </div>
-                </Fade>
             </div>
         );
     }

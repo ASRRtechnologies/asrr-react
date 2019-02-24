@@ -7,7 +7,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 class TeamCards extends Component {
     render() {
         return (
-            <div className="grid-container white">
+            <div className="grid-container white team">
                 <h1>{this.props.t(this.props.section)}</h1>
                 <Fade bottom>
                     <div className="item-container">

@@ -32,7 +32,6 @@ class Why extends Component {
 						<p>{this.props.t('home.why.subtitle')}</p>
 						<Cards category="home.why" items={why}/>
 						<InternalButton button={button}/>
-
 					</div>
 				</div>
 			</div>

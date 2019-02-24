@@ -97,8 +97,6 @@ class Team extends Component {
                 </Fade>
                 <Fade bottom>
 	                <TeamCards id="team" section="about.founders" items={founders}/>
-                </Fade>
-                <Fade bottom>
 	                <TeamCards section="Support" items={support}/>
 	                <Why/>
                 </Fade>

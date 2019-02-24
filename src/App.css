@@ -20,7 +20,6 @@ h1 {
     font-family: 'Roboto', serif;
     font-weight: 800;
     padding-top: 1em;
-    margin-left: 5%;
     margin-top: 0;
 }
 
@@ -294,6 +293,8 @@ hr {
     padding-top: 2em;
     padding-bottom: 0;
     margin-bottom: 0;
+    /*TODO: Remove this*/
+    margin-left: 5%;
 }
 
 .landing-slider {
@@ -625,8 +626,9 @@ hr {
     margin: 0
 }
 
+
 .item-container {
-    padding: 0 0;
+    padding: 0;
     text-align: center;
     width: 100%;
 }
@@ -931,4 +933,8 @@ hr {
 
 .landing-gradient {
     background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+}
+
+.team {
+    padding-bottom: 3em
 }
