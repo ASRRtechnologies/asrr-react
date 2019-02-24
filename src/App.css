@@ -277,9 +277,9 @@ hr {
 /*Landing*/
 .landing-wrapper {
     width: 100%;
-    top: 60px;
+    top: 65px;
     margin: 0;
-    display: inline-block;
+    position: relative;
     background-repeat: no-repeat;
     background-size: cover;
 }
