@@ -113,6 +113,7 @@ class ParticleLanding extends Component {
 							},
 							"retina_detect": true,
 							"interactivity": {
+                                "detect_on": "window",
 								"events": {
 									"onhover": {
 										"enable": true,
