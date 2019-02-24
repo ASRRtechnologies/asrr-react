@@ -106,7 +106,6 @@ class ParticleLanding extends Component {
 									"enable": false,
 									"stroke": {
 										"color": "#3928E4",
-
 									}
 								}
 							},

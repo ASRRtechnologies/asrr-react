@@ -278,10 +278,11 @@ hr {
 .landing-wrapper {
     width: 100%;
     top: 65px;
-    margin: 0;
     position: relative;
+    display: block;
     background-repeat: no-repeat;
     background-size: cover;
+    margin: 0 0 2em;
 }
 
 .landing-wrapper h1 {
