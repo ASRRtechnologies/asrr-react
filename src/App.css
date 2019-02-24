@@ -277,7 +277,7 @@ hr {
 /*Landing*/
 .landing-wrapper {
     width: 100%;
-    /*padding-top: 60px;*/
+    top: 60px;
     margin: 0;
     display: inline-block;
     background-repeat: no-repeat;
@@ -889,6 +889,14 @@ hr {
     .header .menu-icon {
         display: none;
     }
+
+    /*.header {*/
+    /*background-color: #1A1A1A;*/
+    /*box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);*/
+    /*}*/
+    /*.body {*/
+    /*margin-top: 64px*/
+    /*}*/
 }
 
 .glitch {

@@ -28,20 +28,20 @@ class ParticleLanding extends Component {
 		};
 
 		let hrStyle = {
+            margin: "auto",
 			color: "#1A1A1A",
 			border: "2px solid #1A1A1A",
 			borderColor: "#1A1A1A",
 			backgroundColor: "#1A1A1A",
 			borderRadius: "5px",
-			marginLeft: "5%",
 			width: "15%",
-
 		};
 
 		let landingTextStyle = {
 			float: "none",
 			color: "white",
 			marginTop: "",
+            marginBottom: "2em",
 			position: "relative",
 			textJustify: "center",
 			textAlign: "center",
@@ -52,21 +52,20 @@ class ParticleLanding extends Component {
             <div className="landing-gradient" style={divStyle}>
 				<div>
 					<Particles
-
 						height={this.state.dots * 10}
 						params={{
 							"fps_limit": 28,
 							"type": 'inside',
 							"particles": {
 								"number": {
-									"value": 150 + this.state.dots,
+                                    "value": 200,
 									"density": {
 										"enable": false
 									}
 								},
 								"line_linked": {
 									"enable": true,
-									"distance": this.state.dots,
+                                    "distance": 55,
 									"opacity": 0.5
 								},
 								"move": {
@@ -76,7 +75,7 @@ class ParticleLanding extends Component {
 									"anim": {
 										"enable": true,
 										"opacity_min": 0.05,
-										"speed": this.state.dots / 10,
+                                        "speed": 5,
 										"sync": false
 									},
                                     "value": 0.8
@@ -86,7 +85,7 @@ class ParticleLanding extends Component {
 								},
 								"shape": {
 									"stroke": {
-										"width": 1,
+                                        "width": 2,
                                         "color": "#FFF"
 									},
 
@@ -97,7 +96,7 @@ class ParticleLanding extends Component {
 								"scale": 2,
 								"type": "inline",
 								"move": {
-									"radius": this.state.dots / 10
+                                    "radius": 5
 								},
 								"url": "/assr-landing-path.svg",
 								"inline": {
@@ -128,7 +127,6 @@ class ParticleLanding extends Component {
 								}
 							}
 						}}/>
-					{!this.checkMobile() ?
 						<Particles
 							style={{position: "absolute", top: "0"}}
 							height="600px"
@@ -179,17 +177,14 @@ class ParticleLanding extends Component {
 									}
 								},
 								"retina_detect": true
-							}}/> : ""}
-					{/*TODO: Add static background for mobile*/}
+                            }}/>
 				</div>
 
 				<div className="max1200">
 					<div style={landingTextStyle}>
-						<h1 style={{margin: "0"}}>{this.props.t(this.props.header)}</h1>
-						<hr style={hrStyle}/>
+                        <hr style={hrStyle}/>
+                        <h1 style={{margin: "0"}}>{this.props.t(this.props.header)}</h1>
 					</div>
-
-
 				</div>
 			</div>
 		);
