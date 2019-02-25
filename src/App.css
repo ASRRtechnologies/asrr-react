@@ -11,7 +11,7 @@
 body {
     font-family: 'Roboto', serif;
     background-color: #1A1A1A;
-    padding-top: 64px;
+    /*padding-top: 64px;*/
     color: #343434;
 }
 
@@ -20,7 +20,6 @@ h1 {
     font-family: 'Roboto', serif;
     font-weight: 800;
     padding-top: 1em;
-    margin-left: 5%;
     margin-top: 0;
 }
 
@@ -83,8 +82,9 @@ hr {
 }
 
 .header {
-    background-color: #1A1A1A;
-    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+    background-color: transparent;
+    /*background-color: #1A1A1A;*/
+    /*box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);*/
     position: fixed;
     width: 100%;
     z-index: 3;
@@ -108,7 +108,8 @@ hr {
     padding: 0;
     list-style-type: none;
     overflow: hidden;
-    background-color: #1A1A1A;
+    background-color: transparent;
+    /*background-color: #1A1A1A;*/
 }
 
 .header li a {
@@ -275,11 +276,12 @@ hr {
 /*Landing*/
 .landing-wrapper {
     width: 100%;
-    /*padding-top: 60px;*/
-    margin: 0;
-    display: inline-block;
+    top: 65px;
+    position: relative;
+    display: block;
     background-repeat: no-repeat;
     background-size: cover;
+    margin: 0 0 3em;
 }
 
 .landing-wrapper h1 {
@@ -291,6 +293,8 @@ hr {
     padding-top: 2em;
     padding-bottom: 0;
     margin-bottom: 0;
+    /*TODO: Remove this*/
+    margin-left: 5%;
 }
 
 .landing-slider {
@@ -622,8 +626,9 @@ hr {
     margin: 0
 }
 
+
 .item-container {
-    padding: 0 0;
+    padding: 0;
     text-align: center;
     width: 100%;
 }
@@ -887,6 +892,14 @@ hr {
     .header .menu-icon {
         display: none;
     }
+
+    /*.header {*/
+    /*background-color: #1A1A1A;*/
+    /*box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);*/
+    /*}*/
+    /*.body {*/
+    /*margin-top: 64px*/
+    /*}*/
 }
 
 .glitch {
@@ -911,4 +924,17 @@ hr {
     display: block;
     margin: auto;
     padding: 1em;
+}
+
+.landing-canvas {
+    width: 100%;
+    /*background-color: #000000;*/
+}
+
+.landing-gradient {
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+}
+
+.team {
+    padding-bottom: 3em
 }

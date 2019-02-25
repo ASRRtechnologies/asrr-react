@@ -69,7 +69,7 @@ class Contact extends Component {
 				<Fade bottom>
 					<Landing header="contact.headline" subtitle="contact.subtitle" background={green} image={contact}
 					/>
-					<ContactMethods items={services}/>
+                    <ContactMethods style={{paddingTop: "5em"}} items={services}/>
 				</Fade>
 			</div>
 		);
