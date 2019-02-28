@@ -15,12 +15,15 @@ class Footer extends Component {
 						<a className="rounded" href="tel:+31641633358"><FontAwesomeIcon icon={["fas", "phone"]}/></a>
 						<a className="rounded" href="mailto:contact@asrr.nl"><FontAwesomeIcon
 							icon={["fas", "envelope"]}/></a>
-						<a className="rounded" href="http://github.com/asrrtechnologies"><FontAwesomeIcon size={70}
-						                                                                                  icon={["fab", "github"]}/></a>
-						<a className="rounded" href="https://www.linkedin.com/company/asrr"><FontAwesomeIcon size={70}
-						                                                                                     icon={["fab", "linkedin"]}/></a>
-						<a className="rounded" href="https://www.facebook.com/asrrtech/"><FontAwesomeIcon size={70}
-						                                                                                  icon={["fab", "facebook"]}/></a>
+						<a className="rounded" href="http://github.com/asrrtechnologies">
+							<FontAwesomeIcon size={70} icon={["fab", "github"]}/>
+						</a>
+						<a className="rounded" href="https://www.linkedin.com/company/asrr">
+							<FontAwesomeIcon size={70} icon={["fab", "linkedin"]}/>
+						</a>
+						<a className="rounded" href="https://www.facebook.com/asrrtech/">
+							<FontAwesomeIcon size={70} icon={["fab", "facebook"]}/>
+						</a>
 					</div>
 					<hr/>
 					<div className="full-width-900">
