@@ -273,6 +273,37 @@ hr {
 }
 
 /*Landing*/
+.new-landing {
+    height: 80vh;
+    max-width: 700px;
+    margin: auto
+}
+
+.new-landing-text {
+    padding-top: 13vh;
+    color: white;
+    top: 200px;
+    text-align: center;
+}
+
+.new-landing-text h3 {
+    font-variant: all-small-caps;
+    font-size: 20px;
+    color: dimgrey;
+}
+
+.new-landing-text h1 {
+    font-size: 50px;
+    padding-top: 0.3em;
+    padding-bottom: 0.25em;
+}
+
+.new-landing-text p {
+    color: #9a9a9a
+}
+
+
+
 .landing-wrapper {
     width: 100%;
     top: 65px;

@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 import Fade from "react-reveal/Fade";
-import Landing from "../Landing";
 import orange from "../../images/backgrounds/orange.svg";
 import team from "../../images/sectionimages/team.svg"
 import TeamCards from "../about/TeamCards";
 import Why from "../about/Why";
+import NewLanding from "../shared/NewLanding";
 
 const founders = [
     {
@@ -92,7 +92,7 @@ class Team extends Component {
         return (
             <div>
                 <Fade bottom>
-	                <Landing header="about.headline" subtitle="about.subtitle" background={orange} image={team}
+	                <NewLanding header="about.headline" subtitle="about.subtitle" background={orange} image={team}
 	                />
                 </Fade>
                 <Fade bottom>
