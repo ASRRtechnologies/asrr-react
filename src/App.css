@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
-@import url('fonts/fonts.css');
 
 * {
     margin: 0;
@@ -9,7 +8,7 @@
 }
 
 body {
-    font-family: 'Roboto', serif;
+    font-family: 'Poppins', serif;
     background-color: #1A1A1A;
     /*padding-top: 64px;*/
     color: #343434;
@@ -17,7 +16,7 @@ body {
 
 h1 {
     font-size: 30px;
-    font-family: 'Roboto', serif;
+    font-family: 'Poppins', serif;
     font-weight: 800;
     padding-top: 1em;
     margin-top: 0;
