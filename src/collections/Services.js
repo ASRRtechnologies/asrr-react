@@ -15,6 +15,7 @@ import consultancy from "../images/services/consultancy.svg"
 import InternalButton from "../components/InternalButton";
 import Triangle from "../animations/Triangle";
 import SphereLanding from "../components/shared/SphereLanding";
+import LightTextBox from "../components/shared/LightTextBox";
 
 
 const services = [
@@ -69,6 +70,7 @@ class Services extends Component {
 					               image={server}/>
 				</Fade>
 				<Fade bottom>
+					<LightTextBox name="services.text"/>
 					<ServiceGrid section="services.section" items={services}/>
 				</Fade>
 				<Fade bottom>
