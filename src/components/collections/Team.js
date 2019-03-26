@@ -7,6 +7,7 @@ import Why from "../about/Why";
 import NewLanding from "../shared/NewLanding";
 import TeamPictures from "../about/TeamPictures";
 import TeamText from "../about/TeamText";
+import Sphere from "../about/Sphere";
 
 const founders = [
     {
@@ -98,6 +99,7 @@ class Team extends Component {
 	                />
 	                <TeamPictures/>
 	                <TeamText/>
+	                <Sphere/>
                 </Fade>
                 <Fade bottom>
 	                <TeamCards id="team" section="about.founders" items={founders}/>
