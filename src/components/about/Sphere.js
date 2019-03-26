@@ -4,7 +4,11 @@ import Styled from 'styled-components';
 
 const AnimeSVG = Styled.svg`
     margin: auto;
-    height: auto;
+    display: block;
+    width: 100%;
+    height: 100%;
+    height: 500px;
+    top:0;left:0;bottom:0;right:0;
     stroke-width: 1px;
     stroke: rgba(80, 80, 80, .35);
     backface-visibility: hidden;
@@ -20,13 +24,12 @@ const drawSVG = (target) => {
 
 	let sphere_lines = target.querySelectorAll(".st0");
 
-	var pathLength = sphere_lines.length;
-	var hasStarted = false;
-	var aimations = [];
-	var breathAnimation = Anime({
+	const pathLength = sphere_lines.length;
+	const animations = [];
+	const breathAnimation = Anime({
 		begin: function () {
 			for (var i = 0; i < pathLength; i++) {
-				aimations.push(Anime({
+				animations.push(Anime({
 					targets: sphere_lines[i],
 					stroke: {value: ['rgba(255,75,75,1)', 'rgba(80,80,80,.35)'], duration: 500},
 					translateX: [2, -4],
@@ -37,7 +40,7 @@ const drawSVG = (target) => {
 			}
 		},
 		update: function (ins) {
-			aimations.forEach(function (animation, i) {
+			animations.forEach(function (animation, i) {
 				var percent = (1 - Math.sin((i * .35) + (.0022 * ins.currentTime))) / 2;
 				animation.seek(animation.duration * percent);
 			});
@@ -46,7 +49,7 @@ const drawSVG = (target) => {
 		autoplay: false
 	});
 
-	var shadowAnimation = Anime({
+	const shadowAnimation = Anime({
 		targets: '#sphereGradient',
 		x1: '25%',
 		x2: '25%',
@@ -59,24 +62,6 @@ const drawSVG = (target) => {
 
 	breathAnimation.play();
 	shadowAnimation.play();
-
-
-	// let animatePurpleLines = Anime({
-	// 	targets: sphere_lines,
-	// 	opacity: [0, 1],
-	// 	translateX: [2, -4],
-	// 	translateY: [2, -4],
-	// 	strokeDashoffset: [0, Anime.setDashoffset],
-	// 	easing: 'easeInOutSine',
-	// 	duration: 1900,
-	// 	delay: function (el, i) {
-	// 		return i * 350
-	// 	},
-	// 	stroke: {value: ['rgba(255,75,75,1)', 'rgba(80,80,80,.35)'], duration: 500},
-	// 	direction: 'alternate',
-	// 	loop: true
-	// })
-
 };
 
 
@@ -103,7 +88,7 @@ class Sphere extends Component {
 	render() {
 		return (
 			<div>
-				<AnimeSVG id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" innerRef={node => {
+				<AnimeSVG id="Layer_1" xmlns="http://www.w3.org/2000/svg" innerRef={node => {
 					this.svg = node
 				}} stroke="rgba(80,80,80,.35)">
 
