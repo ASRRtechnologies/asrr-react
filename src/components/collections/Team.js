@@ -4,8 +4,8 @@ import orange from "../../images/backgrounds/orange.svg";
 import team from "../../images/sectionimages/team.svg"
 import NewLanding from "../shared/NewLanding";
 import TeamPictures from "../about/TeamPictures";
-import TeamText from "../about/TeamText";
 import CoreValues from "../about/CoreValues";
+import LightTextBox from "../shared/LightTextBox";
 //
 // const founders = [
 // 	{
@@ -94,7 +94,7 @@ class Team extends Component {
 				<Fade bottom>
 					<NewLanding header="about.headline" subtitle="about.subtitle" background={orange} image={team}/>
 					<TeamPictures/>
-					<TeamText/>
+					<LightTextBox name="about_team"/>
 					<CoreValues/>
 				</Fade>
 			</div>

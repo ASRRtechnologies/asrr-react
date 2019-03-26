@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-class Credits extends Component {
+class Licences extends Component {
     render() {
         return (
             <div className="clientGrid">
@@ -19,4 +19,4 @@ class Credits extends Component {
     }
 }
 
-export default Credits;
+export default Licences;

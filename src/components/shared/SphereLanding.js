@@ -12,7 +12,6 @@ class SphereLanding extends Component {
 		} else {
 			return (
 				null
-
 			);
 		}
 	}
