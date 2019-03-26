@@ -444,48 +444,6 @@ hr {
     }
 }
 
-
-#landing-text {
-    float: left;
-    color: white;
-    width: 40%;
-    vertical-align: center;
-    display: inline-block;
-    padding-bottom: 2em;
-    padding-left: 0.5em;
-}
-
-#landing-text h1 {
-    width: 80%;
-    justify-content: end;
-    padding-bottom: 0.25em;
-}
-
-#landing-text p {
-    text-align: left;
-    width: 80%;
-    padding-left: 5%;
-    padding-bottom: 1.5em;
-}
-
-#landing-text a {
-    margin: 0 5%;
-    background-color: #1A1A1A;
-}
-
-#landing-image {
-    overflow: hidden;
-    min-height: 300px;
-    padding: 50px;
-    max-height: 700px;
-}
-
-#landing-image img {
-    width: 100%;
-    float: right;
-    max-width: 58em;
-}
-
 /*services*/
 .services-wrapper {
     color: #343434;
@@ -944,7 +902,6 @@ hr {
     }
 
     .translate-wrapper {
-
         line-height: 60px;
     }
 
