@@ -84,7 +84,7 @@ class Sphere extends Component {
 	render() {
 		return (
 			<div style={{height: "500px", margin: "auto", textAlign: "center"}}>
-				<AnimeSVG id="sphere-svg" xmlns="http://www.w3.org/2000/svg" innerRef={node => {
+				<AnimeSVG id="sphere-svg" viewBox="auto" xmlns="http://www.w3.org/2000/svg" innerRef={node => {
 					this.svg = node
 				}} stroke="rgba(80,80,80,.35)">
 					<g>

@@ -303,6 +303,29 @@ hr {
     margin-bottom: 2em;
 }
 
+.sphere-landing-text {
+    color: white;
+    top: 200px;
+    text-align: center;
+}
+
+.sphere-landing-text h3 {
+    font-variant: all-small-caps;
+    font-size: 20px;
+    color: dimgrey;
+}
+
+.sphere-landing-text-text h1 {
+    font-size: 50px;
+    padding-top: 0.3em;
+    padding-bottom: 0.25em;
+}
+
+.sphere-landing-text p {
+    color: #9a9a9a;
+    margin-bottom: 2em;
+}
+
 .gradient-button {
     text-transform: uppercase;
     background-image: linear-gradient(to right, #DE2756 0%, #ffc500 51%, #DE2756 100%);
@@ -395,6 +418,8 @@ hr {
 .animation-wrapper {
     width: 50%;
     padding-bottom: 50%;
+    position: absolute;
+    z-index: -100;
 }
 
 .sphere-animation {
@@ -775,14 +800,6 @@ hr {
     color: #343434;
 }
 
-.grey {
-    background-color: darkslategrey;
-}
-
-.grey:hover {
-    background-color: #1A1A1A;
-    border-color: #58130e;
-}
 
 .drop-shadow {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
@@ -889,6 +906,13 @@ hr {
     }
 }
 
+.sphere-landing {
+    height: 80vh;
+    max-width: 700px;
+    margin: auto;
+    min-height: 700px;
+}
+
 @media screen and (max-width: 900px) {
     .new-landing {
         max-width: 90%;
@@ -904,8 +928,24 @@ hr {
         font-size: 40px;
     }
 
+    .sphere-landing {
+        /*Landing*/
+        position: absolute;
+        top: 300px;
+        display: block;
+        height: 100%;
+        max-width: 700px;
+        margin: auto;
+        min-height: 700px;
+    }
+
     #sphere-svg {
         max-width: 100vw;
+    }
+
+    .translate-wrapper {
+
+        line-height: 60px;
     }
 
     #landing-text {
