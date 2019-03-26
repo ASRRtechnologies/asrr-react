@@ -381,10 +381,13 @@ hr {
 
 .team-text {
     text-align: center;
-    padding-bottom: 10em;
+    padding-bottom: 7em;
 }
 
-.team-text h1 {
+.core-values {
+    padding-top: 2em;
+    padding-bottom: 1em;
+    text-align: center;
 }
 
 .team-images img {

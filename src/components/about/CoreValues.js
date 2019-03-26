@@ -5,7 +5,7 @@ import Sphere from "../../animations/Sphere";
 class CoreValues extends Component {
 	render() {
 		return (
-			<div className="team-text dark max900">
+			<div className="core-values dark max900">
 				<Sphere/>
 				<h1>ASRR Core Values</h1>
 				<p>At ASRR, we believe in the power of a team working together. Even the best developer cannot master
