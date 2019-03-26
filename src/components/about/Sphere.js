@@ -1,41 +1,27 @@
 import React, {Component} from 'react';
 import Anime from 'animejs';
 import Styled from 'styled-components';
-// import {
-// 	BgContainer,
-// 	PageTitleP1,
-// 	AnimeButton,
-// 	color_green,
-// 	color_purple
-// } from '../../styled-components/styled-components';
-import AnimationButton from './animation-button';
 
 const AnimeSVG = Styled.svg`
     margin: 0 auto;
     width: 60%;
     height: 380px;
     display: block;
-    .st0, st1{
-        fill: black;
-        stroke: #FFFFFF;
+    .st0{
+        fill: url(#sphereGradient);
+        stroke: white;
         stroke-miterlimit: 10;
-    }
-    .st1{
-        fill: none;
-        stroke: #FFFFFF;
     }
 `;
 
 const drawSVG = (target) => {
 
-	let purple_lines = target.querySelectorAll(".st0");
+	let sphere_lines = target.querySelectorAll(".st0");
 
-
-	Anime.remove(purple_lines);
 
 
 	let animatePurpleLines = Anime({
-		targets: purple_lines,
+		targets: sphere_lines,
 		opacity: [0, 1],
 		strokeDashoffset: [0, Anime.setDashoffset],
 		easing: 'easeInOutSine',
@@ -49,24 +35,6 @@ const drawSVG = (target) => {
 
 };
 
-const completeSVG = (target) => {
-	let purple_lines = target.querySelectorAll(".st0");
-
-	Anime.remove(purple_lines);
-
-	let animatePurpleLines = Anime({
-		targets: purple_lines,
-		opacity: 1,
-		strokeDashoffset: 0,
-		easing: 'easeInOutSine',
-		duration: 1900,
-		delay: function (el, i) {
-			return i * 350
-		},
-		direction: 'alternate',
-		loop: false
-	})
-};
 
 class Sphere extends Component {
 	constructor(props) {
@@ -79,17 +47,7 @@ class Sphere extends Component {
 	}
 
 	componentDidMount() {
-		// drawSVG(this.svg);
-	}
-
-	componentDidUpdate(prevProps, prevState) {
-		if (prevState.animate !== this.state.animate) {
-			if (this.state.animate) {
-				drawSVG(this.svg)
-			} else {
-				completeSVG(this.svg)
-			}
-		}
+		drawSVG(this.svg);
 	}
 
 	setOrReset() {
@@ -104,14 +62,15 @@ class Sphere extends Component {
 				<AnimeSVG id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" innerRef={node => {
 					this.svg = node
 				}}>
-					<defs>
-						<linearGradient id="sphereGradient" x1="5%" x2="5%" y1="0%" y2="15%">
-							<stop stop-color="#373734" offset="0%"/>
-							<stop stop-color="#242423" offset="50%"/>
-							<stop stop-color="#0D0D0C" offset="100%"/>
-						</linearGradient>
-					</defs>
+
 					<g id="XMLID_37_">
+						<defs>
+							<linearGradient id="sphereGradient" x1="5%" x2="5%" y1="0%" y2="15%">
+								<stop stop-color="#373734" offset="0%"/>
+								<stop stop-color="#242423" offset="50%"/>
+								<stop stop-color="#0D0D0C" offset="100%"/>
+							</linearGradient>
+						</defs>
 						<path className="st0"
 						      d="M361.604 361.238c-24.407 24.408-51.119 37.27-59.662 28.727-8.542-8.543 4.319-35.255 28.726-59.663 24.408-24.407 51.12-37.269 59.663-28.726 8.542 8.543-4.319 35.255-28.727 59.662z"/>
 						<path className="st0"
@@ -157,7 +116,7 @@ class Sphere extends Component {
 					</g>
 				</AnimeSVG>
 
-				<AnimationButton handleClick={this.setOrReset}/>
+				<button onClick={this.setOrReset}/>
 
 			</div>
 		);
