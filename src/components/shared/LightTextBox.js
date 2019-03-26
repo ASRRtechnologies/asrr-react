@@ -5,7 +5,7 @@ import {translate} from 'react-multi-lang';
 class LightTextBox extends Component {
 	render() {
 		return (
-			<div className="team-text background-white">
+			<div className="team-text background-white max900child">
 				<h1>{this.props.t(this.props.name + ".headline")}</h1>
 				<p>{this.props.t(this.props.name + ".content")}</p>
 			</div>

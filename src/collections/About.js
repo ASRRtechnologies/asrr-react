@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
 import Fade from "react-reveal/Fade";
-import orange from "../images/backgrounds/orange.svg";
-import team from "../images/sectionimages/team.svg"
 import NewLanding from "../components/shared/NewLanding";
 import TeamPictures from "../components/about/TeamPictures";
 import CoreValues from "../components/about/CoreValues";
@@ -87,12 +85,12 @@ import LightTextBox from "../components/shared/LightTextBox";
 // ];
 
 
-class Team extends Component {
+class About extends Component {
 	render() {
 		return (
 			<div>
 				<Fade bottom>
-					<NewLanding header="about.headline" subtitle="about.subtitle" background={orange} image={team}/>
+					<NewLanding name="about.landing"/>
 					<TeamPictures/>
 					<LightTextBox name="about.team"/>
 					<CoreValues/>
@@ -102,4 +100,4 @@ class Team extends Component {
 	}
 }
 
-export default Team;
+export default About;

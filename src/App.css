@@ -102,6 +102,11 @@ hr {
     margin: auto;
 }
 
+.max900child * {
+    max-width: 900px;
+    margin: auto;
+}
+
 .header ul {
     margin: 0;
     padding: 0;

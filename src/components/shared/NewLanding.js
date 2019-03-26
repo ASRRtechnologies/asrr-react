@@ -23,9 +23,9 @@ class NewLanding extends Component {
 			<div className="new-landing">
 				<div className="max1200">
 					<div className="new-landing-text">
-						<h3>{this.props.t(this.props.header)}</h3>
-						<h1>{this.props.t(this.props.header)}</h1>
-						<p>{this.props.t(this.props.header)}{this.props.t(this.props.header)}{this.props.t(this.props.header)}{this.props.t(this.props.header)}{this.props.t(this.props.header)}{this.props.t(this.props.header)}{this.props.t(this.props.header)}{this.props.t(this.props.header)}{this.props.t(this.props.header)}{this.props.t(this.props.header)}{this.props.t(this.props.header)}</p>
+						<h3>{this.props.t(this.props.name + ".subtitle")}</h3>
+						<h1>{this.props.t(this.props.name + ".title")}</h1>
+						<p>{this.props.t(this.props.name + ".content")}</p>
 						{this.renderButton()}
 						<NavLink to="/" className="gradient-button">learn more</NavLink>
 					</div>

@@ -44,7 +44,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 import Home from "./collections/Home";
-import Team from "./collections/Team";
+import About from "./collections/About";
 import Services from "./collections/Services";
 import NoRef from "./components/404";
 import Portfolio from "./collections/Portfolio";
@@ -74,7 +74,7 @@ class App extends Component {
 					<Route path="/" exact component={Home}/>
 					<Route path="/portfolio" component={Portfolio}/>
 					<Route path="/services" component={Services}/>
-					<Route path="/team" component={Team}/>
+					<Route path="/team" component={About}/>
 					<Route path="/contact" component={Contact}/>
 					<Route path="/Languages" component={Languages}/>
 					<Route path='/github' component={() => window.location = 'https://github.com/ASRRWebdesign'}/>
