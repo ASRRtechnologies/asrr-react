@@ -8,9 +8,9 @@ class TeamPictures extends Component {
 		return (
 			<div className="team-images">
 				<div className="upper">
-					<img className="primary" src={teamOne}/>
-					<img className="left secondary" src={teamTwo}/>
-					<img className="right secondary" src={teamTwo}/>
+					<img alt="team pic 1" className="primary" src={teamOne}/>
+					<img alt="team pic 2" className="left secondary" src={teamTwo}/>
+					<img alt="team pic 3" className="right secondary" src={teamTwo}/>
 				</div>
 				<div className="lower background-white">
 				</div>
