@@ -10,8 +10,8 @@ import nlFlag from "../images/flags/nl.svg";
 import enFlag from "../images/flags/en.svg";
 
 class Header extends Component {
-    listenScrollEvent = e => {
-	    if (window.scrollY < 300 && (window.location.pathname === "/" || window.location.pathname === "/team")) {
+	listenScrollEvent = () => {
+		if (window.scrollY < 300) {
             this.setState({color: 'transparent'})
         } else {
             this.setState({color: '#1A1A1A'})

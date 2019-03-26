@@ -5,7 +5,7 @@ import Clients from "../home/Clients";
 import lowPolyRed from "../../images/backgrounds/lowpoly.jpg";
 import browser from '../../images/sectionimages/browserflattrimmed.png';
 import ParticleLanding from "../ParticleLanding";
-import Sphere from "../about/Sphere";
+import Sphere from "../../animations/Sphere";
 import SphereLanding from "../shared/SphereLanding";
 
 const button =

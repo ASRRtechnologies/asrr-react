@@ -14,6 +14,7 @@ import bim from "../../images/services/bim.svg"
 import consultancy from "../../images/services/consultancy.svg"
 import InternalButton from "../InternalButton";
 import NewLanding from "../shared/NewLanding";
+import Triangle from "../../animations/Triangle";
 
 
 const services = [
@@ -63,6 +64,7 @@ class Services extends Component {
 		return (
 			<div>
 				<Fade bottom>
+					<Triangle/>
 					<NewLanding header="services.headline" subtitle="services.subtitle" background={purple}
 					            image={server}/>
 				</Fade>

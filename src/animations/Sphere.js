@@ -19,48 +19,6 @@ const AnimeSVG = Styled.svg`
     }
 `;
 
-const drawSVG = (target) => {
-	const sphere_lines = target.querySelectorAll(".st0");
-	const pathLength = sphere_lines.length;
-	let animations = [];
-	const breathAnimation = Anime({
-		begin: function () {
-			for (let i = 0; i < pathLength; i++) {
-				animations.push(Anime({
-					targets: sphere_lines[i],
-					stroke: {value: ['rgba(255,75,75,1)', 'rgba(80,80,80,.35)'], duration: 500},
-					translateX: [2, -4],
-					translateY: [2, -4],
-					easing: 'easeOutQuad',
-					autoplay: false
-				}));
-			}
-		},
-		update: function (ins) {
-			animations.forEach(function (animation, i) {
-				let percent = (1 - Math.sin((i * .35) + (.0022 * ins.currentTime))) / 2;
-				animation.seek(animation.duration * percent);
-			});
-		},
-		duration: Infinity,
-		autoplay: false
-	});
-
-	const shadowAnimation = Anime({
-		targets: '#sphereGradient',
-		x1: '25%',
-		x2: '25%',
-		y1: '0%',
-		y2: '75%',
-		duration: 30000,
-		easing: 'easeOutQuint',
-		autoplay: false
-	}, 0);
-
-	breathAnimation.play();
-	shadowAnimation.play();
-};
-
 
 class Sphere extends Component {
 	constructor(props) {
@@ -71,8 +29,52 @@ class Sphere extends Component {
 		this.setOrReset = this.setOrReset.bind(this)
 	}
 
+	drawSVG = (target) => {
+		const sphere_lines = target.querySelectorAll(".st0");
+		const pathLength = sphere_lines.length;
+		let animations = [];
+		const breathAnimation = Anime({
+			begin: function () {
+				for (let i = 0; i < pathLength; i++) {
+					animations.push(Anime({
+						targets: sphere_lines[i],
+						stroke: {value: ['rgba(255,75,75,1)', 'rgba(80,80,80,.35)'], duration: 500},
+						translateX: [2, -4],
+						translateY: [2, -4],
+						easing: 'easeOutQuad',
+						autoplay: false
+					}));
+				}
+			},
+			update: function (ins) {
+				animations.forEach(function (animation, i) {
+					let percent = (1 - Math.sin((i * .35) + (.0022 * ins.currentTime))) / 2;
+					animation.seek(animation.duration * percent);
+				});
+			},
+			duration: Infinity,
+			autoplay: false
+		});
+
+		const shadowAnimation = Anime({
+			targets: '#sphereGradient',
+			x1: '25%',
+			x2: '25%',
+			y1: '0%',
+			y2: '75%',
+			duration: 30000,
+			easing: 'easeOutQuint',
+			autoplay: false
+		}, 0);
+
+		breathAnimation.play();
+		shadowAnimation.play();
+	};
+
+
+
 	componentDidMount() {
-		drawSVG(this.svg);
+		this.drawSVG(this.svg);
 	}
 
 	setOrReset() {

@@ -18,7 +18,8 @@ h1 {
     font-size: 30px;
     font-family: 'Poppins', serif;
     font-weight: 800;
-    padding-top: 1em;
+    padding-top: 0.3em;
+    padding-bottom: 0.25em;
     margin-top: 0;
 }
 
@@ -334,7 +335,6 @@ hr {
     border-radius: 30px;
     transition: 0.5s;
     background-size: 200% auto;
-    box-shadow: 0 0 5px #eee;
     text-decoration: none;
 }
 
@@ -381,6 +381,11 @@ hr {
 
 .team-text {
     text-align: center;
+    padding-bottom: 4em;
+}
+
+.team-text h1 {
+    padding-bottom: 1em;
 }
 
 .team-images img {
