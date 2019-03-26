@@ -1,23 +1,23 @@
 import React, {Component} from 'react';
 import Fade from "react-reveal/Fade";
-import blue from "../../images/backgrounds/midblue.svg";
-import orange from "../../images/backgrounds/orange.svg";
+import blue from "../images/backgrounds/midblue.svg";
+import orange from "../images/backgrounds/orange.svg";
 
-import portfolio from "../../images/sectionimages/portfolio.png"
-import Websites from "../portfolio/Websites";
+import portfolio from "../images/sectionimages/portfolio.png"
+import Websites from "../components/portfolio/Websites";
 
-import kroontje from "../../images/portfolio/kroontje.png";
-import moves4vitality from "../../images/portfolio/m4v.png";
-import milanotassen from "../../images/portfolio/milanotassen.PNG";
-import mustique from "../../images/portfolio/mustique.PNG";
-import windowshop from "../../images/portfolio/windowshop.PNG";
-import asrrold from "../../images/portfolio/asrrold.PNG";
-import form from "../../images/portfolio/form.PNG";
-import BusinessCases from "../portfolio/BusinessCases";
-import ClientGrid from "../ClientGrid";
-import Achievements from "../portfolio/Achievements";
-import InternalButton from "../InternalButton";
-import NewLanding from "../shared/NewLanding";
+import kroontje from "../images/portfolio/kroontje.png";
+import moves4vitality from "../images/portfolio/m4v.png";
+import milanotassen from "../images/portfolio/milanotassen.PNG";
+import mustique from "../images/portfolio/mustique.PNG";
+import windowshop from "../images/portfolio/windowshop.PNG";
+import asrrold from "../images/portfolio/asrrold.PNG";
+import form from "../images/portfolio/form.PNG";
+import BusinessCases from "../components/portfolio/BusinessCases";
+import ClientGrid from "../components/ClientGrid";
+import Achievements from "../components/portfolio/Achievements";
+import InternalButton from "../components/InternalButton";
+import NewLanding from "../components/shared/NewLanding";
 
 
 var websites = [

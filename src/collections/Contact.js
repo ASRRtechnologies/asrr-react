@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
 import Fade from "react-reveal/Fade";
-import green from "../../images/backgrounds/green.svg";
-import contact from "../../images/sectionimages/contact.svg";
-import ContactMethods from "../contact/ContactMethods";
-import mail from "../../images/contact/mail.svg";
-import phone from "../../images/contact/mobile.svg";
-import social from "../../images/contact/social.svg";
-import NewLanding from "../shared/NewLanding";
+import green from "../images/backgrounds/green.svg";
+import contact from "../images/sectionimages/contact.svg";
+import ContactMethods from "../components/contact/ContactMethods";
+import mail from "../images/contact/mail.svg";
+import phone from "../images/contact/mobile.svg";
+import social from "../images/contact/social.svg";
+import NewLanding from "../components/shared/NewLanding";
 
 // const button =
 // 	{

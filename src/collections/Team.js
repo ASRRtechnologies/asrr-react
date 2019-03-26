@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
 import Fade from "react-reveal/Fade";
-import orange from "../../images/backgrounds/orange.svg";
-import team from "../../images/sectionimages/team.svg"
-import NewLanding from "../shared/NewLanding";
-import TeamPictures from "../about/TeamPictures";
-import CoreValues from "../about/CoreValues";
-import LightTextBox from "../shared/LightTextBox";
+import orange from "../images/backgrounds/orange.svg";
+import team from "../images/sectionimages/team.svg"
+import NewLanding from "../components/shared/NewLanding";
+import TeamPictures from "../components/about/TeamPictures";
+import CoreValues from "../components/about/CoreValues";
+import LightTextBox from "../components/shared/LightTextBox";
 //
 // const founders = [
 // 	{
@@ -94,7 +94,7 @@ class Team extends Component {
 				<Fade bottom>
 					<NewLanding header="about.headline" subtitle="about.subtitle" background={orange} image={team}/>
 					<TeamPictures/>
-					<LightTextBox name="about_team"/>
+					<LightTextBox name="about.team"/>
 					<CoreValues/>
 				</Fade>
 			</div>

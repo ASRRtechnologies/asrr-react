@@ -58,7 +58,10 @@
     "headline": "Meet the team",
     "subtitle": "The power of ASRR is based around two main components: Diversity and Teamwork. As you can read below, our team consists of a very diverse set of academically schooled members. We apply our different backgrounds into one passion we have in common: Technology. With our already incorporated team, we can selectively pick the right collection of skill-sets from our developers – complementing each other to get the job done as efficiently as possible.",
     "more": "ASRR was founded in 2016, starting out as a webdesign company. We combine our broad areas of expertise gathered during our studies and apply it to all things software. Combining that with strong connections to many skilled developers, engineers and designers we deliver what ASRR stands for: High quality service and efficient work speeds at a very affordable price.",
-    "founders": "Founders"
+    "founders": "Founders",
+    "team": {
+      "headline": "test"
+    }
   },
   "services": {
     "headline": "Find out what we can do for you!",

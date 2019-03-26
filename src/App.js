@@ -43,13 +43,13 @@ import Language from './Language'
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
-import Home from "./components/collections/Home";
-import Team from "./components/collections/Team";
-import Services from "./components/collections/Services";
+import Home from "./collections/Home";
+import Team from "./collections/Team";
+import Services from "./collections/Services";
 import NoRef from "./components/404";
-import Portfolio from "./components/collections/Portfolio";
-import Contact from "./components/collections/Contact";
-import Languages from "./components/collections/Languages";
+import Portfolio from "./collections/Portfolio";
+import Contact from "./collections/Contact";
+import Languages from "./collections/Languages";
 
 library.add(faWhatsapp, faLanguage, faImages, faCogs, faUsers, faChevronCircleDown, faPhone, faEnvelope, faHtml5, faCss3Alt, faJs, faJava, faWindows, faLinux, faGithub, faGit, faReact, faAndroid, faAppStoreIos, faApple, faNode, faNodeJs, faPaypal, faFacebook, faTwitter, faSnapchat, faAws, faChrome, faLinkedin);
 

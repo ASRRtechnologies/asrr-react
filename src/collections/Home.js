@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
 import Fade from "react-reveal/Fade";
-import ServiceSummary from "../home/ServiceSummary";
-import Clients from "../home/Clients";
-import lowPolyRed from "../../images/backgrounds/lowpoly.jpg";
-import browser from '../../images/sectionimages/browserflattrimmed.png';
-import ParticleLanding from "../ParticleLanding";
-import Sphere from "../../animations/Sphere";
-import SphereLanding from "../shared/SphereLanding";
+import ServiceSummary from "../components/home/ServiceSummary";
+import Clients from "../components/home/Clients";
+import lowPolyRed from "../images/backgrounds/lowpoly.jpg";
+import browser from '../images/sectionimages/browserflattrimmed.png';
+import ParticleLanding from "../components/ParticleLanding";
+import Sphere from "../animations/Sphere";
+import SphereLanding from "../components/shared/SphereLanding";
 
 const button =
 	{
@@ -56,15 +56,9 @@ class Home extends Component {
 
 					<ServiceSummary/>
 				</Fade>
-
 				{/*TODO: business case*/}
-
 				<Fade bottom>
 					{/*<SimpleSlider/>*/}
-				</Fade>
-
-				<Fade bottom>
-					{/*<Languages/>*/}
 				</Fade>
 			</div>
 		);
