@@ -73,22 +73,6 @@ class Sphere extends Component {
 
 	componentDidMount() {
 		drawSVG(this.svg);
-		window.addEventListener("resize", this.resize);
-
-	}
-
-	resize() {
-		var timeout = null;
-		var sphereEl = document.querySelector('#sphere-svg');
-		var el = sphereEl.el;
-		var padding = sphereEl.padding;
-		Anime.set(el, {scale: 1});
-		var pad = padding || 0;
-		var parentEl = el.parentNode;
-		var elOffsetWidth = el.offsetWidth - pad;
-		var parentOffsetWidth = parentEl.offsetWidth;
-		var ratio = parentOffsetWidth / elOffsetWidth;
-		timeout = setTimeout(Anime.set(el, {scale: ratio}), 10);
 	}
 
 	setOrReset() {
