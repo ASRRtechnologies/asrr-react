@@ -975,6 +975,10 @@ hr {
         padding-bottom: 0;
     }
 
+    .max900child * {
+        max-width: 90%;
+    }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -1035,7 +1039,6 @@ hr {
     height: 150px;
     padding: 1em;
     max-width: 250px;
-
 }
 
 .internal-button {
