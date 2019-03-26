@@ -8,7 +8,7 @@ class TeamPictures extends Component {
 		return (
 			<div className="team-images">
 				<div className="upper">
-					<img src={teamOne}/>
+					<img className="primary" src={teamOne}/>
 					<img className="left secondary" src={teamTwo}/>
 					<img className="right secondary" src={teamTwo}/>
 				</div>

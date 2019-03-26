@@ -276,7 +276,8 @@ hr {
 .new-landing {
     height: 80vh;
     max-width: 700px;
-    margin: auto
+    margin: auto;
+    min-height: 700px;
 }
 
 .new-landing-text {
@@ -318,7 +319,6 @@ hr {
 .gradient-button:hover {
     background-position: right center; /* change the direction of the change here */
     box-shadow: 0 0 12px #eee;
-
 }
 
 .landing-wrapper {
@@ -359,10 +359,34 @@ hr {
 
 .team-images img {
     display: flex;
+    position: relative;
     max-height: 300px;
     margin: -16em auto 0;
     border-radius: 10px;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+    transition: 0.5s;
 
+}
+
+.team-images img:hover {
+    box-shadow: 0 0 12px #eee;
+}
+
+.primary {
+    z-index: 2;
+}
+
+.secondary {
+    height: 250px;
+    z-index: 1;
+}
+
+.left {
+    left: 250px;
+}
+
+.right {
+    right: 250px;
 }
 
 .nice-boxshadow {
