@@ -299,10 +299,27 @@ hr {
 }
 
 .new-landing-text p {
-    color: #9a9a9a
+    color: #9a9a9a;
+    margin-bottom: 2em;
 }
 
+.gradient-button {
+    text-transform: uppercase;
+    background-image: linear-gradient(to right, #DE2756 0%, #ffc500 51%, #DE2756 100%);
+    padding: 1em;
+    margin-top: 2em;
+    border-radius: 30px;
+    transition: 0.5s;
+    background-size: 200% auto;
+    box-shadow: 0 0 5px #eee;
+    text-decoration: none;
+}
 
+.gradient-button:hover {
+    background-position: right center; /* change the direction of the change here */
+    box-shadow: 0 0 12px #eee;
+
+}
 
 .landing-wrapper {
     width: 100%;
@@ -335,41 +352,24 @@ hr {
     width: 40%;
 }
 
-.logoslider-wrapper {
-    background-color: #1A1A1A;
-    padding: 0 0 30px 0;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    color: white;
-    margin-top: -5px;
+.team-images .lower {
+    margin: -150px 0 0;
+    height: 400px;
 }
 
-.logoslider-wrapper > h2 {
-    padding-bottom: 1em;
+.team-images img {
+    display: flex;
+    max-height: 300px;
+    margin: -16em auto 0;
+    border-radius: 10px;
+
 }
 
-.logoslider {
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 40px;
-    display: block;
-    float: right;
-    color: white;
-    align-content: center;
+.nice-boxshadow {
+
 }
 
-.logoslider-container {
-    padding-left: 4em;
-}
 
-.logoslider div {
-    align-content: center;
-    text-align: center;
-    display: inline-block;
-    margin-left: 50px;
-}
 
 #landing-text {
     float: left;
