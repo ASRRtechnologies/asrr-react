@@ -84,7 +84,7 @@ class Triangle extends Component {
 
 	render() {
 		return (
-			<div style={{height: "450px", margin: "auto", textAlign: "center"}}>
+			<div style={{height: "475px", margin: "auto", textAlign: "center"}}>
 				<AnimeSVG id="sphere-svg" viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg" innerRef={node => {
 					this.svg = node
 				}} stroke="rgba(80,80,80,.35)">

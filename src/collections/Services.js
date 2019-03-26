@@ -13,8 +13,8 @@ import data from "../images/services/data.svg"
 import bim from "../images/services/bim.svg"
 import consultancy from "../images/services/consultancy.svg"
 import InternalButton from "../components/InternalButton";
-import NewLanding from "../components/shared/NewLanding";
 import Triangle from "../animations/Triangle";
+import SphereLanding from "../components/shared/SphereLanding";
 
 
 const services = [
@@ -65,8 +65,8 @@ class Services extends Component {
 			<div>
 				<Fade bottom>
 					<Triangle/>
-					<NewLanding header="services.headline" subtitle="services.subtitle" background={purple}
-					            image={server}/>
+					<SphereLanding header="services.headline" subtitle="services.subtitle" background={purple}
+					               image={server}/>
 				</Fade>
 				<Fade bottom>
 					<ServiceGrid section="services.section" items={services}/>

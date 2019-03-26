@@ -310,6 +310,8 @@ hr {
 }
 
 .sphere-landing-text {
+    padding-top: 3vh;
+
     color: white;
     top: 200px;
     text-align: center;
@@ -885,10 +887,8 @@ hr {
 }
 
 .sphere-landing {
-    height: 80vh;
     max-width: 700px;
     margin: auto;
-    min-height: 700px;
 }
 
 @media screen and (max-width: 900px) {
@@ -914,7 +914,6 @@ hr {
         height: 100%;
         max-width: 700px;
         margin: auto;
-        min-height: 700px;
     }
 
     #sphere-svg {

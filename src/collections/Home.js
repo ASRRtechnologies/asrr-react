@@ -15,6 +15,17 @@ const button =
 		fa: ["fas", "users"]
 	};
 
+let hrStyle = {
+	color: "#DF3151",
+	border: "2px solid #DF3151",
+	borderColor: "#DF3151",
+	backgroundColor: "#DF3151",
+	borderRadius: "5px",
+	margin: "auto",
+	marginTop: "1.5em",
+	width: "15%",
+};
+
 class Home extends Component {
 	checkMobile = function () {
 		let check = false;
@@ -49,6 +60,7 @@ class Home extends Component {
 							               image={browser}
 							               color={false}
 							               button={button}/>
+							<hr style={hrStyle}/>
 						</div>
 
 					}

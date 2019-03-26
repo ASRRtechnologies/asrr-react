@@ -18,7 +18,7 @@ class SphereLanding extends Component {
 
 	render() {
 		return (
-			<div className="new-landing sphere-landing">
+			<div className="sphere-landing">
 				<div className="max1200">
 					<div className="sphere-landing-text">
 						<h1>{this.props.t(this.props.header)}</h1>
