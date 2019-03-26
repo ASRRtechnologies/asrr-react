@@ -94,6 +94,9 @@ class Team extends Component {
 		return (
 			<div>
 				<Fade bottom>
+					<Sphere/>
+
+
 					<NewLanding header="about.headline" subtitle="about.subtitle" background={orange} image={team}
 					/>
 					<TeamPictures/>

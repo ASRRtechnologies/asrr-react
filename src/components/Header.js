@@ -11,7 +11,7 @@ import enFlag from "../images/flags/en.svg";
 
 class Header extends Component {
     listenScrollEvent = e => {
-        if (window.scrollY < 300 && !this.checkMobile() && window.location.pathname === "/") {
+	    if (window.scrollY < 300 && (window.location.pathname === "/" || window.location.pathname === "/team")) {
             this.setState({color: 'transparent'})
         } else {
             this.setState({color: '#1A1A1A'})
@@ -47,10 +47,6 @@ class Header extends Component {
             languageImage: getLanguage(),
             color: 'transparent'
         };
-
-        if (this.checkMobile()) {
-            this.state.color = '#1A1A1A';
-        }
 
         console.log(getLanguage().toString());
         Header.handleFlagClick = Header.handleFlagClick.bind(this);

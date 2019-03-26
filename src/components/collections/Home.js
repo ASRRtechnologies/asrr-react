@@ -5,7 +5,7 @@ import Clients from "../home/Clients";
 import lowPolyRed from "../../images/backgrounds/lowpoly.jpg";
 import browser from '../../images/sectionimages/browserflattrimmed.png';
 import ParticleLanding from "../ParticleLanding";
-import Landing from "../Landing";
+import NewLanding from "../shared/NewLanding";
 
 const button =
     {
@@ -43,9 +43,10 @@ class Home extends Component {
                                          color={true}
                                          button={button}/>
                         :
-                        <Landing header="home.headline" subtitle="home.subtitle" background={lowPolyRed} image={browser}
-                                 color={false}
-                                 button={button}/>
+	                    <NewLanding header="home.headline" subtitle="home.subtitle" background={lowPolyRed}
+	                                image={browser}
+	                                color={false}
+	                                button={button}/>
                     }
                 </Fade>
                 <Fade bottom>
