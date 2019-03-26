@@ -5,8 +5,7 @@ import Styled from 'styled-components';
 const AnimeSVG = Styled.svg`
     margin: auto;
     display: block;
-    width: 100%;
-    height: 100%;
+    width: 500px;
     height: 500px;
     top:0;left:0;bottom:0;right:0;
     stroke-width: 1px;
@@ -21,14 +20,12 @@ const AnimeSVG = Styled.svg`
 `;
 
 const drawSVG = (target) => {
-
-	let sphere_lines = target.querySelectorAll(".st0");
-
+	const sphere_lines = target.querySelectorAll(".st0");
 	const pathLength = sphere_lines.length;
-	const animations = [];
+	let animations = [];
 	const breathAnimation = Anime({
 		begin: function () {
-			for (var i = 0; i < pathLength; i++) {
+			for (let i = 0; i < pathLength; i++) {
 				animations.push(Anime({
 					targets: sphere_lines[i],
 					stroke: {value: ['rgba(255,75,75,1)', 'rgba(80,80,80,.35)'], duration: 500},
@@ -41,7 +38,7 @@ const drawSVG = (target) => {
 		},
 		update: function (ins) {
 			animations.forEach(function (animation, i) {
-				var percent = (1 - Math.sin((i * .35) + (.0022 * ins.currentTime))) / 2;
+				let percent = (1 - Math.sin((i * .35) + (.0022 * ins.currentTime))) / 2;
 				animation.seek(animation.duration * percent);
 			});
 		},
@@ -72,11 +69,26 @@ class Sphere extends Component {
 			animate: false
 		};
 		this.setOrReset = this.setOrReset.bind(this)
-
 	}
 
 	componentDidMount() {
 		drawSVG(this.svg);
+		window.addEventListener("resize", this.resize);
+
+	}
+
+	resize() {
+		var timeout = null;
+		var sphereEl = document.querySelector('#sphere-svg');
+		var el = sphereEl.el;
+		var padding = sphereEl.padding;
+		Anime.set(el, {scale: 1});
+		var pad = padding || 0;
+		var parentEl = el.parentNode;
+		var elOffsetWidth = el.offsetWidth - pad;
+		var parentOffsetWidth = parentEl.offsetWidth;
+		var ratio = parentOffsetWidth / elOffsetWidth;
+		timeout = setTimeout(Anime.set(el, {scale: ratio}), 10);
 	}
 
 	setOrReset() {
@@ -87,12 +99,11 @@ class Sphere extends Component {
 
 	render() {
 		return (
-			<div>
-				<AnimeSVG id="Layer_1" xmlns="http://www.w3.org/2000/svg" innerRef={node => {
+			<div style={{height: "500px", margin: "auto", textAlign: "center"}}>
+				<AnimeSVG id="sphere-svg" xmlns="http://www.w3.org/2000/svg" innerRef={node => {
 					this.svg = node
 				}} stroke="rgba(80,80,80,.35)">
-
-					<g id="XMLID_37_">
+					<g>
 						<defs>
 							<linearGradient id="sphereGradient" x1="5%" x2="5%" y1="0%" y2="15%">
 								<stop stop-color="#373734" offset="0%"/>
@@ -144,8 +155,6 @@ class Sphere extends Component {
 						      d="M109.698 109.332c-24.408 24.407-51.12 37.268-59.663 28.726-8.542-8.543 4.319-35.255 28.727-59.662 24.407-24.408 51.12-37.27 59.662-28.727 8.543 8.543-4.319 35.255-28.726 59.663z"/>
 					</g>
 				</AnimeSVG>
-
-
 			</div>
 		);
 	}
