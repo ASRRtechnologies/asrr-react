@@ -6,6 +6,7 @@ import TeamCards from "../about/TeamCards";
 import Why from "../about/Why";
 import NewLanding from "../shared/NewLanding";
 import TeamPictures from "../about/TeamPictures";
+import TeamText from "../about/TeamText";
 
 const founders = [
     {
@@ -96,6 +97,7 @@ class Team extends Component {
 	                <NewLanding header="about.headline" subtitle="about.subtitle" background={orange} image={team}
 	                />
 	                <TeamPictures/>
+	                <TeamText/>
                 </Fade>
                 <Fade bottom>
 	                <TeamCards id="team" section="about.founders" items={founders}/>

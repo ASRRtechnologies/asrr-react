@@ -26,7 +26,6 @@ h2 {
     font-size: 20px;
     font-weight: 400;
     padding-top: 1em;
-    margin-left: 5%;
     margin-top: 0;
 }
 
@@ -120,7 +119,7 @@ hr {
 
 .header li a:hover,
 .header .menu-btn:hover {
-    background-color: darkslategrey;
+    background-image: linear-gradient(to right, #DE2756 0%, #ffc500 100%);
 }
 
 /* menu */
@@ -354,7 +353,11 @@ hr {
 
 .team-images .lower {
     margin: -150px 0 0;
-    height: 400px;
+    height: 250px;
+}
+
+.team-text {
+    text-align: center;
 }
 
 .team-images img {
@@ -365,7 +368,6 @@ hr {
     border-radius: 10px;
     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
     transition: 0.5s;
-
 }
 
 .team-images img:hover {
