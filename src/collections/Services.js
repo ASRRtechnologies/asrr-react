@@ -68,12 +68,8 @@ class Services extends Component {
 					<Triangle/>
 					<SphereLanding header="services.headline" subtitle="services.subtitle" background={purple}
 					               image={server}/>
-				</Fade>
-				<Fade bottom>
 					<LightTextBox name="services.text"/>
 					<ServiceGrid section="services.section" items={services}/>
-				</Fade>
-				<Fade bottom>
 					<InternalButton button={button}/>
 				</Fade>
 			</div>

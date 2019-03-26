@@ -54,6 +54,11 @@
     "clientsubtitle": "Neem een kijkje bij het werk dat we in het verleden hebben gedaan in onze portfolio"
   },
   "about": {
+    "landing": {
+      "subtitle": "about asrr",
+      "title": "Ontdek het team",
+      "content": "Wij at asrr still need to think of all the text that goes here. Lorem ipsum test talk text need to still be filled in."
+    },
     "headline": "Maak kennis met het team",
     "subtitle": "De kracht van ASRR ligt bij twee componenten: Diversiteit en Teamwork. Zoals hieronder te lezen is, bestaat ons team uit een erg diverse set van academisch geschoolde vennoten. We passsen onze verschillende achtergronde toe bij een gedeelde passie: Technologie. Met ons al ingewerkte team kunnen we selectief de juiste mensen leveren die elkaar aanvullen, om zo de juiste oplossing te bieden.",
     "founders": "Oprichters"
