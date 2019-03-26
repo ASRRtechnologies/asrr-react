@@ -2,8 +2,6 @@ import React, {Component} from 'react';
 import Fade from "react-reveal/Fade";
 import orange from "../../images/backgrounds/orange.svg";
 import team from "../../images/sectionimages/team.svg"
-import TeamCards from "../about/TeamCards";
-import Why from "../about/Why";
 import NewLanding from "../shared/NewLanding";
 import TeamPictures from "../about/TeamPictures";
 import TeamText from "../about/TeamText";
@@ -101,14 +99,6 @@ class Team extends Component {
 					<CoreValues/>
 				</Fade>
 
-
-				<Fade bottom>
-					<TeamCards id="team" section="about.founders" items={founders}/>
-					<TeamCards section="Support" items={support}/>
-					<Why/>
-				</Fade>
-				<Fade bottom>
-				</Fade>
 			</div>
 		);
 	}

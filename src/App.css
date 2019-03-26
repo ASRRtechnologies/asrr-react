@@ -381,11 +381,10 @@ hr {
 
 .team-text {
     text-align: center;
-    padding-bottom: 4em;
+    padding-bottom: 10em;
 }
 
 .team-text h1 {
-    padding-bottom: 1em;
 }
 
 .team-images img {
@@ -756,6 +755,14 @@ hr {
 
 .white {
     color: white;
+}
+
+.dark {
+    color: #9a9a9a;
+}
+
+.dark h1 {
+    color: white
 }
 
 .background-white {
