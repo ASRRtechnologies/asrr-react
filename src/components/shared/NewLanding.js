@@ -20,7 +20,7 @@ class NewLanding extends Component {
 
 	render() {
 		return (
-			<div className="new-landing parallax">
+			<div className="new-landing">
 				<div className="max1200">
 					<div className="new-landing-text">
 						<h3>{this.props.t(this.props.header)}</h3>
