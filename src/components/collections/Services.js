@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import Fade from 'react-reveal';
-import Landing from "../Landing";
 import purple from "../../images/backgrounds/purple.svg"
 import server from "../../images/sectionimages/work.png"
 import ServiceGrid from "../services/ServiceGrid";
@@ -14,6 +13,7 @@ import data from "../../images/services/data.svg"
 import bim from "../../images/services/bim.svg"
 import consultancy from "../../images/services/consultancy.svg"
 import InternalButton from "../InternalButton";
+import NewLanding from "../shared/NewLanding";
 
 
 const services = [
@@ -63,8 +63,8 @@ class Services extends Component {
 		return (
 			<div>
 				<Fade bottom>
-					<Landing header="services.headline" subtitle="services.subtitle" background={purple}
-					         image={server}/>
+					<NewLanding header="services.headline" subtitle="services.subtitle" background={purple}
+					            image={server}/>
 				</Fade>
 				<Fade bottom>
 					<ServiceGrid section="services.section" items={services}/>

@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import Fade from "react-reveal/Fade";
-import Landing from "../Landing";
 import blue from "../../images/backgrounds/midblue.svg";
 import orange from "../../images/backgrounds/orange.svg";
 
@@ -18,6 +17,7 @@ import BusinessCases from "../portfolio/BusinessCases";
 import ClientGrid from "../ClientGrid";
 import Achievements from "../portfolio/Achievements";
 import InternalButton from "../InternalButton";
+import NewLanding from "../shared/NewLanding";
 
 
 var websites = [
@@ -77,8 +77,8 @@ class Portfolio extends Component {
 		return (
 			<div className="portfolio-wrapper">
 				<Fade bottom>
-					<Landing header="portfolio.headline" subtitle="portfolio.subtitle" background={blue}
-					         image={portfolio}/>
+					<NewLanding header="portfolio.headline" subtitle="portfolio.subtitle" background={blue}
+					            image={portfolio}/>
 				</Fade>
 				<Fade bottom>
 					<ClientGrid headline="portfolio.clientHeadline" subtitle="portfolio.clientSubtitle"/>

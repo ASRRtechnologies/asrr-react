@@ -7,7 +7,6 @@ import Why from "../about/Why";
 import NewLanding from "../shared/NewLanding";
 import TeamPictures from "../about/TeamPictures";
 import TeamText from "../about/TeamText";
-import Sphere from "../about/Sphere";
 
 const founders = [
 	{
@@ -94,15 +93,10 @@ class Team extends Component {
 		return (
 			<div>
 				<Fade bottom>
-					<Sphere/>
-
-
 					<NewLanding header="about.headline" subtitle="about.subtitle" background={orange} image={team}
 					/>
 					<TeamPictures/>
 					<TeamText/>
-					<Sphere/>
-
 				</Fade>
 
 

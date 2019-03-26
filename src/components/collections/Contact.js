@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
 import Fade from "react-reveal/Fade";
-import Landing from "../Landing";
 import green from "../../images/backgrounds/green.svg";
 import contact from "../../images/sectionimages/contact.svg";
 import ContactMethods from "../contact/ContactMethods";
 import mail from "../../images/contact/mail.svg";
 import phone from "../../images/contact/mobile.svg";
 import social from "../../images/contact/social.svg";
+import NewLanding from "../shared/NewLanding";
 
 // const button =
 // 	{
@@ -67,7 +67,7 @@ class Contact extends Component {
 		return (
 			<div>
 				<Fade bottom>
-					<Landing header="contact.headline" subtitle="contact.subtitle" background={green} image={contact}
+					<NewLanding header="contact.headline" subtitle="contact.subtitle" background={green} image={contact}
 					/>
                     <ContactMethods style={{paddingTop: "5em"}} items={services}/>
 				</Fade>
