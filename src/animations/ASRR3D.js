@@ -85,7 +85,8 @@ class Sphere extends Component {
 	render() {
 		return (
 			<div style={{height: "800px", margin: "auto", textAlign: "center"}}>
-				<AnimeSVG id="sphere-svg" viewBox="auto" xmlns="http://www.w3.org/2000/svg" innerRef={node => {
+				<AnimeSVG style={{width: "100%", height: "1000px"}} id="sphere-svg" viewBox="auto"
+				          xmlns="http://www.w3.org/2000/svg" innerRef={node => {
 					this.svg = node
 				}} stroke="rgba(80,80,80,.35)">
 					<g>
@@ -96,8 +97,8 @@ class Sphere extends Component {
 								<stop stop-color="#0D0D0C" offset="100%"/>
 							</linearGradient>
 						</defs>
-						<polygon className="st0" fill="none" stroke="#000000" stroke-width="0.25" stroke-miterlimit="10"
-						         points="1567.782,185.755 1479.541,154.684
+						<path className="st0" fill="none" stroke="#000000" stroke-width="0.25" stroke-miterlimit="10"
+						      points="1567.782,185.755 1479.541,154.684
 	1439.011,231.693 1525.308,265.807 "/>
 						<polygon className="st0" fill="none" stroke="#000000" stroke-width="0.25" stroke-miterlimit="10"
 						         points="1432.979,475.4 1456.299,431.525
