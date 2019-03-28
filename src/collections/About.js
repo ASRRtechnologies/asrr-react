@@ -4,6 +4,7 @@ import NewLanding from "../components/shared/NewLanding";
 import TeamPictures from "../components/about/TeamPictures";
 import CoreValues from "../components/about/CoreValues";
 import LightTextBox from "../components/shared/LightTextBox";
+import ASRR3D from "../animations/ASRR3D";
 //
 // const founders = [
 // 	{
@@ -93,7 +94,8 @@ class About extends Component {
 					<NewLanding name="about.landing"/>
 					<TeamPictures/>
 					<LightTextBox name="about.team"/>
-					<CoreValues/>
+					<CoreValues/>y
+					<ASRR3D/>
 				</Fade>
 			</div>
 		);

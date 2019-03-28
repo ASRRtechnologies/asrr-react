@@ -41,7 +41,7 @@ class Sphere extends Component {
 						stroke: {value: ['rgba(255,75,75,1)', 'rgba(80,80,80,.35)'], duration: 500},
 						translateX: [2, -4],
 						translateY: [2, -4],
-						scale: 0.1,
+						scale: [0.1, 1],
 						easing: 'easeOutQuad',
 						autoplay: false
 					}));
@@ -71,8 +71,7 @@ class Sphere extends Component {
 		breathAnimation.play();
 		shadowAnimation.play();
 
-		const sphereEl = target.querySelectorAll(".sphere-animation");
-		this.fitElementToParent(sphereEl);
+		const sphereEl = target.querySelector(".sphereanimation");
 		const scale = Anime({
 			targets: sphereEl,
 			scale: 1,
@@ -84,13 +83,12 @@ class Sphere extends Component {
 	};
 
 	fitElementToParent(el, padding) {
-		// Anime(el, {scale: 1});
+		Anime(el, {scale: 1});
 		var pad = padding || 0;
 		var parentEl = el.parentNode;
 		var elOffsetWidth = el.offsetWidth - pad;
 		var parentOffsetWidth = parentEl.offsetWidth;
 		var ratio = parentOffsetWidth / elOffsetWidth;
-		console.log(ratio)
 	}
 
 	componentDidMount() {
