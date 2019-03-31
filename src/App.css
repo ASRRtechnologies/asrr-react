@@ -895,10 +895,14 @@ hr {
 }
 
 @media screen and (max-width: 900px) {
+    .new-landing-text {
+        margin-bottom: 40px;
+    }
+
     .new-landing {
         max-width: 90%;
         min-height: 0;
-        padding-bottom: 3em;
+        padding-bottom: 8em;
     }
 
     .new-landing {
@@ -952,10 +956,14 @@ hr {
     }
 
     .team-images img {
-        margin-top: 0
+        margin-top: 0;
+        max-width: 90%;
     }
 
-    .lower {
+    .team-images .lower {
+        height: 200px;
+        min-height: 175px;
+        overflow: visible;
     }
 
     .secondary {
