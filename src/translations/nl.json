@@ -105,6 +105,11 @@
     }
   },
   "portfolio": {
+    "landing": {
+      "subtitle": "Portfolio",
+      "title": "lalala",
+      "content": "content"
+    },
     "headline": "Neem een kijkje bij het werk dat we voorheen gedaan hebben!",
     "subtitle": "We hebben verschillende projecten gedaan in diverse gebieden. Voel u vrij om contact op te nemen als u enige vragen heeft over wat we hebben gedaan en hoe we u kunnen helpen met uw project.",
     "clientHeadline": "Een paar bedrijven waar we opdrachten voor hebben gedaan",

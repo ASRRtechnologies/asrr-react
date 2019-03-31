@@ -279,10 +279,9 @@ hr {
 
 /*Landing*/
 .new-landing {
-    height: 80vh;
     max-width: 700px;
     margin: auto;
-    min-height: 700px;
+    min-height: 500px;
 }
 
 .new-landing-text {
@@ -379,6 +378,10 @@ hr {
     height: 400px;
     margin-left: 5%;
     width: 40%;
+}
+
+.team-images {
+    padding-top: 13em;
 }
 
 .team-images .lower {
@@ -938,8 +941,32 @@ hr {
     }
 
     .team-images {
-        visibility: hidden;
         overflow: hidden;
+        z-index: 3000;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .upper {
+        min-height: 0
+    }
+
+    .team-images img {
+        margin-top: 0
+    }
+
+    .lower {
+    }
+
+    .secondary {
+        display: none !important;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+    }
+
+    .primary img {
+        margin: 0;
     }
 
     .team-text {

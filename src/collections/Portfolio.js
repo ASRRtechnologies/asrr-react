@@ -2,8 +2,6 @@ import React, {Component} from 'react';
 import Fade from "react-reveal/Fade";
 import blue from "../images/backgrounds/midblue.svg";
 import orange from "../images/backgrounds/orange.svg";
-
-import portfolio from "../images/sectionimages/portfolio.png"
 import Websites from "../components/portfolio/Websites";
 
 import kroontje from "../images/portfolio/kroontje.png";
@@ -77,8 +75,7 @@ class Portfolio extends Component {
 		return (
 			<div className="portfolio-wrapper">
 				<Fade bottom>
-					<NewLanding header="portfolio.headline" subtitle="portfolio.subtitle" background={blue}
-					            image={portfolio}/>
+					<NewLanding name="portfolio.landing"/>
 				</Fade>
 				<Fade bottom>
 					<ClientGrid headline="portfolio.clientHeadline" subtitle="portfolio.clientSubtitle"/>
