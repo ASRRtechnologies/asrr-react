@@ -942,6 +942,11 @@ hr {
         overflow: hidden;
     }
 
+    .team-text {
+        padding-top: 4em;
+        padding-bottom: 4em;
+    }
+
     .flex-container > div {
         width: 48%;
     }
