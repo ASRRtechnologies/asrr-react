@@ -67,8 +67,10 @@
     }
   },
   "services": {
+    "subtitle": "Expertise at every step of the process",
+    "title": "Services",
+    "content": "The steps along the way are bla blalala la and alala yes no no",
     "headline": "Innovative where needed, robust where it matters",
-    "subtitle": "The key in our services is that they are custom tailored to your wishes. You come to us with a problem or wish, we will find out what is needed to accomplish it and provide you with an expert team that can develop the solution. Don't forget to check out our portfolio to see our past projects!",
     "section": "Services",
     "web": {
       "name": "Web Design",

@@ -11,9 +11,8 @@ import data from "../images/services/data.svg"
 import bim from "../images/services/bim.svg"
 import consultancy from "../images/services/consultancy.svg"
 import LightTextBox from "../components/shared/LightTextBox";
-import Landing from "../components/Landing";
-
-import skyline from "../images/backgrounds/skyline.jpg";
+import NewLanding from "../components/shared/NewLanding";
+import ServiceSummary from "../components/home/ServiceSummary";
 
 
 const services = [
@@ -63,7 +62,8 @@ class Services extends Component {
 		return (
 			<div>
 				<Fade bottom>
-					<Landing name="services" background={skyline}/>
+					<NewLanding name="services"/>
+					<ServiceSummary/>
 					<LightTextBox name="services.text"/>
 					<ServiceGrid section="services.section" items={services}/>
 				</Fade>
