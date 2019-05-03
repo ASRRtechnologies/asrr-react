@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
 import Fade from 'react-reveal';
-import purple from "../images/backgrounds/purple.svg"
-import server from "../images/sectionimages/work.png"
 import ServiceGrid from "../components/services/ServiceGrid";
 
 import web from "../images/services/webdesign.svg"
@@ -12,10 +10,10 @@ import database from "../images/services/database.svg"
 import data from "../images/services/data.svg"
 import bim from "../images/services/bim.svg"
 import consultancy from "../images/services/consultancy.svg"
-import InternalButton from "../components/InternalButton";
-import Triangle from "../animations/Triangle";
-import SphereLanding from "../components/shared/SphereLanding";
 import LightTextBox from "../components/shared/LightTextBox";
+import Landing from "../components/Landing";
+
+import skyline from "../images/backgrounds/skyline.jpg";
 
 
 const services = [
@@ -28,12 +26,12 @@ const services = [
 		service: "app",
 	},
 	{
-        image: desktop,
-        service: "desktop"
+		image: desktop,
+		service: "desktop"
 	},
 	{
-        image: backend,
-        service: "backend"
+		image: backend,
+		service: "backend"
 	},
 	{
 		image: database,
@@ -65,12 +63,9 @@ class Services extends Component {
 		return (
 			<div>
 				<Fade bottom>
-					<Triangle/>
-					<SphereLanding header="services.headline" subtitle="services.subtitle" background={purple}
-					               image={server}/>
+					<Landing name="services" background={skyline}/>
 					<LightTextBox name="services.text"/>
 					<ServiceGrid section="services.section" items={services}/>
-					<InternalButton button={button}/>
 				</Fade>
 			</div>
 		);

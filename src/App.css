@@ -351,33 +351,12 @@ hr {
 
 .landing-wrapper {
     width: 100%;
-    top: 65px;
+    height: 100vh;
     position: relative;
     display: block;
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 0 3em;
-}
-
-.landing-wrapper h1 {
-    color: white;
-    width: 40%;
-    font-size: 40px;
-    font-weight: 800;
-    float: left;
-    padding-top: 2em;
-    padding-bottom: 0;
-    margin-bottom: 0;
-    /*TODO: Remove this*/
-    margin-left: 5%;
-}
-
-.landing-slider {
-    color: white;
-    float: left;
-    height: 400px;
-    margin-left: 5%;
-    width: 40%;
 }
 
 .team-images {

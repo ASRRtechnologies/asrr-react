@@ -27,30 +27,12 @@ class Landing extends Component {
             divStyle = {backgroundImage: 'url(' + this.props.background + ')'}
 		}
 
-		let hrStyle = {
-			color: "#1A1A1A",
-			border: "2px solid #1A1A1A",
-			borderColor: "#1A1A1A",
-			backgroundColor: "#1A1A1A",
-			borderRadius: "5px",
-			marginLeft: "5%",
-			width: "15%",
-
-		};
-
 		return (
 			<div className="landing-wrapper parallax" style={divStyle}>
 				<div className="max1200">
-					<div id="landing-text">
-						<h1>{this.props.t(this.props.header)}</h1>
-						<hr style={hrStyle}/>
-						<p>{this.props.t(this.props.subtitle)}</p>
-						{this.renderButton()}
-					</div>
-
-					<div id="landing-image">
-						<img src={this.props.image} alt="browser"/>
-					</div>
+					<h3>{this.props.t(this.props.name + ".subtitle")}</h3>
+					<h1>{this.props.t(this.props.name + ".title")}</h1>
+					<p>{this.props.t(this.props.name + ".content")}</p>
 				</div>
 			</div>
 		);
