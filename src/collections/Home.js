@@ -3,7 +3,6 @@ import Fade from "react-reveal/Fade";
 import ServiceSummary from "../components/home/ServiceSummary";
 import Clients from "../components/home/Clients";
 import lowPolyRed from "../images/backgrounds/lowpoly.jpg";
-import browser from '../images/sectionimages/browserflattrimmed.png';
 import ParticleLanding from "../components/ParticleLanding";
 import Sphere from "../animations/Sphere";
 import SphereLanding from "../components/shared/SphereLanding";
@@ -51,12 +50,10 @@ class Home extends Component {
 				<Fade bottom>
 					{!this.checkMobile() ?
 						<ParticleLanding header="home.headline" subtitle="home.subtitle" background={lowPolyRed}
-						                 image={browser}
 						                 color={true}
 						                 button={button}/>
 						: <div><Sphere style={{position: "absolute", top: "0", left: "0", zIndex: "-100"}}/>
 							<SphereLanding header="home.headline" subtitle="home.subtitle" background={lowPolyRed}
-							               image={browser}
 							               color={false}
 							               button={button}/>
 							<hr style={hrStyle}/>
