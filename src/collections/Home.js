@@ -61,6 +61,12 @@ class Home extends Component {
 							               color={false}
 							               button={button}/>
 							<hr style={hrStyle}/>
+
+							<ServiceSummary/>
+
+
+							<Clients/>
+
 						</div>
 
 					}
@@ -68,10 +74,7 @@ class Home extends Component {
 
 					<ServiceSummary/>
 				</Fade>
-				{/*TODO: business case*/}
-				<Fade bottom>
-					{/*<SimpleSlider/>*/}
-				</Fade>
+
 			</div>
 		);
 	}
