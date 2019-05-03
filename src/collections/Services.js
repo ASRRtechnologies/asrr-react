@@ -50,13 +50,6 @@ const services = [
 	}
 ];
 
-const button =
-	{
-		text: "buttons.portfolio",
-		href: "/Portfolio",
-		fa: ["fas", "images"]
-	};
-
 class Services extends Component {
 	render() {
 		return (
