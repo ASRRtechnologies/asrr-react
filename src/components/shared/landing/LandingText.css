@@ -1,0 +1,20 @@
+.fluid-landing-container{
+    /*max-width: 700px;*/
+    margin: auto;
+    min-height: 100vh;
+}
+
+.fluid-landing-transparent-text {
+    padding-top: 13vh;
+    color: white;
+    top: 200px;
+    text-align: center;
+}
+
+.fluid-landing-transparent-text > h1 {
+    font-size: 110px;
+    color: white;  /* Fallback: assume this color ON TOP of image */
+    background: url(test2.jpg) no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

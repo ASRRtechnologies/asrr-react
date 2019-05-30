@@ -13,6 +13,7 @@ import consultancy from "../images/services/consultancy.svg"
 import LightTextBox from "../components/shared/LightTextBox";
 import NewLanding from "../components/shared/NewLanding";
 import ServiceSummary from "../components/home/ServiceSummary";
+import LandingText from "../components/shared/landing/LandingText";
 
 
 const services = [
@@ -55,6 +56,9 @@ class Services extends Component {
 		return (
 			<div>
 				<Fade bottom>
+					<LandingText name="expertise"/>
+					<ServiceSummary/>
+
 					<NewLanding name="services"/>
 					<ServiceSummary/>
 					<LightTextBox name="services.text"/>
