@@ -1,9 +1,7 @@
 import React, {Component} from "react";
-import laptop from "../../images/services/laptop.svg";
-import router from "../../images/services/router.svg";
-import desktop from "../../images/services/computer.svg";
 import {translate} from "react-multi-lang"
 import {Link} from "react-router-dom";
+import { FiServer } from "react-icons/fi"
 
 class ChoiceHelper extends Component {
 	constructor(props, context) {
@@ -22,18 +20,24 @@ class ChoiceHelper extends Component {
 			services: [
 				{
 					name: 'software',
+					icon: FiServer,
 					items : {}
 				},
 				{
 					name: 'hardware',
+					icon: FiServer,
 					items: {}
 				},
 				{
 					name: 'workers',
+					icon: FiServer,
 					items: {}
 				}
 			]
 		};
+
+		let self = this;
+
 		return (
 			<div className="services-wrapper">
                 <div>
@@ -48,15 +52,17 @@ class ChoiceHelper extends Component {
 				<div>
                     <h2>{this.props.t('services.choice-helper.service.header')}</h2>
 
-
-
-
-
 					<div className="flex-container">
-						{choiceTree.services.map((o) => <div>
-							<h2>{this.props.t('services.choice-helper.service.' + o.name + '.title')}</h2>
-							<div>{this.props.t('services.choice-helper.service.' + o.name + '.text')}</div>
-						</div>)}
+						{choiceTree.services.map(function(o){
+							const Icon = o.icon;
+							return <div>
+								<h2>{self.props.t('services.choice-helper.service.' + o.name + '.title')}</h2>
+								<div>{self.props.t('services.choice-helper.service.' + o.name + '.text')}</div>
+								<Icon/>
+							</div>
+						})}
+
+
 					</div>
 
 					<div className="centerButton-wrapper">
