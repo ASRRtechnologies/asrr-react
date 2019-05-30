@@ -2,6 +2,7 @@
     /*max-width: 700px;*/
     margin: auto;
     min-height: 100vh;
+    background-color: #000000;
 }
 
 .fluid-landing-transparent-text {
@@ -14,7 +15,7 @@
 .fluid-landing-transparent-text > h1 {
     font-size: 110px;
     color: white;  /* Fallback: assume this color ON TOP of image */
-    background: url(test4.jpg) no-repeat;
+    background: url(images/test4.jpg) no-repeat;
     background-size:     cover;                      /* <------ */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -22,4 +23,9 @@
 
 .fluid-landing-transparent-text > h2 {
     color: grey;
+}
+
+.fluid-landing-image > img {
+    width: 100%;
+
 }

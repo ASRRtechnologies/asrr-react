@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import {translate} from 'react-multi-lang';
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome/index";
-import NavLink from "react-router-dom/es/NavLink";
+import laptop from "../../../images/landing/laptop.jpg";
 
 class LandingText extends Component {
 	render() {
@@ -12,6 +11,9 @@ class LandingText extends Component {
 						<h3>{this.props.t(this.props.name + ".subtitle")}</h3>
 						<h1>{this.props.t(this.props.name + ".title")}</h1>
 						<p>{this.props.t(this.props.name + ".content")}</p>
+					</div>
+					<div className="fluid-landing-image">
+						<img src={laptop}/>
 					</div>
 				</div>
 			</div>
