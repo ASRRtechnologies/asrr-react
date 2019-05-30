@@ -14,6 +14,9 @@ class LandingText extends Component {
 					</div>
 					<div className="fluid-landing-image">
 						<img src={laptop}/>
+						<div className="fluid-landing-image-text">
+							<h1>What do we do?</h1>
+						</div>
 					</div>
 				</div>
 			</div>

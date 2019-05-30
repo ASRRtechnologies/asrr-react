@@ -25,7 +25,22 @@
     color: grey;
 }
 
+.fluid-landing-image {
+    position: relative;
+}
+
 .fluid-landing-image > img {
     width: 100%;
+}
 
+.fluid-landing-image-text {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: invert(100%);
+}
+
+.fluid-landing-image-text > h1 {
+    font-size: 40px;
 }
