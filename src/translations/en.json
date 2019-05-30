@@ -67,6 +67,10 @@
     }
   },
   "services": {
+    "choice-helper": {
+      "title": "How can we help you?",
+      "subtitle": "The amount of choices in IT services and solutions can be quite daunting, which is why we created a nifty little tool to help you decide what you need."
+    },
     "subtitle": "Expertise at every step of the process",
     "title": "Services",
     "content": "The steps along the way are bla blalala la and alala yes no no",

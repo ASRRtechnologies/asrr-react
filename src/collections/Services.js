@@ -14,6 +14,7 @@ import LightTextBox from "../components/shared/LightTextBox";
 import NewLanding from "../components/shared/NewLanding";
 import ServiceSummary from "../components/home/ServiceSummary";
 import LandingText from "../components/shared/landing/LandingText";
+import ChoiceHelper from "../components/services/ChoiceHelper";
 
 
 const services = [
@@ -57,7 +58,7 @@ class Services extends Component {
 			<div>
 				<Fade bottom>
 					<LandingText name="expertise"/>
-					<ServiceSummary/>
+					<ChoiceHelper/>
 
 					<NewLanding name="services"/>
 					<ServiceSummary/>
