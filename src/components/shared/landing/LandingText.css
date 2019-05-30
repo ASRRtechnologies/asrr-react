@@ -14,7 +14,12 @@
 .fluid-landing-transparent-text > h1 {
     font-size: 110px;
     color: white;  /* Fallback: assume this color ON TOP of image */
-    background: url(test2.jpg) no-repeat;
+    background: url(test4.jpg) no-repeat;
+    background-size:     cover;                      /* <------ */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.fluid-landing-transparent-text > h2 {
+    color: grey;
 }
