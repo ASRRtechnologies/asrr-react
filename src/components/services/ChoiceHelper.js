@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import {translate} from "react-multi-lang"
 import {Link} from "react-router-dom";
-import { FiServer } from "react-icons/fi"
+import { FiServer, FiCode, FiSmile } from "react-icons/fi"
 
 class ChoiceHelper extends Component {
 	constructor(props, context) {
@@ -20,7 +20,7 @@ class ChoiceHelper extends Component {
 			services: [
 				{
 					name: 'software',
-					icon: FiServer,
+					icon: FiCode,
 					items : {}
 				},
 				{
@@ -30,7 +30,7 @@ class ChoiceHelper extends Component {
 				},
 				{
 					name: 'workers',
-					icon: FiServer,
+					icon: FiSmile,
 					items: {}
 				}
 			]
@@ -56,9 +56,9 @@ class ChoiceHelper extends Component {
 						{choiceTree.services.map(function(o){
 							const Icon = o.icon;
 							return <div>
+								<Icon/>
 								<h2>{self.props.t('services.choice-helper.service.' + o.name + '.title')}</h2>
 								<div>{self.props.t('services.choice-helper.service.' + o.name + '.text')}</div>
-								<Icon/>
 							</div>
 						})}
 

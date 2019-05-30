@@ -13,7 +13,7 @@ class LandingText extends Component {
 						<p>{this.props.t(this.props.name + ".content")}</p>
 					</div>
 					<div className="fluid-landing-image">
-						<img src={laptop}/>
+						<img src={laptop} alt="laptop"/>
 						<div className="fluid-landing-image-text">
 							<h1>What do we do?</h1>
 							<div className="fluid-landing-flex-grid">
