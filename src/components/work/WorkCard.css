@@ -1,3 +1,11 @@
+.work-card-wrapper{
+    display: flex;
+    width:100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
 
 .card {
     background-color: white;
@@ -6,7 +14,7 @@
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    width:29.333%;
+    width:30.333%;
     margin:0 10px 0 10px;
 }
 

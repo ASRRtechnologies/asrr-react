@@ -5,9 +5,11 @@ class WorkGrid extends Component {
 	render() {
 		return (
 			<div className="work-grid-wrapper">
-				<WorkCard/>
-				<WorkCard/>
-				<WorkCard/>
+				<div className="work-card-wrapper">
+					<WorkCard/>
+					<WorkCard/>
+					<WorkCard/>
+				</div>
 			</div>
 		);
 	}
