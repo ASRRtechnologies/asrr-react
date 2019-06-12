@@ -9,5 +9,15 @@
 
 .contact-landing-header {
     margin: auto;
+    color: #BAC4C3;
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.contact-landing-header > h1 {
+    font-size: 60px;
 }
 
