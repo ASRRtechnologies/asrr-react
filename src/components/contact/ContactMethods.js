@@ -11,7 +11,6 @@ class ContactMethods extends Component {
 		return (
 			<div className="grid-container white">
 				<Fade bottom>
-                    <h1>Contact us</h1>
 					<div className="item-container">
 						<div className="item-cards">
 							<Fade bottom>
