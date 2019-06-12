@@ -4,9 +4,8 @@ import WorkCard from "./WorkCard";
 class WorkGrid extends Component {
 	render() {
 		return (
-			<div className="main">
-				<h1>Responsive Card Grid Layout</h1>
-				<ul className="cards">
+			<div className="work-grid-wrapper">
+				<div className="cards">
 					<li className="cards_item">
 						<div className="card">
 							<div className="card_image"><img src="https://picsum.photos/500/300/?image=10"/></div>
@@ -73,7 +72,7 @@ class WorkGrid extends Component {
 							</div>
 						</div>
 					</li>
-				</ul>
+				</div>
 			</div>
 		);
 	}

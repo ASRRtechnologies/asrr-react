@@ -1,17 +1,5 @@
 .work-grid-wrapper{
-    /*display: grid;*/
-    /*grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));*/
-    /*padding: 0 100px;*/
-    /*grid-column-gap: 25px;*/
-    /*max-width:1250px;*/
-    /*!*margin:auto;*!*/
-    /*display: flex;*/
-    /*!*flex-direction: row;*!*/
-    /*width:100%;*/
-    /*!*padding:0 100px;*!*/
-    /*!*max-width: 1250px;*!*/
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
 }
