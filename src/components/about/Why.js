@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import {translate} from "react-multi-lang"
-import Cards from "../../shared/Cards";
-import InternalButton from "../../shared/InternalButton";
+import Cards from "../shared/Cards";
+import InternalButton from "../shared/InternalButton";
 
 const why = [
 	{

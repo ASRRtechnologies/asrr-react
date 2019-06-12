@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome/index';
-import logo from "../../../images/logo.svg";
+import logo from "../../../assets/images/logo.svg";
 
 class Footer extends Component {
 	render() {

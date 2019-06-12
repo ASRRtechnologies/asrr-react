@@ -1,7 +1,7 @@
 import React, {Component} from "react";
-import laptop from "../../../images/services/laptop.svg";
-import router from "../../../images/services/router.svg";
-import desktop from "../../../images/services/computer.svg";
+import laptop from "../../assets/images/services/laptop.svg";
+import router from "../../assets/images/services/router.svg";
+import desktop from "../../assets/images/services/computer.svg";
 import {translate} from "react-multi-lang"
 import {Link} from "react-router-dom";
 

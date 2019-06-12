@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import ClientGrid from "../../shared/ClientGrid";
+import ClientGrid from "../shared/ClientGrid";
 
 class Clients extends Component {
 	render() {
