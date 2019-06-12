@@ -82,10 +82,10 @@ class Header extends Component {
                         </span>
 
 						<ul className="menu">
-							<li><Link to="/">{this.props.t("header.home")}</Link></li>
-							<li><Link to="/team">{this.props.t("header.about")}</Link></li>
+							<li><Link to="/work">{this.props.t("header.work")}</Link></li>
 							<li><Link to="/services">{this.props.t("header.services")}</Link></li>
-							<li><Link to="/portfolio">{this.props.t("header.portfolio")}</Link></li>
+							<li><Link to="/team">{this.props.t("header.about")}</Link></li>
+							<li><Link to="/careers">{this.props.t("header.careers")}</Link></li>
 							<li><Link to="/contact">{this.props.t("header.contact")}</Link></li>
 						</ul>
 					</div>

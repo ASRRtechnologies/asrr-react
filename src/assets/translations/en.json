@@ -1,8 +1,10 @@
 {
   "header": {
     "home": "Home",
-    "about": "About ASRR",
+    "about": "About",
     "services": "Services",
+    "work": "Work",
+    "careers": "Careers",
     "portfolio": "Portfolio",
     "contact": "Contact"
   },
