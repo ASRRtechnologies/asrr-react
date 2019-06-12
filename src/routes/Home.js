@@ -4,7 +4,7 @@ import ServiceSummary from "../components/home/ServiceSummary";
 import Clients from "../components/home/Clients";
 import lowPolyRed from "../assets/images/backgrounds/lowpoly.jpg";
 import ParticleLanding from "../components/ParticleLanding";
-import Sphere from "../components/animations/Sphere";
+import Sphere from "../components/experimental/Sphere";
 import SphereLanding from "../components/shared/SphereLanding";
 
 const button =

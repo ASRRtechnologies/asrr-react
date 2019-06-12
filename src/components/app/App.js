@@ -49,6 +49,7 @@ import About from "../../routes/About";
 import Services from "../../routes/Services";
 import Portfolio from "../../routes/Portfolio";
 import Home from "../../routes/Home";
+import Work from "../../routes/Work";
 
 
 
@@ -72,7 +73,7 @@ class App extends Component {
 
 			<Switch>
 				<Route path="/" exact component={Home}/>
-				<Route path="/work" component={Portfolio}/>
+				<Route path="/work" component={Work}/>
 				<Route path="/services" component={Services}/>
 				<Route path="/team" component={About}/>
 				<Route path="/contact" component={Contact}/>
