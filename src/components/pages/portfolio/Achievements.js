@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import top from '../../../images/achievements/top.svg';
-import webDesign from '../../../images/achievements/web-design.svg';
-import webHosting from '../../../images/achievements/web-hosting.svg';
+import top from '../../../assets/images/achievements/top.svg';
+import webDesign from '../../../assets/images/achievements/web-design.svg';
+import webHosting from '../../../assets/images/achievements/web-hosting.svg';
 import {translate} from "react-multi-lang";
 import CountUp from 'react-countup/build';
 

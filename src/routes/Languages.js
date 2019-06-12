@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
 import Fade from "react-reveal/Fade";
 import LogoGrid from "../components/shared/LanguageGrid";
-import html5 from "../images/languages/html5.png";
-import css3 from "../images/languages/css3.png";
-import js from "../images/languages/js.png";
-import java from "../images/languages/java.png";
-import csharp from "../images/languages/csharp.png";
+import html5 from "../assets/images/languages/html5.png";
+import css3 from "../assets/images/languages/css3.png";
+import js from "../assets/images/languages/js.png";
+import java from "../assets/images/languages/java.png";
+import csharp from "../assets/images/languages/csharp.png";
 
 const languages = [
     {

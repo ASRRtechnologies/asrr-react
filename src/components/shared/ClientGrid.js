@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import {translate} from 'react-multi-lang';
-import kroontje from "../../images/clients/kroontje.svg";
-import form from "../../images/clients/form_logo-diap.svg";
-import m4v from "../../images/clients/m4v.png";
+import kroontje from "../../assets/images/clients/kroontje.svg";
+import form from "../../assets/images/clients/form_logo-diap.svg";
+import m4v from "../../assets/images/clients/m4v.png";
 
 class ClientGrid extends Component {
 	render() {

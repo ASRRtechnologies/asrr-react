@@ -2,9 +2,9 @@ import React, {Component} from 'react';
 import Fade from "react-reveal/Fade";
 import ServiceSummary from "../components/pages/home/ServiceSummary";
 import Clients from "../components/pages/home/Clients";
-import lowPolyRed from "../images/backgrounds/lowpoly.jpg";
+import lowPolyRed from "../assets/images/backgrounds/lowpoly.jpg";
 import ParticleLanding from "../components/ParticleLanding";
-import Sphere from "../animations/Sphere";
+import Sphere from "../components/animations/Sphere";
 import SphereLanding from "../components/shared/SphereLanding";
 
 const button =

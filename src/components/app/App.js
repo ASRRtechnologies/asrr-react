@@ -3,7 +3,7 @@ import {Route, Switch} from 'react-router-dom';
 import Fade from 'react-reveal/Fade';
 import {translate} from 'react-multi-lang';
 
-import {library} from '@fortawesome/fontawesome-svg-core';
+import {library} from '@fortawesome/fontawesome-svg-core/index';
 import {
 	faAndroid,
 	faApple,
@@ -27,7 +27,7 @@ import {
 	faTwitter,
 	faWhatsapp,
 	faWindows
-} from '@fortawesome/free-brands-svg-icons';
+} from '@fortawesome/free-brands-svg-icons/index';
 import {
 	faChevronCircleDown,
 	faCogs,
@@ -36,20 +36,20 @@ import {
 	faLanguage,
 	faPhone,
 	faUsers
-} from '@fortawesome/free-solid-svg-icons';
+} from '@fortawesome/free-solid-svg-icons/index';
 
 import './App.css';
 import Language from './Language'
 import Header from "./components/shared/header/Header";
 import Footer from "./components/shared/header/Footer";
 
-import Home from "./collections/Home";
-import About from "./collections/About";
-import Services from "./collections/Services";
+import Home from "./routes/Home";
+import About from "./routes/About";
+import Services from "./routes/Services";
 import NoRef from "./components/shared/404";
-import Portfolio from "./collections/Portfolio";
-import Contact from "./collections/Contact";
-import Languages from "./collections/Languages";
+import Portfolio from "./routes/Portfolio";
+import Contact from "./routes/Contact";
+import Languages from "./routes/Languages";
 
 library.add(faWhatsapp, faLanguage, faImages, faCogs, faUsers, faChevronCircleDown, faPhone, faEnvelope, faHtml5, faCss3Alt, faJs, faJava, faWindows, faLinux, faGithub, faGit, faReact, faAndroid, faAppStoreIos, faApple, faNode, faNodeJs, faPaypal, faFacebook, faTwitter, faSnapchat, faAws, faChrome, faLinkedin);
 
@@ -60,32 +60,30 @@ const NoMatch = ({location}) => (
 );
 
 class App extends Component {
-	constructor() {
-		super();
+	constructor(props) {
+		super(props);
 		Language.initialize();
 	}
 
 	render() {
-		return (
-			<div className="App">
-				<Header/>
+		return <div className="App">
+			<Header/>
 
-				<Switch>
-					<Route path="/" exact component={Home}/>
-					<Route path="/portfolio" component={Portfolio}/>
-					<Route path="/services" component={Services}/>
-					<Route path="/team" component={About}/>
-					<Route path="/contact" component={Contact}/>
-					<Route path="/Languages" component={Languages}/>
-					<Route path='/github' component={() => window.location = 'https://github.com/ASRRWebdesign'}/>
-					<Route component={NoMatch}/>
-				</Switch>
+			<Switch>
+				<Route path="/" exact component={Home}/>
+				<Route path="/work" component={Portfolio}/>
+				<Route path="/services" component={Services}/>
+				<Route path="/team" component={About}/>
+				<Route path="/contact" component={Contact}/>
+				<Route path="/Languages" component={Languages}/>
+				<Route path='/github' component={() => window.location = "https://github.com/ASRRWebdesign"}/>
+				<Route component={NoMatch}/>
+			</Switch>
 
-				<Fade bottom>
-					<Footer/>
-				</Fade>
-			</div>
-		);
+			<Fade bottom>
+				<Footer/>
+			</Fade>
+		</div>;
 	}
 }
 

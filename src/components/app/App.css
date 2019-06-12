@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
-@import "global.css";
-@import "components/shared/landing/LandingText.css";
+@import "../shared/landing/LandingText.css";
 
 * {
     margin: 0;

@@ -1,16 +1,16 @@
 import React, {Component} from 'react';
 import Fade from "react-reveal/Fade";
-import blue from "../images/backgrounds/midblue.svg";
-import orange from "../images/backgrounds/orange.svg";
+import blue from "../assets/images/backgrounds/midblue.svg";
+import orange from "../assets/images/backgrounds/orange.svg";
 import Websites from "../components/pages/portfolio/Websites";
 
-import kroontje from "../images/portfolio/kroontje.png";
-import moves4vitality from "../images/portfolio/m4v.png";
-import milanotassen from "../images/portfolio/milanotassen.PNG";
-import mustique from "../images/portfolio/mustique.PNG";
-import windowshop from "../images/portfolio/windowshop.PNG";
-import asrrold from "../images/portfolio/asrrold.PNG";
-import form from "../images/portfolio/form.PNG";
+import kroontje from "../assets/images/portfolio/kroontje.png";
+import moves4vitality from "../assets/images/portfolio/m4v.png";
+import milanotassen from "../assets/images/portfolio/milanotassen.PNG";
+import mustique from "../assets/images/portfolio/mustique.PNG";
+import windowshop from "../assets/images/portfolio/windowshop.PNG";
+import asrrold from "../assets/images/portfolio/asrrold.PNG";
+import form from "../assets/images/portfolio/form.PNG";
 import BusinessCases from "../components/pages/portfolio/BusinessCases";
 import ClientGrid from "../components/shared/ClientGrid";
 import Achievements from "../components/pages/portfolio/Achievements";

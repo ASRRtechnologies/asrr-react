@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Sphere from "../../../animations/Sphere";
+import Sphere from "../../animations/Sphere";
 
 
 class CoreValues extends Component {

@@ -2,8 +2,8 @@ import locale from 'browser-locale';
 import Cookie from 'react-cookies'
 import {setDefaultLanguage, setDefaultTranslations} from 'react-multi-lang'
 
-import en from './translations/en.json'
-import nl from './translations/nl.json'
+import en from '../assets/translations/en.json'
+import nl from '../assets/translations/nl.json'
 
 class Language {
 

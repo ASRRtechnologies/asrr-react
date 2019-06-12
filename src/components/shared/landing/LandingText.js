@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {translate} from 'react-multi-lang';
-import laptop from "../../../images/landing/laptop.jpg";
+import laptop from "../../../assets/images/landing/laptop.jpg";
 
 class LandingText extends Component {
 	render() {
