@@ -1,0 +1,20 @@
+.service-grid-container {
+
+}
+
+.service-grid-items-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;  /* NEW */
+    max-width: 1200px;
+    margin: auto;
+}
+
+.service-grid-items-container > div {
+    flex: 1 0 32%;
+    margin: 5px;
+}
+
+.service-grid-items-container > div {
+    align-content: center;
+}

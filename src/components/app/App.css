@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import "../shared/landing/LandingText.css";
 @import "../contact/ContactLanding.css";
+@import "../services/ServiceGrid.css";
 
 :root {
     --primary-color: #141315;
@@ -80,10 +81,6 @@ a.rounded {
     text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
     text-align: center;
     transition: all 0.2s;
-}
-
-a.rounded:hover {
-    border-color: rgba(255, 255, 255, 1);
 }
 
 hr {
