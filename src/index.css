@@ -5,7 +5,10 @@ body {
 }
 
 :root {
-    --main-accent-color: brown;
+    --primary-color: #141315;
+    --secondary-color: #1C1B20;
+    --main-accent-color: #E4324C;
+    --secondary-accent-color: #181644;
 }
 
 
