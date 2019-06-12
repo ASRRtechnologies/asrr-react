@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import {translate} from "react-multi-lang"
 import {Link} from "react-router-dom";
-import { FiServer, FiCode, FiSmile } from "react-icons/fi"
+import {FiCode, FiServer, FiSmile} from "react-icons/fi"
 
 class ChoiceHelper extends Component {
 	constructor(props, context) {

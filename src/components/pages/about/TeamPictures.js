@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import teamOne from '../../images/team/team1.jpg';
-import teamTwo from '../../images/team/team2.jpg'
+import teamOne from '../../../images/team/team1.jpg';
+import teamTwo from '../../../images/team/team2.jpg'
 
 
 class TeamPictures extends Component {

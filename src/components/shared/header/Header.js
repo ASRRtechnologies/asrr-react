@@ -1,13 +1,13 @@
 import React, {Component} from "react";
 import {Link} from "react-router-dom";
 
-import Language from "../Language";
-import logo from "../images/logo.svg";
+import Language from "../../../Language";
+import logo from "../../../images/logo.svg";
 
 import {getLanguage, translate} from "react-multi-lang";
 
-import nlFlag from "../images/flags/nl.svg";
-import enFlag from "../images/flags/en.svg";
+import nlFlag from "../../../images/flags/nl.svg";
+import enFlag from "../../../images/flags/en.svg";
 
 class Header extends Component {
 	listenScrollEvent = () => {

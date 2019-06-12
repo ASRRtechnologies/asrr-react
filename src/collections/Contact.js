@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Fade from "react-reveal/Fade";
 import green from "../images/backgrounds/green.svg";
 import contact from "../images/sectionimages/contact.svg";
-import ContactMethods from "../components/contact/ContactMethods";
+import ContactMethods from "../components/pages/contact/ContactMethods";
 import mail from "../images/contact/mail.svg";
 import phone from "../images/contact/mobile.svg";
 import social from "../images/contact/social.svg";

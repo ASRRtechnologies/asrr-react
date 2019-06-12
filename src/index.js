@@ -5,7 +5,7 @@ import unregisterServiceWorker from './registerServiceWorker';
 import Analytics from 'react-router-ga';
 
 import App from './App';
-import ScrollToTop from "./components/ScrollToTop";
+import ScrollToTop from "./components/shared/ScrollToTop";
 
 ReactDOM.render(
 	<Router>

@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {translate} from 'react-multi-lang';
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome/index";
 
 class InternalButton extends Component {
 

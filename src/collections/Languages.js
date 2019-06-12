@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Fade from "react-reveal/Fade";
-import LogoGrid from "../components/LanguageGrid";
+import LogoGrid from "../components/shared/LanguageGrid";
 import html5 from "../images/languages/html5.png";
 import css3 from "../images/languages/css3.png";
 import js from "../images/languages/js.png";

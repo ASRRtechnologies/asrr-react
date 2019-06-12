@@ -40,13 +40,13 @@ import {
 
 import './App.css';
 import Language from './Language'
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Header from "./components/shared/header/Header";
+import Footer from "./components/shared/header/Footer";
 
 import Home from "./collections/Home";
 import About from "./collections/About";
 import Services from "./collections/Services";
-import NoRef from "./components/404";
+import NoRef from "./components/shared/404";
 import Portfolio from "./collections/Portfolio";
 import Contact from "./collections/Contact";
 import Languages from "./collections/Languages";

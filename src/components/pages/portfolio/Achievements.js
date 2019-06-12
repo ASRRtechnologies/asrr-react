@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
-import top from '../../images/achievements/top.svg';
-import webDesign from '../../images/achievements/web-design.svg';
-import webHosting from '../../images/achievements/web-hosting.svg';
+import top from '../../../images/achievements/top.svg';
+import webDesign from '../../../images/achievements/web-design.svg';
+import webHosting from '../../../images/achievements/web-hosting.svg';
 import {translate} from "react-multi-lang";
-import CountUp from 'react-countup';
+import CountUp from 'react-countup/build';
 
 function diff_hours(dt2, dt1) {
 	let diff = (dt2.getTime() - dt1.getTime()) / 1000;
