@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Fade from "react-reveal/Fade";
 import blue from "../assets/images/backgrounds/midblue.svg";
 import orange from "../assets/images/backgrounds/orange.svg";
-import Websites from "../components/pages/portfolio/Websites";
+import Websites from "../components/portfolio/Websites";
 
 import kroontje from "../assets/images/portfolio/kroontje.png";
 import moves4vitality from "../assets/images/portfolio/m4v.png";
@@ -11,9 +11,9 @@ import mustique from "../assets/images/portfolio/mustique.PNG";
 import windowshop from "../assets/images/portfolio/windowshop.PNG";
 import asrrold from "../assets/images/portfolio/asrrold.PNG";
 import form from "../assets/images/portfolio/form.PNG";
-import BusinessCases from "../components/pages/portfolio/BusinessCases";
+import BusinessCases from "../components/portfolio/BusinessCases";
 import ClientGrid from "../components/shared/ClientGrid";
-import Achievements from "../components/pages/portfolio/Achievements";
+import Achievements from "../components/portfolio/Achievements";
 import InternalButton from "../components/shared/InternalButton";
 import NewLanding from "../components/shared/NewLanding";
 

@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Anime from 'animejs';
-import Styled from 'styled-components/typings/styled-components';
+import Styled from "styled-components";
+
 
 const AnimeSVG = Styled.svg`
     margin: auto;

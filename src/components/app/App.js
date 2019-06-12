@@ -39,17 +39,18 @@ import {
 } from '@fortawesome/free-solid-svg-icons/index';
 
 import './App.css';
-import Language from './Language'
-import Header from "./components/shared/header/Header";
-import Footer from "./components/shared/header/Footer";
+import Language from '../../utils/Language'
+import NoRef from "../shared/404";
+import Header from "../shared/header/Header";
+import Footer from "../shared/header/Footer";
+import Languages from "../../routes/Languages";
+import Contact from "../../routes/Contact";
+import About from "../../routes/About";
+import Services from "../../routes/Services";
+import Portfolio from "../../routes/Portfolio";
+import Home from "../../routes/Home";
 
-import Home from "./routes/Home";
-import About from "./routes/About";
-import Services from "./routes/Services";
-import NoRef from "./components/shared/404";
-import Portfolio from "./routes/Portfolio";
-import Contact from "./routes/Contact";
-import Languages from "./routes/Languages";
+
 
 library.add(faWhatsapp, faLanguage, faImages, faCogs, faUsers, faChevronCircleDown, faPhone, faEnvelope, faHtml5, faCss3Alt, faJs, faJava, faWindows, faLinux, faGithub, faGit, faReact, faAndroid, faAppStoreIos, faApple, faNode, faNodeJs, faPaypal, faFacebook, faTwitter, faSnapchat, faAws, faChrome, faLinkedin);
 
