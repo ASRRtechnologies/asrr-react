@@ -58,12 +58,8 @@
     /*}*/
 /*}*/
 
+.work-card-wrapper{
 
-
-img {
-    height: auto;
-    max-width: 100%;
-    vertical-align: middle;
 }
 
 .btn {
@@ -91,31 +87,27 @@ img {
     margin: 0;
     padding: 0;
     justify-content: center;
+    flex-direction: row;
+}
+
+.card_image{
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    width: 100%;
+
+}
+
+.card_image:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
 }
 
 .cards_item {
     display: flex;
     padding: 1rem;
 }
-
-
-/*@media (min-width: 900px) {*/
-    /*.cards_item {*/
-        /*width: 30.3333%;*/
-    /*}*/
-/*}*/
-
-/*@media (max-width: 700px) {*/
-    /*.cards_item {*/
-        /*width: 45%;*/
-    /*}*/
-/*}*/
-
-/*@media (max-width: 500px) {*/
-    /*.cards_item {*/
-        /*width: 90%;*/
-    /*}*/
-/*}*/
 
 @media (min-width: 20rem) {
     .cards_item {
