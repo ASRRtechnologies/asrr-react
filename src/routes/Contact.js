@@ -8,15 +8,7 @@ import phone from "../assets/images/contact/mobile.svg";
 import social from "../assets/images/contact/social.svg";
 import NewLanding from "../components/shared/NewLanding";
 
-// const button =
-// 	{
-// 		text: "buttons.contact",
-// 		href: "mailto:contact@asrr.nl",
-// 		fa: ["fas", "envelope"]
-// 	};
-
 const services = [
-
 	{
 		image: phone,
 		service: "phone",
@@ -67,7 +59,7 @@ class Contact extends Component {
 		return (
 			<div>
 				<Fade bottom>
-					<NewLanding header="contact.headline" subtitle="contact.subtitle" background={green} image={contact}
+					<NewLanding header="contact.headline" subtitle="contact.subtitle" image={contact}
 					/>
                     <ContactMethods style={{paddingTop: "5em"}} items={services}/>
 				</Fade>
