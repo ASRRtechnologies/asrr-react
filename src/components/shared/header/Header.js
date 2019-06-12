@@ -10,11 +10,23 @@ import nlFlag from "../../../assets/images/flags/nl.svg";
 import enFlag from "../../../assets/images/flags/en.svg";
 
 class Header extends Component {
+	constructor(props) {
+		super(props);
+
+		this.state = {
+			languageImage: getLanguage(),
+			color: 'transparent'
+		};
+
+		console.log(getLanguage().toString());
+		Header.handleFlagClick = Header.handleFlagClick.bind(this);
+	}
+
 	listenScrollEvent = () => {
-		if (window.scrollY < 300) {
+		if (window.scrollY < 300 && window.location.pathname !== "/contact") {
 			this.setState({color: 'transparent'})
 		} else {
-			this.setState({color: '#1A1A1A'})
+			this.setState({color: '#1C1B20'})
 		}
 	};
 
@@ -39,18 +51,6 @@ class Header extends Component {
 		})(navigator.userAgent || navigator.vendor || window.opera);
 		return check;
 	};
-
-	constructor() {
-		super();
-
-		this.state = {
-			languageImage: getLanguage(),
-			color: 'transparent'
-		};
-
-		console.log(getLanguage().toString());
-		Header.handleFlagClick = Header.handleFlagClick.bind(this);
-	}
 
 	componentDidMount() {
 		if (getLanguage().toString() === 'nl') {

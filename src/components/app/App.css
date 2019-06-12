@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import "../shared/landing/LandingText.css";
+@import "../contact/ContactLanding.css";
+
+:root {
+    --primary-color: #141315;
+    --secondary-color: #1C1B20;
+    --main-accent-color: #E4324C;
+    --secondary-accent-color: #181644;
+}
+
 
 * {
     margin: 0;
@@ -10,10 +19,33 @@
 
 body {
     font-family: 'Poppins', serif;
-    background-color: #1A1A1A;
+    background-color: var(--secondary-color);
     /*padding-top: 64px;*/
     color: #343434;
 }
+
+.accent{
+    background: rgb(24,22,68);
+    background: linear-gradient(90deg, rgba(24,22,68,1) 0%, rgba(228,50,76,1) 100%);
+}
+
+.drop-shadow {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.drop-shadow:hover {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.white {
+    color: white;
+}
+
+.dark {
+    color: #9a9a9a;
+}
+
 
 h1 {
     font-size: 30px;
@@ -83,8 +115,6 @@ hr {
 
 .header {
     background-color: transparent;
-    /*background-color: #1A1A1A;*/
-    /*box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);*/
     position: fixed;
     width: 100vw;
     z-index: 3;
@@ -573,7 +603,6 @@ hr {
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: #1A1A1A;
     color: white;
     text-align: center;
     padding: 1rem 0 2em;
@@ -830,36 +859,14 @@ hr {
         display: none;
     }
 
-    /*.header {*/
-    /*background-color: #1A1A1A;*/
-    /*box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);*/
-    /*}*/
-    /*.body {*/
-    /*margin-top: 64px*/
-    /*}*/
+
 }
 
-.glitch {
-    font-size: 100px;
-    position: relative;
-    width: 400px;
-    margin: 0 auto;
-}
-
-.read-more-button {
-    color: #4D429F;
-}
 
 .service-image {
     height: 150px;
     padding: 1em;
     max-width: 250px;
-}
-
-.internal-button {
-    display: block;
-    margin: auto;
-    padding: 1em;
 }
 
 .landing-canvas {

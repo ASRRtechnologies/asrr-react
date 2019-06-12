@@ -7,6 +7,7 @@ import mail from "../assets/images/contact/mail.svg";
 import phone from "../assets/images/contact/mobile.svg";
 import social from "../assets/images/contact/social.svg";
 import NewLanding from "../components/shared/NewLanding";
+import ContactLanding from "../components/contact/ContactLanding";
 
 const services = [
 	{
@@ -59,8 +60,7 @@ class Contact extends Component {
 		return (
 			<div>
 				<Fade bottom>
-					<NewLanding header="contact.headline" subtitle="contact.subtitle" image={contact}
-					/>
+					<ContactLanding/>
                     <ContactMethods style={{paddingTop: "5em"}} items={services}/>
 				</Fade>
 			</div>
