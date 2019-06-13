@@ -4,55 +4,22 @@ import Arrow from "../../assets/images/work/icons/angle-arrow-pointing-to-right.
 
 class WorkCard extends Component {
     render() {
-        const {title, brand} = this.props;
+        const {title, client, logo} = this.props;
         return (
             <div className="card">
                 <div style={{backgroundImage: "url(https://picsum.photos/500/300/?image=10)"}}  className="card_image">
-                    <img className="card-logo" src={Logo}/>
+                    <img className="card-logo" src={logo}/>
                 </div>
                 <div className="card_content">
-                    <p className="card-title">Product design</p>
-                    <h2 className="card_client">Nike</h2>
+                    <p className="card-title">{title}</p>
+                    <h2 className="card_client">{client}</h2>
                     <div className="card-read-more">
                         <p>Read More</p>
 
-                        <img src={Arrow} className="card-read-more-arrow"/>
+                        <img src={Arrow} alt="arrow" className="card-read-more-arrow"/>
                     </div>
                 </div>
             </div> );
-            {/*<div className="work-card-wrapper">*/}
-                {/*<div className="work-card">*/}
-                    {/*<div className="work-card-image">*/}
-                        {/*<h2> Text</h2>*/}
-                    {/*</div>*/}
-
-                    {/*<div className="work-card-description">*/}
-                        {/*<p>IT Beheer</p>*/}
-                        {/*<h2>FORM</h2>*/}
-                        {/*<p className="work-card-read-more">Read more</p>*/}
-                    {/*</div>*/}
-                {/*</div>*/}
-                {/*<div className="work-card-wrapper">*/}
-                {/*<div className="work-card">*/}
-                {/*<div className="work-card-image">*/}
-                {/*<h2> Text</h2>*/}
-                {/*</div>*/}
-
-                {/*<div className="work-card-description">*/}
-                {/*<p>IT Beheer</p>*/}
-                {/*<h2>FORM</h2>*/}
-                {/*<p className="work-card-read-more">Read more</p>*/}
-                {/*</div>*/}
-                {/*</div>*/}
-
-                {/*</div>*/}
-                {/*<div className="cards">*/}
-                    {/*<li className="cards_item">*/}
-
-                    {/*</li>*/}
-                {/*</div>*/}
-            {/*</div>*/}
-
     }
 }
 
