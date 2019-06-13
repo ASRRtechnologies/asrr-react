@@ -88,8 +88,8 @@
     color:white;
 }
 
-.card_title {
-    color: #343434;
+.card-title {
+    color: #c0c0c0 !important;
 }
 
 .card-read-more{
