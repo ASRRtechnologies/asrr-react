@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Fade from "react-reveal/Fade";
 import NewLanding from "../components/shared/NewLanding";
-import TeamPictures from "../components/about/TeamPictures";
+import TeamPictures from "../components/team/TeamPictures";
 import LightTextBox from "../components/shared/LightTextBox";
 //
 // const founders = [
