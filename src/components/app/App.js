@@ -47,7 +47,6 @@ import Languages from "../../routes/Languages";
 import Contact from "../../routes/Contact";
 import About from "../../routes/About";
 import Services from "../../routes/Services";
-import Portfolio from "../../routes/Portfolio";
 import Home from "../../routes/Home";
 import Work from "../../routes/Work";
 

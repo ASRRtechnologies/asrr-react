@@ -9,9 +9,9 @@ class WorkGrid extends Component {
 		return (
 			<div className="work-grid-wrapper">
 				<div className="work-card-wrapper">
-					<WorkCard logo={Nike} client="Nike" title="Product design"/>
-					<WorkCard logo={Google} client=" Google" title="Website design"/>
-					<WorkCard logo={Amazon} client="Amazon" title="Consultancy"/>
+					<WorkCard logo={Nike} alt="Nike-logo" client="Nike" title="Product design"/>
+					<WorkCard logo={Google} alt="Google-logo" client=" Google" title="Website design"/>
+					<WorkCard logo={Amazon} alt="Amazon-logo" client="Amazon" title="Consultancy"/>
 				</div>
 			</div>
 		);
