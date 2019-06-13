@@ -1,16 +1,17 @@
 import React, {Component} from 'react';
-
+import Logo from "../../assets/images/work/nike.png";
 class WorkCard extends Component {
     render() {
         const {title, brand} = this.props;
         return (
             <div className="card">
-                <div style={{backgroundImage: "url(https://picsum.photos/500/300/?image=10)"}}  className="card_image"> </div>
+                <div style={{backgroundImage: "url(https://picsum.photos/500/300/?image=10)"}}  className="card_image">
+                    <img className="card-logo" src={Logo}/>
+                </div>
                 <div className="card_content">
-                    <h2 className="card_title">Card Grid Layout</h2>
-                    <p className="card_text">Demo of pixel perfect pure CSS simple responsive card grid
-                        layout</p>
-                    <button className="btn card_btn">Read More</button>
+                    <p className="card-title">Product design</p>
+                    <h2 className="card_client">Nike</h2>
+                    <p className="card-read-more">Read More</p>
                 </div>
             </div> );
             {/*<div className="work-card-wrapper">*/}
