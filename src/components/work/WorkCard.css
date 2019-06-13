@@ -23,6 +23,11 @@
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
     width: 100%;
+    position: relative;
+}
+
+.card_image:hover{
+    filter:brightness(80%);
 }
 
 .card_image:after {
