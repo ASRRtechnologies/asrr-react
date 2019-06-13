@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import Logo from "../../assets/images/work/nike.png";
+import Arrow from "../../assets/images/work/icons/angle-arrow-pointing-to-right.svg";
+
 class WorkCard extends Component {
     render() {
         const {title, brand} = this.props;
@@ -11,7 +13,11 @@ class WorkCard extends Component {
                 <div className="card_content">
                     <p className="card-title">Product design</p>
                     <h2 className="card_client">Nike</h2>
-                    <p className="card-read-more">Read More</p>
+                    <div className="card-read-more">
+                        <p>Read More</p>
+
+                        <img src={Arrow} className="card-read-more-arrow"/>
+                    </div>
                 </div>
             </div> );
             {/*<div className="work-card-wrapper">*/}

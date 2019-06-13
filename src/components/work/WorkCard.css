@@ -94,8 +94,27 @@
 
 .card-read-more{
     color:white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
+.card-read-more > p{
+   padding-bottom: 0;
+    padding-right: 5px;
+}
+
+.card-read-more-arrow{
+    transition: transform 500ms ease-in-out;
+    width:10px;
+    height:auto;
+    fill:white;
+}
+
+.card-read-more:hover > .card-read-more-arrow {
+    transform: translate(10px);
+    transition: transform 500ms ease-in-out;
+}
 
 @media only screen and (max-width: 800px) {
     .card{
