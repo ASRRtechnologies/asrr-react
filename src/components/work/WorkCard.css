@@ -28,21 +28,14 @@
     width: 100%;
     padding-bottom: 100%;
     position: relative;
-    transition: all 0.3s cubic-bezier(0.47, 0, 0.75, 0.72);
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
 }
-
-
-/*.work-card_image:after {*/
-/*content: "";*/
-/*display: block;*/
-/*padding-bottom: 100%;*/
-/*}*/
-
 
 .work-card:hover .work-card_image{
     filter:brightness(80%);
+    transform:translate3d(0, 0, 0) scale(1.0) ;
 }
-
 
 .work-card-overlay{
     position: absolute;
@@ -50,16 +43,15 @@
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
     width: 100%;
-    transition: all 0.5s ease;
-    left:10px;
+    transition: all 0.3s ease-in-out;
     height: 100%;
+    transform: scale(1.0);
 }
 
 .work-card:hover .work-card-overlay{
-    transform:translate3d(10px, 10px, 10px) scale(1.2) ;
+    transform:translate3d(10px, 10px, 10px) scale(1.1) ;
     transform-origin:center;
 }
-
 
 .work-card-logo{
     position: absolute;
