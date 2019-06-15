@@ -6,7 +6,8 @@ class WorkCard extends Component {
         const {title, client, logo, alt} = this.props;
         return (
             <div className="card">
-                <div style={{backgroundImage: "url(https://picsum.photos/500/300/?image=10)"}} className="card_image">
+                <div style={{backgroundImage: "url(../../assets/images/work/icons/angle-arrow-pointing-to-right.svg)"}} className="card_image">
+                    <div style={{backgroundImage: "url(../)"}}> </div>
                     <img className="card-logo" alt={alt} src={logo}/>
                 </div>
                 <div className="card_content">

@@ -3,7 +3,7 @@
 @import "../shared/landing/LandingText.css";
 @import "../../components/work/WorkCard.css";
 @import "../../components/work/WorkGrid.css";
-
+@import "../shared/header/Header.css";
 
 * {
     margin: 0;

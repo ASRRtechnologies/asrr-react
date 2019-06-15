@@ -41,7 +41,7 @@ import {
 import './App.css';
 import Language from '../../utils/Language'
 import NoRef from "../shared/404";
-import Header from "../shared/header/Header";
+import Header2 from "../shared/header/Header2";
 import Footer from "../shared/header/Footer";
 import Languages from "../../routes/Languages";
 import Contact from "../../routes/Contact";
@@ -68,7 +68,7 @@ class App extends Component {
 
 	render() {
 		return <div className="App">
-			<Header/>
+			<Header2/>
 
 			<Switch>
 				<Route path="/" exact component={Home}/>
