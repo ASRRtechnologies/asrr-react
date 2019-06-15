@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import Arrow from "../../assets/images/work/icons/angle-arrow-pointing-to-right.svg";
-import Plant from "../../assets/images/work/plants.jpg";
 
 class WorkCard extends Component {
     render() {
@@ -10,7 +9,7 @@ class WorkCard extends Component {
 
                 <div style={{backgroundImage: `url(${background})`}} className="work-card_image">
                     <div style={{backgroundImage: `url(${backgroundOverlay})`}}
-                         className="work-card-overlay">
+                             className="work-card-overlay">
                     </div>
                     <img className="work-card-logo" alt={alt} src={logo}/>
                 </div>
@@ -19,8 +18,10 @@ class WorkCard extends Component {
                     <p className="work-card-title">{title}</p>
                     <h2 className="work-card_client">{client}</h2>
                     <div className="work-card-read-more">
-                        <p>Read More</p>
-                        <img src={Arrow} alt="arrow" className="work-card-read-more-arrow"/>
+                        <span style={{display:"inline"}} >
+                            <p>Read More</p>
+                            <img src={Arrow} alt="arrow" className="work-card-read-more-arrow"/>
+                        </span>
                     </div>
                 </div>
             </div>
