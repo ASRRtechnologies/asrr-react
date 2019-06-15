@@ -65,17 +65,14 @@ class Header2 extends React.PureComponent {
 							<li><Link to="/login"><p>Login</p></Link></li>
 						</ul>
 						<ul id="mobile-navigation" className="hamburger-wrapper">
-							{/*<span onClick={this.menuOpen}*/}
-								  {/*className={this.state.menuOpen ? "hamburger--spring is-active" : "hamburger--spring"}>*/}
-								  {/*<span className="hamburger-box">*/}
-									{/*<div className="hamburger-inner"/>*/}
-								  {/*</span>*/}
-							{/*</span>*/}
-							<div className="hamburger-line line1"></div>
-							<div className="hamburger-line line2"></div>
+							<div className="hamburger-box">
+								<div onClick={this.menuOpen} className={this.state.menuOpen ? "hamburger-open hamburger-line" : "hamburger-line"}> </div>
+							</div>
 						</ul>
 					</div>
 				</div>
+
+
 				<div id="side-menu" ref={this.sideNav} className="side-menu"
 					 style={{width: this.state.menuOpen ? '100%' : 0}}>
 					<ul style={{opacity: this.state.menuOpen ? 1 : 0}}>
@@ -91,6 +88,8 @@ class Header2 extends React.PureComponent {
 						</Fade>
 					</ul>
 				</div>
+
+
 			</div>
 		);
 	}
