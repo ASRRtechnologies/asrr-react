@@ -51,8 +51,9 @@ class Header2 extends React.PureComponent {
         return (
             <div className="navigation-container">
                 <div ref={this.header} className="navigation-wrapper">
-                    <ul className="navigation-links" style={{height: this.state.menuOpen ? '100vh' : 0}}>
-                        <div className="navigation-list">
+                    <ul className={this.state.menuOpen ? "menu-open navigation-links": "navigation-links"}>
+                        {/*<ul style={{height: this.state.menuOpen ? '100vh' : 0}}>*/}
+                    <div className={this.state.menuOpen ? "menu-open navigation-list": "navigation-list"}>
                               <li className={this.state.menuOpen ? "menuOpen":""} id="work-link"><Link to="/work">{this.props.t("header.work")}</Link></li>
                               <li className={this.state.menuOpen ? "menuOpen":""} id="services-link"><Link to="/services">{this.props.t("header.services")}</Link></li>
                               <li className={this.state.menuOpen ? "menuOpen":""} id="team-link"><Link to="/team">{this.props.t("header.about")}</Link></li>
