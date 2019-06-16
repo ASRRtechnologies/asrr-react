@@ -1,3 +1,10 @@
+/*// Variable*/
+:root{
+    --hamburger-open: all 0.5s cubic-bezier(0, 0, 0.49, 1.4);
+    --hamburger-closed: all 0.5s ease-out;
+    --nav-links-fade: all 0.2s linear;
+}
+
 .navigation-container{
     width: 100%;
     height:80px;
@@ -25,7 +32,11 @@
      padding-left: 0;
  }
 
-.navigation-links > li{
+.navigation-list {
+    height:100%;
+}
+
+.navigation-list > li {
     height:100%;
 }
 
@@ -49,29 +60,17 @@
 }
 
 @media only screen and (max-width: 1100px) {
-
-    .navigation-wrapper:after{
-        content: "";
-        max-width: 1400px;
-        width:100%;
-        height:100vh;
-        position: absolute;
-        margin-top: 80px;
-        top:0;
-        background-color: #1A1A1A;
-        z-index: 100;
-        overflow-x: hidden;
-        overflow-y: hidden;
-    }
-
     .navigation-links{
         position: absolute;
         top:0;
         margin-top: 80px;
         width:100%;
         height: 100vh;
-        z-index: 200;
-        /*background-color: #1b2735;*/
+        background-color: #1A1A1A;
+        z-index: 100;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        transition: 0.5s all ease-in; /* 0.5 second transition effect to slide in the sidebar */
     }
 
     .navigation-list{
@@ -79,7 +78,9 @@
         flex-direction: column;
         text-align: center;
         margin: 0 auto;
-        height:100%;
+        height:auto;
+        position: absolute;
+        top:50px;
     }
 
     .navigation-links > li{
@@ -89,10 +90,112 @@
     .navigation-links a {
         display: inline-block;
         height:auto;
+        font-size: 26px;
     }
 
     .navigation-wrapper a:hover {
         background-color: transparent;
     }
 
+    .hamburger-box {
+        display: block;
+        cursor: pointer;
+        width:70px;
+        height:70px;
+        position: relative;
+    }
+
+    .hamburger-line{
+        width:50%;
+        height:1px;
+        background-color: white;
+        border-radius: 3px;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top:50%;
+        left:50%;
+        transition: var(--hamburger-closed);
+    }
+
+    .hamburger-line::after{
+        content: "";
+        width:100%;
+        height:1px;
+        background-color: white;
+        border-radius: 3px;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top:10px;
+        left:50%;
+        transition: var(--hamburger-closed);
+    }
+
+    .hamburger-open.hamburger-line{
+        transform: translate(-50%, -50%) rotate(45deg);
+        transition: var(--hamburger-open);
+        top:50%;
+        left:50%;
+    }
+
+    .hamburger-open.hamburger-line::after{
+        content: "";
+        top:0;
+        transform: translate(-50%, -50%) rotate(-90deg);
+        left:50%;
+        transition: var(--hamburger-open);
+    }
+
+    .hamburger-wrapper {
+        margin: 0 50px 0 0;
+        grid-column-start: 4;
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*Fade-in Animations list items*/
+        #work-link{
+            transition:var(--nav-links-fade);
+            opacity: 0;
+        }
+        .menuOpen#work-link{
+            opacity: 1;
+            transition:var(--nav-links-fade);
+        }
+
+    #services-link{
+        transition:var(--nav-links-fade);
+        transition-delay: 0.1s ;
+        opacity: 0;
+    }
+    .menuOpen#services-link{
+        opacity: 1;
+    }
+
+    #team-link{
+        transition:var(--nav-links-fade);
+        transition-delay: 0.2s ;
+        opacity: 0;
+    }
+    .menuOpen#team-link{
+        opacity: 1;
+    }
+
+    #careers-link{
+        transition:var(--nav-links-fade);
+        transition-delay: 0.3s ;
+        opacity: 0;
+    }
+    .menuOpen#careers-link{
+        opacity: 1;
+    }
+
+    #contact-link{
+        transition:var(--nav-links-fade);
+        transition-delay: 0.4s ;
+        opacity: 0;
+    }
+    .menuOpen#contact-link{
+        opacity: 1;
+    }
 }
