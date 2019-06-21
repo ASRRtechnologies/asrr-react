@@ -289,10 +289,11 @@
 
     .menu-overlay{
         position: absolute;
-        width:600px;
-        height:600px;
+        width:300%;
+        height:500%;
         transition: background-position 0.5s, transform 0.5s 0.5s, visibility 0.5s 1s;
         visibility: hidden;
+        left: -150%;
 
     }
 
@@ -302,36 +303,59 @@
     }
 
     .menu-overlay.top{
-        transform: rotate(-45deg) translateY(-460px);
-        background: linear-gradient(to top, transparent 50%, cyan 50%);
+        /*transform: rotate(-45deg) translateY(-460px);*/
+        /*background: linear-gradient(to top, transparent 50%, cyan 50%);*/
+        /*background-size: 100% 200%;*/
+        /*background-position: -100% 100%;*/
+        /*z-index: 2;*/
+        transform: rotate(-45deg) translateY(-250%);
+        background: linear-gradient(to top, cyan 50%, white 50%);
         background-size: 100% 200%;
         background-position: -100% 100%;
+
     }
 
     .menu-open.menu-overlay.top{
+        /*background-position: 0 0;*/
+        /*transform: rotate(-45deg) translateY(-49%);*/
+        /*background-position: 0 0;*/
+        transform: rotate(-45deg) translateY(15%);
         background-position: 0 0;
+
     }
 
     .menu-overlay.middle{
-        transform: rotate(-45deg) translateY(-135%) scaleY(0);
-        background: cyan;
+        /*transform: rotate(-45deg) translateY(135px) scaleY(0);*/
+        /*width:810px;*/
+        /*height:1150px;*/
+        /*background-size: 100% 200%;*/
+        transform: rotate(-45deg) translateY(148%) scaleY(0);
+        background: white;
     }
 
     .menu-open.menu-overlay.middle{
-        transform: rotate(-45deg)  translateY(-65%) scaleY(1);
+        /*transform: scaleY(1);*/
+        /*z-index: 1;*/
+        /*background-position: -100% 100%;*/
+        transform: rotate(-45deg) translateY(115%) scaleY(1);
+
     }
 
     .menu-overlay.bottom{
-        transform: rotate(-45deg) translateY(540px);
-        left:-70%;
-        /*background: linear-gradient(to top, white 50%, cyan 50%);*/
-        background: linear-gradient(to top,  cyan 50%, transparent 50%);
+        /*transform: rotate(-45deg) translateY(540px);*/
+        /*left:-70%;*/
+        /*!*background: linear-gradient(to top, white 50%, cyan 50%);*!*/
+        /*background: linear-gradient(to top,  cyan 50%, transparent 50%);*/
+        /*background-size: 100% 200%;*/
+        transform: rotate(-45deg) translateY(250%);
+        background: linear-gradient(to bottom, red 50%, cyan 50%);
         background-size: 100% 200%;
+        background-position: 0 -100%;
     }
 
     .menu-open.menu-overlay.bottom{
-        background-position: -100% 100%;
-
+        transform: rotate(-45deg) translateY(215%);
+        background-position: 0 0;
     }
 }
 
