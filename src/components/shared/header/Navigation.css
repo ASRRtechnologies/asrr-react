@@ -277,15 +277,15 @@
         z-index:0;
     }
 
-    /*.navigation-menu::after{*/
-        /*content:"";*/
-        /*display: flex;*/
-        /*position: absolute;*/
-        /*top:0;*/
-        /*width: 100%;*/
-        /*height:100vh;*/
-        /*z-index: 1;*/
-    /*}*/
+    .navigation-menu::after{
+        content:"";
+        display: flex;
+        position: absolute;
+        top:0;
+        width: 100%;
+        height:100vh;
+        z-index: 10;
+    }
 
     .menu-overlay{
         position: absolute;
@@ -294,68 +294,101 @@
         transition: background-position 0.5s, transform 0.5s 0.5s, visibility 0.5s 1s;
         visibility: hidden;
         left: -150%;
-
     }
 
     .menu-open.menu-overlay{
         visibility: visible;
-        transition: background-position 0.5s, transform 0.5s 0.5s;
+        transition: background-position 0.3s, transform 0.3s 0.3s;
     }
 
     .menu-overlay.top{
-        /*transform: rotate(-45deg) translateY(-460px);*/
-        /*background: linear-gradient(to top, transparent 50%, cyan 50%);*/
-        /*background-size: 100% 200%;*/
-        /*background-position: -100% 100%;*/
-        /*z-index: 2;*/
         transform: rotate(-45deg) translateY(-250%);
-        background: linear-gradient(to top, cyan 50%, white 50%);
+        background: linear-gradient(to top, white 50%, #1A1A1A 50%);
         background-size: 100% 200%;
         background-position: -100% 100%;
 
     }
 
     .menu-open.menu-overlay.top{
-        /*background-position: 0 0;*/
-        /*transform: rotate(-45deg) translateY(-49%);*/
-        /*background-position: 0 0;*/
         transform: rotate(-45deg) translateY(15%);
         background-position: 0 0;
-
     }
 
     .menu-overlay.middle{
-        /*transform: rotate(-45deg) translateY(135px) scaleY(0);*/
-        /*width:810px;*/
-        /*height:1150px;*/
-        /*background-size: 100% 200%;*/
         transform: rotate(-45deg) translateY(148%) scaleY(0);
-        background: white;
+        background: #1A1A1A;
     }
 
     .menu-open.menu-overlay.middle{
-        /*transform: scaleY(1);*/
-        /*z-index: 1;*/
-        /*background-position: -100% 100%;*/
-        transform: rotate(-45deg) translateY(115%) scaleY(1);
-
+        transform: rotate(-45deg) translateY(114%) scaleY(1);
+        background-color: #1A1A1A;
     }
 
     .menu-overlay.bottom{
-        /*transform: rotate(-45deg) translateY(540px);*/
-        /*left:-70%;*/
-        /*!*background: linear-gradient(to top, white 50%, cyan 50%);*!*/
-        /*background: linear-gradient(to top,  cyan 50%, transparent 50%);*/
-        /*background-size: 100% 200%;*/
-        transform: rotate(-45deg) translateY(250%);
-        background: linear-gradient(to bottom, red 50%, cyan 50%);
+        transform: rotate(-45deg) translateY(350%);
+        background: linear-gradient(to top, white 50%, #1A1A1A 50%);
         background-size: 100% 200%;
         background-position: 0 -100%;
     }
 
     .menu-open.menu-overlay.bottom{
-        transform: rotate(-45deg) translateY(215%);
+        transform: rotate(-45deg) translateY(213%);
         background-position: 0 0;
+    }
+
+    .navigation-links{
+        display: flex;
+        height:100vh;
+        position: absolute;
+        width:100%;
+        z-index: 5;
+        color:white;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navigation-links li {
+        list-style: none;
+        opacity: 0;
+        transition: all 0.6s;
+    }
+
+    .menu-open.navigation-links li {
+        opacity: 1;
+        transition: all 1s;
+    }
+
+    .navigation-links li:nth-child(1) {
+        transition-delay: 0.3s;
+    }
+    .navigation-links li:nth-child(2) {
+        transition-delay: 0.25s;
+    }
+    .navigation-links li:nth-child(3) {
+        transition-delay: 0.2s;
+    }
+    .navigation-links li:nth-child(4) {
+        transition-delay: 0.15s;
+    }
+    .navigation-links li:nth-child(5) {
+        transition-delay: 0.1s;
+    }
+
+    .menu-open.navigation-links li:nth-child(1) {
+        transition-delay: 0.6s;
+    }
+    .menu-open.navigation-links li:nth-child(2) {
+        transition-delay: 0.7s;
+    }
+    .menu-open.navigation-links li:nth-child(3) {
+        transition-delay: 0.8s;
+    }
+    .menu-open.navigation-links li:nth-child(4) {
+        transition-delay: 0.9s;
+    }
+    .menu-open.navigation-links li:nth-child(5) {
+        transition-delay: 1s;
     }
 }
 
