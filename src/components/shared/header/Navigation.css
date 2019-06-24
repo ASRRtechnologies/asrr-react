@@ -15,11 +15,12 @@
     position: fixed;
     top: 0;
     transition: top 0.3s; /* Transition effect when sliding down (and up) */
-
 }
 
 .navigation-menu {
     height: 100%;
+    display: flex;
+    flex-direction: row;
 }
 
 .navigation-wrapper {
@@ -28,6 +29,8 @@
     height: 100%;
     margin: auto;
     position: relative;
+    display: flex;
+    flex-direction: row;
 }
 
 .navigation-links {
@@ -80,6 +83,33 @@
     border-bottom: 5px solid #E4324C !important;
 }
 
+.logo-wrapper{
+    position: relative;
+    z-index: -1;
+}
+
+
+/*translate button*/
+.translate-wrapper {
+    /*display: inline-block;*/
+    /*float: right;*/
+    /*position: relative;*/
+    /*user-select: none;*/
+    /*line-height: 70px;*/
+    /*margin: auto;*/
+    display: inline-block;
+    margin: auto;
+    height: auto;
+
+}
+
+.translate-button {
+    height: 100%;
+    display: inline-block;
+    margin: auto;
+}
+
+
 
 
 @media only screen and (max-width: 1000px) {
@@ -95,12 +125,13 @@
     }
 
     .navigation-menu {
-        position: relative;
+        position: absolute;
         height: 100vh;
         background-color: #1A1A1A;
         z-index: 0;
         transition: width 1s 0.5s;
         width: 0;
+        right: 0;
     }
 
     .menu-open.navigation-menu {
@@ -180,11 +211,12 @@
 
     .hamburger-wrapper {
         position: absolute;
-        margin: 0 50px 0 0;
+        margin: 0 10px 0 0;
         grid-column-start: 4;
         padding-left: 0;
         display: flex;
         flex-direction: column;
+        right:0;
     }
 
     .hamburger-box {
@@ -235,6 +267,15 @@
         left: 50%;
         transition: var(--hamburger-open);
     }
+
+    .translate-wrapper {
+        position: absolute;
+        right:80px;
+        height:50px;
+        display: flex;
+        align-items: center;
+
+    }
 }
 
 
@@ -244,6 +285,7 @@
     .navigation-menu {
         width: 100% !important;
         background-color: transparent;
+        position: relative;
     }
 
     .menu-open.navigation-menu {
@@ -304,5 +346,8 @@
     .navigation-links {
         font-size: 28px;
     }
+
+
+
 }
 

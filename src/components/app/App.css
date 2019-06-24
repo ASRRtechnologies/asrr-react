@@ -232,19 +232,7 @@ hr {
     display: block
 }
 
-/*translate button*/
-.translate-wrapper {
-    display: inline-block;
-    float: right;
-    margin: auto;
-    position: relative;
-    user-select: none;
-    line-height: 70px;
-}
 
-.translate-button {
-    height: 100%;
-}
 
 .modal {
     display: flex;
@@ -280,6 +268,7 @@ hr {
     margin-right: 20px;
     fill: white !important;
     padding-left: 1em;
+    z-index: 1;
 }
 
 /*Landing*/
@@ -914,6 +903,8 @@ hr {
     .translate-wrapper {
         line-height: 60px;
     }
+
+
 
     #landing-text {
         float: none;
