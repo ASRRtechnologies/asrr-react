@@ -11,8 +11,11 @@
     height: 80px;
     background-color: black;
     z-index: 1000;
-    position: fixed;
     color: white;
+    position: fixed;
+    top: 0;
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+
 }
 
 .navigation-menu {
@@ -82,6 +85,7 @@
 @media only screen and (max-width: 1000px) {
     .navigation-container {
         height: 50px;
+
     }
 
     .navigation-wrapper {
