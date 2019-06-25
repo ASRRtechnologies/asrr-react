@@ -6,14 +6,12 @@ class WorkCard extends Component {
         const {title, client, logo, alt, background, backgroundOverlay} = this.props;
         return (
             <div className="work-card">
-
                 <div style={{backgroundImage: `url(${background})`}} className="work-card_image">
                     <div style={{backgroundImage: `url(${backgroundOverlay})`}}
                              className="work-card-overlay">
                     </div>
                     <img className="work-card-logo" alt={alt} src={logo}/>
                 </div>
-
                 <div className="work-card_content">
                     <p className="work-card-title">{title}</p>
                     <h2 className="work-card_client">{client}</h2>

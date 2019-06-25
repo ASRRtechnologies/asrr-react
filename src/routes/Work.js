@@ -9,7 +9,7 @@ class Work extends Component {
 		return (
 			<div className="portfolio-wrapper">
 				<Fade bottom>
-					<NewLanding name="work.landing"/>
+					{/*<NewLanding name="work.landing"/>*/}
 
 					<WorkGrid/>
 				</Fade>

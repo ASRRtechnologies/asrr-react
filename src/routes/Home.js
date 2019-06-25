@@ -48,18 +48,18 @@ class Home extends Component {
 		return (
 			<div>
 				<Fade bottom>
-					{!this.checkMobile() ?
-						<ParticleLanding header="home.headline" subtitle="home.subtitle" background={lowPolyRed}
-						                 color={true}
-						                 button={button}/>
-						: <div><Sphere style={{position: "absolute", top: "0", left: "0", zIndex: "-100"}}/>
-							<SphereLanding header="home.headline" subtitle="home.subtitle" background={lowPolyRed}
-							               color={false}
-							               button={button}/>
-							<hr style={hrStyle}/>
-						</div>
+					{/*{!this.checkMobile() ?*/}
+						{/*<ParticleLanding header="home.headline" subtitle="home.subtitle" background={lowPolyRed}*/}
+						                 {/*color={true}*/}
+						                 {/*button={button}/>*/}
+						{/*: <div><Sphere style={{position: "absolute", top: "0", left: "0", zIndex: "-100"}}/>*/}
+							{/*<SphereLanding header="home.headline" subtitle="home.subtitle" background={lowPolyRed}*/}
+							               {/*color={false}*/}
+							               {/*button={button}/>*/}
+							{/*<hr style={hrStyle}/>*/}
+						{/*</div>*/}
 
-					}
+					{/*}*/}
 					<Clients/>
 
 					<ServiceSummary/>
