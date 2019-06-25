@@ -78,7 +78,7 @@ class Header3 extends Component {
             <div ref={this.header} className="navigation-container">
                 <div className="navigation-wrapper">
 
-                    <div className="logo-wrapper"><NavLink to="/"><img className="logo" src={logo}
+                    <div  onClick={this.closeMenu} className="logo-wrapper"><NavLink to="/"><img className="logo" src={logo}
                                                                        alt="logo"/></NavLink></div>
 
                     <div className={this.state.menuOpen ? "menu-open navigation-menu top" : "navigation-menu"}>
