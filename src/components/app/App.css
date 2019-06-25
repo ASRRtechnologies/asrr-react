@@ -259,17 +259,7 @@ hr {
     padding: 16px;
 }
 
-.logo {
-    display: inline;
-    vertical-align: top;
-    left: 10px;
-    width: 90px;
-    height: 65px;
-    margin-right: 20px;
-    fill: white !important;
-    padding-left: 1em;
-    z-index: 1;
-}
+
 
 /*Landing*/
 .new-landing {
