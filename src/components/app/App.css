@@ -3,7 +3,7 @@
 @import "../shared/landing/LandingText.css";
 @import "../../components/work/WorkCard.css";
 @import "../../components/work/WorkGrid.css";
-
+@import "../shared/header/Navigation.css";
 
 * {
     margin: 0;
@@ -55,6 +55,7 @@ a.rounded {
 
 a.rounded:hover {
     border-color: rgba(255, 255, 255, 1);
+    cursor: pointer;
 }
 
 hr {
@@ -231,19 +232,7 @@ hr {
     display: block
 }
 
-/*translate button*/
-.translate-wrapper {
-    display: inline-block;
-    float: right;
-    margin: auto;
-    position: relative;
-    user-select: none;
-    line-height: 70px;
-}
 
-.translate-button {
-    height: 100%;
-}
 
 .modal {
     display: flex;
@@ -270,16 +259,7 @@ hr {
     padding: 16px;
 }
 
-.logo {
-    display: inline;
-    vertical-align: top;
-    left: 10px;
-    width: 90px;
-    height: 65px;
-    margin-right: 20px;
-    fill: white !important;
-    padding-left: 1em;
-}
+
 
 /*Landing*/
 .new-landing {
@@ -913,6 +893,8 @@ hr {
     .translate-wrapper {
         line-height: 60px;
     }
+
+
 
     #landing-text {
         float: none;
