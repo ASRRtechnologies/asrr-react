@@ -5,4 +5,9 @@
     padding: 0 50px;
 }
 
+@media only screen and (max-width: 500px) {
+    .work-grid-wrapper{
+        padding:0;
+    }
+}
 

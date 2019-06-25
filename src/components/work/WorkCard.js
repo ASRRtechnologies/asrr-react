@@ -7,8 +7,10 @@ class WorkCard extends Component {
         return (
             <div className="work-card">
                 <div style={{backgroundImage: `url(${background})`}} className="work-card_image">
+                    <div className="work-card-filter">
                     <div style={{backgroundImage: `url(${backgroundOverlay})`}}
                              className="work-card-overlay">
+                    </div>
                     </div>
                     <img className="work-card-logo" alt={alt} src={logo}/>
                 </div>
