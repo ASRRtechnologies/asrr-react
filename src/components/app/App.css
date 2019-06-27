@@ -4,7 +4,7 @@
 @import "../../components/work/WorkCard.css";
 @import "../../components/work/WorkGrid.css";
 @import "../shared/header/Navigation.css";
-
+@import "../../components/services/serviceCard.css";
 * {
     margin: 0;
     padding: 0;
