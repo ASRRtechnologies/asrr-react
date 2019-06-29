@@ -1,6 +1,6 @@
-.work-card-wrapper{
+.work-card-wrapper {
     display: flex;
-    width:100%;
+    width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -12,15 +12,15 @@
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    width:30.333%;
-    margin:0 10px 0 10px;
+    width: 30.333%;
+    margin: 0 10px 0 10px;
 }
 
-.work-card:hover{
+.work-card:hover {
     cursor: pointer;
 }
 
-.work-card_image{
+.work-card_image {
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
@@ -31,12 +31,12 @@
     transition: all 0.3s ease-in-out;
 }
 
-.work-card:hover .work-card_image{
-    transform:translate3d(0, 0, 0) scale(1.0) ;
+.work-card:hover .work-card_image {
+    transform: translate3d(0, 0, 0) scale(1.0);
 }
 
 
-.work-card-overlay{
+.work-card-overlay {
     position: absolute;
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
@@ -47,16 +47,26 @@
     transform: scale(1.0);
 }
 
-.work-card:hover .work-card-overlay{
-    transform:translate3d(10px, 10px, 10px) scale(1.1) ;
-    transform-origin:center;
-    filter:brightness(80%);
+.work-card-dark-filter {
+     position: absolute;
+     height: 100%;
+     width: 100%;
+ }
+
+.work-card:hover .work-card-dark-filter{
+    background: radial-gradient( rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.3));
 }
 
-.work-card-logo{
+.work-card:hover .work-card-overlay {
+    transform: translate3d(10px, 10px, 10px) scale(1.1);
+    transform-origin: center;
+    filter: brightness(80%);
+}
+
+.work-card-logo {
     position: absolute;
     z-index: 10;
-    width:150px;
+    width: 150px;
     height: auto;
     left: 50%;
     bottom: 0;
@@ -66,10 +76,10 @@
     transform: translate(-50%, 0);
 }
 
-.work-card:hover .work-card-logo{
+.work-card:hover .work-card-logo {
     transform: translate(-50%, -50px);
     opacity: 1;
-    transition:transform 0.3s ease-in-out,
+    transition: transform 0.3s ease-in-out,
     opacity 0.3s ease-in-out,
     visibility 1000ms ease-out;
 }
@@ -77,7 +87,7 @@
 .work-cards_item {
     display: flex;
     padding: 1rem;
-    width:auto;
+    width: auto;
 }
 
 .work-card_content {
@@ -86,7 +96,7 @@
     z-index: 20;
     display: flex;
     flex-direction: column;
-    height:100%;
+    height: 100%;
 }
 
 .work-card_content p {
@@ -96,31 +106,31 @@
 .work-card_client {
     font-size: 34px;
     padding: 0 0 20px 0;
-    font-weight:bold;
-    color:white;
+    font-weight: bold;
+    color: white;
 }
 
 .work-card-title {
     color: #c0c0c0 !important;
 }
 
-.work-card-read-more{
-    color:white;
-    display:inline-block;
-    width:100%;
+.work-card-read-more {
+    color: white;
+    display: inline-block;
+    width: 100%;
 }
 
-.work-card-read-more p{
-    display:inline-block;
+.work-card-read-more p {
+    display: inline-block;
     padding-bottom: 0;
     padding-right: 5px;
 }
 
-.work-card-read-more-arrow{
+.work-card-read-more-arrow {
     transition: all 0.3s ease-in-out;
-    width:10px;
-    height:auto;
-    fill:white;
+    width: 10px;
+    height: auto;
+    fill: white;
 }
 
 .work-card-read-more > span:hover > .work-card-read-more-arrow {
@@ -132,42 +142,42 @@
     .work-card_client {
         font-size: 28px;
         padding: 0 0 20px 0;
-        font-weight:bold;
-        color:white;
+        font-weight: bold;
+        color: white;
     }
 }
 
 @media only screen and (max-width: 800px) {
-    .work-card{
+    .work-card {
         width: 45%;
-        margin:20px 10px
+        margin: 20px 10px
     }
 
-    .work-card:hover{
+    .work-card:hover {
         cursor: none;
     }
 
-    .work-card_image{
+    .work-card_image {
         transform: scale(1.0);
     }
 
-    .work-card:hover .work-card_image{
-        filter:none;
-        transform:none;
+    .work-card:hover .work-card_image {
+        filter: none;
+        transform: none;
     }
 
-    .work-card:hover .work-card-overlay{
-        transform:none;
+    .work-card:hover .work-card-overlay {
+        transform: none;
     }
 
-    .work-card-logo{
+    .work-card-logo {
         visibility: hidden;
     }
 
 }
 
 @media only screen and (max-width: 500px) {
-    .work-card{
+    .work-card {
         width: 95%;
         margin: 35px 10px;
     }
