@@ -58,7 +58,6 @@ class Home extends Component {
 							               {/*button={button}/>*/}
 							{/*<hr style={hrStyle}/>*/}
 						{/*</div>*/}
-
 					{/*}*/}
 					<Clients/>
 
