@@ -7,15 +7,20 @@ import Plant from "../../assets/images/work/plants.jpg";
 import PlantOverlay from "../../assets/images/work/plants-overlay.png";
 import Building from "../../assets/images/work/form/building-min.png";
 import BuildingOverlay from "../../assets/images/work/form/building-overlay-min.png";
-import FormLogo from  "../../assets/images/work/form/form_logo.svg";
+import Form from  "../../assets/images/work/form/form_logo.svg";
+import Container from "../../assets/images/work/hes/hes.png";
+import ContainerOverlay from "../../assets/images/work/hes/hes-overlay.png";
+import Hes from "../../assets/images/work/hes/HES-logo-dark.png";
+
+
 
 class WorkGrid extends Component {
 	render() {
 		return (
 			<div className="work-grid-wrapper">
 				<div className="work-card-wrapper">
-					<WorkCard logo={FormLogo} background={Building} backgroundOverlay={BuildingOverlay}  alt="Form-logo" client="Form Architecture" title="Product design"/>
-					<WorkCard logo={Google} background={Plant} backgroundOverlay={PlantOverlay} alt="Google-logo" client=" Google" title="Website design"/>
+					<WorkCard logo={Form} background={Building} backgroundOverlay={BuildingOverlay}  alt="Form-logo" client="Form Architecture" title="Bim configuration"/>
+					<WorkCard logo={Hes} background={Container} backgroundOverlay={ContainerOverlay} alt="Hes-logo" client=" Hes" title="Steel Tracker & Quality Control"/>
 					<WorkCard logo={Amazon} background={Plant} backgroundOverlay={PlantOverlay} alt="Amazon-logo" client="Amazon" title="Consultancy"/>
 				</div>
 			</div>

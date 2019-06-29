@@ -153,6 +153,10 @@
         margin: 20px 10px
     }
 
+    .work-card_client {
+        font-size: 22px;
+    }
+
     .work-card:hover {
         cursor: none;
     }
@@ -173,10 +177,9 @@
     .work-card-logo {
         visibility: hidden;
     }
-
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
     .work-card {
         width: 95%;
         margin: 35px 10px;
