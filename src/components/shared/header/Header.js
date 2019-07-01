@@ -22,6 +22,13 @@ class Header extends Component {
 
     menuOpen = () => {
         this.setState({menuOpen: !this.state.menuOpen});
+        let position;
+        // if(this.state.menuOpen) {
+        //     position = "fixed";
+        // }
+        // else position = "static";
+        // this.header.current.style.position= position;
+        // console.log(this.header.current.style.position);
     };
 
     closeMenu = () => {
@@ -31,16 +38,16 @@ class Header extends Component {
     headerScroll = () => {
         this.setState({prevScrollprops: window.pageYOffset});
         let currentScrollPos = window.pageYOffset;
-        if (this.state.prevScrollpos > currentScrollPos) {
-            this.header.current.style.top = "0";
-            console.log("upwards")
-        } else {
-            this.header.current.style.top = "-80px";
-            console.log("downwards")
-
+        if(!this.state.menuOpen){
+            if (this.state.prevScrollpos > currentScrollPos) {
+                this.header.current.style.top = "0";
+            }
+            else {
+                this.header.current.style.top = "-80px";
+            }
         }
         this.setState({prevScrollpos: currentScrollPos});
-    }
+    };
 
     static selectPreferredLanguage(language) {
         Language.selectPreferredLanguage(language);
