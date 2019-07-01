@@ -22,13 +22,6 @@ class Header extends Component {
 
     menuOpen = () => {
         this.setState({menuOpen: !this.state.menuOpen});
-        let position;
-        // if(this.state.menuOpen) {
-        //     position = "fixed";
-        // }
-        // else position = "static";
-        // this.header.current.style.position= position;
-        // console.log(this.header.current.style.position);
     };
 
     closeMenu = () => {
