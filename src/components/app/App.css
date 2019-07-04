@@ -6,7 +6,7 @@
 @import "../shared/header/Navigation.css";
 @import "../../components/home/slider.css";
 @import "../../components/home/testimonial.css";
-
+@import "~@brainhubeu/react-carousel/lib/style.css";
 * {
     margin: 0;
     padding: 0;

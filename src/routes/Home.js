@@ -6,6 +6,7 @@ import Testimonial from "../components/home/Testimonial";
 import Hes from "../assets/images/clients/hes.png";
 import Form from "../assets/images/clients/form_logo-diap.svg";
 import VW from "../assets/images/clients/Logo_VolkerWessels logo.png";
+import TestimonialCard from '../components/home/TestimonialCard'
 
 
 const button =
