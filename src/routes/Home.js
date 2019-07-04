@@ -74,7 +74,7 @@ class Home extends Component {
 					<Clients data={clients}/>
 					<ServiceSummary/>
 					<WorkGrid backgroundColor="#1A1A1D" component={
-						<GeneralHeader title="Work" titleColor="#C3073F" subText_color="white" marginBottom="50px"
+						<GeneralHeader title="Work" titleColor="#E4324C" subText_color="white" marginBottom="50px"
 									   subText={`See some of our previous work`}/>}/>
 					<Testimonial/>
 				</Fade>
