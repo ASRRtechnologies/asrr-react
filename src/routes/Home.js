@@ -2,6 +2,11 @@ import React, {Component} from 'react';
 import Fade from "react-reveal/Fade";
 import ServiceSummary from "../components/home/ServiceSummary";
 import Clients from "../components/home/Clients";
+import Testimonial from "../components/home/Testimonial";
+import Hes from "../assets/images/clients/hes.png";
+import Form from "../assets/images/clients/form_logo-diap.svg";
+import VW from "../assets/images/clients/Logo_VolkerWessels logo.png";
+
 
 const button =
 	{
@@ -20,6 +25,25 @@ let hrStyle = {
 	marginTop: "1.5em",
 	width: "15%",
 };
+
+const clients = [
+	{image_src: Hes, alt:"X", width:200},
+	{image_src: Form, alt:"X", width:200},
+	{image_src: VW, alt:"X", width:200},
+	{image_src: Hes, alt:"X", width:250},
+	{image_src: Form, alt:"X", width:200},
+	{image_src: VW, alt:"X", width:200},
+	{image_src: Hes, alt:"X", width:200},
+	{image_src: Form, alt:"X", width:200},
+	{image_src: VW, alt:"X", width:200},
+	{image_src: Hes, alt:"X", width:200},
+	{image_src: Form, alt:"X", width:200},
+	{image_src: VW, alt:"X", width:200},
+	{image_src: Hes, alt:"X", width:200},
+	{image_src: Form, alt:"X", width:200},
+	{image_src: VW, alt:"X", width:200},
+
+];
 
 class Home extends Component {
 	checkMobile = function () {
@@ -44,8 +68,9 @@ class Home extends Component {
 		return (
 			<div>
 				<Fade bottom>
-					<Clients/>
+					<Clients data={clients}/>
 					<ServiceSummary/>
+					<Testimonial/>
 				</Fade>
 
 			</div>

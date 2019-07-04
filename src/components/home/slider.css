@@ -7,7 +7,7 @@
         animation-play-state: paused;
     }
     100% {
-        transform: translateX(calc(-250px * 7));
+        transform: translateX(calc(-200px * 7.5));
 
     }
 }
@@ -38,13 +38,13 @@
     top: 0;
 }
 .slider .slide-track {
-    animation: scroll 30s linear infinite;
+    animation: scroll 10s linear infinite;
     display: flex;
-    width: calc(250px * 14);
+    width: calc(200px * 15);
 }
 .slider .slide {
     height: 100px;
-    width: 250px;
+    width: 200px;
 }
 
 @media only screen and (max-width: 600px) {

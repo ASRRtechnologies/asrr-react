@@ -5,6 +5,7 @@
 @import "../../components/work/WorkGrid.css";
 @import "../shared/header/Navigation.css";
 @import "../../components/home/slider.css";
+@import "../../components/home/testimonial.css";
 
 * {
     margin: 0;
@@ -15,7 +16,7 @@
 body {
     font-family: 'Poppins', serif;
     background-color: #1A1A1A;
-    /*padding-top: 64px;*/
+    padding-top: 180px;
     color: #343434;
 }
 
