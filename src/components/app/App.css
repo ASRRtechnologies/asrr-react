@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import "../shared/landing/LandingText.css";
+@import "../shared/general-header.css";
 @import "../../components/work/WorkCard.css";
 @import "../../components/work/WorkGrid.css";
 @import "../shared/header/Navigation.css";
-
+@import "../../components/home/slider.css";
+@import "../../components/home/testimonial.css";
+@import "~@brainhubeu/react-carousel/lib/style.css";
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +17,7 @@
 body {
     font-family: 'Poppins', serif;
     background-color: #1A1A1A;
-    /*padding-top: 64px;*/
+    padding-top: 180px;
     color: #343434;
 }
 
