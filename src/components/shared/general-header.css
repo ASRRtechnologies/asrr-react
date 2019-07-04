@@ -10,7 +10,10 @@
 }
 
 .general-header span {
-    position: absolute;
+    width:200px;
+    height:2px;
+    background-color: red;
+    margin-bottom: 20px;
 }
 
 .general-header h1 {
@@ -18,21 +21,6 @@
     font-weight: bolder;
     position: relative;
     text-align: center;
-}
-
-.general-header h1:after {
-    position: absolute;
-    bottom: 20px;
-    content: "";
-    left: 50%;
-    transform: translateX(-50%);
-    width: 30%;
-    height: 2px;
-    background-color: red;
-}
-
-.general-header-line {
-
 }
 
 .general-header p {
@@ -55,6 +43,13 @@
 
     .general-header p {
         font-size: 20px;
+    }
+
+    .general-header span {
+        width:100px;
+        height:2px;
+        background-color: red;
+        margin-bottom: 20px;
     }
 }
 

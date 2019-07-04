@@ -12,7 +12,7 @@ class Testimonial extends Component {
 		return (
 			<div className="testimonial-wrapper">
 
-				<GeneralHeader title="Testimonials"
+				<GeneralHeader title="Testimonials" line
 							   subText={`Dont just take us for our words \n see what our clients have to say`}/>
 				<Carousel
 					infinite

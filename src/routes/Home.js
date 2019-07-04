@@ -8,6 +8,7 @@ import Form from "../assets/images/clients/form_logo-diap.svg";
 import VW from "../assets/images/clients/Logo_VolkerWessels logo.png";
 import TestimonialCard from '../components/home/TestimonialCard'
 import WorkGrid from '../components/work/WorkGrid'
+import GeneralHeader from '../components/shared/GeneralHeader'
 
 
 const button =
@@ -72,7 +73,9 @@ class Home extends Component {
 				<Fade bottom>
 					<Clients data={clients}/>
 					<ServiceSummary/>
-					<WorkGrid/>
+					<WorkGrid backgroundColor="#1A1A1D" component={
+						<GeneralHeader title="Work" titleColor="#C3073F" subText_color="white" marginBottom="50px"
+									   subText={`See some of our previous work`}/>}/>
 					<Testimonial/>
 				</Fade>
 
