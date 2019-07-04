@@ -1,10 +1,10 @@
-
 .services-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-columns: repeat(5, 1fr);
     grid-template-rows: auto;
     width:100%;
     background-color: white;
+
 }
 
 .services-card{
@@ -74,7 +74,6 @@
     padding-top: 90px;
     transition: all 0.4s ease;
     min-height: 90px;
-    max-height: 90px;
 }
 
 .services-card-icon{
@@ -144,13 +143,3 @@
 .services-card:hover .services-card-read-more{
     cursor: pointer;
 }
-
-.services-grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    grid-template-rows: auto;
-    width:100%;
-    background-color: white;
-}
-
-
