@@ -83,7 +83,7 @@ class Header extends Component {
 
                     <div className={this.state.menuOpen ? "menu-open navigation-menu top" : "navigation-menu"}>
                         <div className={this.state.menuOpen ? "menu-open navigation-links" : " navigation-links"}>
-                            <li onClick={this.closeMenu}><NavLink activeClassName='active-link'
+                            <li onClick={this.closeMenu}><NavLink exact activeClassName='active-link'
                                                                   to="/">{this.props.t("header.home")}</NavLink>
                             </li>
                             <li onClick={this.closeMenu}><NavLink activeClassName='active-link'

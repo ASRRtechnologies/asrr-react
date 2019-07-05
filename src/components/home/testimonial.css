@@ -27,9 +27,11 @@
     border-radius: 10px;
     background-color: white;
     padding:30px 20px;
-    -webkit-box-shadow:0 5px 15px rgba(0, 0, 0, 0.3);;
-    -moz-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    margin:20px;
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+
     position: relative;
     z-index: 10;
 }
@@ -86,7 +88,7 @@
     }
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 749px) {
     .testimonial-card-wrapper {
         width:60%;
         height:250px;
@@ -98,6 +100,7 @@
         width:80%;
         height:400px;
         margin-bottom: 20px;
+        border-radius: 0;
     }
     .testimonial-card-wrapper > img {
         display: block;
