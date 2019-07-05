@@ -293,6 +293,10 @@
         margin-left: 20px;
         z-index: 300;
     }
+
+    .navigation-links a {
+        font-size: 40px;
+    }
 }
 
 /*// Mobile devices*/
@@ -358,7 +362,7 @@
         background-position: 0 0;
     }
 
-    .navigation-links {
+    .navigation-links a {
         font-size: 28px;
     }
 }

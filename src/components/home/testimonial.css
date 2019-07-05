@@ -4,11 +4,10 @@
     background-color: #fafafa;
     width: 100%;
     height: 100%;
-    padding-bottom: 100px;
+    padding-bottom: 150px;
     padding-top: 100px;
     position: relative;
     z-index: -1;
-
 }
 
 .testimonial-background{
@@ -95,13 +94,18 @@
     }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 500px) {
+    .testimonial-wrapper{
+
+    }
+
     .testimonial-card-wrapper {
         width:80%;
         height:400px;
         margin-bottom: 20px;
         border-radius: 0;
     }
+
     .testimonial-card-wrapper > img {
         display: block;
         margin: auto;

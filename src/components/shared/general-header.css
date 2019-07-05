@@ -3,8 +3,8 @@
     width: 100%;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 200px;
-    padding-top: 50px;
+    margin-bottom: 100px;
+
     justify-content: center;
     white-space: pre-wrap;
 }
@@ -32,10 +32,15 @@
 
     .general-header {
         margin-bottom: 20px !important;
+        padding-top:0;
     }
 }
 
 @media only screen and (max-width: 600px) {
+
+    .general-header {
+        padding-top:0;
+    }
 
     .general-header h1 {
         font-size: 40px;
@@ -43,6 +48,7 @@
 
     .general-header p {
         font-size: 20px;
+        padding: 0 5px;
     }
 
     .general-header span {
