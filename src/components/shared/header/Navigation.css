@@ -150,7 +150,6 @@
         flex-direction: column;
         align-items: center;
         top: 25%;
-        font-size: 34px;
         height: auto;
         pointer-events: none;
     }
@@ -295,7 +294,7 @@
     }
 
     .navigation-links a {
-        font-size: 40px;
+        font-size: 28px;
     }
 }
 
@@ -360,10 +359,6 @@
     .menu-open.menu-overlay.bottom {
         transform: rotate(-45deg) translateY(140vw);
         background-position: 0 0;
-    }
-
-    .navigation-links a {
-        font-size: 28px;
     }
 }
 
