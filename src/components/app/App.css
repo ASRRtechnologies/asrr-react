@@ -18,7 +18,7 @@
 body {
     font-family: 'Poppins', serif;
     background-color: #1A1A1A;
-    padding-top: 180px;
+    padding-top: 80px;
     color: #343434;
 }
 
@@ -769,7 +769,6 @@ hr {
     color: white;
     text-align: center;
     padding: 1rem 0 2em;
-
 }
 
 .footer-logo {
@@ -862,6 +861,10 @@ hr {
 }
 
 @media screen and (max-width: 900px) {
+    body{
+        padding-top: 50px;
+    }
+
     .new-landing-text {
         margin-bottom: 40px;
     }
