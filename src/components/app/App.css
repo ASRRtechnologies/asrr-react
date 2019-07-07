@@ -6,10 +6,11 @@
 @import "../../components/work/WorkCard.css";
 @import "../../components/work/WorkGrid.css";
 @import "../shared/header/Navigation.css";
+@import "../../components/services/serviceCard.css";
 @import "../shared/header/footer.css";
 @import "../../components/home/slider.css";
 @import "../../components/home/testimonial.css";
-@import "~@brainhubeu/react-carousel/lib/style.css";
+
 * {
     margin: 0;
     padding: 0;

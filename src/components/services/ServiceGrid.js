@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Fade from 'react-reveal/Fade';
 import {translate} from 'react-multi-lang';
 import ReadMoreReact from "read-more-react";
+import ServiceCard from './ServiceCard'
 
 // import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
@@ -9,26 +10,15 @@ import ReadMoreReact from "read-more-react";
 class ServiceGrid extends Component {
     render() {
         return (
-            <div className="grid-container white">
-                <h1>{this.props.t(this.props.section)}</h1>
+            <div className="services-grid">
+
                 <Fade bottom>
-                    <div className="item-container">
-                        <div className="item-cards">
-                            <Fade bottom>
-	                            {this.props.items.map((item, index) => {
-		                            return <div key={index} className="drop-shadow">
-			                            <img src={item.image} className="service-image" alt={item.service + " image"}/>
-                                        <h2>{this.props.t('services.' + item.service + ".name")}</h2>
-                                        <div className="card-description">
-                                            <div><ReadMoreReact
-                                                text={this.props.t('services.' + item.service + ".description")}
-                                                min={30} ideal={32} max={35}/></div>
-                                        </div>
-                                    </div>
-                                })}
-                            </Fade>
-                        </div>
-                    </div>
+                    {this.props.items.map((item) => {
+                        {console.log(item.image)}
+                        return <ServiceCard image={item.image} textPreview={item.previewText} color={item.color} service={item.service}/>
+
+                    })}
+
                 </Fade>
 
             </div>
