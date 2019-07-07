@@ -6,7 +6,7 @@ class TestimonialCard extends Component {
 	render () {
 		return (
 			<div className="testimonial-card-wrapper">
-				<img src={Quote} width="40px"/>
+				<img src={Quote} width="40px" alt="testimonials"/>
 				<p>
 					Lorem Ipsum is slechts een proeftekst uit het drukkerij- en zetterijwezen. Lorem Ipsum is de
 					standaard proeftekst in deze bedrijfstak sinds de 16e eeuw, toen een onbekende drukker een zethaak

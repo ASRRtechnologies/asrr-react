@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import "../shared/landing/LandingText.css";
+@import "../shared/landing/MobileLanding.css";
 @import "../shared/general-header.css";
 @import "../../components/work/WorkCard.css";
 @import "../../components/work/WorkGrid.css";
@@ -18,7 +19,7 @@
 body {
     font-family: 'Poppins', serif;
     background-color: #1A1A1A;
-    padding-top: 180px;
+    padding-top: 80px;
     color: #343434;
 }
 
@@ -273,7 +274,7 @@ hr {
 }
 
 .new-landing-text {
-    padding-top: 13vh;
+    padding-top: 30vh;
     color: white;
     top: 200px;
     text-align: center;
@@ -761,6 +762,7 @@ hr {
 }
 
 /*footer*/
+
 /*.footer {*/
     /*right: 0;*/
     /*bottom: 0;*/
@@ -862,6 +864,10 @@ hr {
 }
 
 @media screen and (max-width: 900px) {
+    body{
+        padding-top: 50px;
+    }
+
     .new-landing-text {
         margin-bottom: 40px;
     }
