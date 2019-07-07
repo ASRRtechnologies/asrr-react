@@ -7,7 +7,7 @@ class Clients extends Component {
                 <div className="slide-track">
                     {this.props.data.map((item) =>{
                         return <div className="slide">
-                            <img src={item.image_src} height="100" width={item.width}
+                            <img src={item.image_src} height="55"
                                  alt={item.alt}/>
                         </div>
                     })}
