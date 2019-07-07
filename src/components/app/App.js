@@ -49,6 +49,7 @@ import About from "../../routes/About";
 import Services from "../../routes/Services";
 import Home from "../../routes/Home";
 import Work from "../../routes/Work";
+import Footer2 from "../shared/header/Footer2";
 
 
 
@@ -82,7 +83,8 @@ class App extends Component {
 			</Switch>
 
 			<Fade bottom>
-				<Footer/>
+				{/*<Footer/>*/}
+				<Footer2/>
 			</Fade>
 		</div>;
 	}
