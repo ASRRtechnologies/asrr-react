@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {Link, NavLink} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 import Language from "../../../utils/Language";
 import {getLanguage, translate} from "react-multi-lang";
 import logo from "../../../assets/images/logo.svg";
@@ -7,6 +7,7 @@ import nlFlag from "../../../assets/images/flags/nl.svg";
 import enFlag from "../../../assets/images/flags/en.svg";
 
 class Header extends Component {
+
 
     constructor(props) {
         super(props);
@@ -129,6 +130,7 @@ class Header extends Component {
             </div>
         )
     }
+
 }
 
 export default translate(Header);

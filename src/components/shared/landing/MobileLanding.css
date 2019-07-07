@@ -1,0 +1,8 @@
+.mobile-landing-container {
+    background-size: cover;
+    background-image: url("images/skyline.jpg");
+    background-color: white;
+    min-height: 80vh;
+
+
+}

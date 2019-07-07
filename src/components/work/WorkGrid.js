@@ -1,18 +1,14 @@
 import React, {Component} from 'react';
 import WorkCard from "./WorkCard";
-import Nike from "../../assets/images/work/nike.png";
-import Google from "../../assets/images/work/google.png";
 import Amazon from "../../assets/images/work/amazon.png";
 import Plant from "../../assets/images/work/plants.jpg";
 import PlantOverlay from "../../assets/images/work/plants-overlay.png";
 import Building from "../../assets/images/work/form/building-min.png";
 import BuildingOverlay from "../../assets/images/work/form/building-overlay-min.png";
-import Form from  "../../assets/images/work/form/form_logo.svg";
+import Form from "../../assets/images/work/form/form_logo.svg";
 import Container from "../../assets/images/work/hes/hes.png";
 import ContainerOverlay from "../../assets/images/work/hes/hes-overlay.png";
 import Hes from "../../assets/images/work/hes/HES-logo-dark.png";
-import GeneralHeader from '../shared/GeneralHeader';
-
 
 
 class WorkGrid extends Component {

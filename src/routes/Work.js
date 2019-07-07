@@ -1,8 +1,6 @@
 import React, {Component} from 'react';
 import Fade from "react-reveal/Fade";
-import NewLanding from "../components/shared/NewLanding";
 import WorkGrid from "../components/work/WorkGrid";
-
 
 class Work extends Component {
 	render() {
@@ -10,7 +8,6 @@ class Work extends Component {
 			<div className="portfolio-wrapper">
 				<Fade bottom>
 					{/*<NewLanding name="work.landing"/>*/}
-
 					<WorkGrid/>
 				</Fade>
 			</div>
