@@ -27,7 +27,6 @@ const clients = [
 	{image_src: Hes, alt: "X", width: 200},
 	{image_src: Form, alt: "X", width: 200},
 	{image_src: VW, alt: "X", width: 200},
-
 ];
 
 class Home extends Component {

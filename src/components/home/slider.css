@@ -42,9 +42,9 @@
 }
 
 .slider .slide-track {
-    animation: scroll 30s linear infinite;
+    animation: scroll 60s linear infinite;
     display: flex;
-    width: calc(200px * 15);
+    width: calc(250px * 15);
 }
 
 .slider .slide {
@@ -54,10 +54,8 @@
 }
 
 @media only screen and (max-width: 600px) {
-
     .slider::before, .slider::after {
         background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
         width: 50px;
     }
-
 }
