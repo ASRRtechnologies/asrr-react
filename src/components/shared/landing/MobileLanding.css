@@ -3,4 +3,5 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)),url("images/landing-asrr.jpg");
     background-color: white;
     min-height: 85vh;
+    margin-bottom: -30px;
 }
