@@ -304,11 +304,13 @@
     .navigation-menu {
         width: 100% !important;
         background-color: transparent;
+        visibility: hidden;
     }
 
     .menu-open.navigation-menu {
         width: 100%;
         background-color: transparent;
+        visibility: visible;
     }
 
     .menu-overlay {
