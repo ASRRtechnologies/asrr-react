@@ -32,7 +32,9 @@ class Testimonial extends Component {
 					<TestimonialCard/>
 					<TestimonialCard/>
 				</Carousel>
+
 				<img className="testimonial-background" src={background} alt="testimonial background"/>
+
 			</div>
 		)
 	}
