@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import "../shared/landing/LandingText.css";
+@import "../shared/landing/MobileLanding.css";
 @import "../shared/general-header.css";
 @import "../../components/work/WorkCard.css";
 @import "../../components/work/WorkGrid.css";

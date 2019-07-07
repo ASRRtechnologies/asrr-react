@@ -8,8 +8,7 @@ import Form from "../assets/images/clients/form_logo-diap.svg";
 import VW from "../assets/images/clients/Logo_VolkerWessels logo.png";
 import WorkGrid from '../components/work/WorkGrid'
 import GeneralHeader from '../components/shared/GeneralHeader'
-import LandingText from "../components/shared/landing/LandingText";
-import NewLanding from "../components/shared/landing/MobileLanding";
+import MobileLanding from "../components/shared/landing/MobileLanding";
 
 const clients = [
 	{image_src: Hes, alt:"X", width:200},
@@ -53,7 +52,7 @@ class Home extends Component {
 		return (
 			<div>
 				<Fade bottom>
-					<NewLanding />
+					<MobileLanding />
 					<Clients data={clients}/>
 					<ServiceSummary/>
 					<WorkGrid backgroundColor="#1A1A1D" component={
