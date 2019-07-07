@@ -9,6 +9,7 @@ import VW from "../assets/images/clients/Logo_VolkerWessels logo.png";
 import WorkGrid from '../components/work/WorkGrid'
 import GeneralHeader from '../components/shared/GeneralHeader'
 import MobileLanding from "../components/shared/landing/MobileLanding";
+import ParticleLanding from "../components/ParticleLanding";
 
 const clients = [
 	{image_src: Hes, alt:"X", width:200},
@@ -52,7 +53,12 @@ class Home extends Component {
 		return (
 			<div>
 				<Fade bottom>
-					<MobileLanding />
+					{this.checkMobile() ?
+						<MobileLanding />
+						:
+						<ParticleLanding header="hi"/>
+
+					}
 					<Clients data={clients}/>
 					<ServiceSummary/>
 					<WorkGrid backgroundColor="#1A1A1D" component={

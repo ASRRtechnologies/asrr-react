@@ -50,8 +50,6 @@ import Services from "../../routes/Services";
 import Home from "../../routes/Home";
 import Work from "../../routes/Work";
 
-
-
 library.add(faWhatsapp, faLanguage, faImages, faCogs, faUsers, faChevronCircleDown, faPhone, faEnvelope, faHtml5, faCss3Alt, faJs, faJava, faWindows, faLinux, faGithub, faGit, faReact, faAndroid, faAppStoreIos, faApple, faNode, faNodeJs, faPaypal, faFacebook, faTwitter, faSnapchat, faAws, faChrome, faLinkedin);
 
 const NoMatch = ({location}) => (

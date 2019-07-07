@@ -25,7 +25,6 @@ class Testimonial extends Component {
 							slidesPerPage: 1,
 						},
 					}}
-
 				>
 					<TestimonialCard/>
 					<TestimonialCard/>
