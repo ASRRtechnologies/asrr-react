@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {Link, NavLink} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 import Language from "../../../utils/Language";
 import {getLanguage, translate} from "react-multi-lang";
 import logo from "../../../assets/images/logo.svg";
@@ -7,6 +7,7 @@ import nlFlag from "../../../assets/images/flags/nl.svg";
 import enFlag from "../../../assets/images/flags/en.svg";
 
 class Header extends Component {
+
 
     constructor(props) {
         super(props);
@@ -31,16 +32,16 @@ class Header extends Component {
     headerScroll = () => {
         this.setState({prevScrollprops: window.pageYOffset});
         let currentScrollPos = window.pageYOffset;
-        if (this.state.prevScrollpos > currentScrollPos) {
-            this.header.current.style.top = "0";
-            console.log("upwards")
-        } else {
-            this.header.current.style.top = "-80px";
-            console.log("downwards")
-
+        if(!this.state.menuOpen){
+            if (this.state.prevScrollpos > currentScrollPos) {
+                this.header.current.style.top = "0";
+            }
+            else {
+                this.header.current.style.top = "-80px";
+            }
         }
         this.setState({prevScrollpos: currentScrollPos});
-    }
+    };
 
     static selectPreferredLanguage(language) {
         Language.selectPreferredLanguage(language);
@@ -83,6 +84,9 @@ class Header extends Component {
 
                     <div className={this.state.menuOpen ? "menu-open navigation-menu top" : "navigation-menu"}>
                         <div className={this.state.menuOpen ? "menu-open navigation-links" : " navigation-links"}>
+                            <li onClick={this.closeMenu}><NavLink exact activeClassName='active-link'
+                                                                  to="/">{this.props.t("header.home")}</NavLink>
+                            </li>
                             <li onClick={this.closeMenu}><NavLink activeClassName='active-link'
                                                                   to="/work">{this.props.t("header.work")}</NavLink>
                             </li>
@@ -126,6 +130,7 @@ class Header extends Component {
             </div>
         )
     }
+
 }
 
 export default translate(Header);

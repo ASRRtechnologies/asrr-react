@@ -1,8 +1,16 @@
 .work-grid-wrapper{
-    max-width: 1400px;
+    max-width: 1500px;
     margin: 0 auto;
     display: flex;
-    padding: 0 50px;
+    padding-bottom: 150px;
+    padding-top: 100px;
+    flex-direction: column;
 }
 
+@media only screen and (max-width: 600px) {
+    .work-grid-wrapper{
+        padding-bottom:50px;
+        padding-top: 50px;
+    }
+}
 

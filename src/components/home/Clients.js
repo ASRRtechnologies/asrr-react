@@ -1,14 +1,21 @@
 import React, {Component} from 'react';
-import ClientGrid from "../shared/ClientGrid";
 
 class Clients extends Component {
-	render() {
-		return (
-			<div className="clientGrid white">
-                <ClientGrid headline="home.clientheadline"/>
-			</div>
-		);
-	}
+    render() {
+        return (
+            <div className="slider">
+                <div className="slide-track">
+                    {this.props.data.map((item) =>{
+                        return <div className="slide">
+                            <img src={item.image_src} height="55"
+                                 alt={item.alt}/>
+                        </div>
+                    })}
+                </div>
+            </div>
+
+        );
+    }
 }
 
 export default Clients;

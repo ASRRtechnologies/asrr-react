@@ -2,28 +2,32 @@ import React, {Component} from 'react';
 import Fade from "react-reveal/Fade";
 import ServiceSummary from "../components/home/ServiceSummary";
 import Clients from "../components/home/Clients";
-import lowPolyRed from "../assets/images/backgrounds/lowpoly.jpg";
+import Testimonial from "../components/home/Testimonial";
+import Hes from "../assets/images/clients/hes.png";
+import Form from "../assets/images/clients/form_logo-diap.svg";
+import VW from "../assets/images/clients/Logo_VolkerWessels logo.png";
+import WorkGrid from '../components/work/WorkGrid'
+import GeneralHeader from '../components/shared/GeneralHeader'
+import MobileLanding from "../components/shared/landing/MobileLanding";
 import ParticleLanding from "../components/ParticleLanding";
-import Sphere from "../components/experimental/Sphere";
-import SphereLanding from "../components/shared/SphereLanding";
 
-const button =
-	{
-		text: "buttons.home",
-		href: "/team",
-		fa: ["fas", "users"]
-	};
-
-let hrStyle = {
-	color: "#DF3151",
-	border: "2px solid #DF3151",
-	borderColor: "#DF3151",
-	backgroundColor: "#DF3151",
-	borderRadius: "5px",
-	margin: "auto",
-	marginTop: "1.5em",
-	width: "15%",
-};
+const clients = [
+	{image_src: Hes, alt: "X", width: "auto"},
+	{image_src: Form, alt: "X", width: "auto"},
+	{image_src: VW, alt: "X", width: 200},
+	{image_src: Hes, alt: "X", width: 250},
+	{image_src: Form, alt: "X", width: 200},
+	{image_src: VW, alt: "X", width: 200},
+	{image_src: Hes, alt: "X", width: 200},
+	{image_src: Form, alt: "X", width: 200},
+	{image_src: VW, alt: "X", width: 200},
+	{image_src: Hes, alt: "X", width: 200},
+	{image_src: Form, alt: "X", width: 200},
+	{image_src: VW, alt: "X", width: 200},
+	{image_src: Hes, alt: "X", width: 200},
+	{image_src: Form, alt: "X", width: 200},
+	{image_src: VW, alt: "X", width: 200},
+];
 
 class Home extends Component {
 	checkMobile = function () {
@@ -48,20 +52,18 @@ class Home extends Component {
 		return (
 			<div>
 				<Fade bottom>
-					{/*{!this.checkMobile() ?*/}
-						{/*<ParticleLanding header="home.headline" subtitle="home.subtitle" background={lowPolyRed}*/}
-						                 {/*color={true}*/}
-						                 {/*button={button}/>*/}
-						{/*: <div><Sphere style={{position: "absolute", top: "0", left: "0", zIndex: "-100"}}/>*/}
-							{/*<SphereLanding header="home.headline" subtitle="home.subtitle" background={lowPolyRed}*/}
-							               {/*color={false}*/}
-							               {/*button={button}/>*/}
-							{/*<hr style={hrStyle}/>*/}
-						{/*</div>*/}
-					{/*}*/}
-					<Clients/>
+					{this.checkMobile() ?
+						<MobileLanding/>
+						:
+						<ParticleLanding header="hi"/>
 
+					}
+					<Clients data={clients}/>
 					<ServiceSummary/>
+					<WorkGrid backgroundColor="#1A1A1D" component={
+						<GeneralHeader title="Work" titleColor="#E4324C" subText_color="white" marginBottom="50px"
+						               subText={`See some of our previous work`}/>}/>
+					<Testimonial/>
 				</Fade>
 
 			</div>
