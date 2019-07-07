@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/services-cards
 .services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -89,6 +92,7 @@
     transition: all 0.4s ease;
     min-height: 90px;
     max-height: 90px;
+
 }
 
 .services-card-icon {
@@ -135,14 +139,22 @@
 .services-card-content-hidden {
     transform: translateY(calc(80px));
     opacity: 0;
+<<<<<<< HEAD
     height: 80px;
     transition: all 0.4s ease;
+=======
+    height:80px;
+    transition: all 0.2s ease;
+    visibility: hidden;
+
+>>>>>>> origin/services-cards
 }
 
 .services-card:hover .services-card-content-hidden {
     transform: translateY(calc(0px));
     opacity: 1;
     transition: all 0.4s ease;
+    visibility: visible;
 }
 
 .services-card:hover .services-card-content {
@@ -158,6 +170,7 @@
 .services-card:hover .services-card-read-more {
     cursor: pointer;
 }
+<<<<<<< HEAD
 
 .services-grid {
     display: grid;
@@ -168,3 +181,5 @@
 }
 
 
+=======
+>>>>>>> origin/services-cards
