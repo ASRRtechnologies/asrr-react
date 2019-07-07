@@ -1,102 +1,176 @@
+
 .footer-container {
     display: flex;
     flex-direction: column;
     color: white;
-    padding: 50px 0 5px 0;
+    padding: 50px 100px 50px 100px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
 }
 
-.footer-container:after{
-    content:"";
-    position: absolute;
-    width:100%;
-    top:0;
-    height:100%;
-    background-color: black;
-    opacity: 0.5;
-    z-index: 2;
-}
 
-.footer-grid-container{
-    width:100%;
+.footer-grid-container {
+    width: 100%;
     display: grid;
-    color:white;
-    margin-bottom:10px;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    color: white;
+    margin-bottom: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     z-index: 5;
+    max-width: 1200px;
 }
 
-.footer-container h2 {
-    font-size: 16px;
-    padding-bottom:10px;
+.footer-column {
+    display: grid;
+    grid-template-rows: 1fr;
+    /*padding: 0 20px;*/
 }
 
 .footer-container p {
     text-align: left;
-    font-size:12px;
+    font-size: 16px;
 }
 
-.footer-column{
-    display: grid;
-    grid-template-rows: 1fr;
-    padding: 0 20px;
-
+.footer-container h2 {
+    font-size: 22px;
+    padding-bottom: 10px;
+    display: inline-block;
+    height:auto;
 }
 
-.footer-icons{
+.footer-icons {
     display: flex;
     flex-direction: row;
-    padding: 20px 0;
-    margin:auto;
-    width:100%;
-    justify-content: space-evenly;
-    z-index: 5;
-
-
-
-}
-
-.footer-logo{
-    width:70px;
-    height:100%;
-}
-
-a.rounded{
-    padding:0 10px !important;
-}
-
-.footer-terms{
+    padding: 50px 0 50px 0;
+    margin: auto;
     width: 100%;
-    display: block;
-    text-align: center;
+    justify-content: space-between;
     z-index: 5;
-    /*flex-direction: column;*/
-    /*display: flex;*/
-    /*justify-content: center;*/
-    /*margin: 0 20px;*/
-    /*flex-direction: column;*/
+    position: relative;
+}
+
+.footer-icons:after {
+    content: "";
+    width: 100%;
+    background-color: white;
+    height: 1px;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.footer-logo {
+    flex:1;
+}
+
+.footer-logo img{
+    width:100px;
 }
 
 .footer-terms li {
-    color:white;
-    padding: 0 20px;
-    font-size: 12px;
+    color: white;
+    font-size: 16px;
+    padding-right:20px;
     display: inline-block;
 }
 
-.footer-terms a{
+.footer-terms a {
     text-decoration: none;
 }
 
-.footer-copyright{
-    display: block;
-    text-align: center;
-    font-size: 12px;
-    padding: 0 20px;
-    margin: 20px 0;
-    z-index: 5;
+.footer-copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
 
+}
+
+@media only screen and (max-width: 1000px) {
+    .footer-grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+
+    .footer-container {
+        padding: 50px 50px 50px 50px;
+    }
+
+    a.rounded {
+        padding: 0 0 0 20px  !important;
+    }
+
+
+
+
+}
+
+@media only screen and (max-width: 500px) {
+
+    .footer-container {
+        padding: 50px 20px 50px 20px;
+    }
+
+    .footer-container h2 {
+        font-size: 20px;
+    }
+
+    .footer-container p {
+        font-size: 16px;
+    }
+
+    .footer-icons {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .footer-icon-links{
+        display: flex;
+        flex:1;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+    }
+
+    a.rounded {
+        padding: 0 20px 0 0  !important;
+    }
+
+    .footer-logo {
+        flex:1;
+    }
+
+    .footer-logo img{
+        width:50%;
+    }
+
+    .footer-terms {
+        width: 100%;
+        display: block;
+        text-align: center;
+        z-index: 5;
+    }
+
+    .footer-terms li {
+        color: white;
+        padding: 0 20px;
+        font-size: 16px;
+        display: inline-block;
+    }
+
+    .footer-terms a {
+        text-decoration: none;
+    }
+
+    .footer-copyright {
+        display: block;
+        text-align: center;
+        font-size: 12px;
+        padding: 0 20px;
+        margin: 20px 0;
+        z-index: 5;
+
+    }
 }
