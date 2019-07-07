@@ -6,28 +6,10 @@ import Testimonial from "../components/home/Testimonial";
 import Hes from "../assets/images/clients/hes.png";
 import Form from "../assets/images/clients/form_logo-diap.svg";
 import VW from "../assets/images/clients/Logo_VolkerWessels logo.png";
-import TestimonialCard from '../components/home/TestimonialCard'
 import WorkGrid from '../components/work/WorkGrid'
 import GeneralHeader from '../components/shared/GeneralHeader'
-
-
-const button =
-	{
-		text: "buttons.home",
-		href: "/team",
-		fa: ["fas", "users"]
-	};
-
-let hrStyle = {
-	color: "#DF3151",
-	border: "2px solid #DF3151",
-	borderColor: "#DF3151",
-	backgroundColor: "#DF3151",
-	borderRadius: "5px",
-	margin: "auto",
-	marginTop: "1.5em",
-	width: "15%",
-};
+import MobileLanding from "../components/shared/landing/MobileLanding";
+import ParticleLanding from "../components/ParticleLanding";
 
 const clients = [
 	{image_src: Hes, alt:"X", width:200},
@@ -71,6 +53,12 @@ class Home extends Component {
 		return (
 			<div>
 				<Fade bottom>
+					{this.checkMobile() ?
+						<MobileLanding />
+						:
+						<ParticleLanding header="hi"/>
+
+					}
 					<Clients data={clients}/>
 					<ServiceSummary/>
 					<WorkGrid backgroundColor="#1A1A1D" component={

@@ -1,8 +1,5 @@
-import React, { Component } from 'react'
-import Carousel, { Dots } from '@brainhubeu/react-carousel'
-import imageOne from '../../assets/images/work/hes/hes.png'
-import imageTwo from '../../assets/images/work/hes/hes-overlay.png'
-import imageThree from '../../assets/images/work/hes/HES-logo-dark.png'
+import React, {Component} from 'react'
+import Carousel from '@brainhubeu/react-carousel'
 import background from '../../assets/images/backgrounds/testimonial2.svg'
 import TestimonialCard from './TestimonialCard'
 import GeneralHeader from '../shared/GeneralHeader'
@@ -28,7 +25,6 @@ class Testimonial extends Component {
 							slidesPerPage: 1,
 						},
 					}}
-
 				>
 					<TestimonialCard/>
 					<TestimonialCard/>
@@ -36,7 +32,7 @@ class Testimonial extends Component {
 					<TestimonialCard/>
 					<TestimonialCard/>
 				</Carousel>
-				<img className="testimonial-background" src={background}/>
+				<img className="testimonial-background" src={background} alt="testimonial background"/>
 			</div>
 		)
 	}
