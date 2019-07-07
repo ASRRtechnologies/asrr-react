@@ -12,21 +12,21 @@ import MobileLanding from "../components/shared/landing/MobileLanding";
 import ParticleLanding from "../components/ParticleLanding";
 
 const clients = [
-	{image_src: Hes, alt:"X", width:200},
-	{image_src: Form, alt:"X", width:200},
-	{image_src: VW, alt:"X", width:200},
-	{image_src: Hes, alt:"X", width:250},
-	{image_src: Form, alt:"X", width:200},
-	{image_src: VW, alt:"X", width:200},
-	{image_src: Hes, alt:"X", width:200},
-	{image_src: Form, alt:"X", width:200},
-	{image_src: VW, alt:"X", width:200},
-	{image_src: Hes, alt:"X", width:200},
-	{image_src: Form, alt:"X", width:200},
-	{image_src: VW, alt:"X", width:200},
-	{image_src: Hes, alt:"X", width:200},
-	{image_src: Form, alt:"X", width:200},
-	{image_src: VW, alt:"X", width:200},
+	{image_src: Hes, alt: "X", width: "auto"},
+	{image_src: Form, alt: "X", width: "auto"},
+	{image_src: VW, alt: "X", width: 200},
+	{image_src: Hes, alt: "X", width: 250},
+	{image_src: Form, alt: "X", width: 200},
+	{image_src: VW, alt: "X", width: 200},
+	{image_src: Hes, alt: "X", width: 200},
+	{image_src: Form, alt: "X", width: 200},
+	{image_src: VW, alt: "X", width: 200},
+	{image_src: Hes, alt: "X", width: 200},
+	{image_src: Form, alt: "X", width: 200},
+	{image_src: VW, alt: "X", width: 200},
+	{image_src: Hes, alt: "X", width: 200},
+	{image_src: Form, alt: "X", width: 200},
+	{image_src: VW, alt: "X", width: 200},
 
 ];
 
@@ -54,7 +54,7 @@ class Home extends Component {
 			<div>
 				<Fade bottom>
 					{this.checkMobile() ?
-						<MobileLanding />
+						<MobileLanding/>
 						:
 						<ParticleLanding header="hi"/>
 
@@ -63,7 +63,7 @@ class Home extends Component {
 					<ServiceSummary/>
 					<WorkGrid backgroundColor="#1A1A1D" component={
 						<GeneralHeader title="Work" titleColor="#E4324C" subText_color="white" marginBottom="50px"
-									   subText={`See some of our previous work`}/>}/>
+						               subText={`See some of our previous work`}/>}/>
 					<Testimonial/>
 				</Fade>
 
