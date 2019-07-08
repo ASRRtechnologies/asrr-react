@@ -19,11 +19,12 @@
     "landing": {
       "subtitle": "Welcome to",
       "title": "ASRR Tech",
-      "content": "Innovation Redefined"
+      "content": "Innovation Redefined",
+      "headline": "Software Development Redefined"
     },
     "services": {
-      "tagline": "Enterprise quality on any scale",
-      "tagsubtitle": "From small businesses to multinational companies, using our microservices we ensure the best quality possible for every situation by creating scalable solutions",
+      "tagline": "Enterprise grade software development on any scale",
+      "tagsubtitle": "From small businesses to multinational companies, using our microservices we ensure the best quality possible for every situation by creating scalable solutions that can connect to existing systems.",
       "headline": "We offer the following services",
       "web": {
         "name": "Web Applications",

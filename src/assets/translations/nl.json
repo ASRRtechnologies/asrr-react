@@ -16,8 +16,11 @@
     "services": "Naar diensten"
   },
   "home": {
-    "headline": "ASRR Ontwikkelt Innovatieve Enterprise Software Oplossingen",
-    "subtitle": "Wij zijn een jong, multidisciplinair team dat bestaat uit experts die elkaar aanvullen om zo een duurzame en complete oplossing te leveren. We luisteren naar u als klant, verdiepen ons in uw visie op uw product en leveren daarna de beste maatwerkoplossing.",
+    "landing": {
+      "subtitle": "Welkom bij",
+      "title": "ASRR Tech",
+      "content": "Innovation Redefined"
+    },
     "services": {
       "tagline": "Enterprise kwaliteit op iedere schaal",
       "tagsubtitle": "Van MKB'er tot multinational, onze microservices verzekeren de beste kwaliteit in elke situatie door opschaalbare oplossingen te creëren.",
