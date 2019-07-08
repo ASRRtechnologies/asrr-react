@@ -1070,7 +1070,9 @@ hr {
 }
 
 .landing-gradient {
-    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    /*background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../assets/images/landing/darkpurplenebula.jpg");
+    background-size: cover;
 }
 
 .team {

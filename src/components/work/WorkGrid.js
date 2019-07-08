@@ -19,9 +19,9 @@ class WorkGrid extends Component {
 				<div className="work-grid-wrapper">
 					{this.props.component}
 					<div className="work-card-wrapper">
-						<WorkCard logo={Form} background={Building} backgroundOverlay={BuildingOverlay}  alt="Form-logo" client="Form Architecture" title="Bim configuration"/>
+						<WorkCard logo={Form} background={Building} backgroundOverlay={BuildingOverlay}  alt="Form-logo" client="Form Architecture" title="BIM Configurator & Scalable REST API"/>
 						<WorkCard logo={Hes} background={Container} backgroundOverlay={ContainerOverlay} alt="Hes-logo" client=" Hes" title="Steel Tracker & Quality Control"/>
-						<WorkCard logo={Amazon} background={Plant} backgroundOverlay={PlantOverlay} alt="Amazon-logo" client="Amazon" title="Consultancy"/>
+						<WorkCard logo={Amazon} background={Plant} backgroundOverlay={PlantOverlay} alt="Amazon-logo" client="ESP Consultancy" title="Web Design"/>
 					</div>
 				</div>
 			</div>
