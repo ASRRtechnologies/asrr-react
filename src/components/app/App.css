@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import '../../../node_modules/aos/dist/aos.css';
 @import "../shared/landing/LandingText.css";
 @import "../shared/landing/MobileLanding.css";
 @import "../shared/general-header.css";
 @import "../../components/work/WorkCard.css";
 @import "../../components/work/WorkGrid.css";
+@import "../../components/work/work-page.css";
 @import "../shared/header/Navigation.css";
 @import "../../components/services/serviceCard.css";
 @import "../shared/header/footer.css";
