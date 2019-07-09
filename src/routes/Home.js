@@ -53,10 +53,9 @@ class Home extends Component {
 			<div>
 				<Fade bottom>
 					{this.checkMobile() ?
-						<MobileLanding/>
+						<MobileLanding name="home.landing"/>
 						:
-						<ParticleLanding header="hi"/>
-
+						<ParticleLanding header="home.landing.headline"/>
 					}
 					<Clients data={clients}/>
 					<ServiceSummary/>
