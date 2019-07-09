@@ -47,7 +47,9 @@ class WorkPage extends Component {
 
                     <div className="work-page-text-image-container work-page-image-slider">
                         <Carousel
-                            arrows
+                            arrowLeft={<p>""</p>}
+                            arrowRight={<p>></p>}
+                            addArrowClickHandler
                             infinite
                             slidesPerPage={1}
                             slidesPerScroll={1}
