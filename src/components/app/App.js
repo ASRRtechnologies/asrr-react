@@ -77,6 +77,7 @@ class App extends Component {
 				<Route path="/team" component={Construction}/>
 				<Route path="/contact" component={Construction}/>
 				<Route path="/Languages" component={Construction}/>
+				<Route path="/careers" component={Construction}/>
 				<Route path='/github' component={() => window.location = "https://github.com/ASRRWebdesign"}/>
 				<Route component={NoMatch}/>
 			</Switch>
