@@ -1,0 +1,64 @@
+.fluid-landing-container{
+    /*max-width: 700px;*/
+    margin: auto;
+    min-height: 100vh;
+    background-color: #000000;
+}
+
+.fluid-landing-transparent-text {
+    padding-top: 13vh;
+    color: white;
+    top: 200px;
+    text-align: center;
+}
+
+.fluid-landing-transparent-text > h1 {
+    font-size: 110px;
+    color: white;  /* Fallback: assume this color ON TOP of image */
+    background: url(images/test4.jpg) no-repeat;
+    background-size:     cover;                      /* <------ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fluid-landing-transparent-text > h2 {
+    color: grey;
+}
+
+.fluid-landing-image {
+    position: relative;
+}
+
+.fluid-landing-image > img {
+    width: 100%;
+}
+
+.fluid-landing-image-text {
+    position: absolute;
+    top: 63%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    filter: invert(100%);
+    margin: auto;
+}
+
+.fluid-landing-flex-grid {
+    display: flex;
+}
+
+.fluid-landing-col {
+    flex: 1;
+    text-align: center;
+    /*background-color: white;*/
+    margin: 10px;
+    padding-bottom: 18px;
+    border-radius: 10px;
+}
+.fluid-landing-col:hover {
+    filter: invert(10%);
+}
+
+.fluid-landing-image-text > h1 {
+    font-size: 40px;
+    text-align: center;
+}

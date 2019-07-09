@@ -1,0 +1,167 @@
+{
+  "header": {
+    "home": "Home",
+    "about": "Over ASRR",
+    "services": "Diensten",
+    "careers": "Carrière ",
+    "work": "Werk",
+    "portfolio": "Referenties",
+    "contact": "Contact"
+  },
+  "buttons": {
+    "home": "Ontmoet het team",
+    "service": "Volledige lijst van diensten",
+    "contact": "Naar contactpagina",
+    "portfolio": "Bekijk onze referenties",
+    "services": "Naar diensten"
+  },
+  "home": {
+    "landing": {
+      "subtitle": "Welkom bij",
+      "title": "ASRR Tech",
+      "content": "Innovation Redefined",
+      "headline": "Software Development Redefined"
+    },
+    "services": {
+      "tagline": "Enterprise prestaties op elke schaal",
+      "tagsubtitle": "Van MKB'er tot multinational, onze microservices verzekeren de beste kwaliteit in elke situatie door opschaalbare oplossingen te creëren die zich naadloos aansluiten op uw huidige systeem.",
+      "headline": "Wat kan ASRR voor u doen?",
+      "web": {
+        "name": "Web Applicaties",
+        "description": "ASRR maakt mooie en responsive websites, met offline beschikbaarheid en geen laadtijden tussen de pagina's."
+      },
+      "backend": {
+        "name": "Maatwerk Back-End Applicaties",
+        "description": "Met onze al bestaande microservices zorgen we ervoor dat we alleen hoeven te focussen op het maatwerk, waardoor we lagere tarieven kunnen handhaven en de systemen goed getest zijn."
+      },
+      "desktop": {
+        "name": "Data Analytics / Business Intelligence",
+        "description": "Onze databases zijn zo ingericht dat er gemakkelijk business insights uit vergaard kunnen worden, wat wij ook aanbieden met PowerBI Dashboards"
+      }
+    },
+    "techslider": "Technologieën waar wij op bouwen",
+    "why": {
+      "headline": "Waarom ASRR?",
+      "subtitle": "Waarom zou u ASRR kiezen in plaats van een gewone ZZP'er of een interne IT'er?",
+      "multi": {
+        "name": "Multidisciplinair team",
+        "description": "Waar één developer misschien wel in staat is om code te schrijven voor iets wat net buiten zijn expertise ligt, wordt dit al snel een rommeltje bij grotere en complexe projecten. Dat geld dat aan het begin gedacht wordt bespaard te worden, wordt uiteindelijk dubbel verloren met extra tijd bij het verder bouwen op slordige code. Dit is waar ASRR een verschil maakt; door het combineren van de diverse kennis kunnen wij overal nette code afleveren, met de nieuwste technieken."
+      },
+      "transparency": {
+        "name": "Transparantie",
+        "description": "We streven ernaar om duidelijke feedback te geven, die zelfs een leek een complex inzicht kan geven in het probleem en de situatie. We gebruiken hiervoor bijvoorbeeld Scrum en Agile. Verder kunnen we na een initiële analyse een voorspelling doen over de geschatte aantal uren die we nodig hebben, zodat er achteraf geen verassingen komen in de prijs."
+      },
+      "integrations": {
+        "name": "Integratie met huidige systemen",
+        "description": "Omdat de software die wij leveren REST-ful is, is het erg gemakkelijk te integreren met bestaande systemen. Er hoeft hiervoor dus niet meer gegraven worden in legacy code, maar kan deze interactie met een simpele API interface worden voldaan."
+      }
+    },
+    "clientheadline": "Onze klanten",
+    "clientsubtitle": "Neem een kijkje bij het werk dat we in het verleden hebben gedaan in onze portfolio"
+  },
+  "about": {
+    "landing": {
+      "subtitle": "about asrr",
+      "title": "Ontdek het team",
+      "content": "Wij at asrr still need to think of all the text that goes here. Lorem ipsum test talk text need to still be filled in."
+    },
+    "headline": "Maak kennis met het team",
+    "subtitle": "De kracht van ASRR ligt bij twee componenten: Diversiteit en Teamwork. Zoals hieronder te lezen is, bestaat ons team uit een erg diverse set van academisch geschoolde vennoten. We passsen onze verschillende achtergronde toe bij een gedeelde passie: Technologie. Met ons al ingewerkte team kunnen we selectief de juiste mensen leveren die elkaar aanvullen, om zo de juiste oplossing te bieden.",
+    "founders": "Oprichters"
+  },
+  "services": {
+    "headline": "Kom erachter wat we voor u kunnen doen!",
+    "subtitle": "De crux van onze services is dat ze op maat gemaakt zijn op basis van het probleem. U kunt naar ons toe komen met een probleem of wens, wij vogelen uit wat er daarvoor allemaal nodig is, en leveren een team van experts die samen de juiste oplossing kunnen ontwikkelen.",
+    "section": "Services",
+    "web": {
+      "name": "Web Design",
+      "description": "We create beautiful and responsive websites using HTML, CSS, JavaScript and frameworks like ReactJS and Polymer. We can create everything from a simple static image with some information for your clients, to complex webshops with automated systems, integrating seamlessly with our custom back-ends or an existing API you might have already."
+    },
+    "app": {
+      "name": "App Design",
+      "description": "We deliver both custom iOS and Android applications. Using React-Native, we can create apps orders of magnitudes quicker than the conventional way, with native components and custom integrations with your or our servers."
+    },
+    "desktop": {
+      "name": "Desktop Applications",
+      "description": "Using C# and Windows Forms, we can automate and improve your workflow. We have created custom applications in the past for clients who, for example needed access to a custom database and to be reminded of certain tasks, while also giving them the ability to analyze their portfolio. The more time we save you by automating your daily tasks, the more money you will save on personnel costs, and lets you focus on the things that matter."
+    },
+    "backend": {
+      "name": "Back-End Applications",
+      "description": "Every system needs a brain. Think of login systems, a social media platform and webshops. This is where a back-end application comes in. Our custom back-ends are RESTful, which means that they can be seen as a contained API. This in turn lets you connect them to your existing systems, an app, a website, a desktop application or even open them up for the public if you so desire. These back-ends are usually written in Java or C#, and can then be hosted on a virtual private server, or a dedicated server."
+    },
+    "data-analysis": {
+      "name": "Big Data",
+      "description": "You hear about it everywhere, Big Data, but what can it do for you? Applying the more analytical side of our skill set, we can create complex algorithms and models to create insights in customer behaviors, but also get some conclusive results from big data sets such as an intellectual property database or data scraped from the web."
+    },
+    "database": {
+      "name": "Database Design and Setup",
+      "description": "Every company needs data storage. However, ordinary file systems are often cluttered and don't allow for easy filtering. Furthermore, with complex projects, simple file systems simply won't allow you to achieve your goals. This is where databases come in. We use SQL, SQLite and MongoDB to manage and store your data, which can then be accessed using a custom back-end"
+    },
+    "bim": {
+      "name": "AutoDesk/BIM Plugins",
+      "description": "Using C# we can create custom plugins for AutoDesk applications, such as Revit."
+    },
+    "vps": {
+      "name": "Virtual Private Servers",
+      "description": "We offer various custom tailored servers, that can cloud compute any intensive programs you might have, or even host a back-end server application to handle any API requests. We specialize in both setting up and maintaining these cloud computers."
+    },
+    "consultancy": {
+      "name": "Consultancy",
+      "description": "As software development and integrations is what we specialize in, we can offer various forms of advice for both internal work flow setups, and solving complex IT jobs"
+    }
+  },
+  "portfolio": {
+    "landing": {
+      "subtitle": "Portfolio",
+      "title": "lalala",
+      "content": "content"
+    },
+    "headline": "Neem een kijkje bij het werk dat we voorheen gedaan hebben!",
+    "subtitle": "We hebben verschillende projecten gedaan in diverse gebieden. Voel u vrij om contact op te nemen als u enige vragen heeft over wat we hebben gedaan en hoe we u kunnen helpen met uw project.",
+    "clientHeadline": "Een paar bedrijven waar we opdrachten voor hebben gedaan",
+    "clientSubtitle": "Klik op een logo om naar hun site te gaan",
+    "achievements": {
+      "headline": "Wat we tot nu to hebben bereikt",
+      "happy": "Tevreden Klanten",
+      "commercial": "Commerciële Websites",
+      "pageViews": "Totale Page Views",
+      "fullStack": "Volledige Full Stack Web Shops",
+      "sideProjects": "Community Projecten",
+      "upTime": "Uur online sinds setup"
+    },
+    "businessCases": {
+      "headline": "Business Cases",
+      "form": {
+        "name": "FORM Architectuur and Engineering",
+        "features": {
+          "1": "Server Inregelen",
+          "2": "Automatisch Uitrollen van software",
+          "3": "Back-End Overkoepeling"
+        },
+        "description": {
+          "1": "For FORM, we set up a windows server. As most of our client data is confidential, we can't say much about the contents of this server. What we can tell is what we've done. First off, we set up the server from scratch, providing remote desktop capabilities, opening up the correct ports for API access and installing the required programs.",
+          "2": "Next, we set up one of our continuous deployment systems for their internal product. This system automatically closes the program using the code and downloads the latest version whenever a new stable build is available on their private GitHub repository. The project is then built locally in the required folder and is automatically signed. After all tests have passed, the back-end spins up again and is ready to handle requests again."
+        }
+      }
+    },
+    "features": "Eigenschappen",
+    "websites": "Websites",
+    "desktop": "Desktop Applicaties"
+  },
+  "contact": {
+    "headline": "Neem contact met ons op!",
+    "subtitle": "Elk project is anders en vereist een unieke oplossing; twijfel daarom dus niet om contact met ons op te nemen voor wat gratis advies. We zijn erg flexibel in zowel de velden waarin we producten draaien als in het aanbieden van een pakket dat kwa prijs en complexiteit bij uw bedrijf past.",
+    "phone": {
+      "name": "Neem telefonisch contact op",
+      "description": "U kunt telefonisch contact opnemen via het onderstaande nummer"
+    },
+    "social": {
+      "name": "Vind ons op social media",
+      "description": "Stuur ons een berichtje via fb messenger voor het snelste antwoord!"
+    },
+    "mail": {
+      "name": "Mail ons",
+      "description": "Voor verdere vragen of voorstellen kunt u ons ook mailen op onderstaand adres."
+    }
+  }
+}

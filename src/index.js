@@ -4,8 +4,8 @@ import {BrowserRouter as Router} from "react-router-dom";
 import unregisterServiceWorker from './registerServiceWorker';
 import Analytics from 'react-router-ga';
 
-import App from './App';
-import ScrollToTop from "./components/ScrollToTop";
+import App from './components/app/App';
+import ScrollToTop from "./components/shared/ScrollToTop";
 
 ReactDOM.render(
 	<Router>
