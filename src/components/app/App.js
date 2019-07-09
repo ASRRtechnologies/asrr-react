@@ -50,6 +50,7 @@ import Services from "../../routes/Services";
 import Home from "../../routes/Home";
 import Work from "../../routes/Work";
 import Footer2 from "../shared/header/Footer2";
+import Construction from "../shared/Construction";
 
 library.add(faWhatsapp, faLanguage, faImages, faCogs, faUsers, faChevronCircleDown, faPhone, faEnvelope, faHtml5, faCss3Alt, faJs, faJava, faWindows, faLinux, faGithub, faGit, faReact, faAndroid, faAppStoreIos, faApple, faNode, faNodeJs, faPaypal, faFacebook, faTwitter, faSnapchat, faAws, faChrome, faLinkedin);
 
@@ -71,11 +72,11 @@ class App extends Component {
 
 			<Switch>
 				<Route path="/" exact component={Home}/>
-				<Route path="/work" component={Work}/>
-				<Route path="/services" component={Services}/>
-				<Route path="/team" component={About}/>
-				<Route path="/contact" component={Contact}/>
-				<Route path="/Languages" component={Languages}/>
+				<Route path="/work" component={Construction}/>
+				<Route path="/services" component={Construction}/>
+				<Route path="/team" component={Construction}/>
+				<Route path="/contact" component={Construction}/>
+				<Route path="/Languages" component={Construction}/>
 				<Route path='/github' component={() => window.location = "https://github.com/ASRRWebdesign"}/>
 				<Route component={NoMatch}/>
 			</Switch>

@@ -16,8 +16,8 @@ class TestimonialCard extends Component {
 					<div className="testimonial-card-avatar" style={{backgroundImage:`url(${Avatar})`}}>
 					</div>
 					<div className="testimonial-card-name">
-						<h3> Jorgen Form</h3>
-						<p> Form Wateringen B.V</p>
+						<h3>John Doe</h3>
+						<p>John Doe Inc</p>
 					</div>
 				</div>
 

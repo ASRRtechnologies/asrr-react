@@ -1,0 +1,77 @@
+
+.construction-wrapper{
+    width:100vw;
+    height:100vh;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:white;
+}
+
+.construction-wrapper h2{
+    position:absolute;
+    left:50%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    transform: translateX(-50%);
+    bottom:25%;
+    z-index: 15;
+    font-size: 40px;
+}
+
+.rocket{
+    position:absolute;
+    left:50%;
+    bottom:0;
+    width:200px;
+    height:100%;
+    animation: mover 10s infinite linear;
+    transform: translateX(-50%);
+    z-index: 2;
+
+}
+
+.construction-logo{
+    width:300px;
+    height:100%;
+    position:absolute;
+    transform: translateX(-50%);
+    bottom:-180px;
+    left:50%;
+    z-index: 1;
+}
+
+@keyframes mover {
+    0%, 100% {
+        bottom: 50px;
+    }
+    50% {
+        bottom: 100px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .construction-wrapper h2{
+        font-size: 26px;
+    }
+
+    .rocket{
+        position:absolute;
+        left:50%;
+        bottom:0;
+        width:200px;
+        height:100%;
+        animation: mover 10s infinite linear;
+        transform: translateX(-50%);
+        z-index: 2;
+
+    }
+
+    .construction-logo{
+        width:100px;
+    }
+
+}
