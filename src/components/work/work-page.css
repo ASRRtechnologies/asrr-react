@@ -2,6 +2,7 @@
     width:100%;
     display: flex;
     flex-direction: column;
+    color:white;
 }
 
 .work-page-section{
@@ -11,18 +12,23 @@
     padding: 50px 0;
 }
 
-.work-page-text{
+.work-page-text-wrapper{
     width:50%;
     background-color: #1A1A1A;
     padding: 0 30px;
     white-space:pre-wrap;
 }
 
-.work-page-text h1{
+.work-page-text-wrapper p {
+    text-align: left;
+    font-size: 14px;
+}
+
+.work-page-text-wrapper h1{
 position: relative;
 }
 
-.work-page-text h1:after{
+.work-page-text-wrapper h1:after{
     content:"";
     width:60%;
     height:1px;
@@ -32,11 +38,8 @@ position: relative;
     background-color: white;
 }
 
-.work-page-text p {
-    text-align: left;
-    margin-top: 50px;
-    font-size: 14px;
-
+.work-page-text{
+    margin-top:50px;
 }
 
 .work-page-text-image-container{
@@ -56,7 +59,8 @@ position: relative;
 .work-page-scroll{
     height:300px;
     overflow-y: auto;
-    margin-top: 20px;
+    margin-top: 50px;
+    padding-right:20px;
 }
 
 .work-padding{
