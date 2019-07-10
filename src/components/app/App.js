@@ -63,15 +63,32 @@ const NoMatch = ({location}) => (
 class App extends Component {
 	constructor(props) {
 		super(props);
+		this.state = {
+			isLoading:true,
+		};
 		Language.initialize();
 	}
 
+
+	componentDidMount() {
+		setTimeout(() => {
+			this.setState({
+				isLoading: false,
+			});
+		}, 6000)
+	}
+
 	render() {
+		if(this.state.isLoading){
+			window.document.body.style.paddingTop = "0";
+			return <SplashScreen/>
+		}
+		else
 		return <div className="App">
 			<Header/>
 
 			<Switch>
-				<Route path="/" exact component={SplashScreen}/>
+				<Route path="/" exact component={Home}/>
 				<Route path="/work" component={Work}/>
 				<Route path="/services" component={Services}/>
 				<Route path="/team" component={About}/>

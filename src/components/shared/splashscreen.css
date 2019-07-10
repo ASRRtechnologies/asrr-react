@@ -6,6 +6,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-color: black;
+    z-index: 100000000;
 }
 
 @-webkit-keyframes neon1 {
@@ -44,7 +45,6 @@
     top:50%;
     transform: translate(-50%, -50%);
     width:100%;
-    opacity: 0;
     /*animation: opacity 5s ease-out forwards;*/
 }
 
