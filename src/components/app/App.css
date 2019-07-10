@@ -8,6 +8,7 @@
 @import "../shared/header/Navigation.css";
 @import "../../components/services/serviceCard.css";
 @import "../shared/header/footer.css";
+@import "../shared/splashscreen.css";
 @import "../../components/home/slider.css";
 @import "../../components/home/testimonial.css";
 @import "~@brainhubeu/react-carousel/lib/style.css";
@@ -23,6 +24,16 @@ body {
     background-color: #1A1A1A;
     padding-top: 80px;
     color: #343434;
+}
+
+
+@font-face {
+    font-family: 'Anurati';
+    font-style: normal;
+    font-weight: 700;
+    src:
+            local('Anurati Regular'),
+            url(../../assets/fonts/Anurati-Regular.otf) format('otf')
 }
 
 h1 {

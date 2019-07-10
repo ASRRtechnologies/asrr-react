@@ -50,6 +50,7 @@ import Services from "../../routes/Services";
 import Home from "../../routes/Home";
 import Work from "../../routes/Work";
 import Footer2 from "../shared/header/Footer2";
+import SplashScreen from "../shared/SplashScreen";
 
 library.add(faWhatsapp, faLanguage, faImages, faCogs, faUsers, faChevronCircleDown, faPhone, faEnvelope, faHtml5, faCss3Alt, faJs, faJava, faWindows, faLinux, faGithub, faGit, faReact, faAndroid, faAppStoreIos, faApple, faNode, faNodeJs, faPaypal, faFacebook, faTwitter, faSnapchat, faAws, faChrome, faLinkedin);
 
@@ -70,7 +71,7 @@ class App extends Component {
 			<Header/>
 
 			<Switch>
-				<Route path="/" exact component={Home}/>
+				<Route path="/" exact component={SplashScreen}/>
 				<Route path="/work" component={Work}/>
 				<Route path="/services" component={Services}/>
 				<Route path="/team" component={About}/>
@@ -80,10 +81,10 @@ class App extends Component {
 				<Route component={NoMatch}/>
 			</Switch>
 
-			<Fade bottom>
-				{/*<Footer/>*/}
-				<Footer2/>
-			</Fade>
+			{/*<Fade bottom>*/}
+				{/*/!*<Footer/>*!/*/}
+				{/*<Footer2/>*/}
+			{/*</Fade>*/}
 		</div>;
 	}
 }

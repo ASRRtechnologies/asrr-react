@@ -51,7 +51,7 @@ class Home extends Component {
 	render() {
 		return (
 			<div>
-				<Fade bottom>
+				{/*<Fade bottom>*/}
 					{this.checkMobile() ?
 						<MobileLanding name="home.landing"/>
 						:
@@ -63,7 +63,7 @@ class Home extends Component {
 						<GeneralHeader title="Work" titleColor="#E4324C" subText_color="white" marginBottom="50px"
 						               subText={`See some of our previous work`}/>}/>
 					<Testimonial/>
-				</Fade>
+				{/*</Fade>*/}
 
 			</div>
 		);
