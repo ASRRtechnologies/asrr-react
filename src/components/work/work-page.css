@@ -88,3 +88,34 @@ position: relative;
     /*opacity: 1;*/
 }
 
+/* width */
+.work-page-scroll::-webkit-scrollbar {
+    width: 5px;
+    height:7px;
+}
+
+/* Track */
+.work-page-scroll::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+.work-page-scroll::-webkit-scrollbar-thumb {
+    background-color: #E4324C;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+.work-page-scroll::-webkit-scrollbar-thumb:hover {
+    cursor: pointer;
+}
+
+
+/*.slide-left{*/
+    /**/
+/*}*/
+
+/*@keyframes  {*/
+    /**/
+/*}*/

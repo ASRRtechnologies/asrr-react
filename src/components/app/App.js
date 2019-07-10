@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import {Route, Switch} from 'react-router-dom';
 import Fade from 'react-reveal/Fade';
 import {translate} from 'react-multi-lang';
-import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 import {library} from '@fortawesome/fontawesome-svg-core/index';
