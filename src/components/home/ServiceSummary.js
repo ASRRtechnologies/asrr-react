@@ -43,7 +43,7 @@ class ServiceSummary extends Component {
 
 					<div className="centerButton-wrapper">
 						<Link to="/Services"
-						      className="rounded centerButton">{this.props.t('buttons.service')}</Link>
+						      className="square-button">{this.props.t('buttons.service')}</Link>
 					</div>
 				</div>
                 <br/>

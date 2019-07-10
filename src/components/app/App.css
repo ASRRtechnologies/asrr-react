@@ -1078,3 +1078,11 @@ hr {
 .team {
     padding-bottom: 3em
 }
+
+.square-button {
+    margin: auto;
+    padding: 0.8em;
+    background: rgb(227,50,76);
+    /*background: linear-gradient(90deg, rgba(227,50,76,1) 0%, rgba(227,100,50,1) 100%);*/
+    text-decoration: none;
+}
