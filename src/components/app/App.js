@@ -82,35 +82,40 @@ class App extends Component {
 	}
 
 	render() {
-		if(this.state.isLoading){
-			window.document.body.style.paddingTop = "0";
+
+	    const Splash = () => {
+            window.document.body.style.paddingTop = "0";
+	         return <SplashScreen/>
+        };
+
+	    const App = () => {
+	        return <div className="App">
+                <Header/>
+
+                <Switch>
+                    <Route path="/" exact component={Home}/>
+                    <Route path="/work" component={Work}/>
+                    <Route path="/services" component={Services}/>
+                    <Route path="/team" component={About}/>
+                    <Route path="/contact" component={Contact}/>
+                    <Route path="/Languages" component={Languages}/>
+                    <Route path='/github' component={() => window.location = "https://github.com/ASRRWebdesign"}/>
+                    <Route component={NoMatch}/>
+                </Switch>
+
+                {/*<Fade bottom>*/}
+                {/*/!*<Footer/>*!/*/}
+                {/*<Footer2/>*/}
+                {/*</Fade>*/}
+            </div>;
+        };
 
 			return <TransitionGroup component={null}>
 					<CSSTransition  in={this.state.isLoading} classNames="dialog" timeout={300}>
-						<SplashScreen />
+						{this.state.isLoading ? Splash() : App}
 					</CSSTransition>
 			</TransitionGroup>
-		}
-		else
-		return <div className="App">
-			<Header/>
 
-			<Switch>
-				<Route path="/" exact component={Home}/>
-				<Route path="/work" component={Work}/>
-				<Route path="/services" component={Services}/>
-				<Route path="/team" component={About}/>
-				<Route path="/contact" component={Contact}/>
-				<Route path="/Languages" component={Languages}/>
-				<Route path='/github' component={() => window.location = "https://github.com/ASRRWebdesign"}/>
-				<Route component={NoMatch}/>
-			</Switch>
-
-			{/*<Fade bottom>*/}
-				{/*/!*<Footer/>*!/*/}
-				{/*<Footer2/>*/}
-			{/*</Fade>*/}
-		</div>;
 	}
 }
 
