@@ -1,9 +1,14 @@
 import React, {Component} from 'react';
 import logo from "../../assets/images/logo.svg";
 import bck from "../../assets/images/backgrounds/space-background.jpg";
+import { TransitionGroup, CSSTransition } from "react-transition-group";
+
 class SplashScreen extends Component {
     render() {
+        const { isOpen, onClose, message } = this.props;
+
         return (
+
             /*<div className="splash-screen-wrapper" style={{backgroundImage:`url(${bck})`}}>*/
         <div className="splash-screen-wrapper">
         <img src={logo} className="splash-screen-logo"/>

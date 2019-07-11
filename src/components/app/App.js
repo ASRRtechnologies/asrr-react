@@ -51,6 +51,7 @@ import Home from "../../routes/Home";
 import Work from "../../routes/Work";
 import Footer2 from "../shared/header/Footer2";
 import SplashScreen from "../shared/SplashScreen";
+import {CSSTransition, TransitionGroup, Reac} from "react-transition-group";
 
 library.add(faWhatsapp, faLanguage, faImages, faCogs, faUsers, faChevronCircleDown, faPhone, faEnvelope, faHtml5, faCss3Alt, faJs, faJava, faWindows, faLinux, faGithub, faGit, faReact, faAndroid, faAppStoreIos, faApple, faNode, faNodeJs, faPaypal, faFacebook, faTwitter, faSnapchat, faAws, faChrome, faLinkedin);
 
@@ -75,13 +76,20 @@ class App extends Component {
 			this.setState({
 				isLoading: false,
 			});
-		}, 6000)
+		}, 6000);
+
+
 	}
 
 	render() {
 		if(this.state.isLoading){
 			window.document.body.style.paddingTop = "0";
-			return <SplashScreen/>
+
+			return <TransitionGroup component={null}>
+					<CSSTransition  in={this.state.isLoading} classNames="dialog" timeout={300}>
+						<SplashScreen />
+					</CSSTransition>
+			</TransitionGroup>
 		}
 		else
 		return <div className="App">
