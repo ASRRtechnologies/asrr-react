@@ -103,10 +103,10 @@ class App extends Component {
                     <Route component={NoMatch}/>
                 </Switch>
 
-                {/*<Fade bottom>*/}
-                {/*/!*<Footer/>*!/*/}
-                {/*<Footer2/>*/}
-                {/*</Fade>*/}
+                <Fade bottom>
+                {/*<Footer/>*/}
+                <Footer2/>
+                </Fade>
             </div>;
         };
 
