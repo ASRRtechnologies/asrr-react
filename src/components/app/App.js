@@ -76,7 +76,7 @@ class App extends Component {
 			this.setState({
 				isLoading: false,
 			});
-		}, 6000);
+		}, 2000);
 
 
 	}
