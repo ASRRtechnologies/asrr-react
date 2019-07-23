@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Fade from "react-reveal/Fade";
 import WorkGrid from "../components/work/WorkGrid";
-import WorkPage from "../components/work/WorkPage";
+import WorkPage2 from "../components/work/WorkPage2";
 
 class Work extends Component {
 	render() {
@@ -11,7 +11,7 @@ class Work extends Component {
 					{/*/!*<NewLanding name="work.landing"/>*!/*/}
 					{/*<WorkGrid/>*/}
 				{/*</Fade>*/}
-				<WorkPage/>
+				<WorkPage2/>
 			</div>
 		);
 	}
