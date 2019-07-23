@@ -25,6 +25,8 @@ body {
     background-color: #1A1A1A;
     padding-top: 80px;
     color: #343434;
+    overflow-x: hidden;
+
 }
 
 h1 {

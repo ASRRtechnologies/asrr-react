@@ -1,3 +1,6 @@
+:root {
+    --arrow-color: black;
+}
 /*.work-page-wrapper{*/
     /*width:100%;*/
     /*display: flex;*/
@@ -125,7 +128,7 @@
 .work-page-wrapper{
     width:100%;
     height:100%;
-    /*padding:50px 0;*/
+    padding:50px 0;
     background-color: white;
 }
 
@@ -133,18 +136,21 @@
     width:100%;
     height:100%;
     background-color: white;
+    padding:0 20px;
 }
 
 .work-page-text-wrapper{
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 0 150px;
 }
 
 .work-page-text-wrapper p{
     text-align: justify;
 }
-
+.work-page-text-wrapper h1{
+    margin-bottom: 20px;
+}
 
 
 .work-page-image-wrapper{
@@ -181,6 +187,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 
+
 }
 .big-font{
     font-size:58px;
@@ -196,3 +203,75 @@
     align-items: center;
     justify-content: center;
 }
+
+
+
+/*Arrows used in the carousel*/
+.arrow-wrapper{
+    display: block;
+    width:100%;
+    height:100%;
+    position: relative;
+    margin-right:100px;
+}
+
+.arrow {
+    cursor: pointer;
+    height: 60px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    transition: transform 0.1s;
+    width: 30px;
+}
+.arrow-top, .arrow-bottom {
+    background-color: #666;
+    height: 4px;
+    left: -5px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+.arrow-top:after, .arrow-bottom:after {
+    background-color: var(--arrow-color);
+    content: '';
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transition: all 0.15s;
+}
+.arrow-top {
+    transform: rotate(45deg);
+    transform-origin: bottom right;
+}
+.arrow-top:after {
+    left: 100%;
+    right: 0;
+    transition-delay: 0s;
+}
+.arrow-bottom {
+    transform: rotate(-45deg);
+    transform-origin: top right;
+}
+.arrow-bottom:after {
+    left: 0;
+    right: 100%;
+    transition-delay: 0.15s;
+}
+.arrow:hover .arrow-top:after {
+    left: 0;
+    transition-delay: 0.15s;
+}
+.arrow:hover .arrow-bottom:after {
+    right: 0;
+    transition-delay: 0s;
+}
+.arrow:active {
+    transform: translateX(-50%) translateY(-50%) scale(0.9);
+}
+
+.arrow-left{
+    transform: rotate(-180deg);
+}
+
