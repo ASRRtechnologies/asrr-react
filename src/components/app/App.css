@@ -4,6 +4,8 @@
 @import "../shared/landing/LandingText.css";
 @import "../shared/landing/MobileLanding.css";
 @import "../shared/general-header.css";
+@import "../shared/fonts/image-font.css";
+
 @import "../../components/work/WorkCard.css";
 @import "../../components/work/WorkGrid.css";
 @import "../../components/work/work-page.css";

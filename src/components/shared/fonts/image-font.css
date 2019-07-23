@@ -1,0 +1,10 @@
+
+.image-font-wrapper> h1 {
+    font-size: 110px;
+    color: black;  /* Fallback: assume this color ON TOP of image */
+    background:no-repeat 0 -600px;
+
+    background-size: cover;                      /* <------ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
 import AOS from 'aos'
-import landingImage from '../../assets/images/work/example/phone-mockup.png'
+import landingImage from '../../assets/images/work/hes/hes_phone.png'
 import Carousel, { Dots } from '@brainhubeu/react-carousel'
 import Fade from 'react-reveal/Fade'
 import Image from '../../assets/images/work/form/building.jpg'
 import ArrowCarousel from './ArrowCarousel'
 import LandingText from '../../routes/Services'
+import ImageFont from '../shared/fonts/ImageFont'
 
 class WorkPage extends Component {
 	constructor (props) {
@@ -18,23 +19,25 @@ class WorkPage extends Component {
 		})
 	}
 
+
+
 	render () {
 		AOS.init()
 
 		return (
 			<div className="work-page-wrapper">
-				<div className="work-page-section center-text  ">
+				<div style={{backgroundImage:this.props.background ? `url(${this.props.backgroundImage})` : null}} className="work-page-section center-text gradient" >
 
-					<div data-aos="fade" data-aos-anchor-placement="top">
+					<div data-aos="fade-up" data-aos-anchor-placement="top">
 						<div className="work-page-image-wrapper">
 							<img className="work-page-image big-image" src={landingImage}/>
 						</div>
 					</div>
 
 					<div className="work-page-text-wrapper center-text">
-						<div data-aos="fade" data-aos-anchor-placement="top">
+						<div data-aos="fade" data-aos-anchor-placement="top" data-aos-delay="300">
 							{/*<h1 className=" center-text big-font">Mobile mockup with style</h1>*/}
-							<LandingText name="expertise"/>
+							<ImageFont title="Mobile mockup with style" image={Image}/>
 
 						</div>
 					</div>
@@ -42,12 +45,12 @@ class WorkPage extends Component {
 
 				</div>
 
-				<div style={{ backgroundColor: '#f2f5fa' }} className="work-page-section grid spacing-100">
+				<div style={{ backgroundColor: 'white' }} className="work-page-section grid spacing-100">
 					<div className="work-page-text-wrapper">
-						<div data-aos="slide-right" data-aos-delay="200" data-aos-easing="ease-in-out"
+						<div data-aos="fade-right" data-aos-delay="200" data-aos-easing="ease-in-out"
 							 data-aos-anchor-placement="bottom"
 							 data-aos-duration="600">
-							<h1 className="slide-left"> A dedicted server using linux counterparts</h1>
+							<h1 className="slide-left medium-font"> A dedicted server using linux counterparts</h1>
 						</div>
 
 						<div data-aos="fade-up" data-aos-delay="800" data-aos-easing="ease-in-out"
