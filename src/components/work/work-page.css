@@ -181,6 +181,11 @@
 
 }
 
+.wide-image{
+    width:1000px;
+    height:100%;
+}
+
 .grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
