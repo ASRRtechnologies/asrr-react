@@ -22,13 +22,13 @@ class WorkPage extends Component {
             <div className="work-page-wrapper">
                 <div className="work-page-section center-text  ">
                     <div className="work-page-text-wrapper center-text">
-                        <div data-aos-duration="600" data-aos="fade-left" data-aos-anchor-placement="top" >
+                        <div data-aos="fade" data-aos-anchor-placement="top">
                             <h1 className=" center-text big-font"> A dedicted server using linux counterparts</h1>
                         </div>
                     </div>
 
 
-                    <div data-aos="slide-up" data-aos-anchor-placement="top">
+                    <div data-aos="fade" data-aos-anchor-placement="top">
                         <div className="work-page-image-wrapper">
                             <img className="work-page-image big-image" src={landingImage}/>
                         </div>
