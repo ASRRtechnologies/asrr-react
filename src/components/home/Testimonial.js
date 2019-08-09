@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import Carousel from '@brainhubeu/react-carousel'
 import background from '../../assets/images/backgrounds/testimonial2.svg'
 import TestimonialCard from './TestimonialCard'
-import GeneralHeader from '../shared/GeneralHeader'
+import GeneralHeader from '../shared/General/GeneralHeader'
 
 class Testimonial extends Component {
 	render () {

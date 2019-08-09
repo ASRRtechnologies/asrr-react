@@ -7,7 +7,7 @@ import Hes from "../assets/images/clients/hes.png";
 import Form from "../assets/images/clients/form_logo-diap.svg";
 import VW from "../assets/images/clients/Logo_VolkerWessels logo.png";
 import WorkGrid from '../components/work/WorkGrid'
-import GeneralHeader from '../components/shared/GeneralHeader'
+import GeneralHeader from '../components/shared/General/GeneralHeader'
 import MobileLanding from "../components/shared/landing/MobileLanding";
 import ParticleLanding from "../components/ParticleLanding";
 

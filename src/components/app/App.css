@@ -3,7 +3,8 @@
 @import '../../../node_modules/aos/dist/aos.css';
 @import "../shared/landing/LandingText.css";
 @import "../shared/landing/MobileLanding.css";
-@import "../shared/general-header.css";
+@import "../shared/General/general-header.css";
+@import "../shared/General/hover-button.css";
 @import "../shared/fonts/image-font.css";
 
 @import "../../components/work/WorkCard.css";

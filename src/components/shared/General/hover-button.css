@@ -1,0 +1,66 @@
+button{
+    display: inline-block;
+    position: relative;
+    background: red;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 20px 30px;
+}
+span{
+    display: block;
+    padding: 25px 80px;
+}
+button::before, button::after{
+    content:"";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    transition: all 0.2s linear;
+    background: #fff;
+}
+
+span::before, span::after{
+    content:"";
+    width:2px;
+    height:0;
+    position: absolute;
+    transition: all 0.2s linear;
+    background: #fff;
+}
+button:hover::before, button:hover::after{
+    width: 100%;
+}
+button:hover span::before, button:hover span::after{
+    height: 100%;
+}
+/*----- button 1 -----*/
+.btn-1::before, .btn-1::after{
+    transition-delay: 0.2s;
+}
+.btn-1 span::before, .btn-1 span::after{
+    transition-delay: 0s;
+}
+.btn-1::before{
+    right: 0;
+    top: 0;
+}
+.btn-1::after{
+    left: 0;
+    bottom: 0;
+}
+.btn-1 span::before{
+    left: 0;
+    top: 0;
+}
+.btn-1 span::after{
+    right: 0;
+    bottom: 0;
+}
+.btn-1:hover::before, .btn-1:hover::after{
+    transition-delay: 0s;
+}
+.btn-1:hover span::before, .btn-1:hover span::after{
+    transition-delay: 0.2s;
+}
