@@ -29,6 +29,19 @@
     align-items: center;
 }
 
+.asrr-circle-text > h1{
+
+    font-size: 100px;
+}
+
+.landing-arrow{
+    position: absolute;
+    bottom:30px;
+    font-size: 36px;
+    left:50%;
+     transform: translateX(-50%) rotate(45deg);
+}
+
 /*.landing-overlay{*/
 /*    width: 100%;*/
 /*    height:100%;*/

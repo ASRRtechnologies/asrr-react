@@ -1,14 +1,69 @@
 import React, {Component} from 'react';
-import {Spring, Trail, Transition} from 'react-spring/renderprops'
+import {Spring, Trail, Transition, Keyframes, animated, config} from 'react-spring/renderprops';
+import {Parallax, ParallaxLayer} from 'react-spring/renderprops-addons'
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faSpaceShuttle} from "@fortawesome/free-solid-svg-icons/faSpaceShuttle";
+
+const Trailing = Keyframes.Trail( async next => {
+    while(true){
+        await next({
+                    from: {transform: 'translate3d(0,-5px,0)', opacity: 0},
+            opacity: 1,
+            transform: 'translate3d(0,5px,0)',
+        });
+        await next({
+                    from: {transform: 'translate3d(0,5px,0)'},
+            transform: 'translate3d(0,-5px,0)',
+        })
+
+
+        // await next({
+        //     from: { transform: 'translate3d(0,0px,0)'},
+        //
+        //     transform: 'translate3d(0,15px,0)',
+        //     opacity: 1
+        //
+        // })
+    }
+});
+
 
 class Landing extends Component {
     render() {
 
 
+        // const Trailing = Keyframes.Trail({
+        //     initial: {
+        //         from: {transform: 'translate3d(0,-10px,0)', opacity: 0},
+        //         to: {transform: 'translate3d(0,0px,0)', opacity: 1}
+        //     },
+        //     hovering: {
+        //         from: {opacity: 0},
+        //         to: {opacity: 0.5}
+        //     }
+        // });
+
+
+
+
+
+
+        const items = [
+            <h1>A</h1>,
+            <h1>S</h1>,
+            <h1>R</h1>,
+            <h1>R</h1>
+        ];
+
+
         return (
             <div className="landing-container">
+
+
                 <Spring
                     config={{duration: 1000}}
+                    delay={500}
                     from={{x: 2000}}
                     to={{x: 0}}>
                     {props => (
@@ -19,31 +74,34 @@ class Landing extends Component {
                         </svg>
                     )}
                 </Spring>
-                {/*<div className="landing-container" style={{backgroundImage:`url(${this.props.image})`}}>*/}
-
-                {/*<div className="landing-overlay">*/}
 
                 {/*</div>*/}
                 <div className="asrr-circle">
-                    <Spring
-                        delay={700}
-                        config={{duration: 1000}}
-                        from={{y: 3, opacity:0}}
-                        to={{y: 3.2, opacity:1}}>
-                        {props => (
-                            <h1 style={{fontSize:"120px", opacity:props.opacity}}>
-                                ASRR
-                            </h1>
-                        )}
-                    </Spring>
+
+                    {/*<Trail items={items} keys={item => item.key}*/}
+                    {/*       from={{transform: 'translate3d(0,-10px,0)', opacity: 0}}*/}
+                    {/*       to={{transform: 'translate3d(0,0px,0)', opacity: 1}}>*/}
+                    {/*    {item => props => <span className="asrr-circle-text" style={props}>{item}</span>}*/}
+                    {/*</Trail>*/}
+
+                    <Trailing items={items} keys={item => item.key}  >
+                        {item => props => <span className="asrr-circle-text" style={props}>{item}</span>}
+                    </Trailing>
+
 
                 </div>
 
-                <div>
-                    <p>Click me</p>
-                </div>
-
-
+                {/*<Spring*/}
+                {/*    config={{duration: 1000}}*/}
+                {/*    delay={700}*/}
+                {/*    from={{opacity: 0}}*/}
+                {/*    to={{opacity: 1}}>*/}
+                {/*    {props => (*/}
+                {/*        <div className="landing-arrow" >*/}
+                {/*            <FontAwesomeIcon className="landing-arrow" style={props} icon={faSpaceShuttle} />*/}
+                {/*        </div>*/}
+                {/*    )}*/}
+                {/*</Spring>*/}
             </div>
         );
     }
