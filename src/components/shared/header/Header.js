@@ -32,11 +32,21 @@ class Header extends Component {
     headerScroll = () => {
         this.setState({prevScrollprops: window.pageYOffset});
         let currentScrollPos = window.pageYOffset;
+
+        if(currentScrollPos  < 100 ) {
+            // this.header.current.style.opacity = "0";
+            this.header.current.style.backgroundColor = "transparent";
+        }
+        else {
+            // this.header.current.style.opacity = 1;
+            this.header.current.style.backgroundColor = "black"
+        }
+
         if(!this.state.menuOpen){
             if (this.state.prevScrollpos > currentScrollPos) {
                 this.header.current.style.top = "0";
             }
-            else {
+            else if(currentScrollPos > 600) {
                 this.header.current.style.top = "-80px";
             }
         }
@@ -58,6 +68,12 @@ class Header extends Component {
 
 
     componentDidMount() {
+
+        //
+        // let currentScrollPos = window.pageYOffset;
+        // if(currentScrollPos  < 100 ) {
+        //     this.header.current.style.opacity = "0";
+        // }
         document.addEventListener("scroll", this.headerScroll);
 
         if (getLanguage().toString() === 'nl') {

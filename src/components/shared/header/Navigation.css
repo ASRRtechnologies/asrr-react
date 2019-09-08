@@ -8,12 +8,12 @@
 .navigation-container {
     width: 100%;
     height: 80px;
-    background-color: black;
+    background-color: transparent;
     z-index: 1000;
     color: white;
     position: fixed;
     top: 0;
-    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+    transition: all linear 0.3s; /* Transition effect when sliding down (and up) */
 }
 
 .navigation-menu {

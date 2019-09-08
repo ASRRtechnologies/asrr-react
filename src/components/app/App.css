@@ -10,6 +10,7 @@
 @import "../shared/header/footer.css";
 @import "../../components/home/slider.css";
 @import "../../components/home/testimonial.css";
+@import "../../components/shared/landing/landing.css";
 @import "~@brainhubeu/react-carousel/lib/style.css";
 
 * {
@@ -21,8 +22,9 @@
 body {
     font-family: 'Poppins', serif;
     background-color: #1A1A1A;
-    padding-top: 80px;
+    /*padding-top: 80px;*/
     color: #343434;
+    overflow-x: hidden;
 }
 
 h1 {

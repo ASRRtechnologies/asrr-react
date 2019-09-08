@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Fade from 'react-reveal'
 import ServiceGrid from '../components/services/ServiceGrid'
-
+import robot from '../assets/images/services/robot-hand.jpg'
 import web from '../assets/images/services/webdesign.svg'
 import app from '../assets/images/services/app.svg'
 import desktop from '../assets/images/services/responsive.svg'
@@ -16,6 +16,7 @@ import ServiceSummary from '../components/home/ServiceSummary'
 import LandingText from '../components/shared/landing/LandingText'
 import ChoiceHelper from '../components/services/ChoiceHelper'
 import ServiceCard from '../components/services/ServiceCard'
+import Landing from "../components/shared/landing/Landing";
 
 const services = [
 	{
@@ -78,7 +79,7 @@ class Services extends Component {
 		return (
 			<div>
 				<Fade bottom>
-					<LandingText name="expertise"/>
+					<Landing image={robot}/>
 					<ChoiceHelper/>
 					<NewLanding name="services"/>
 					<ServiceSummary/>
