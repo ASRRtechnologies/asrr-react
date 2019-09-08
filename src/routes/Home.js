@@ -55,7 +55,6 @@ class Home extends Component {
 			<div>
 				<Landing/>
 
-
 				{/*<Fade bottom>*/}
 				{/*	{this.checkMobile() ?*/}
 				{/*		<MobileLanding name="home.landing"/>*/}
