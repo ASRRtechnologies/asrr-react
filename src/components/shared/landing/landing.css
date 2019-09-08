@@ -1,10 +1,29 @@
 
 .landing-container{
+    position: relative;
     width:100vw;
     height:100vh;
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(235,237,238,1);
+    background: -moz-linear-gradient(-45deg, rgba(235,237,238,1) 0%, rgba(253,251,251,1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(235,237,238,1)), color-stop(100%, rgba(253,251,251,1)));
+    background: -webkit-linear-gradient(-45deg, rgba(235,237,238,1) 0%, rgba(253,251,251,1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(235,237,238,1) 0%, rgba(253,251,251,1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(235,237,238,1) 0%, rgba(253,251,251,1) 100%);
+    background: linear-gradient(135deg, rgba(235,237,238,1) 0%, rgba(253,251,251,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebedee', endColorstr='#fdfbfb', GradientType=1 );
+}
+
+.asrr-circle{
+    position: absolute;
+    width:100%;
+    height:100%;
     display: flex;
     justify-content: center;
     align-items: center;

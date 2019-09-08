@@ -27,13 +27,21 @@ body {
     overflow-x: hidden;
 }
 
+@font-face {
+    font-family: "anurati";
+    src: url("../../assets/fonts/Anurati-Regular.otf") format("opentype");
+    font-weight: normal;
+    font-style:normal;
+}
+
 h1 {
     font-size: 30px;
-    font-family: 'Poppins', serif;
+    font-family: 'Anurati', serif;
     font-weight: 800;
     padding-top: 0.3em;
     padding-bottom: 0.25em;
     margin-top: 0;
+    color: black !important;
 }
 
 h2 {

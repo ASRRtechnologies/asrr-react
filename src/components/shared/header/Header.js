@@ -3,6 +3,7 @@ import {NavLink} from 'react-router-dom'
 import Language from "../../../utils/Language";
 import {getLanguage, translate} from "react-multi-lang";
 import logo from "../../../assets/images/logo.svg";
+import logoBlack from "../../../assets/images/logo-black.svg";
 import nlFlag from "../../../assets/images/flags/nl.svg";
 import enFlag from "../../../assets/images/flags/en.svg";
 
@@ -15,7 +16,8 @@ class Header extends Component {
         this.state = {
             menuOpen: false,
             header: "",
-            prevScrollprops: ""
+            prevScrollprops: "",
+            logoBlack: true,
         }
 
     }
@@ -36,10 +38,15 @@ class Header extends Component {
         if(currentScrollPos  < 100 ) {
             // this.header.current.style.opacity = "0";
             this.header.current.style.backgroundColor = "transparent";
+            this.header.current.style.color = "black";
+            this.setState({logoBlack:true});
         }
         else {
             // this.header.current.style.opacity = 1;
-            this.header.current.style.backgroundColor = "black"
+            this.header.current.style.backgroundColor = "black";
+            this.header.current.style.color = "white";
+            this.setState({logoBlack:false});
+
         }
 
         if(!this.state.menuOpen){
@@ -69,11 +76,6 @@ class Header extends Component {
 
     componentDidMount() {
 
-        //
-        // let currentScrollPos = window.pageYOffset;
-        // if(currentScrollPos  < 100 ) {
-        //     this.header.current.style.opacity = "0";
-        // }
         document.addEventListener("scroll", this.headerScroll);
 
         if (getLanguage().toString() === 'nl') {
@@ -95,7 +97,7 @@ class Header extends Component {
             <div ref={this.header} className="navigation-container">
                 <div className="navigation-wrapper">
 
-                    <div  onClick={this.closeMenu} className="logo-wrapper"><NavLink to="/"><img className="logo" src={logo}
+                    <div  onClick={this.closeMenu} className="logo-wrapper"><NavLink to="/"><img className="logo" src={this.state.logoBlack ? logoBlack : logo}
                                                                        alt="logo"/></NavLink></div>
 
                     <div className={this.state.menuOpen ? "menu-open navigation-menu top" : "navigation-menu"}>

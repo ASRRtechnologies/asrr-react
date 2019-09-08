@@ -10,6 +10,8 @@ import WorkGrid from '../components/work/WorkGrid'
 import GeneralHeader from '../components/shared/GeneralHeader'
 import MobileLanding from "../components/shared/landing/MobileLanding";
 import ParticleLanding from "../components/ParticleLanding";
+import Landing from "../components/shared/landing/Landing";
+import robot from '../assets/images/services/robot-hand.jpg'
 
 const clients = [
 	{image_src: Hes, alt: "X", width: "auto"},
@@ -51,19 +53,22 @@ class Home extends Component {
 	render() {
 		return (
 			<div>
-				<Fade bottom>
-					{this.checkMobile() ?
-						<MobileLanding name="home.landing"/>
-						:
-						<ParticleLanding header="home.landing.headline"/>
-					}
-					<Clients data={clients}/>
-					<ServiceSummary/>
-					<WorkGrid backgroundColor="#1A1A1D" component={
-						<GeneralHeader title="Work" titleColor="#E4324C" subText_color="white" marginBottom="50px"
-						               subText={`See some of our previous work`}/>}/>
-					<Testimonial/>
-				</Fade>
+				<Landing/>
+
+
+				{/*<Fade bottom>*/}
+				{/*	{this.checkMobile() ?*/}
+				{/*		<MobileLanding name="home.landing"/>*/}
+				{/*		:*/}
+				{/*		<ParticleLanding header="home.landing.headline"/>*/}
+				{/*	}*/}
+				{/*	<Clients data={clients}/>*/}
+				{/*	<ServiceSummary/>*/}
+				{/*	<WorkGrid backgroundColor="#1A1A1D" component={*/}
+				{/*		<GeneralHeader title="Work" titleColor="#E4324C" subText_color="white" marginBottom="50px"*/}
+				{/*		               subText={`See some of our previous work`}/>}/>*/}
+				{/*	<Testimonial/>*/}
+				{/*</Fade>*/}
 
 			</div>
 		);

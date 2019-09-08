@@ -10,7 +10,7 @@
     height: 80px;
     background-color: transparent;
     z-index: 1000;
-    color: white;
+    color: black;
     position: fixed;
     top: 0;
     transition: all linear 0.3s; /* Transition effect when sliding down (and up) */
