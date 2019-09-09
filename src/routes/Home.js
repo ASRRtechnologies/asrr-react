@@ -12,7 +12,7 @@ import MobileLanding from "../components/shared/landing/MobileLanding";
 import ParticleLanding from "../components/ParticleLanding";
 import Landing from "../components/shared/landing/Landing";
 import robot from '../assets/images/services/robot-hand.jpg'
-
+import Section from '../components/home/Section';
 const clients = [
 	{image_src: Hes, alt: "X", width: "auto"},
 	{image_src: Form, alt: "X", width: "auto"},
@@ -54,6 +54,7 @@ class Home extends Component {
 		return (
 			<div>
 				<Landing/>
+				<Section/>
 
 				{/*<Fade bottom>*/}
 				{/*	{this.checkMobile() ?*/}

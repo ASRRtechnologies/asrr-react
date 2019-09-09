@@ -10,6 +10,7 @@
 @import "../shared/header/footer.css";
 @import "../../components/home/slider.css";
 @import "../../components/home/testimonial.css";
+@import "../../components/home/section.css";
 @import "../../components/shared/landing/landing.css";
 @import "~@brainhubeu/react-carousel/lib/style.css";
 
@@ -54,6 +55,7 @@ h2 {
 a {
     color: inherit;
 }
+
 
 a.rounded {
     padding: 0.3em 1.2em;
