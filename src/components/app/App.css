@@ -13,6 +13,7 @@
 @import "../../components/home/section.css";
 @import "../../components/shared/landing/landing.css";
 @import "~@brainhubeu/react-carousel/lib/style.css";
+@import "../../../node_modules/aos/dist/aos.css";
 
 * {
     margin: 0;
