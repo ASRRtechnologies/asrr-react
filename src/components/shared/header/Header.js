@@ -46,17 +46,16 @@ class Header extends Component {
             this.header.current.style.backgroundColor = "black";
             this.header.current.style.color = "white";
             this.setState({logoBlack:false});
-
         }
 
-        if(!this.state.menuOpen){
-            if (this.state.prevScrollpos > currentScrollPos) {
-                this.header.current.style.top = "0";
-            }
-            else if(currentScrollPos > 600) {
-                this.header.current.style.top = "-80px";
-            }
-        }
+        // if(!this.state.menuOpen){
+        //     if (this.state.prevScrollpos > currentScrollPos) {
+        //         this.header.current.style.top = "0";
+        //     }
+        //     else if(currentScrollPos > 600) {
+        //         this.header.current.style.top = "-80px";
+        //     }
+        // }
         this.setState({prevScrollpos: currentScrollPos});
     };
 
