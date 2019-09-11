@@ -14,6 +14,8 @@ import Landing from "../components/shared/landing/Landing";
 import robot from '../assets/images/services/robot-hand.jpg'
 import Section from '../components/home/Section';
 import Section2 from '../components/home/Section2';
+import Section3 from '../components/home/Section3';
+
 const clients = [
 	{image_src: Hes, alt: "X", width: "auto"},
 	{image_src: Form, alt: "X", width: "auto"},
@@ -57,7 +59,8 @@ class Home extends Component {
 				<Landing/>
 				<Section/>
 				<Section2/>
-
+				<Section3/>
+				
 				{/*<Fade bottom>*/}
 				{/*	{this.checkMobile() ?*/}
 				{/*		<MobileLanding name="home.landing"/>*/}

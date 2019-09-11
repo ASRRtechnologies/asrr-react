@@ -43,7 +43,7 @@ class Header extends Component {
         }
         else {
             // this.header.current.style.opacity = 1;
-            this.header.current.style.backgroundColor = "black";
+            this.header.current.style.backgroundColor = "#1a1a1a";
             this.header.current.style.color = "white";
             this.setState({logoBlack:false});
         }
