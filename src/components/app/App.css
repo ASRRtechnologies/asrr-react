@@ -83,6 +83,10 @@ a {
     color: inherit;
 }
 
+p{
+    text-align: left
+}
+
 
 a.rounded {
     padding: 0.3em 1.2em;

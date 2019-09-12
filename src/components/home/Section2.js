@@ -21,7 +21,7 @@ class Section2 extends Component {
             <div className="section-wrapper">
 
                 <div data-aos="fade-up" data-aos-delay="400" data-aos-easing="ease-in-out"
-                     data-aos-anchor-placement="top"
+                     data-aos-anchor-placement="middl"
                      data-aos-duration="600" className="section-image">
                     <img id="hes-phone-image" src={phone}/>
                 </div>

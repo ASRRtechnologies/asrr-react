@@ -17,7 +17,7 @@ class ValueCards extends Component {
     render() {
 
         return (
-            <div className="value-cards-wrapper "> 
+            <div  className="value-cards-wrapper "> 
                 <div className="value-cards-title"><p>Secure</p></div>
                 <div><p>bdy</p></div>
 
