@@ -17,6 +17,7 @@ class Section extends Component {
 
         return (
             <div className="section-container">
+                <div className="section-keyword"><p>OUR WORK</p></div>
                 <div className="section-wrapper">
                             <div className="section-text">
                                 <h2 data-aos="fade-right" data-aos-easing="ease-in-out"

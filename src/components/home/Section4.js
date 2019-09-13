@@ -37,15 +37,16 @@ class Section4 extends Component {
   render() {
     return (
       <div className="section-container">
+        <div className="section-keyword"><p style={{color:this.state.color}}>WE ARE</p></div>
         <div className="section-wrapper">
           <div className="section-text we-are-grid">
             <div>
               <div  data-aos="fade-right"
                 data-aos-easing="ease-in-out"
                 data-aos-anchor-placement="top"
-                data-aos-duration="600">
+                data-aos-duration="600" style={{marginBottom:"30px"}}>
                
-                <span style={{display:"inline"}}><h2 style={{color:"black", display:"inline"}}>We are  &nbsp;</h2></span> 
+                <span style={{display:"inline"}}><h2 style={{color:"black", display:"inline"}}>We are&nbsp;</h2></span> 
                
                <h2 style={{color:this.state.color, display:"inline"}}
                 class={"section-title-animation"}

@@ -16,6 +16,7 @@ import Section from '../components/home/Section';
 import Section2 from '../components/home/Section2';
 import Section3 from '../components/home/Section3';
 import Section4 from '../components/home/Section4';
+import Section5 from '../components/home/Section5';
 
 const clients = [
 	{image_src: Hes, alt: "X", width: "auto"},
@@ -60,8 +61,9 @@ class Home extends Component {
 				<Landing/>
 				<Section/>
 				<Section2/>
-				{/* <Section3/> */}
 				<Section4/>
+				<Section3/>
+				<Section5/>
 
 				{/*<Fade bottom>*/}
 				{/*	{this.checkMobile() ?*/}
