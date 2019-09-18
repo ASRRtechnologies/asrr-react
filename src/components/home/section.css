@@ -18,7 +18,7 @@
   .section-keyword{
     display: flex;
     flex-direction: row;
-    width:80%;
+    width:70%;
     height:100%;
     margin-top:40px;
   }
@@ -30,7 +30,7 @@
   }
 
 .section-wrapper {
-  width: 80%;
+  width: 70%;
   margin: 100px 0;
   display: grid;
   /* grid-template-columns: repeat(auto-fill, minmax(450px, 1fr)); */
@@ -274,9 +274,9 @@
   color: red;
 }
 
-/*.center-grid{*/
-/*    ali*/
-/*}*/
+.center-grid{
+    align-items:center;
+}
 
 /* .beautiful-grey {
     background: rgba(235, 237, 238, 1);

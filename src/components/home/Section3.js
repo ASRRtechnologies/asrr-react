@@ -16,45 +16,23 @@ class Section3 extends Component {
 
   render() {
     return (
-      <div className="section-container beautiful-purple">
-        <div className="section-wrapper value-cards">
-          <div
-            data-aos="pop"
-            data-aos-delay="400"
-            data-aos-easing="ease-in-out"
-            data-aos-anchor-placement="top"
-            data-aos-duration="600"
-          >
-            <ValueCards />
-          </div>
+      <div className="section-container">
+        <div className="section-wrapper">
 
-          <div
-            data-aos="pop"
-            data-aos-delay="600"
-            data-aos-easing="ease-in-out"
-            data-aos-anchor-placement="top"
-            data-aos-duration="600"
-          >
-            <ValueCards />
-          </div>
-          <div
-            data-aos="pop"
-            data-aos-delay="800"
-            data-aos-easing="ease-in-out"
-            data-aos-anchor-placement="top"
-            data-aos-duration="600"
-          >
-                 <ValueCards /> 
-          </div>
 
-          <div
-            data-aos="pop"
-            data-aos-delay="1000"
-            data-aos-easing="ease-in-out"
-            data-aos-anchor-placement="top"
-            data-aos-duration="800"
-          >
-                 <ValueCards /> 
+
+          <div><h2>Testingg</h2>
+            <p> zetterijwezen. Lorem Ipsum is de standaard proeftekst in deze
+              bedrijfstak sinds de 16e eeuw</p>
+
+          </div>
+          <div className="section-services-grid">
+            <ValueCards/>
+            <ValueCards/>
+            <ValueCards/>
+            <ValueCards/>
+            <ValueCards/>
+            <ValueCards/>
           </div>
 
           

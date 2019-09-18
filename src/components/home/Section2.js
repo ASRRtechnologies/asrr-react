@@ -17,7 +17,7 @@ class Section2 extends Component {
   render() {
 
     return (
-        <div className="section-container beautiful-grey">
+        <div className="section-container">
             <div className="section-wrapper">
 
                 <div data-aos="fade-up" data-aos-delay="400" data-aos-easing="ease-in-out"
@@ -34,11 +34,7 @@ class Section2 extends Component {
                        data-aos-duration="600">
                         Lorem Ipsum is slechts een proeftekst uit het drukkerij- en
                         zetterijwezen. Lorem Ipsum is de standaard proeftekst in deze
-                        bedrijfstak sinds de 16e eeuw, toen een onbekende drukker een
-                        zethaak met letters nam en ze door elkaar husselde om een
-                        font-catalogus te maken. Het heeft niet alleen vijf eeuwen overleefd
-                        maar is ook, vrijwel onveranderd, overgenomen in elektronische
-                        letterzetting. Het is in de jaren '60 populair geworden met de{" "}
+                        bedrijfstak sinds de 16e eeuw
                     </p>
                     <span data-aos="fade-right" data-aos-delay="400" data-aos-easing="ease-in-out"
                           data-aos-anchor-placement="top"

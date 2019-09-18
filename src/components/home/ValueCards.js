@@ -19,14 +19,18 @@ class ValueCards extends Component {
 
         return (
             <div  className="value-cards-wrapper "> 
-                <div className="value-cards-information">
+                {/*<div className="value-cards-information">*/}
 
-                <img src={lightning} className="value-cards-image" />
-                <h3>Fast and secure</h3>
-                <p> See how ASRR can provide security</p>
-                <p>Learn more</p>
+                {/*<img src={lightning} className="value-cards-image" />*/}
+                {/*<h3 style={{color:"black"}}>Fast and secure</h3>*/}
+                {/*<p> See how ASRR can provide security</p>*/}
+                {/*<p>Learn more</p>*/}
 
-                </div> 
+                {/*</div> */}
+
+                <h3>Database protection</h3>
+                <p> With our latstest of latstet. We are sure youre in the right hands</p>
+
             </div>
         );
     }
