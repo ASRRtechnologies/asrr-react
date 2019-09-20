@@ -73,13 +73,14 @@
     position: absolute;
     height: 5px;
     bottom: 0;
-    background-color: #E4324C;
+    background-color: #455878;
     transition: all ease-in-out .2s;
     transform: scaleX(1);
 }
 
 .active-link {
-    border-bottom: 5px solid #E4324C !important;
+    border-bottom: 5px solid #455878 !important;
+    /*border-bottom: 5px solid #E4324C !important;*/
 }
 
 .logo-wrapper {

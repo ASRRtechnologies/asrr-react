@@ -32,7 +32,7 @@ class Section extends Component {
                                 </p>
                                 <span data-aos="fade-right" data-aos-delay="400" data-aos-easing="ease-in-out"
                                       data-aos-anchor-placement="top"
-                                      data-aos-duration="600">See all projects</span>
+                                      data-aos-duration="600" className="learn-more-arrow"><p>See all our projects</p></span>
 
                                 <div data-aos="fade-up" data-aos-delay="600" data-aos-easing="ease-in-out"
                                      data-aos-anchor-placement="top"

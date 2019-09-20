@@ -33,6 +33,12 @@ body {
     color: #343434;
     overflow-x: hidden;
 }
+:root {
+    --tintColor: #49cf86;
+    --main-txt-color: blue;
+    --main-padding: 15px;
+}
+
 
 @font-face {
     font-family: "anurati";
@@ -1101,6 +1107,46 @@ hr {
 
 .read-more-button {
     color: #4D429F;
+}
+
+.learn-more-arrow {
+    position: relative;
+    display: inline-block !important;
+    width:auto;
+    align-items: center !important;
+}
+
+.learn-more-arrow::before {
+    position: absolute;
+    top:0;
+    right:-10px;
+    content:"\2192";
+    color:black;
+    display: flex !important;
+    width:auto;
+    align-items: center !important;
+    transition: all 400ms cubic-bezier(.17,.67,.61,1.5);
+}
+
+.learn-more-arrow:hover{
+    cursor: pointer;
+}
+
+.learn-more-arrow:hover::before
+{
+    transform: translateX(10px);
+}
+
+.learn-more-arrow:hover p
+{
+    color:#455878;
+}
+
+
+.learn-more-arrow p{
+    display: inline;
+    padding: 0 10px 0 0;
+
 }
 
 .service-image {

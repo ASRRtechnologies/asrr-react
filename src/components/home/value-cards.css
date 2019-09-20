@@ -1,28 +1,34 @@
 .section-services-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-row-gap: 100px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
 }
 
 .value-cards-wrapper{
-    width:250px;
-    height: 275px;
+    width:100%;
+    height: 200px;
     display: flex;
     flex-direction: column;
     border-radius:50px;
     position:relative;
     justify-content: flex-start;
     align-items: flex-start;
-    padding:10px 20px;
 }
+
+
 
 .value-cards-wrapper h3{
     color:black;
+    padding-top:10px;
 }
 
 .value-cards-wrapper p{
     margin-top: 20px;
     text-align: left;
     color:black;
+    max-width: 400px;
+    width: 90%;
 }
 
 .value-cards-wrapper:after{
@@ -65,10 +71,8 @@
 }
 
 .value-cards-image{
-    width:20px;
-    height:auto;
-    
-    margin: 20px 0;
+    width:auto;
+    height:50px;
 }
 
 .value-cards h3{

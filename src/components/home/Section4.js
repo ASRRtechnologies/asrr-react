@@ -72,14 +72,14 @@ class Section4 extends Component {
                 website at ASRR. We assrelerate in building wbesites using the
                 lastest of the lastest techniques.
               </p>
-              <span
+              <span className="learn-more-arrow"
                 data-aos="fade-right"
                 data-aos-delay="400"
                 data-aos-easing="ease-in-out"
                 data-aos-anchor-placement="top"
                 data-aos-duration="600"
               >
-                Learn more ->
+                See all our services
               </span>
             </div>
 
