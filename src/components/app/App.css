@@ -1110,6 +1110,7 @@ hr {
 }
 
 .learn-more-arrow {
+    margin-top:15px;
     position: relative;
     display: inline-block !important;
     width:auto;
@@ -1139,7 +1140,7 @@ hr {
 
 .learn-more-arrow:hover p
 {
-    color:#455878;
+    color: #0a0878;
 }
 
 

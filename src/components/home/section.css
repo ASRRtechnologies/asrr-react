@@ -51,12 +51,12 @@
   max-width: 700px;
 }
 
-.section-text span {
-  display: block;
-  margin-top: 15px;
-  color: #6a6a6a;
-  font-size: 16px;
-}
+/*.section-text span {*/
+/*  display: block;*/
+/*  margin-top: 15px;*/
+/*  color: #6a6a6a;*/
+/*  font-size: 16px;*/
+/*}*/
 
 .section-image {
   display: flex;
@@ -122,7 +122,6 @@
   justify-content: center;
   text-align: center;
   width: 270px;
-  font-weight: bold;
   padding: 14px 0px;
   border: 2px #383736 solid;
   border-radius: 2px;
