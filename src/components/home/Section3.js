@@ -25,28 +25,30 @@ class Section3 extends Component {
                 title: "Power BI Dashboard",
                 text: "Lorem Ipsum is slechts een proeftekst uit het drukkerij- en zetterijwezen. " +
                     "Lorem Ipsum is de standaard proeftekst in",
-                image: Dashboard
+                image: Dashboard,
+                delay:"200ms"
             },
             {
                 title: "Server Design",
                 text: "Lorem Ipsum is slechts een proeftekst uit het drukkerij- en zetterijwezen. " +
                     "Lorem Ipsum is de standaard proeftekst in",
-                image: Server
+                image: Server,
+                delay:"400ms"
             },
             {
                 title: "Webdesign",
                 text: "Lorem Ipsum is slechts een proeftekst uit het drukkerij- en zetterijwezen. " +
                     "Lorem Ipsum is de standaard proeftekst in",
-                image: WebDesign
+                image: WebDesign,
+                delay:"500ms"
             },
             {
                 title: "Desktop Applications",
                 text: "Lorem Ipsum is slechts een proeftekst uit het drukkerij- en zetterijwezen. " +
                     "Lorem Ipsum is de standaard proeftekst in",
                 image: Desktop,
+                delay:"600ms"
             },
-
-
         ]
 
         return (
@@ -62,10 +64,12 @@ class Section3 extends Component {
 
                     <div className="section-services-grid">
                         {services.map((data, i) => {
-                            return <React.Fragment>
+                            return <div data-aos="-up" data-aos-delay={data.delay} data-aos-easing="ease-in-out"
+                                        data-aos-anchor-placement="top"
+                                        data-aos-duration="600">
                                 <ValueCards height={data.height} key={i} text={data.text} image={data.image}
                                             title={data.title}/>
-                            </React.Fragment>
+                            </div>
                         })}
                     </div>
                 </div>

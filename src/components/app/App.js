@@ -82,7 +82,6 @@ class App extends Component {
 			{console.log(currentPath)}
 
 			<Switch>
-
 				<Route path="/" exact component={Home}/>
 				<Route path="/work" component={Work}/>
 				<Route path="/services" component={Services}/>

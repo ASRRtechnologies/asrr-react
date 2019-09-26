@@ -17,6 +17,7 @@ import LandingText from '../components/shared/landing/LandingText'
 import ChoiceHelper from '../components/services/ChoiceHelper'
 import ServiceCard from '../components/services/ServiceCard'
 import Landing from "../components/shared/landing/Landing";
+import LandingImage from "../components/shared/landing/LandingImage";
 
 const services = [
 	{
@@ -79,9 +80,8 @@ class Services extends Component {
 		return (
 			<div>
 				<Fade bottom>
-					<Landing image={robot}/>
+					<LandingImage image={robot}/>
 					<ChoiceHelper/>
-					<NewLanding name="services"/>
 					<ServiceSummary/>
 					<LightTextBox name="services.text"/>
 					<ServiceGrid section="services.section" items={services}/>

@@ -17,12 +17,11 @@ class Section extends Component {
 
         return (
             <div className="section-container">
-                <div className="section-keyword"><p>OUR WORK</p></div>
                 <div className="section-wrapper">
                             <div className="section-text">
-                                <h2 data-aos="fade-right" data-aos-easing="ease-in-out"
+                                <h1 data-aos="fade-right" data-aos-easing="ease-in-out"
                                     data-aos-anchor-placement="top"
-                                    data-aos-duration="600">Remote desktop server</h2>
+                                    data-aos-duration="600">Remote desktop server</h1>
                                 <p data-aos="fade-right" data-aos-delay="200" data-aos-easing="ease-in-out"
                                    data-aos-anchor-placement="top"
                                    data-aos-duration="600">

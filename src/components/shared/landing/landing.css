@@ -3,9 +3,9 @@
     position: relative;
     width:100vw;
     height:100vh;
-    background-position: bottom;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover  ;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -18,6 +18,25 @@
     background: -ms-linear-gradient(-45deg, rgba(235,237,238,1) 0%, rgba(253,251,251,1) 100%);
     background: linear-gradient(135deg, rgba(235,237,238,1) 0%, rgba(253,251,251,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebedee', endColorstr='#fdfbfb', GradientType=1 );
+}
+
+
+.landing-container-image{
+    position: relative;
+    width:100vw;
+    height:100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover  ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing-container-image h1 {
+    font-size: 112px;
+    color:white !important;
 }
 
 .asrr-circle{
