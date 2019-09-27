@@ -22,7 +22,7 @@ class ChoiceHelper extends Component {
 
         return (
             <div className="services-wrapper">
-                <div style={{paddingTop:"100px"}}>
+                <div style={{paddingTop:"50px"}}>
                     <h1 style={{maxWidth: "90%", margin: "auto"}}>{this.props.title}</h1>
                     <p style={{
                         width: "700px",
