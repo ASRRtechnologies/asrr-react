@@ -28,30 +28,31 @@ class Section4 extends Component {
         AOS.init();
     }
 
-
-    activeLink = () => {
-
-
-    }
-
-
     render() {
         return (
             <React.Fragment>
-                <Fade>
-                <div className="section-container" key={this.state.word}  style={{backgroundImage:`url(${this.state.image})`}}>
+
+                <div className="section-container" key={this.state.word}>
+                    <Fade duration={2000}>
+                        <div className="section-container section-value-image" key={this.state.word}
+                             style={{backgroundImage: `url(${this.state.image})`}}>
+                        </div>
+                    </Fade>
                     <div className="section-wrapper">
                         <div className="section-cover-text cover-value">
                             <div className="section-text section-value">
-                                <span style={{display: "inline"}}><h1
+                                <span data-aos="fade-right" data-aos-delay="100" data-aos-easing="ease-in-out"
+                                      data-aos-anchor-placement="top"
+                                      data-aos-duration="600" style={{display: "inline"}}>
+                                    <h1
                                     style={{color: "black", display: "inline"}}>We are&nbsp;</h1>
-                                <h1 style={{color: this.state.color, display: "inline"}}
+                                    <h1 style={{color: this.state.color, display: "inline"}}
                                     className={"section-title-animation"}
                                     key={this.state.word + "title"}>
                                     {this.state.word}
-                                </h1>
-                            </span>
-                                <p data-aos="fade-right" data-aos-delay="200" data-aos-easing="ease-in-out"
+                                    </h1>
+                                 </span>
+                                <p data-aos="fade" data-aos-delay="200" data-aos-easing="ease-in-out"
                                    data-aos-anchor-placement="top"
                                    data-aos-duration="600">
                                     We focus on designing websites with the highest quality of
@@ -60,16 +61,21 @@ class Section4 extends Component {
                                     website at ASRR. We assrelerate in building wbesites using the
                                     lastest of the lastest techniques.
                                 </p>
-                              <div className="section-value-key">
-                                <a onClick={() => {this.changeView("developers",developer, "#FF8080")}}>We are developers</a>
-                                <a onClick={() => {this.changeView("innovative", innovative, "#455878")}}>We are innovative</a>
-                                <a onClick={() => {this.changeView("management", management )}}>We are management</a>
-                              </div>
+                                <div className="section-value-key">
+                                    <a onClick={() => {
+                                        this.changeView("developers", developer, "#FF8080")
+                                    }}>We are developers</a>
+                                    <a onClick={() => {
+                                        this.changeView("innovative", innovative, "#455878")
+                                    }}>We are innovative</a>
+                                    <a onClick={() => {
+                                        this.changeView("management", management)
+                                    }}>We are management</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                </Fade>
             </React.Fragment>
         );
     }

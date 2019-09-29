@@ -32,11 +32,11 @@ class Section2 extends Component {
                     <div></div>
                     <div className="section-cover-text">
                         <div className="section-text">
-                            <h1 data-aos="fade-right" data-aos-easing="ease-in-out"
+                            <h1 data-aos="fade-right" data-aos-delay={200} data-aos-easing="ease-in-out"
                                 data-aos-anchor-placement="top"
                                 data-aos-duration="600">Remote desktop server</h1>
                             <p data-aos="fade-right" data-aos-delay="200" data-aos-easing="ease-in-out"
-                               data-aos-anchor-placement="top"
+                               data-aos-anchor-placement="top-top"
                                data-aos-duration="600">
                                 Lorem Ipsum is slechts een proeftekst uit het drukkerij- en
                                 zetterijwezen. Lorem Ipsum is de standaard proeftekst in deze

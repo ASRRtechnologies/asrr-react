@@ -19,9 +19,7 @@ class Header extends Component {
             prevScrollprops: "",
             logoBlack: true,
         }
-
     }
-
 
     menuOpen = () => {
         this.setState({menuOpen: !this.state.menuOpen});
