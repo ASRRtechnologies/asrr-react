@@ -56,14 +56,6 @@ class Section3 extends Component {
         return (
             <div className="section-container">
                 <div className="section-wrapper flex-center">
-                    {/*<div className="section-text">*/}
-                    {/*    <h2>Services</h2>*/}
-                    {/*    <p style={{width: "80%"}}> zetterijwezen. Lorem Ipsum is de standaard proeftekst in deze*/}
-                    {/*        bedrijfstak sinds de 16e eeuw zetterijwezen. Lorem Ipsum is de standaard proeftekst in deze*/}
-                    {/*        bedrijfstak sinds de 16e eeuw</p>*/}
-                    {/*    <NavigateButton to="services" text="Learn more"/>*/}
-                    {/*</div>*/}
-
                     <div className="section-services-grid">
                         {services.map((data, i) => {
                             return <div data-aos="-up" data-aos-delay={data.delay} data-aos-easing="ease-in-out"

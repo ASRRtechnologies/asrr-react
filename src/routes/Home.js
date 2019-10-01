@@ -83,6 +83,7 @@ class Home extends Component {
 				<Section4/>
 				<DescriptionDiv title={services.title} text={services.text}/>
 				<Section3/>
+                <DescriptionDiv title={services.title} text={services.text}/>
                 <Section5/>
 
                 {/*<Fade bottom>*/}
