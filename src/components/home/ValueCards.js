@@ -1,19 +1,21 @@
 import React, {Component} from "react";
+
 class ValueCards extends Component {
     render() {
         const {image, title, text, height} = this.props;
         return (
-            <div  className="value-cards-wrapper ">
-                <div style={{height:"80px"}}>
-                <img style={{height:height}} className="value-cards-image" src={image}/>
+            <div className="value-cards-wrapper">
+                <div className="value-image-wrapper">
+                    <div className="value-cards-image" style={{backgroundImage: `url(${image})`}}></div>
                 </div>
-                <h3>{title}</h3>
-                <div style={{height:"150px"}}>
-                    <p>{text}</p>
+                <div>
+                    <h3>3D BIM modelling</h3>
+                    <p>With revit we can customize any 3d houses so that its very nice</p>
+                    <span className="learn-more-arrow"><p>Read more</p></span>
                 </div>
-                <span className="learn-more-arrow"><p>Read more</p></span>
             </div>
         );
     }
 }
+
 export default ValueCards;
