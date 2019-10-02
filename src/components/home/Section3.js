@@ -28,28 +28,33 @@ class Section3 extends Component {
                 text: "Lorem Ipsum is slechts een proeftekst uit het drukkerij- en zetterijwezen. " +
                     "Lorem Ipsum is de standaard proeftekst in",
                 image: management,
-                delay:"200ms"
+                delay:"200ms",
+                key:"management"
             },
             {
                 title: "Server Design",
                 text: "Lorem Ipsum is slechts een proeftekst uit het drukkerij- en zetterijwezen. " +
                     "Lorem Ipsum is de standaard proeftekst in",
                 image: developer,
-                delay:"400ms"
+                delay:"400ms",
+                key:"Server"
             },
             {
                 title: "Webdesign",
                 text: "Lorem Ipsum is slechts een proeftekst uit het drukkerij- en zetterijwezen. " +
                     "Lorem Ipsum is de standaard proeftekst in",
                 image: innovative,
-                delay:"500ms"
+                delay:"500ms",
+                key:"Webdesign"
             },
             {
                 title: "Desktop Applications",
                 text: "Lorem Ipsum is slechts een proeftekst uit het drukkerij- en zetterijwezen. " +
                     "Lorem Ipsum is de standaard proeftekst in",
                 image: developer,
-                delay:"600ms"
+                delay:"600ms",
+                key:"Desktop applications"
+
             },
         ]
 
@@ -58,10 +63,10 @@ class Section3 extends Component {
                 <div className="section-wrapper flex-center">
                     <div className="section-services-grid">
                         {services.map((data, i) => {
-                            return <div data-aos="-up" data-aos-delay={data.delay} data-aos-easing="ease-in-out"
+                            return <div  key={data.key} data-aos="-up" data-aos-delay={data.delay} data-aos-easing="ease-in-out"
                                         data-aos-anchor-placement="top"
                                         data-aos-duration="600">
-                                <ValueCards  key={i} text={data.text} image={data.image} title={data.title}/>
+                                <ValueCards  text={data.text} image={data.image} title={data.title}/>
                             </div>
                         })}
                     </div>

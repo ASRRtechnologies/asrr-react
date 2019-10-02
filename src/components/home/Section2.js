@@ -36,7 +36,7 @@ class Section2 extends Component {
                                 data-aos-anchor-placement="top"
                                 data-aos-duration="600">Remote desktop server</h1>
                             <p data-aos="fade-right" data-aos-delay="200" data-aos-easing="ease-in-out"
-                               data-aos-anchor-placement="top-top"
+                               data-aos-anchor-placement="top"
                                data-aos-duration="600">
                                 Lorem Ipsum is slechts een proeftekst uit het drukkerij- en
                                 zetterijwezen. Lorem Ipsum is de standaard proeftekst in deze
@@ -48,7 +48,7 @@ class Section2 extends Component {
 
                             <div data-aos="fade-up" data-aos-delay="600" data-aos-easing="ease-in-out"
                                  data-aos-anchor-placement="top"
-                                 data-aos-duration="600" class="section-button">
+                                 data-aos-duration="600" className="section-button">
                                 <p>Read more</p>
                             </div>
                         </div>

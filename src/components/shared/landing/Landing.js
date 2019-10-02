@@ -50,10 +50,10 @@ class Landing extends Component {
 
 
         const items = [
-            <h1>A</h1>,
-            <h1>S</h1>,
-            <h1>R</h1>,
-            <h1>R</h1>
+            {key:"A", item:<h1>A</h1>},
+            {key:"S", item:<h1>S</h1>},
+            {key:"S2", item:<h1>R</h1>},
+            {key:"R", item:<h1>R</h1>},
         ];
 
 
@@ -85,7 +85,7 @@ class Landing extends Component {
                     {/*</Trail>*/}
 
                     <Trailing items={items} keys={item => item.key}  >
-                        {item => props => <span className="asrr-circle-text" style={props}>{item}</span>}
+                        {item => props => <span className="asrr-circle-text" style={props}>{item.item}</span>}
                     </Trailing>
 
 

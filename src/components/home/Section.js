@@ -48,7 +48,7 @@ class Section extends Component {
 
                                 <div data-aos="fade-up" data-aos-delay="600" data-aos-easing="ease-in-out"
                                      data-aos-anchor-placement="top"
-                                     data-aos-duration="600" class="section-button">
+                                     data-aos-duration="600" className="section-button">
                                     <p>Read more</p>
                                 </div>
                             </div>
