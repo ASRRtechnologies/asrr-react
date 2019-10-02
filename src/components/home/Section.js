@@ -1,7 +1,5 @@
 import React, {Component} from "react";
-import NWO from "../../assets/images/home/laptop-nwo.png";
-// import phone from "../../assets/images/home/remote.jpg";
-import laptop from "../../assets/images/home/image-mobile.jpg";
+import phone from "../../assets/images/home/image-mobile.jpg";
 import AOS from 'aos';
 
 class Section extends Component {
@@ -27,9 +25,9 @@ class Section extends Component {
     render() {
 
         return (
-            <div className="section-container" style={{backgroundImage:`url(${laptop})`}}>
-                <div className="section-wrapper">
-                    <div> </div>
+            <div className="section-container white-gray">
+                <div className="section-wrapper rtl">
+
                     <div className="section-cover-text">
                         {/*<span className="section-border" ref={this.elementTop}></span>*/}
                             <div className="section-text">
@@ -54,6 +52,11 @@ class Section extends Component {
                                 </div>
                             </div>
                     </div>
+                    <div className="section-image">
+                        <img src={phone}/>
+                    </div>
+
+
                 </div>
             </div>
         );
