@@ -29,6 +29,7 @@ class Section extends Component {
         return (
             <div className="section-container" style={{backgroundImage:`url(${laptop})`}}>
                 <div className="section-wrapper">
+                    <div> </div>
                     <div className="section-cover-text">
                         {/*<span className="section-border" ref={this.elementTop}></span>*/}
                             <div className="section-text">

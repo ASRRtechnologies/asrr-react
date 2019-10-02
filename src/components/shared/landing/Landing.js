@@ -52,7 +52,7 @@ class Landing extends Component {
         const items = [
             {key:"A", item:<h1>A</h1>},
             {key:"S", item:<h1>S</h1>},
-            {key:"S2", item:<h1>R</h1>},
+            {key:"R2", item:<h1>R</h1>},
             {key:"R", item:<h1>R</h1>},
         ];
 
