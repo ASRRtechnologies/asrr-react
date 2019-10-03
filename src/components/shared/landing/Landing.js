@@ -66,7 +66,13 @@ class Landing extends Component {
                     to={{x: 0}}>
                     {props => (
                         <svg className="circle__svg">
-                            <circle cx="50%" cy="50%" r="225" stroke={"black"} strokeDasharray={2000}
+                            <circle className="large-circle" cx="50%" cy="50%" r="225" stroke={"black"} strokeDasharray={2000}
+                                    strokeDashoffset={props.x}
+                                    strokeWidth={5} fill={"none"}/>
+                            <circle className="medium-circle" cx="50%" cy="50%" r="150" stroke={"black"} strokeDasharray={2000}
+                                    strokeDashoffset={props.x}
+                                    strokeWidth={5} fill={"none"}/>
+                            <circle className="small-circle" cx="50%" cy="50%" r="100" stroke={"black"} strokeDasharray={2000}
                                     strokeDashoffset={props.x}
                                     strokeWidth={5} fill={"none"}/>
                         </svg>

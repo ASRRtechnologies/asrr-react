@@ -71,13 +71,19 @@ class App extends Component {
 		super(props);
 		this.state={
 			header:true,
+			preload:true,
 		}
 		Language.initialize();
+
+	}
+
+	componentDidMount(){
+		this.setState({preload:false});
 	}
 
 	render() {
 		const currentPath = window.location.pathname;
-		return <div className="App">
+		return <div className={this.state.preload ? "App pre-load": "App"}>
 			<Header/>
 			{console.log(currentPath)}
 

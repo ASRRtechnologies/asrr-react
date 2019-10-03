@@ -40,6 +40,13 @@ body {
     --main-padding: 15px;
 }
 
+.pre-load *{
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+}
+
 
 @font-face {
     font-family: "anurati";
@@ -945,9 +952,9 @@ hr {
 }
 
 @media screen and (max-width: 900px) {
-    body{
-        padding-top: 50px;
-    }
+    /*body{*/
+    /*    padding-top: 50px;*/
+    /*}*/
 
     .new-landing-text {
         margin-bottom: 40px;
