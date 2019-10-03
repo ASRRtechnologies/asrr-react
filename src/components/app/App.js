@@ -51,6 +51,7 @@ import Home from "../../routes/Home";
 import Work from "../../routes/Work";
 import Footer2 from "../shared/header/Footer2";
 import ServicePage from "../services/ServicePage";
+import ScrollPosition from "../shared/ScrollPosition";
 
 library.add(faWhatsapp, faLanguage, faImages, faCogs, faUsers, faChevronCircleDown, faPhone, faEnvelope, faHtml5, faCss3Alt, faJs, faJava, faWindows, faLinux, faGithub, faGit, faReact, faAndroid, faAppStoreIos, faApple, faNode, faNodeJs, faPaypal, faFacebook, faTwitter, faSnapchat, faAws, faChrome, faLinkedin);
 
@@ -69,13 +70,20 @@ const renderHeader = ({location}) => {
 class App extends Component {
 	constructor(props) {
 		super(props);
-		this.state={
-			header:true,
-			preload:true,
+		this.state= {
+			header: true,
+			preload: true,
+			data:[],
 		}
+
 		Language.initialize();
 
 	}
+
+	handlePagination = (data, name) => {
+		this.setState({data:{...this.state.data,[name]:data}});
+		console.log(this.state)
+	};
 
 	componentDidMount(){
 		this.setState({preload:false});
@@ -85,10 +93,12 @@ class App extends Component {
 		const currentPath = window.location.pathname;
 		return <div className={this.state.preload ? "App pre-load": "App"}>
 			<Header/>
-			{console.log(currentPath)}
+			{console.log(this.state)}
+
+			<ScrollPosition data={this.state.data}/>
 
 			<Switch>
-				<Route path="/" exact component={Home}/>
+				<Route path="/" exact   render={(props) =><Home data={this.handlePagination}/>}/>
 				<Route path="/work" component={Work}/>
 				<Route path="/services" component={Services}/>
 				<Route path="/team" component={About}/>

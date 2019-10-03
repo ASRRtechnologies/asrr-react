@@ -1,0 +1,14 @@
+.scroll-nav-container{
+
+    width:30px;
+    height:70px;
+    background-color: red;
+    position: fixed;
+    right:10px;
+    top:50%;
+    z-index: 10000;
+}
+
+.work-nav{
+
+}

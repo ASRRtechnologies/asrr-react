@@ -1,9 +1,8 @@
 import React, {Component} from "react";
-import NWO from "../../assets/images/home/laptop-nwo.png";
 // import phone from "../../assets/images/home/remote.jpg";
 import laptop from "../../assets/images/home/nwo-laptop-login.png";
 import AOS from 'aos';
-import phone from "../../assets/images/home/image-mobile.jpg";
+import {withScroll} from "../shared/withScroll";
 
 class Section2 extends Component {
     constructor(props) {
@@ -11,13 +10,6 @@ class Section2 extends Component {
         this.state = {};
         this.elementTop = React.createRef();
     }
-
-    drawBorder = () => {
-        let element = this.elementTop.current;
-        console.log(element);
-        element.style.height = `${-1*element.getBoundingClientRect().top}%`;
-        console.log(element.getBoundingClientRect().top)
-    };
 
     componentDidMount() {
         AOS.init();

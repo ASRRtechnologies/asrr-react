@@ -75,11 +75,10 @@ class Home extends Component {
     render() {
         return (
             <div>
-                <Landing/>
-                <Section title={work.title} text={work.text}/>
+                 <Landing/>
+                <Section position={this.props.data} title={work.title} text={work.text}/>
                 <Section2/>
-
-				<Section4 title={weAre.title} text={weAre.text}/>
+				<Section4 position={this.props.data} title={weAre.title} text={weAre.text}/>
 				<Section3 title={services.title} text={services.text}/>
 {/*/                <Section5/>*/}
             </div>

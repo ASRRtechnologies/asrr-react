@@ -1,31 +1,36 @@
 import React, {Component} from "react";
 import phone from "../../assets/images/home/image-mobile.jpg";
 import AOS from 'aos';
+import {getScrollPosition} from "../shared/Functions";
 
 class Section extends Component {
     constructor(props) {
         super(props);
-        this.state = {};
-        this.elementTop = React.createRef();
+        this.state = {
+            data:{elementPos:"", name:""}
+        };
     }
-
-    drawBorder = () => {
-       let element = this.elementTop.current;
-       console.log(element);
-       element.style.height = `${-1*element.getBoundingClientRect().top}%`;
-        console.log(element.getBoundingClientRect().top)
-    };
 
     componentDidMount() {
         AOS.init();
-        // window.addEventListener("scroll", this.drawBorder)
+        const props = this.props;
+        console.log(props);
+        window.addEventListener("scroll", function _scrollHandler(){
+            getScrollPosition("work", props)
+        })
     }
 
+    componentWillUnmount() {
+        const props = this.props;
+        window.removeEventListener("scroll", function _scrollHandler(){
+            getScrollPosition("work", props)
+        })
+    }
 
     render() {
 
         return (
-            <div className="section-container white-gray mobile-no-gradient">
+            <div id="work" className="section-container white-gray mobile-no-gradient">
                 <div className="services-wrapper" style={{backgroundImage:`${this.props.backgroundColor}`, color:`${this.props.color}`}}>
                     <h1>{this.props.title}</h1>
                     <p>{[this.props.text]}</p>

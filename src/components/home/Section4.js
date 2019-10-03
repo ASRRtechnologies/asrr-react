@@ -5,13 +5,9 @@ import developer from "../../assets/images/home/programming.jpg";
 import management from "../../assets/images/home/management.jpg";
 import innovative from "../../assets/images/home/nasa.jpg";
 
-import managementIcon from "../../assets/images/home/management.svg"
 import developerIcon from "../../assets/images/home/management.svg"
-import innovativeIcon from "../../assets/images/home/management.svg"
-
-import ValueCards from "./ValueCards";
 import Fade from "react-reveal/Fade";
-import laptop from "../../assets/images/home/image-mobile.jpg";
+import {getScrollPosition} from "../shared/Functions";
 
 class Section4 extends Component {
     constructor(props) {
@@ -32,11 +28,22 @@ class Section4 extends Component {
 
     componentDidMount() {
         AOS.init();
+        const props = this.props;
+        window.addEventListener("scroll", function _scrollHandler(){
+            getScrollPosition("about", props)
+        })
+    }
+
+    componentWillUnmount() {
+        const props = this.props;
+        window.removeEventListener("scroll", function _scrollHandler(){
+            getScrollPosition("about", props)
+        })
     }
 
     render() {
         return (
-                <div className="section-container " key={this.state.word}>
+                <div id="about" className="section-container " key={this.state.word}>
                     <div className="services-wrapper" style={{backgroundImage:`${this.props.backgroundColor}`, color:`${this.props.color}`}}>
                         <h1>{this.props.title}</h1>
                         <p>{[this.props.text]}</p>

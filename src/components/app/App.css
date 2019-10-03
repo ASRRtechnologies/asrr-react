@@ -11,6 +11,7 @@
 @import "../shared/header/footer.css";
 @import "../../components/home/slider.css";
 @import "../../components/home/testimonial.css";
+@import "../shared/scroll-nav.css";
 @import "../../components/home/section.css";
 @import "../../components/home/value-cards.css";
 @import "../../components/shared/landing/landing.css";
