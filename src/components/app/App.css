@@ -102,6 +102,17 @@ p{
     text-align: left
 }
 
+@media screen and (max-width: 500px) {
+    p{
+        font-size: 14px;
+    }
+
+    h1{
+        font-size: 22px;
+    }
+
+}
+
 
 a.rounded {
     padding: 0.3em 1.2em;
@@ -491,18 +502,18 @@ hr {
 
 /*services*/
 .services-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #343434;
     background-color: white;
     text-align: center;
+    flex-direction: column;
+    padding:0 0 50px 0;
 }
 
 .services-wrapper hr {
     background-color: rgba(0, 0, 0, 0.1);
-}
-
-.services-wrapper > div {
-    padding-top: 2em;
-    padding-bottom: 1em;
 }
 
 .services-wrapper h2 {
@@ -512,7 +523,10 @@ hr {
 }
 
 .services-wrapper p {
-    padding: 1em;
+    padding:0;
+    width:90%;
+    max-width: 700px;
+    text-align: justify;
 }
 
 .services-wrapper ul {

@@ -21,24 +21,9 @@ class ChoiceHelper extends Component {
         let self = this;
 
         return (
-            <div className="services-wrapper">
-                <div style={{paddingTop:"50px"}}>
-                    <h1 style={{maxWidth: "90%", margin: "auto"}}>{this.props.title}</h1>
-                    <p style={{
-                        width: "700px",
-                        margin: "auto",
-                        maxWidth: "90%"
-                    }}>{[this.props.text]}</p>
-                </div>
-                {/*<div>*/}
-                {/*    <h2>See all of our work</h2>*/}
-
-                {/*    <div className="centerButton-wrapper">*/}
-                {/*        <Link to="/Services"*/}
-                {/*              className="rounded centerButton">{this.props.t('buttons.service')}</Link>*/}
-                {/*    </div>*/}
-                {/*</div>*/}
-                <br/>
+            <div className="services-wrapper" style={{backgroundImage:`${this.props.backgroundColor}`, color:`${this.props.color}`}}>
+                    <h1>{this.props.title}</h1>
+                    <p>{[this.props.text]}</p>
             </div>
         );
     }

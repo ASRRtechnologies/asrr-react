@@ -25,9 +25,12 @@ class Section extends Component {
     render() {
 
         return (
-            <div className="section-container white-gray">
+            <div className="section-container white-gray mobile-no-gradient">
+                <div className="services-wrapper" style={{backgroundImage:`${this.props.backgroundColor}`, color:`${this.props.color}`}}>
+                    <h1>{this.props.title}</h1>
+                    <p>{[this.props.text]}</p>
+                </div>
                 <div className="section-wrapper rtl">
-
                     <div className="section-cover-text">
                         {/*<span className="section-border" ref={this.elementTop}></span>*/}
                             <div className="section-text">

@@ -60,10 +60,14 @@ class Section3 extends Component {
 
         return (
             <div className="section-container">
+                <div className="services-wrapper" style={{backgroundImage:`${this.props.backgroundColor}`, color:`${this.props.color}`}}>
+                    <h1>{this.props.title}</h1>
+                    <p>{[this.props.text]}</p>
+                </div>
                 <div className="section-wrapper flex-center">
                     <div className="section-services-grid">
                         {services.map((data, i) => {
-                            return <div  key={data.key} data-aos="-up" data-aos-delay={data.delay} data-aos-easing="ease-in-out"
+                            return <div className=" value-card-padding flex-center" key={data.key} data-aos="-up" data-aos-delay={data.delay} data-aos-easing="ease-in-out"
                                         data-aos-anchor-placement="top"
                                         data-aos-duration="600">
                                 <ValueCards  text={data.text} image={data.image} title={data.title}/>

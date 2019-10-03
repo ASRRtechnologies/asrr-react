@@ -28,7 +28,7 @@ class Section2 extends Component {
 
         return (
             <div className="section-container white-gray">
-                <div className="section-wrapper">
+                <div className="section-wrapper flex ">
                      <div className="section-image">
                         <img src={laptop}/>
                     </div>

@@ -96,7 +96,7 @@ class App extends Component {
 
 			<Fade bottom>
 				{/*<Footer/>*/}
-				<Footer2/>
+				{/*<Footer2/>*/}
 			</Fade>
 		</div>;
 	}

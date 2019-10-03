@@ -4,6 +4,11 @@ import AOS from "aos";
 import developer from "../../assets/images/home/programming.jpg";
 import management from "../../assets/images/home/management.jpg";
 import innovative from "../../assets/images/home/nasa.jpg";
+
+import managementIcon from "../../assets/images/home/management.svg"
+import developerIcon from "../../assets/images/home/management.svg"
+import innovativeIcon from "../../assets/images/home/management.svg"
+
 import ValueCards from "./ValueCards";
 import Fade from "react-reveal/Fade";
 import laptop from "../../assets/images/home/image-mobile.jpg";
@@ -12,6 +17,7 @@ class Section4 extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            icon:developerIcon,
             word: "developers",
             image: developer,
             color: "#FF8080"
@@ -30,15 +36,19 @@ class Section4 extends Component {
 
     render() {
         return (
-            <React.Fragment>
+                <div className="section-container " key={this.state.word}>
+                    <div className="services-wrapper" style={{backgroundImage:`${this.props.backgroundColor}`, color:`${this.props.color}`}}>
+                        <h1>{this.props.title}</h1>
+                        <p>{[this.props.text]}</p>
+                    </div>
 
-                <div className="section-container" key={this.state.word}>
                     <Fade duration={2000}>
-                        <div className="section-container section-value-image" key={this.state.word}
+                        <div className="section-container section-value-image no-padding mobile-no-gradient" key={this.state.word}
                              style={{backgroundImage: `url(${this.state.image})`}}>
+                            <img className="section-icons" src={this.state.icon}/>
                         </div>
                     </Fade>
-                    <div className="section-wrapper">
+                    <div className="section-wrapper flex-center">
                         <div className="section-cover-text cover-value">
                             <div className="section-text section-value">
                                 <span data-aos="fade-right" data-aos-delay="100" data-aos-easing="ease-in-out"
@@ -76,7 +86,6 @@ class Section4 extends Component {
                         </div>
                     </div>
                 </div>
-            </React.Fragment>
         );
     }
 }

@@ -75,30 +75,13 @@ class Home extends Component {
     render() {
         return (
             <div>
-                <Landing/>
-                <DescriptionDiv title={work.title} text={work.text}/>
-                <Section/>
+                {/*<Landing/>*/}
+                <Section title={work.title} text={work.text}/>
                 <Section2/>
-				<DescriptionDiv title={weAre.title} text={weAre.text}/>
-				<Section4/>
-				<DescriptionDiv title={services.title} text={services.text}/>
-				<Section3/>
-                <Section5/>
 
-                {/*<Fade bottom>*/}
-                {/*	{this.checkMobile() ?*/}
-                {/*		<MobileLanding name="home.landing"/>*/}
-                {/*		:*/}
-                {/*		<ParticleLanding header="home.landing.headline"/>*/}
-                {/*	}*/}
-                {/*	<Clients data={clients}/>*/}
-                {/*	<ServiceSummary/>*/}
-                {/*	<WorkGrid backgroundColor="#1A1A1D" component={*/}
-                {/*		<GeneralHeader title="Work" titleColor="#E4324C" subText_color="white" marginBottom="50px"*/}
-                {/*		               subText={`See some of our previous work`}/>}/>*/}
-                {/*	<Testimonial/>*/}
-                {/*</Fade>*/}
-
+				<Section4 title={weAre.title} text={weAre.text}/>
+				<Section3 title={services.title} text={services.text}/>
+{/*/                <Section5/>*/}
             </div>
         );
     }

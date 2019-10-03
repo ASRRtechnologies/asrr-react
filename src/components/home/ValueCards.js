@@ -5,7 +5,7 @@ class ValueCards extends Component {
         const {image, title, text, height} = this.props;
         return (
             <div className="value-cards-wrapper">
-                <div className="value-image-wrapper">
+                <div className="value-image-cards-wrapper">
                     <div className="value-cards-image" style={{backgroundImage: `url(${image})`}}></div>
                 </div>
                 <div>
