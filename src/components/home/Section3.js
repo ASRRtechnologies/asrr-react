@@ -64,7 +64,7 @@ class Section3 extends Component {
                     <h1>{this.props.title}</h1>
                     <p>{[this.props.text]}</p>
                 </div>
-                <div className="section-wrapper flex-center">
+                <div className="section-wrapper flex-center unresponsive-grid">
                     <div className="section-services-grid">
                         {services.map((data, i) => {
                             return <div className=" value-card-padding flex-center" key={data.key} data-aos="-up" data-aos-delay={data.delay} data-aos-easing="ease-in-out"

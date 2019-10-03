@@ -79,6 +79,11 @@
     display: none;
 }
 
+.unresponsive-grid{
+    grid-template-columns:none;
+}
+
+
 .section-value {
     display: flex;
     align-items: center;
@@ -227,7 +232,8 @@
     width: 100%;
     display: grid;
     grid-row-gap: 50px;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-column-gap: 50px;
+    grid-template-columns: repeat(auto-fill, minmax(25vw, 1fr));
     grid-template-rows: auto;
     justify-items: center;
 }
@@ -392,7 +398,12 @@
         min-height: 100vh;
     }
 
+    .section-services-grid {
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    }
+
 }
+
 
 
 @media screen and (max-width: 1200px) {
