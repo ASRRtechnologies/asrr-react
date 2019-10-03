@@ -3,6 +3,7 @@ import NWO from "../../assets/images/home/laptop-nwo.png";
 // import phone from "../../assets/images/home/remote.jpg";
 import laptop from "../../assets/images/home/nwo-laptop-login.png";
 import AOS from 'aos';
+import phone from "../../assets/images/home/image-mobile.jpg";
 
 class Section2 extends Component {
     constructor(props) {
@@ -28,14 +29,13 @@ class Section2 extends Component {
 
         return (
             <div className="section-container white-gray">
-                <div className="section-wrapper flex ">
-                     <div className="section-image">
+                <div className="section-wrapper flex">
+                    <div className="section-image">
                         <img src={laptop}/>
                     </div>
-
                     <div className="section-cover-text">
                         <div className="section-text">
-                            <h1 data-aos="fade-right" data-aos-delay={200} data-aos-easing="ease-in-out"
+                            <h1 data-aos="fade-right" data-aos-easing="ease-in-out"
                                 data-aos-anchor-placement="top"
                                 data-aos-duration="600">Remote desktop server</h1>
                             <p data-aos="fade-right" data-aos-delay="200" data-aos-easing="ease-in-out"
@@ -58,6 +58,7 @@ class Section2 extends Component {
                     </div>
                 </div>
             </div>
+
         );
     }
 }

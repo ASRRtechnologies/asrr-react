@@ -39,6 +39,11 @@
     color:white !important;
 }
 
+.circle__svg{
+    width:100vw;
+    height:100vh;
+}
+
 .asrr-circle{
     position: absolute;
     width:100%;
@@ -67,3 +72,19 @@
 /*    background-color: black;*/
 /*    opacity: 0.8;*/
 /*}*/
+
+
+
+@media screen and (max-width: 700px) {
+
+    /*.circle__svg{*/
+    /*    width:70vw;*/
+    /*    height:70vh;*/
+    /*}*/
+
+    .landing-container{
+        width:100vw;
+        height:75vh;
+    }
+
+}

@@ -500,16 +500,17 @@ hr {
     }
 }
 
+
 /*services*/
 .services-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     color: #343434;
-    background-color: white;
+    background-color: transparent;
     text-align: center;
     flex-direction: column;
-    padding:0 0 50px 0;
+    padding:100px 0 100px 0;
 }
 
 .services-wrapper hr {
@@ -535,6 +536,13 @@ hr {
 
 .services-wrapper ul li:before {
     content: '✓';
+}
+
+@media (max-width: 1200px) {
+    .services-wrapper {
+        padding:0 0 50px 0;
+    }
+
 }
 
 .flex-container {

@@ -21,6 +21,7 @@
 }
 
 .section-wrapper {
+    position: relative;
     min-height: 100vh;
     width: 100%;
     display: grid;
@@ -387,27 +388,22 @@
 
 @media screen and (max-width: 1400px) {
     .section-container {
-        height: 75vh;
-        min-height: 50vh;
+        height: auto;
+        min-height: 100vh;
     }
 
-    .section-wrapper {
-        min-height: 75vh;
-        height: 50vh;
-    }
 }
 
 
 @media screen and (max-width: 1200px) {
     .section-container {
         /*background-image: none !important;*/
-        padding: 0 0 100px 0;
+        padding: 100px 0 100px 0;
         height: 100%;
         min-height: 100%;
     }
 
     .section-wrapper {
-        /*padding: 100px 0;*/
         grid-template-columns: none;
         grid-template-rows: 1fr 1fr;
         height: 100%;
@@ -428,6 +424,7 @@
 
     .flex-center {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }

@@ -59,15 +59,13 @@ class Landing extends Component {
 
         return (
             <div className="landing-container">
-
-
                 <Spring
                     config={{duration: 1000}}
                     delay={500}
                     from={{x: 2000}}
                     to={{x: 0}}>
                     {props => (
-                        <svg width="100vw" height="100vh" className="circle__svg">
+                        <svg className="circle__svg">
                             <circle cx="50%" cy="50%" r="225" stroke={"black"} strokeDasharray={2000}
                                     strokeDashoffset={props.x}
                                     strokeWidth={5} fill={"none"}/>

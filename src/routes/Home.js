@@ -75,7 +75,7 @@ class Home extends Component {
     render() {
         return (
             <div>
-                {/*<Landing/>*/}
+                <Landing/>
                 <Section title={work.title} text={work.text}/>
                 <Section2/>
 

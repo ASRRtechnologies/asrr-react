@@ -42,13 +42,14 @@ class Section4 extends Component {
                         <p>{[this.props.text]}</p>
                     </div>
 
-                    <Fade duration={2000}>
-                        <div className="section-container section-value-image no-padding mobile-no-gradient" key={this.state.word}
-                             style={{backgroundImage: `url(${this.state.image})`}}>
-                            <img className="section-icons" src={this.state.icon}/>
-                        </div>
-                    </Fade>
                     <div className="section-wrapper flex-center">
+
+                        <Fade duration={2000}>
+                            <div className="section-container section-value-image no-padding mobile-no-gradient" key={this.state.word}
+                                 style={{backgroundImage: `url(${this.state.image})`}}>
+                                <img className="section-icons" src={this.state.icon}/>
+                            </div>
+                        </Fade>
                         <div className="section-cover-text cover-value">
                             <div className="section-text section-value">
                                 <span data-aos="fade-right" data-aos-delay="100" data-aos-easing="ease-in-out"
