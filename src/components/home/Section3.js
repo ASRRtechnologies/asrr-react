@@ -36,7 +36,7 @@ class Section3 extends Component {
                 text: "Lorem Ipsum is slechts een proeftekst uit het drukkerij- en zetterijwezen. " +
                     "Lorem Ipsum is de standaard proeftekst in",
                 image: management,
-                delay:"200ms",
+                delay:"200",
                 key:"management"
             },
             {
@@ -44,7 +44,7 @@ class Section3 extends Component {
                 text: "Lorem Ipsum is slechts een proeftekst uit het drukkerij- en zetterijwezen. " +
                     "Lorem Ipsum is de standaard proeftekst in",
                 image: developer,
-                delay:"400ms",
+                delay:"600",
                 key:"Server"
             },
             {
@@ -52,7 +52,7 @@ class Section3 extends Component {
                 text: "Lorem Ipsum is slechts een proeftekst uit het drukkerij- en zetterijwezen. " +
                     "Lorem Ipsum is de standaard proeftekst in",
                 image: innovative,
-                delay:"500ms",
+                delay:"800",
                 key:"Webdesign"
             },
             {
@@ -60,7 +60,7 @@ class Section3 extends Component {
                 text: "Lorem Ipsum is slechts een proeftekst uit het drukkerij- en zetterijwezen. " +
                     "Lorem Ipsum is de standaard proeftekst in",
                 image: developer,
-                delay:"600ms",
+                delay:"1000",
                 key:"Desktop applications"
 
             },
@@ -75,8 +75,8 @@ class Section3 extends Component {
                 <div className="section-wrapper flex-center unresponsive-grid">
                     <div className="section-services-grid">
                         {services.map((data, i) => {
-                            return <div className=" value-card-padding flex-center" key={data.key} data-aos="-up" data-aos-delay={data.delay} data-aos-easing="ease-in-out"
-                                        data-aos-anchor-placement="top"
+                            return <div className=" value-card-padding flex-center" key={data.key} data-aos="fade-in" data-aos-delay={data.delay} data-aos-easing="ease-in-out"
+                                        data-aos-anchor-placement="center"
                                         data-aos-duration="600">
                                 <ValueCards  text={data.text} image={data.image} title={data.title}/>
                             </div>

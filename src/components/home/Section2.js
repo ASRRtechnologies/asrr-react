@@ -22,9 +22,11 @@ class Section2 extends Component {
             <div className="section-container white-gray">
                 <div className="section-wrapper flex">
                     <div className="section-image">
-                        <img src={laptop}/>
+                        <div className="section-image-wrapper">
+                            <img src={laptop}/>
+                        </div>
                     </div>
-                    <div className="section-cover-text">
+                    <div className="section-cover-text flex-end">
                         <div className="section-text">
                             <h1 data-aos="fade-right" data-aos-easing="ease-in-out"
                                 data-aos-anchor-placement="top"

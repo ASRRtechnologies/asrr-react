@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import phone from "../../assets/images/home/hes-mobile.png";
 import AOS from 'aos';
 import {getScrollPosition} from "../shared/Functions";
+import laptop from "../../assets/images/home/nwo-laptop-login.png";
 
 class Section extends Component {
     constructor(props) {
@@ -35,8 +36,7 @@ class Section extends Component {
                     <p>{[this.props.text]}</p>
                 </div>
                 <div className="section-wrapper rtl">
-                    <div className="section-cover-text">
-                        {/*<span className="section-border" ref={this.elementTop}></span>*/}
+                    <div className="section-cover-text ">
                             <div className="section-text">
                                 <h1 data-aos="fade-right" data-aos-easing="ease-in-out"
                                     data-aos-anchor-placement="top"
@@ -60,10 +60,10 @@ class Section extends Component {
                             </div>
                     </div>
                     <div className="section-image">
-                        <img src={phone}/>
+                        <div className="section-image-wrapper flex-end">
+                            <img src={phone}/>
+                        </div>
                     </div>
-
-
                 </div>
             </div>
         );

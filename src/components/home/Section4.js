@@ -17,14 +17,13 @@ class Section4 extends Component {
             word: "developers",
             image: developer,
             color: "#FF8080"
-
         };
     }
 
     changeView = (name, image, color) => {
         this.setState({word: name, image: image, color: color});
         this.forceUpdate();
-    }
+    };
 
     componentDidMount() {
         AOS.init();
@@ -50,8 +49,7 @@ class Section4 extends Component {
                     </div>
 
                     <div className="section-wrapper flex-center">
-
-                        <Fade duration={2000}>
+                        <Fade duration={3000}>
                             <div className="section-container section-value-image no-padding mobile-no-gradient" key={this.state.word}
                                  style={{backgroundImage: `url(${this.state.image})`}}>
                                 <img className="section-icons" src={this.state.icon}/>
@@ -64,6 +62,7 @@ class Section4 extends Component {
                                       data-aos-duration="600" style={{display: "inline"}}>
                                     <h1
                                     style={{color: "black", display: "inline"}}>We are&nbsp;</h1>
+
                                     <h1 style={{color: this.state.color, display: "inline"}}
                                     className={"section-title-animation"}
                                     key={this.state.word + "title"}>
@@ -82,13 +81,13 @@ class Section4 extends Component {
                                 <div className="section-value-key">
                                     <a onClick={() => {
                                         this.changeView("developers", developer, "#FF8080")
-                                    }}>We are developers</a>
+                                    }} style={{fontWeight:this.state.word ==="developers"? "bold": ""}}>We are developers</a>
                                     <a onClick={() => {
                                         this.changeView("innovative", innovative, "#455878")
-                                    }}>We are innovative</a>
+                                    }}style={{fontWeight:this.state.word ==="innovative"? "bold": ""}}>We are innovative</a>
                                     <a onClick={() => {
                                         this.changeView("management", management)
-                                    }}>We are management</a>
+                                    }} style={{fontWeight:this.state.word ==="management"? "bold": ""}}>We are management</a>
                                 </div>
                             </div>
                         </div>

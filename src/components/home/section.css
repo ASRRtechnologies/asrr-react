@@ -38,10 +38,18 @@
     align-items: center;
 }
 
-.section-image > img {
-    width: 80%;
+.section-image  img {
+    width: 100%;
     height: auto;
-    max-width: 700px;
+    max-width: 1200px;
+}
+
+.section-image-wrapper{
+    width:70%;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    height:100%;
 }
 
 .section-text {
@@ -49,7 +57,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: flex-start;
-    width: auto;
+    width: 70%;
     z-index: 100;
 }
 
@@ -81,13 +89,15 @@
 
 .unresponsive-grid{
     grid-template-columns:none;
+    display: flex;
+    justify-content: center;
 }
 
 
 .section-value {
     display: flex;
     align-items: flex-start;
-    width: 80%;
+    width: 70%;
     height: 100%;
 }
 
@@ -229,7 +239,7 @@
 
 .section-services-grid {
     height: 100%;
-    width: 100%;
+    width: 90%;
     display: grid;
     grid-row-gap: 50px;
     grid-column-gap: 50px;
@@ -260,13 +270,13 @@
 }
 
 .section-contact {
-    min-width: 400px;
-    max-width: 600px;
+    /*min-width: 300px;*/
+    /*max-width: 600px;*/
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
     align-items: flex-start;
-    width: auto;
+    width: 70%;
     z-index: 100;
     padding-top: 50px;
 }
@@ -379,9 +389,17 @@
     background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(216, 241, 230, 0.46) 0.1%, rgba(233, 226, 226, 0.28) 90.1%);
 }
 
+.mapouter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .map-wrapper {
-    width: 100%;
+    width: 70%;
     height: 100%;
+    display: flex;
+
 }
 
 #map {
@@ -392,7 +410,12 @@
     max-height: 600px;
 }
 
+.flex-end{
+    justify-content: flex-end !important;
+}
+
 @media screen and (max-width: 1400px) {
+
     .section-container {
         height: auto;
         min-height: 100vh;
@@ -432,6 +455,9 @@
         flex-direction: column-reverse;
     }
 
+    .flex-end{
+        justify-content: center !important;
+    }
 
     .flex-center {
         display: flex;
@@ -449,7 +475,6 @@
         text-align: justify !important;
         color: #343434;
         width:80%;
-        max-width: 500px;
     }
 
     .section-icons{
@@ -463,7 +488,7 @@
     .section-image > img {
         width: 80%;
         height: auto;
-        max-width: 700px;
+        max-width: 900px;
     }
 
     .section-text.section-value p {
@@ -537,12 +562,15 @@
         width: 90%;
     }
 
+    .section-text {
+        width:100%;
+    }
+
 
     .section-text > p {
         text-align: justify !important;
         color: #343434;
         width:90%;
-        max-width: 500px;
     }
 
 
