@@ -86,7 +86,7 @@
 
 .section-value {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     width: 80%;
     height: 100%;
 }
@@ -495,6 +495,31 @@
         background-image: none !important;
     }
 
+    .section-contact{
+        align-items: center;
+    }
+
+    .mapouter{
+        height: auto;
+    }
+
+    .map-wrapper{
+        display: flex;
+        justify-content: center;
+        width:100%;
+        height: auto;
+    }
+
+    #map{
+        width:60vw;
+        height:60vw;
+    }
+
+    .section-contact {
+        min-width: 200px;
+        width: 90%;
+    }
+
 }
 
 @media screen and (max-width: 530px) {
@@ -532,6 +557,16 @@
         max-width: 200px;
         width:50%;
         height:auto;
+    }
+
+    #map{
+        width:80vw;
+        height:80vw;
+    }
+
+    .section-contact {
+        min-width: 200px;
+       width: 90%;
     }
 
 }

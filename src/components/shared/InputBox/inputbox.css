@@ -154,6 +154,7 @@ LEVEL 3. PRESENTATION STYLES
 
     opacity: 0;
     border: var(--uiFieldBorderWidth) solid var(--fieldBorderColorActive);
+    /*border: var(--uiFieldBorderWidth) solid var(--fieldBorderColorActive);*/
 
     position: absolute;
     bottom: 0;
@@ -174,8 +175,10 @@ LEVEL 3. PRESENTATION STYLES
 
 
 .field{
-    --fieldBorderColor: #D1C4E9;
-    --fieldBorderColorActive: #673AB7;
+    /*--fieldBorderColor: #D1C4E9;*/
+    /*--fieldBorderColorActive: #673AB7;   */
+    --fieldBorderColor: #ff9298;
+    --fieldBorderColorActive: var(--primaryTint);
 }
 
 .textarea {

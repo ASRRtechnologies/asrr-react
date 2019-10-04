@@ -28,18 +28,18 @@ class Section4 extends Component {
 
     componentDidMount() {
         AOS.init();
-        const props = this.props;
-        window.addEventListener("scroll", function _scrollHandler(){
-            getScrollPosition("about", props)
-        })
+        // const props = this.props;
+        // window.addEventListener("scroll", function _scrollHandler(){
+        //     getScrollPosition("about", props)
+        // })
     }
 
-    componentWillUnmount() {
-        const props = this.props;
-        window.removeEventListener("scroll", function _scrollHandler(){
-            getScrollPosition("about", props)
-        })
-    }
+    // componentWillUnmount() {
+    //     const props = this.props;
+    //     window.removeEventListener("scroll", function _scrollHandler(){
+    //         getScrollPosition("about", props)
+    //     })
+    // }
 
     render() {
         return (

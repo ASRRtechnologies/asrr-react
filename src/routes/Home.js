@@ -39,18 +39,18 @@ const clients = [
 ];
 
 const work = {
-	title:"Some of our latest work",
-	text:"Lorem Ipsum is slechts een proeftekst uit het drukkerij- en zetterijwezen. Lorem Ipsum is de standaard proeftekst in deze bedrijfstak sinds de 16e eeuw"
+    title: "Some of our latest work",
+    text: "Lorem Ipsum is slechts een proeftekst uit het drukkerij- en zetterijwezen. Lorem Ipsum is de standaard proeftekst in deze bedrijfstak sinds de 16e eeuw"
 }
 
 const weAre = {
-	title:"What ASRR stands for",
-	text:"Lorem Ipsum is slechts een proeftekst uit het drukkerij- en zetterijwezen. Lorem Ipsum is de standaard proeftekst in deze bedrijfstak sinds de 16e eeuw"
+    title: "What ASRR stands for",
+    text: "Lorem Ipsum is slechts een proeftekst uit het drukkerij- en zetterijwezen. Lorem Ipsum is de standaard proeftekst in deze bedrijfstak sinds de 16e eeuw"
 }
 
 const services = {
-	title:"The services we provide",
-	text:"Lorem Ipsum is slechts een proeftekst uit het drukkerij- en zetterijwezen. Lorem Ipsum is de standaard proeftekst in deze bedrijfstak sinds de 16e eeuw"
+    title: "The services we provide",
+    text: "Lorem Ipsum is slechts een proeftekst uit het drukkerij- en zetterijwezen. Lorem Ipsum is de standaard proeftekst in deze bedrijfstak sinds de 16e eeuw"
 }
 
 class Home extends Component {
@@ -75,12 +75,12 @@ class Home extends Component {
     render() {
         return (
             <div>
-                 <Landing/>
+                <Landing/>
                 <Section position={this.props.data} title={work.title} text={work.text}/>
                 <Section2/>
-				<Section4 position={this.props.data} title={weAre.title} text={weAre.text}/>
-				<Section3 title={services.title} text={services.text}/>
-{/*/                <Section5/>*/}
+                <Section4 position={this.props.data} title={weAre.title} text={weAre.text}/>
+                <Section3 position={this.props.data} title={services.title} text={services.text}/>
+                <Section5/>
             </div>
         );
     }

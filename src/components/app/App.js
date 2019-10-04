@@ -82,7 +82,6 @@ class App extends Component {
 
 	handlePagination = (data, name) => {
 		this.setState({data:{...this.state.data,[name]:data}});
-		console.log(this.state)
 	};
 
 	componentDidMount(){
@@ -93,9 +92,9 @@ class App extends Component {
 		const currentPath = window.location.pathname;
 		return <div className={this.state.preload ? "App pre-load": "App"}>
 			<Header/>
-			{console.log(this.state)}
 
-			<ScrollPosition data={this.state.data}/>
+
+			{/*<ScrollPosition data={this.state.data}/>*/}
 
 			<Switch>
 				<Route path="/" exact   render={(props) =><Home data={this.handlePagination}/>}/>
@@ -112,7 +111,7 @@ class App extends Component {
 
 			<Fade bottom>
 				{/*<Footer/>*/}
-				{/*<Footer2/>*/}
+				<Footer2/>
 			</Fade>
 		</div>;
 	}

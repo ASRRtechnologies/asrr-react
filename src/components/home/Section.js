@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import phone from "../../assets/images/home/image-mobile.jpg";
+import phone from "../../assets/images/home/hes-mobile.png";
 import AOS from 'aos';
 import {getScrollPosition} from "../shared/Functions";
 
@@ -14,18 +14,17 @@ class Section extends Component {
     componentDidMount() {
         AOS.init();
         const props = this.props;
-        console.log(props);
-        window.addEventListener("scroll", function _scrollHandler(){
-            getScrollPosition("work", props)
-        })
+        // window.addEventListener("scroll", function _scrollHandler (){
+        //     getScrollPosition("work", props)
+        // },false)
     }
 
-    componentWillUnmount() {
-        const props = this.props;
-        window.removeEventListener("scroll", function _scrollHandler(){
-            getScrollPosition("work", props)
-        })
-    }
+    // componentWillUnmount() {
+    //     const props = this.props;
+    //     window.removeEventListener("scroll", function _scrollHandler(){
+    //         getScrollPosition("work", props)
+    //     },false)
+    // }
 
     render() {
 

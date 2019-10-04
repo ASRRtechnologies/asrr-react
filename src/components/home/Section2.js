@@ -13,7 +13,6 @@ class Section2 extends Component {
 
     componentDidMount() {
         AOS.init();
-        // window.addEventListener("scroll", this.drawBorder)
     }
 
 

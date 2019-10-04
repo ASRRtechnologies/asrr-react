@@ -1,15 +1,12 @@
 import React, {Component} from "react";
 import AOS from "aos";
-import Dashboard from "../../assets/images/services/icons/dashboard-icon.svg"
 import Server from "../../assets/images/services/icons/database-icon.svg"
-import WebDesign from "../../assets/images/services/icons/webdesign-icon.svg"
-import Desktop from "../../assets/images/services/icons/desktop-icon.svg"
 import developer from "../../assets/images/home/programming.jpg";
 import management from "../../assets/images/home/management.jpg";
 import innovative from "../../assets/images/home/nasa.jpg";
 
 import ValueCards from "./ValueCards";
-import NavigateButton from "./NavigateButton";
+import {getScrollPosition} from "../shared/Functions";
 
 class Section3 extends Component {
     constructor(props) {
@@ -19,7 +16,18 @@ class Section3 extends Component {
 
     componentDidMount() {
         AOS.init();
+        // const props = this.props;
+        // window.addEventListener("scroll", function _scrollHandler (){
+        //     getScrollPosition("services", props)
+        // })
     }
+    //
+    // componentWillUnmount() {
+    //     const props = this.props;
+    //     window.removeEventListener("scroll", function _scrollHandler(){
+    //         getScrollPosition("services", props)
+    //     })
+    // }
 
     render() {
         const services = [
@@ -59,7 +67,7 @@ class Section3 extends Component {
         ]
 
         return (
-            <div className="section-container">
+            <div className="section-container" id="services">
                 <div className="services-wrapper" style={{backgroundImage:`${this.props.backgroundColor}`, color:`${this.props.color}`}}>
                     <h1>{this.props.title}</h1>
                     <p>{[this.props.text]}</p>

@@ -130,19 +130,19 @@
 @media screen and (max-width: 900px) {
 
     .value-image-cards-wrapper{
-         height:60vw;
+         height:90vw;
         min-height: 100px;
     }
 
     .value-cards-image{
-         height:60vw;
+         height:90vw;
         min-height: 100px;
     }
 
     .value-cards-wrapper{
         display: flex;
         flex-direction: column;
-        width:60vw;
+        width:90vw;
         padding: 0;
     }
 

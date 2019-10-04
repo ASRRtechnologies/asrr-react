@@ -32,7 +32,7 @@ class Section5 extends Component {
 
         return (
             <div className="section-container beautiful-grey section-padding">
-                <div className="section-wrapper">
+                <div className="section-wrapper flex">
                     <div className="section-cover-text beautiful-grey">
                         <div className="section-contact">
                             <h1 data-aos="fade-right" data-aos-easing="ease-in-out"

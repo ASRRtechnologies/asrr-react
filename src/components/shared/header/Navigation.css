@@ -3,6 +3,8 @@
     --hamburger-closed: all 0.5s ease-out;
     --nav-links-fade: all 0.2s linear;
     --splash-bg-color: blue;
+    --primaryTint:#E4324C;
+    /*--primaryTint:#455878;*/
 }
 
 .navigation-container {
@@ -62,7 +64,7 @@
     position: absolute;
     height: 5px;
     bottom: 0;
-    background-color: #E4324C;
+    background-color: var(--primaryTint);
     transition: all ease-in-out .2s;
     transform: scaleX(0);
     width: 100%;
@@ -73,13 +75,13 @@
     position: absolute;
     height: 5px;
     bottom: 0;
-    background-color: #455878;
+    background-color: var(--primaryTint) ;
     transition: all ease-in-out .2s;
     transform: scaleX(1);
 }
 
 .active-link {
-    border-bottom: 5px solid #455878 !important;
+    border-bottom: 5px solid var(--primaryTint) !important;
     /*border-bottom: 5px solid #E4324C !important;*/
 }
 

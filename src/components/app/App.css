@@ -1170,7 +1170,8 @@ hr {
 
 .learn-more-arrow:hover p
 {
-    color: #0a0878;
+    /*color: #0a0878;*/
+    color: #ff3855;
 }
 
 
