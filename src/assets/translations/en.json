@@ -198,25 +198,27 @@
       "Form": {
         "client": "Form Architecture",
         "card": {
-          "title": "Revit / BIM configuration plugins",
+          "title": "Form: BIM automation",
           "text": "For our client Form we created revit plugins which..."
         },
         "section": {
-          "title": "Building a virtual environment with remote desktop",
+          "title": "Form: BIM automation",
           "subtitle": "Creating a powerful virtual environment",
-          "text_1": ""
+          "text_1": "The industry standard for designing and engineering architectural structures in this day and age is based on a BIM workflow using Autodesk Revit. With a housing market where prices keep increasing, cutting costs where possible is a necessity.\n",
+          "text_2": "Working together with FORM, we helped build an automated home configurator. The challenge was twofold; automate actions within Revit, and create an environment that was scalable up to an Enterprise level with multiple Revit workers to handle incoming requests.\n",
+          "text_3": "The biggest challenge proved to be making Revit, a program that tends to crash at crucial times, stable enough to get a reliable output. To do this, we created an intricate system, with a main \"brain\", a \"thin client\" and the Revit worker. The brain is an enterprise level spring boot application, able to receive thousands of requests a second and safely storing them in an Azure database. The brain then chooses which physical or cloud machine is up to the task of handling the request, and sends the configurations one by one to a thin client. This thin client is responsible for two things: interaction with Revit and keeping Revit working as it should. If Revit crashes it automatically restarts, and if an error within Revit is caught, it's relayed back to the brain to give the end user insights on a dashboard.\n"
         }
       },
       "Hes": {
         "client": "Hes",
         "card": {
-          "title":"Real time logistics insight",
+          "title": "Real time logistics insight",
           "text": "Get insights in your logistics with this real-time tracker"
         },
         "section": {
-          "title": "Building a virtual environment with remote desktop",
-          "subtitle": "Creating a powerful virtual environment",
-          "text_1": ""
+          "title": "Hes: Real time logistics tracker.",
+          "subtitle": "In larger companies the disconnection between management and reality can often be a difficult problem to tackle. To help give more insights about such a large scale project, we created the Delivery Tracker. This application helps workers sign off the status of different parts in a large scale operation. ",
+          "text_1": "This data is then automatically analyzed and stored in a database. Using PowerBI, we created a dashboard that shows planned vs. actuals, steel to be delivered, and other key values for the management."
         }
       }
     }

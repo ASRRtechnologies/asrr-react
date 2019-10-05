@@ -1,25 +1,89 @@
 .work-section-container{
     width:100%;
     height:100%;
-    background-color: white;
     position:relative;
-}
-
-.work-section-landing{
-    position: relative;
-    width: 100vw;
-    height: 100vh;
     display: flex;
-    align-items: flex-end;
     justify-content: center;
 }
 
-.work-section-landing > img {
+.work-section-padding{
+    width:80%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 
-    width:500px;
+
+
+.work-section-landing{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+.landing-video{
+    width: 100vw;
+    height: 100vh;
+}
+
+.work-section-landing > img {
+    max-width:700px;
     height:auto;
 }
 
+.work-section-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 500px;
+    width:100%;
+    height:auto;
+}
+
+.work-section-wrapper{
+    width:100%;
+    height:100%;
+}
+
+.work-section-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.work-section-carousel-image{
+    width:50%;
+    max-width: 500px;
+    height:auto;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .work-section-landing > img {
+        width:80%;
+        height:auto;
+    }
+
+}
+
+
+@media screen and (max-width: 500px) {
+    .work-section-landing{
+        position: relative;
+        width: 100vw;
+        height: 50vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
 
 /*Animations*/
 

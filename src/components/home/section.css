@@ -57,7 +57,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: flex-start;
-    width: 70%;
+    width: auto;
     z-index: 100;
 }
 
@@ -75,7 +75,7 @@
 .section-text p {
     text-align: justify !important;
     color: #343434;
-    max-width: 400px;
+    max-width: 600px;
 }
 
 .section-text.section-value p {

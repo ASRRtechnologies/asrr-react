@@ -27,7 +27,7 @@ class Section2 extends Component {
                             <img src={laptop}/>
                         </div>
                     </div>
-                    <div className="section-cover-text flex-end">
+                    <div className="section-cover-text ">
                         <div className="section-text">
                             <h1 data-aos="fade-right" data-aos-easing="ease-in-out"
                                 data-aos-anchor-placement="top"

@@ -55,15 +55,6 @@ class Section3 extends Component {
                 delay:"800",
                 key:"Webdesign"
             },
-            {
-                title: "Desktop Applications",
-                text: "Lorem Ipsum is slechts een proeftekst uit het drukkerij- en zetterijwezen. " +
-                    "Lorem Ipsum is de standaard proeftekst in",
-                image: developer,
-                delay:"1000",
-                key:"Desktop applications"
-
-            },
         ];
 
         return (

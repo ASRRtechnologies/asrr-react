@@ -65,8 +65,8 @@ const NoMatch = ({location}) => (
 
 const renderHeader = ({location}) => {
 	console.log(location)
-
 }
+
 
 class App extends Component {
 	constructor(props) {
@@ -106,9 +106,9 @@ class App extends Component {
 				<Route path="/Languages" component={Languages}/>
 				<Route path="/service/desktop" component={ServicePage}/>
 				<Route path='/github' component={() => window.location = "https://github.com/ASRRWebdesign"}/>
-				<Route path="/work/hes" component={WorkSection}/>
-				<Route path="/work/nwo" component={WorkSection}/>
-				<Route path="/work/form" component={WorkSection}/>
+				<Route path="/work/hes"  render={(props) =><WorkSection name="Hes"/>}/>
+				<Route path="/work/nwo"  render={(props) =><WorkSection name="NWO"/>}/>
+				<Route path="/work/form"  render={(props) =><WorkSection name="Form"/>}/>
 				<Route component={NoMatch}/>
 				<Route component={renderHeader} />
 			</Switch>
