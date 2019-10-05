@@ -5,7 +5,7 @@ class LandingImage extends Component {
         return (
             <div className="landing-container-image" style={{backgroundImage:`url(${this.props.image})`}}>
 
-                <h1>Services</h1>
+                <h1>{this.props.title}</h1>
 
             </div>
         );

@@ -64,7 +64,7 @@ class Section3 extends Component {
                 key:"Desktop applications"
 
             },
-        ]
+        ];
 
         return (
             <div className="section-container" id="services">
@@ -78,7 +78,7 @@ class Section3 extends Component {
                             return <div className=" value-card-padding flex-center" key={data.key} data-aos="fade-in" data-aos-delay={data.delay} data-aos-easing="ease-in-out"
                                         data-aos-anchor-placement="center"
                                         data-aos-duration="600">
-                                <ValueCards  text={data.text} image={data.image} title={data.title}/>
+                                <ValueCards to={"/"} text={data.text} image={data.image} title={data.title}/>
                             </div>
                         })}
                     </div>

@@ -1,8 +1,12 @@
 import React, {Component} from 'react';
 import Arrow from "../../assets/images/work/icons/angle-arrow-pointing-to-right.svg";
+import management from "../../assets/images/home/management.jpg";
+import developer from "../../assets/images/home/programming.jpg";
+import innovative from "../../assets/images/home/nasa.jpg";
 
 class WorkCard extends Component {
     render() {
+
         const {title, client, logo, alt, background, backgroundOverlay} = this.props;
         return (
             <div className="work-card">

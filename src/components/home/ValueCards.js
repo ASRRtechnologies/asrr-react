@@ -1,17 +1,23 @@
 import React, {Component} from "react";
+import NavLink from "react-router-dom/NavLink";
 
 class ValueCards extends Component {
     render() {
-        const {image, title, text, height} = this.props;
+        const {image, title, text, height, to, cover} = this.props;
         return (
             <div className="value-cards-wrapper">
                 <div className="value-image-cards-wrapper">
-                    <div className="value-cards-image" style={{backgroundImage: `url(${image})`}}></div>
+                    <div className="value-cards-image"
+                         style={{backgroundImage: `url(${image})`, backgroundSize:cover}}>
+
+                    </div>
                 </div>
                 <div>
-                    <h3>3D BIM modelling</h3>
-                    <p>With revit we can customize any 3d houses so that its very nice</p>
-                    <span className="learn-more-arrow"><p>Read more</p></span>
+                    <h3>{title}</h3>
+                    <p>{text}</p>
+                    <NavLink to={to}>
+                        <span className="learn-more-arrow"><p>Read more</p></span>
+                    </NavLink>
                 </div>
             </div>
         );

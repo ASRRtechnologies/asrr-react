@@ -178,5 +178,47 @@
       "name": "Mail us",
       "description": "You can always send an email to the company wide contact channel."
     }
+  },
+  "work": {
+    "portfolio": {
+      "title": "Our portfolio",
+      "text": "Take a look at our latest work and see what we have been up to.",
+      "NWO": {
+        "client": "NWO",
+        "card": {
+          "title": "Building a virtual environment with remote desktop",
+          "text": "Creating a powerful virtual environment"
+        },
+        "section": {
+          "title": "Building a virtual environment with remote desktop",
+          "subtitle": "Creating a powerful virtual environment",
+          "text_1": ""
+        }
+      },
+      "Form": {
+        "client": "Form Architecture",
+        "card": {
+          "title": "Revit / BIM configuration plugins",
+          "text": "For our client Form we created revit plugins which..."
+        },
+        "section": {
+          "title": "Building a virtual environment with remote desktop",
+          "subtitle": "Creating a powerful virtual environment",
+          "text_1": ""
+        }
+      },
+      "Hes": {
+        "client": "Hes",
+        "card": {
+          "title":"Real time logistics insight",
+          "text": "Get insights in your logistics with this real-time tracker"
+        },
+        "section": {
+          "title": "Building a virtual environment with remote desktop",
+          "subtitle": "Creating a powerful virtual environment",
+          "text_1": ""
+        }
+      }
+    }
   }
 }

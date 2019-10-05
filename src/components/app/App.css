@@ -104,6 +104,7 @@ h3 {
 
 a {
     color: inherit;
+    text-decoration: none;
 }
 
 p{
@@ -519,6 +520,10 @@ hr {
     text-align: center;
     flex-direction: column;
     padding:100px 0 100px 0;
+}
+
+.margin-work{
+    margin:50px 0 0 0;
 }
 
 .services-wrapper hr {
