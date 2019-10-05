@@ -4,6 +4,7 @@ import phone from "../assets/images/contact/mobile.svg";
 import social from "../assets/images/contact/social.svg";
 import landing from "../assets/images/contact/landing-min.png";
 import LandingImage from "../components/shared/landing/LandingImage";
+import Section5 from "../components/home/Section5";
 // const button =
 // 	{
 // 		text: "buttons.contact",
@@ -63,6 +64,7 @@ class Contact extends Component {
 		return (
 			<div>
 				<LandingImage title="contact" image={landing}/>
+				<Section5/>
 			</div>
 		);
 	}

@@ -27,12 +27,6 @@ class LandingImage extends Component {
             {key: "R", item: <h1>R</h1>},
         ];
 
-        const absolute = {
-            top: "0",
-            left: 0,
-            position: "absolute",
-        }
-
         return (
             <div className="landing-container-image" style={{backgroundImage: `url(${this.props.image})`}}>
                 {console.log(this.props.image)}
@@ -68,7 +62,7 @@ class LandingImage extends Component {
                     to={{y: 50, opacity: 1}}>
                     {props => (
                         <div style={{opacity:props.opacity}} className="landing-title">
-                            <h1 className="landing-title">{this.props.title}</h1>
+                            <h1>{this.props.title}</h1>
                         </div>
                     )}
                 </Spring>
