@@ -1,0 +1,36 @@
+.work-section-container{
+    width:100%;
+    height:100%;
+    background-color: white;
+    position:relative;
+}
+
+.work-section-landing{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.work-section-landing > img {
+
+    width:500px;
+    height:auto;
+}
+
+
+/*Animations*/
+
+[data-aos="fade-up-absolute"] {
+    transform: translateY(50%);
+    opacity: 0;
+    transition-property: all;
+}
+
+[data-aos="fade-up-absolute"].aos-animate {
+    transform: translateY(-50%);
+    opacity: 0;
+    transition-property: all;
+}

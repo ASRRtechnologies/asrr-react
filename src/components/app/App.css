@@ -14,6 +14,7 @@
 @import "../shared/scroll-nav.css";
 @import "../../components/home/section.css";
 @import "../../components/home/value-cards.css";
+@import "../../components/work/worksections/worksection.css";
 @import "../../components/shared/landing/landing.css";
 @import "~@brainhubeu/react-carousel/lib/style.css";
 @import "../../../node_modules/aos/dist/aos.css";

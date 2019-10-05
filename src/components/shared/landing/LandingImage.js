@@ -68,11 +68,10 @@ class LandingImage extends Component {
                     to={{y: 50, opacity: 1}}>
                     {props => (
                         <div style={{opacity:props.opacity}} className="landing-title">
-                            <h1 className="landing-title">Work</h1>
+                            <h1 className="landing-title">{this.props.title}</h1>
                         </div>
                     )}
                 </Spring>
-
 
                 <div className="asrr-circle">
                     <Trailing config={{duration: 300}} items={items} keys={item => item.key}>

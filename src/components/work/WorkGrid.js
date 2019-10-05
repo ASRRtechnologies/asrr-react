@@ -4,8 +4,9 @@ import Hes from "../../assets/images/work/hes/HES-logo-dark.png";
 import ValueCards from "../home/ValueCards";
 import NavLink from "react-router-dom/NavLink";
 import {translate} from 'react-multi-lang'
-import phone from "../../assets/images/home/remote.jpg";
-import Desktop from "../../assets/images/work/nwo/nwo-desktop.png";
+import laptop from "../../assets/images/work/hes/hes-macbook-cropped.png";
+import desktop from "../../assets/images/work/nwo/nwo-desktop.png";
+import house from "../../assets/images/work/form/architect-building.jpg"
 import ContactShortcut from "../shared/ContactShortcut";
 
 // import Language from '../../utils/Language';
@@ -19,14 +20,18 @@ class WorkGrid extends Component {
         const data = [
             {
                 name: "NWO",
-				image:Desktop
+                url:"nwo",
+				image:desktop
             },
             {
                 name: "Hes",
-				image: phone,
+                url:"hes",
+				image: laptop,
             },
             {
-                name: "Form"
+                name: "Form",
+                url:"form",
+                image:house,
             },
         ];
 
@@ -46,18 +51,17 @@ class WorkGrid extends Component {
                     <div className="section-wrapper flex-center unresponsive-grid">
                         <div className="section-services-grid">
                             {data.map((data, i) => {
-                                return <NavLink to={`work/${data.name}`}>
+                                return <NavLink to={`work/${data.url}`} exact>
                                     <div className=" value-card-padding flex-center" key={data.key} >
                                         <ValueCards cover="cover" title={t(`work.portfolio.${data.name}.card.title`)}
                                                     text={t(`work.portfolio.${data.name}.card.text`)}
-                                                    to={`work/${data.name}`} image={data.image}/>
+                                                    to={`work/${data.url}`} image={data.image}/>
                                     </div>
                                 </NavLink>
                             })}
                         </div>
                     </div>
                     <ContactShortcut/>
-
                 </div>
                 {/*<div className="work-grid-wrapper">*/}
                 {/*	{this.props.component}*/}

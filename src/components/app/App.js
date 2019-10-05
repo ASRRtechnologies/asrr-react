@@ -52,6 +52,7 @@ import Work from "../../routes/Work";
 import Footer2 from "../shared/header/Footer2";
 import ServicePage from "../services/ServicePage";
 import ScrollPosition from "../shared/ScrollPosition";
+import WorkSection from "../work/worksections/WorkSection";
 
 library.add(faWhatsapp, faLanguage, faImages, faCogs, faUsers, faChevronCircleDown, faPhone, faEnvelope, faHtml5, faCss3Alt, faJs, faJava, faWindows, faLinux, faGithub, faGit, faReact, faAndroid, faAppStoreIos, faApple, faNode, faNodeJs, faPaypal, faFacebook, faTwitter, faSnapchat, faAws, faChrome, faLinkedin);
 
@@ -98,13 +99,16 @@ class App extends Component {
 
 			<Switch>
 				<Route path="/" exact   render={(props) =><Home data={this.handlePagination}/>}/>
-				<Route path="/work" component={Work}/>
+				<Route path="/work" exact component={Work}/>
 				<Route path="/services" component={Services}/>
 				<Route path="/team" component={About}/>
 				<Route path="/contact" component={Contact}/>
 				<Route path="/Languages" component={Languages}/>
 				<Route path="/service/desktop" component={ServicePage}/>
 				<Route path='/github' component={() => window.location = "https://github.com/ASRRWebdesign"}/>
+				<Route path="/work/hes" component={WorkSection}/>
+				<Route path="/work/nwo" component={WorkSection}/>
+				<Route path="/work/form" component={WorkSection}/>
 				<Route component={NoMatch}/>
 				<Route component={renderHeader} />
 			</Switch>

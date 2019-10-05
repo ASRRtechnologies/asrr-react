@@ -1,14 +1,8 @@
 import React, {Component} from 'react';
-import Fade from "react-reveal/Fade";
-import green from "../assets/images/backgrounds/green.svg";
-import contact from "../assets/images/sectionimages/contact.svg";
-import ContactMethods from "../components/contact/ContactMethods";
 import mail from "../assets/images/contact/mail.svg";
 import phone from "../assets/images/contact/mobile.svg";
 import social from "../assets/images/contact/social.svg";
-import NewLanding from "../components/shared/NewLanding";
-import Landing from "../components/shared/landing/Landing";
-import landing from "../assets/images/contact/landing.png";
+import landing from "../assets/images/contact/landing-min.png";
 import LandingImage from "../components/shared/landing/LandingImage";
 // const button =
 // 	{
@@ -68,7 +62,7 @@ class Contact extends Component {
 	render() {
 		return (
 			<div>
-				<LandingImage image={landing}/>
+				<LandingImage title="contact" image={landing}/>
 			</div>
 		);
 	}
