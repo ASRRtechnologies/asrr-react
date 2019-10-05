@@ -58,14 +58,14 @@ class Landing extends Component {
 
 
         return (
-            <div className="landing-container">
+            <div className="landing-container" style={{backgroundImage:this.props}}>
                 <Spring
                     config={{duration: 1000}}
                     delay={500}
-                    from={{x: 2000}}
-                    to={{x: 0}}>
+                    from={{x: 2000, opacity:1}}
+                    to={{x: 0, opacity:0}}>
                     {props => (
-                        <svg className="circle__svg">
+                        <svg style={{}} className="circle__svg">
                             <circle className="large-circle" cx="50%" cy="50%" r="225" stroke={"black"} strokeDasharray={2000}
                                     strokeDashoffset={props.x}
                                     strokeWidth={5} fill={"none"}/>

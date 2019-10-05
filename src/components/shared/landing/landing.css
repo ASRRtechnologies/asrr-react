@@ -22,7 +22,7 @@
 
 
 .landing-container-image{
-    position: relative;
+    /*position: relative;*/
     width:100vw;
     height:100vh;
     background-position: center;
@@ -56,6 +56,7 @@
 .asrr-circle-text > h1{
     font-family: anurati;
     font-size: 100px;
+    color: black!important;
 }
 
 .landing-arrow{
@@ -84,6 +85,17 @@
 
 .small-circle{
     display: none;
+}
+
+.landing-title{
+    position: absolute;
+    bottom:25%;
+    left:25%;
+    padding: 0 !important;
+    display: inline-block;
+    height: 50%;
+    width:50%;
+    /*transform: translate(50%, 100%);*/
 }
 
 

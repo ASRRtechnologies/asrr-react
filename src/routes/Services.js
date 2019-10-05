@@ -79,13 +79,11 @@ class Services extends Component {
 	render () {
 		return (
 			<div>
-				<Fade bottom>
 					<LandingImage image={robot}/>
 					<ChoiceHelper/>
 					<ServiceSummary/>
 					<LightTextBox name="services.text"/>
 					<ServiceGrid section="services.section" items={services}/>
-				</Fade>
 			</div>
 		)
 	}

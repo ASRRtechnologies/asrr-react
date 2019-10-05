@@ -9,6 +9,7 @@ import social from "../assets/images/contact/social.svg";
 import NewLanding from "../components/shared/NewLanding";
 import Landing from "../components/shared/landing/Landing";
 import landing from "../assets/images/contact/landing.png";
+import LandingImage from "../components/shared/landing/LandingImage";
 // const button =
 // 	{
 // 		text: "buttons.contact",
@@ -67,7 +68,7 @@ class Contact extends Component {
 	render() {
 		return (
 			<div>
-				<Landing image={landing}/>
+				<LandingImage image={landing}/>
 			</div>
 		);
 	}
