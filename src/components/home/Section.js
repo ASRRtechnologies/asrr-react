@@ -3,6 +3,7 @@ import phone from "../../assets/images/home/hes-mobile.png";
 import AOS from 'aos';
 import {getScrollPosition} from "../shared/Functions";
 import laptop from "../../assets/images/home/nwo-laptop-login.png";
+import NavLink from "react-router-dom/NavLink";
 
 class Section extends Component {
     constructor(props) {
@@ -48,15 +49,18 @@ class Section extends Component {
                                     zetterijwezen. Lorem Ipsum is de standaard proeftekst in deze
                                     bedrijfstak sinds de 16e eeuw
                                 </p>
-                                <span data-aos="fade-right" data-aos-delay="400" data-aos-easing="ease-in-out"
-                                      data-aos-anchor-placement="top"
-                                      data-aos-duration="600" className="learn-more-arrow"><p>See all our projects</p></span>
 
-                                <div data-aos="fade-up" data-aos-delay="600" data-aos-easing="ease-in-out"
-                                     data-aos-anchor-placement="top"
-                                     data-aos-duration="600" className="section-button">
+                                <NavLink exact to={'/work'}>
+                                    <span data-aos="fade-right" data-aos-delay="400" data-aos-easing="ease-in-out"
+                                          data-aos-anchor-placement="top"
+                                          data-aos-duration="600" className="learn-more-arrow"><p>See all our projects</p></span>
+                                </NavLink>
+
+                                <NavLink to="/work/hes"> <div data-aos="fade-up" data-aos-delay="600" data-aos-easing="ease-in-out"
+                                                              data-aos-anchor-placement="top"
+                                                              data-aos-duration="600" className="section-button">
                                     <p>Read more</p>
-                                </div>
+                                </div></NavLink>
                             </div>
                     </div>
                     <div className="section-image">

@@ -3,6 +3,7 @@ import React, {Component} from "react";
 import laptop from "../../assets/images/home/nwo-laptop-login.png";
 import AOS from 'aos';
 import {withScroll} from "../shared/withScroll";
+import NavLink from "react-router-dom/NavLink";
 
 class Section2 extends Component {
     constructor(props) {
@@ -38,15 +39,17 @@ class Section2 extends Component {
                                 zetterijwezen. Lorem Ipsum is de standaard proeftekst in deze
                                 bedrijfstak sinds de 16e eeuw
                             </p>
-                            <span data-aos="fade-right" data-aos-delay="400" data-aos-easing="ease-in-out"
-                                  data-aos-anchor-placement="top"
-                                  data-aos-duration="600" className="learn-more-arrow"><p>See all our projects</p></span>
+                            <NavLink exact to={'/work'}>
+                                    <span data-aos="fade-right" data-aos-delay="400" data-aos-easing="ease-in-out"
+                                          data-aos-anchor-placement="top"
+                                          data-aos-duration="600" className="learn-more-arrow"><p>See all our projects</p></span>
+                            </NavLink>
 
-                            <div data-aos="fade-up" data-aos-delay="600" data-aos-easing="ease-in-out"
+                           <NavLink to="/work/nwo"> <div data-aos="fade-up" data-aos-delay="600" data-aos-easing="ease-in-out"
                                  data-aos-anchor-placement="top"
                                  data-aos-duration="600" className="section-button">
                                 <p>Read more</p>
-                            </div>
+                           </div></NavLink>
                         </div>
                     </div>
                 </div>
