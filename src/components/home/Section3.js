@@ -78,5 +78,4 @@ class Section3 extends Component {
         );
     }
 }
-
 export default Section3;

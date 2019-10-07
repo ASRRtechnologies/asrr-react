@@ -31,7 +31,7 @@ class Section5 extends Component {
         }
 
         return (
-            <div className="section-container beautiful-grey section-padding">
+            <div id="contact" className="section-container beautiful-grey section-padding">
                 <div className="section-wrapper flex">
                     <div className="section-cover-text beautiful-grey">
                         <div className="section-contact">

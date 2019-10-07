@@ -10,9 +10,7 @@ class Work extends Component {
 	render() {
 		return (
 			<div className="portfolio-wrapper">
-				<LandingImage title={'Work'} image={landing}/>
-
-					{/*<NewLanding name="work.landing"/>*/}
+				<LandingImage pageID="#work" title={'Work'} image={landing}/>
 					<WorkGrid/>
 			</div>
 		);

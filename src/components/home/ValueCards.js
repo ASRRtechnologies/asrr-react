@@ -13,8 +13,9 @@ class ValueCards extends Component {
                     </div>
                 </div>
                 <div>
+                    <h2>Hes International</h2>
                     <h3>{title}</h3>
-                    <p>{text}</p>
+                    {/*<p>{text}</p>*/}
                     <NavLink exact to={to}>
                         <span className="learn-more-arrow"><p>Read more</p></span>
                     </NavLink>

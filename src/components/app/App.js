@@ -1,9 +1,9 @@
-import React, {Component} from 'react';
-import {Route, Switch} from 'react-router-dom';
-import Fade from 'react-reveal/Fade';
-import {translate} from 'react-multi-lang';
+import React, { Component } from 'react'
+import { Route, Switch } from 'react-router-dom'
+import Fade from 'react-reveal/Fade'
+import { translate } from 'react-multi-lang'
 
-import {library} from '@fortawesome/fontawesome-svg-core/index';
+import { library } from '@fortawesome/fontawesome-svg-core/index'
 import {
 	faAndroid,
 	faApple,
@@ -26,8 +26,8 @@ import {
 	faSnapchat,
 	faTwitter,
 	faWhatsapp,
-	faWindows
-} from '@fortawesome/free-brands-svg-icons/index';
+	faWindows,
+} from '@fortawesome/free-brands-svg-icons/index'
 import {
 	faChevronCircleDown,
 	faCogs,
@@ -35,25 +35,23 @@ import {
 	faImages,
 	faLanguage,
 	faPhone,
-	faUsers
-} from '@fortawesome/free-solid-svg-icons/index';
+	faUsers,
+} from '@fortawesome/free-solid-svg-icons/index'
 
-import './App.css';
+import './App.css'
 import Language from '../../utils/Language'
-import NoRef from "../shared/404";
-import Header from "../shared/header/Header";
-import Footer from "../shared/header/Footer";
-import Languages from "../../routes/Languages";
-import Contact from "../../routes/Contact";
-import About from "../../routes/About";
-import Services from "../../routes/Services";
-import Home from "../../routes/Home";
-import Work from "../../routes/Work";
-import Footer2 from "../shared/header/Footer2";
-import ServicePage from "../services/ServicePage";
-import ScrollPosition from "../shared/ScrollPosition";
-import WorkSection from "../work/worksections/WorkSection";
-
+import NoRef from '../shared/404'
+import Header from '../shared/header/Header'
+import Languages from '../../routes/Languages'
+import Contact from '../../routes/Contact'
+import About from '../../routes/About'
+import Services from '../../routes/Services'
+import Home from '../../routes/Home'
+import Work from '../../routes/Work'
+import Footer2 from '../shared/header/Footer2'
+import ServicePage from '../services/ServicePage'
+import WorkSection from '../work/worksections/WorkSection'
+import {portfolioImages} from "../shared/PortfolioImages";
 library.add(faWhatsapp, faLanguage, faImages, faCogs, faUsers, faChevronCircleDown, faPhone, faEnvelope, faHtml5, faCss3Alt, faJs, faJava, faWindows, faLinux, faGithub, faGit, faReact, faAndroid, faAppStoreIos, faApple, faNode, faNodeJs, faPaypal, faFacebook, faTwitter, faSnapchat, faAws, faChrome, faLinkedin);
 
 const NoMatch = ({location}) => (
@@ -76,9 +74,7 @@ class App extends Component {
 			preload: true,
 			data:[],
 		}
-
 		Language.initialize();
-
 	}
 
 	handlePagination = (data, name) => {
@@ -90,6 +86,7 @@ class App extends Component {
 	}
 
 	render() {
+
 		const currentPath = window.location.pathname;
 		return <div className={this.state.preload ? "App pre-load": "App"}>
 			<Header/>
@@ -106,9 +103,9 @@ class App extends Component {
 				<Route path="/Languages" component={Languages}/>
 				<Route path="/service/desktop" component={ServicePage}/>
 				<Route path='/github' component={() => window.location = "https://github.com/ASRRWebdesign"}/>
-				<Route path="/work/hes"  render={(props) =><WorkSection name="Hes"/>}/>
-				<Route path="/work/nwo"  render={(props) =><WorkSection name="NWO"/>}/>
-				<Route path="/work/form"  render={(props) =><WorkSection name="Form"/>}/>
+				<Route path="/work/hes"  render={(props) =><WorkSection data={portfolioImages.Hes} name="Hes"/>}/>
+				<Route path="/work/nwo"  render={(props) =><WorkSection data={portfolioImages.NWO} name="NWO"/>}/>
+				<Route path="/work/form"  render={(props) =><WorkSection data={portfolioImages.Form} name="Form"/>}/>
 				<Route component={NoMatch}/>
 				<Route component={renderHeader} />
 			</Switch>

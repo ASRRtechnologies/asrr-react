@@ -1,9 +1,7 @@
-import React, {Component} from 'react';
-import {Spring, Trail, Transition, Keyframes, animated, config} from 'react-spring/renderprops';
-import {Parallax, ParallaxLayer} from 'react-spring/renderprops-addons'
-
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faSpaceShuttle} from "@fortawesome/free-solid-svg-icons/faSpaceShuttle";
+import React, { Component } from 'react'
+import { Keyframes, Spring } from 'react-spring/renderprops'
+import { NavHashLink as NavLink } from 'react-router-hash-link'
+import ScrollDown from '../ScrollDown/ScrollDown'
 
 const Trailing = Keyframes.Trail(async next => {
     await next({
@@ -16,7 +14,6 @@ const Trailing = Keyframes.Trail(async next => {
         transform: 'translate3d(0,-5px,0)', opacity: 0
     })
 });
-
 
 class LandingImage extends Component {
     render() {
@@ -73,6 +70,14 @@ class LandingImage extends Component {
                         {item => props => <span className="asrr-circle-text" style={props}>{item.item}</span>}
                     </Trailing>
                 </div>
+
+
+                <NavLink to={`${this.props.pageID}`}>
+                    <div className="scroll-down-mouse-container">
+                        <ScrollDown/>
+                    </div>
+                </NavLink>
+
             </div>
         );
     }

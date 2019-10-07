@@ -12,6 +12,7 @@
 @import "../../components/home/slider.css";
 @import "../../components/home/testimonial.css";
 @import "../shared/scroll-nav.css";
+@import "../shared/ScrollDown/scroll-mouse.css";
 @import "../../components/home/section.css";
 @import "../../components/home/value-cards.css";
 @import "../../components/work/worksections/worksection.css";
@@ -79,20 +80,21 @@ body {
 
 
 h1 {
-    font-size: 30px;
+    font-size: 50px;
     font-family: 'Poppins', serif;
-    font-weight: 800;
+    font-weight: bold;
     padding-top: 0.3em;
     padding-bottom: 0.25em;
-    margin-top: 0;
-    color: black !important;
+    margin: 0;
+    color: #1A1A1A !important;
 }
 
 h2 {
-    font-size: 20px;
-    font-weight: 400;
-    padding-top: 1em;
+    font-size: 30px;
+    padding-top: 0;
+    padding-bottom: 0.25em;
     margin-top: 0;
+    font-weight: bold;
 }
 h3 {
     font-size: 20px;
@@ -109,7 +111,25 @@ a {
 }
 
 p{
-    text-align: left
+    font-size: 18px;
+    text-align: left;
+    color: #343434;
+}
+
+@media screen and (max-width: 800px) {
+
+    h1{
+        font-size: 30px;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+
+    p{
+        font-size: 16px;
+    }
+
 }
 
 @media screen and (max-width: 500px) {
@@ -539,7 +559,7 @@ hr {
 
 .services-wrapper p {
     padding:0;
-    width:90%;
+    width:80%;
     max-width: 700px;
     text-align: justify;
 }

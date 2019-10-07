@@ -31,23 +31,24 @@ class Section extends Component {
     render() {
 
         return (
-            <div id="work" className="section-container white-gray mobile-no-gradient">
+            <div id="home-page-work" className="section-container white-gray mobile-no-gradient">
                 <div className="services-wrapper" style={{backgroundImage:`${this.props.backgroundColor}`, color:`${this.props.color}`}}>
-                    <h1>{this.props.title}</h1>
-                    <p>{[this.props.text]}</p>
+                    <h1>{this.props.sectionTitle}</h1>
+                    <p>{[this.props.sectionText]}</p>
                 </div>
                 <div className="section-wrapper rtl">
                     <div className="section-cover-text ">
                             <div className="section-text">
-                                <h1 data-aos="fade-right" data-aos-easing="ease-in-out"
+                                <h1 className="section-client-big" data-aos="fade-right" data-aos-easing="ease-in-out"
                                     data-aos-anchor-placement="top"
-                                    data-aos-duration="600">Remote desktop server</h1>
-                                <p data-aos="fade-right" data-aos-delay="200" data-aos-easing="ease-in-out"
+                                    data-aos-duration="600">{this.props.client}</h1>
+                                <h2 data-aos="fade-right" data-aos-delay="200" data-aos-easing="ease-in-out"
+                                    data-aos-anchor-placement="top"
+                                    data-aos-duration="600">{this.props.title}</h2>
+                                <p data-aos="fade-right" data-aos-delay="600" data-aos-easing="ease-in-out"
                                    data-aos-anchor-placement="top"
                                    data-aos-duration="600">
-                                    Lorem Ipsum is slechts een proeftekst uit het drukkerij- en
-                                    zetterijwezen. Lorem Ipsum is de standaard proeftekst in deze
-                                    bedrijfstak sinds de 16e eeuw
+                                    {this.props.text}
                                 </p>
 
                                 <NavLink exact to={'/work'}>
@@ -56,7 +57,7 @@ class Section extends Component {
                                           data-aos-duration="600" className="learn-more-arrow"><p>See all our projects</p></span>
                                 </NavLink>
 
-                                <NavLink to="/work/hes"> <div data-aos="fade-up" data-aos-delay="600" data-aos-easing="ease-in-out"
+                                <NavLink to={this.props.to}> <div data-aos="fade-up" data-aos-delay="600" data-aos-easing="ease-in-out"
                                                               data-aos-anchor-placement="top"
                                                               data-aos-duration="600" className="section-button">
                                     <p>Read more</p>
@@ -65,7 +66,9 @@ class Section extends Component {
                     </div>
                     <div className="section-image">
                         <div className="section-image-wrapper flex-end">
-                            <img src={phone}/>
+                            <img data-aos="fade-up" data-aos-easing="ease-in-out"
+                                 data-aos-anchor-placement="top"
+                                 data-aos-duration="600" data-aos-delay="400" src={phone}/>
                         </div>
                     </div>
                 </div>

@@ -1,8 +1,7 @@
 .value-cards-wrapper{
     min-width: 200px;
-    max-width: 600px;
-
-    width:30vw;
+    max-width: 500px;
+    width:25vw;
     height: auto;
     display: grid;
     grid-template-rows:1fr auto;
@@ -10,9 +9,15 @@
     padding-bottom: 50px;
 }
 
-.value-cards-wrapper h3{
+.value-cards-wrapper h2{
+    font-size: 26px;
     color:#1a1a1a;
-    padding-top:30px;
+    padding-top:15px;
+    text-align: left !important;
+}
+
+.value-cards-wrapper h3{
+    padding-top:15px;
 }
 
 .value-cards-wrapper p{
@@ -25,7 +30,7 @@
 
 .value-image-cards-wrapper{
     width:100%;
-    height:30vw;
+    height:25vw;
     overflow:hidden;
     min-height: 300px;
     max-height: 600px;
@@ -35,14 +40,13 @@
 .value-cards-image {
     width:100%;
     min-height: 200px;
-    height:30vw;
+    height:25vw;
     max-height: 600px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     transition: all ease-in-out 500ms;
     overflow:hidden;
-
 }
 
 .value-cards-image:hover {
@@ -66,20 +70,18 @@
     .value-cards-wrapper{
         width:20vw;
         height: auto;
-    }
 
+    }
 
     .value-image-cards-wrapper{
         height: 20vw;
     }
-
 
     .value-cards-image{
         height:20vw;
     }
 
 }
-
 
 @media screen and (max-width: 1200px) {
 
@@ -100,49 +102,24 @@
 
 }
 
-/*    @media screen and (max-width: 800px) {*/
-
-/*    .value-image-cards-wrapper{*/
-/*        width:100%;*/
-/*        height:50vw;*/
-/*        overflow:hidden;*/
-/*        min-height: 300px;*/
-/*    }*/
-
-/*    .value-cards-image{*/
-/*        width:100%;*/
-/*        height:50vw;*/
-/*        overflow:hidden;*/
-/*        min-height: 300px;*/
-/*    }*/
-
-/*    .value-cards-wrapper{*/
-/*        padding: 30px 0;*/
-/*        display: flex;*/
-/*        flex-direction: column;*/
-/*        width:50vw;*/
-/*        height: auto;*/
-/*    }*/
-
-/*}*/
-
 @media screen and (max-width: 900px) {
-
-    .value-image-cards-wrapper{
-         height:90vw;
-        min-height: 100px;
-    }
-
-    .value-cards-image{
-         height:90vw;
-        min-height: 100px;
-    }
 
     .value-cards-wrapper{
         display: flex;
         flex-direction: column;
         width:90vw;
         padding: 0;
+        max-width: 600px;
+    }
+
+    .value-image-cards-wrapper{
+        height:90vw;
+        min-height: 200px;
+    }
+
+    .value-cards-image{
+        height:90vw;
+        min-height: 200px;
     }
 
     .value-cards-wrapper p{

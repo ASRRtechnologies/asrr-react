@@ -111,9 +111,9 @@ class Header extends Component {
                             <li onClick={this.closeMenu}><NavLink activeClassName='active-link'
                                                                   to="/team">{this.props.t("header.about")}</NavLink>
                             </li>
-                            <li onClick={this.closeMenu}><NavLink activeClassName='active-link'
-                                                                  to="/careers">{this.props.t("header.careers")}</NavLink>
-                            </li>
+                            {/*<li onClick={this.closeMenu}><NavLink activeClassName='active-link'*/}
+                                                                  {/*to="/careers">{this.props.t("header.careers")}</NavLink>*/}
+                            {/*</li>*/}
                             <li onClick={this.closeMenu}><NavLink activeClassName='active-link'
                                                                   to="/contact">{this.props.t("header.contact")}</NavLink>
                             </li>

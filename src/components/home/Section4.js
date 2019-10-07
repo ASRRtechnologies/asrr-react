@@ -44,8 +44,8 @@ class Section4 extends Component {
         return (
                 <div id="about" className="section-container " key={this.state.word}>
                     <div className="services-wrapper" style={{backgroundImage:`${this.props.backgroundColor}`, color:`${this.props.color}`}}>
-                        <h1>{this.props.title}</h1>
-                        <p>{[this.props.text]}</p>
+                        <h1>{this.props.sectionTitle}</h1>
+                        <p>{[this.props.sectionText]}</p>
                     </div>
 
                     <div className="section-wrapper flex-center">

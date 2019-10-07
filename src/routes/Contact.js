@@ -63,7 +63,7 @@ class Contact extends Component {
 	render() {
 		return (
 			<div>
-				<LandingImage title="contact" image={landing}/>
+				<LandingImage pageID="#contact" title={'Contact'} image={landing}/>
 				<Section5/>
 			</div>
 		);

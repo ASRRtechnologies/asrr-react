@@ -16,6 +16,9 @@
     position: fixed;
     top: 0;
     transition: all linear 0.3s; /* Transition effect when sliding down (and up) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .navigation-menu {
@@ -25,10 +28,9 @@
 }
 
 .navigation-wrapper {
-    max-width: 1400px;
-    width: 100%;
+    max-width: 1800px;
+    width: 90%;
     height: 100%;
-    margin: auto;
     position: relative;
     display: flex;
     flex-direction: row;

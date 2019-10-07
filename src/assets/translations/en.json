@@ -8,177 +8,20 @@
     "portfolio": "Portfolio",
     "contact": "Contact"
   },
-  "buttons": {
-    "home": "Meet the team",
-    "service": "Full list of services",
-    "contact": "To contact page",
-    "portfolio": "See our portfolio",
-    "services": "To services"
-  },
   "home": {
-    "landing": {
-      "subtitle": "Welcome to",
-      "title": "ASRR Tech",
-      "content": "Innovation Redefined",
-      "headline": "Software Development Redefined"
+    "work": {
+      "title": "Some of our latest work",
+      "text": "The jobs that we have been working on. Take a look and let us know what you think."
+    },
+    "we_are": {
+
     },
     "services": {
-      "tagline": "Enterprise grade software development on any scale",
-      "tagsubtitle": "From small businesses to multinational companies, using our microservices we ensure the best quality possible for every situation by creating scalable solutions that can connect to existing systems.",
-      "headline": "We offer the following services",
-      "web": {
-        "name": "Web Applications",
-        "description": "Custom, responsive and beautiful web applications, suited for anything you might need. Built on the latest and greatest frameworks."
-      },
-      "backend": {
-        "name": "Microservices",
-        "description": "The microservices we deliver are RESTful, meaning that one microservice can be used for your website, app and desktop application."
-      },
-      "desktop": {
-        "name": "Data Analytics / Business Intelligence",
-        "description": "Our databases are designed in a way that allow for seamless integration with business analytics tools such as PowerBI"
-      }
-    },
-    "techslider": "Technologies we use",
-    "why": {
-      "headline": "Why ASRR?",
-      "subtitle": "Why choose ASRR instead of a conventional freelancer (ZZP) or an internal IT employee?",
-      "multi": {
-        "name": "Multidisciplinary team",
-        "description": "While one developer might be able to get something outside of the scope of their expertise to work, it quickly becomes messy with larger and more complex projects. This is where our service makes a difference, by combining the diverse knowledge of our developers to tailor to the customers needs, using the best practices and state of the art techniques."
-      },
-      "transparency": {
-        "name": "Transparency",
-        "description": "We strive to create a clear feedback loop to the client, showing the actions that were undertaken in a clear and concise way (Scrum, Agile). Furthermore, after an initial analysis, we can forecast a prospected amount of hours the work will take, so that there won't be any surprises afterwards."
-      },
-      "integrations": {
-        "name": "Integrations with existing systems",
-        "description": "Beceause the software we write is REST-ful, it becomes very easy to integrate in existing systems. There won't be any digging into legacy code, as we create a simple API interface to get and send data to and from the new system."
-      }
-    },
-    "clientheadline": "Some of our clients",
-    "clientsubtitle": "Find the work we've done in the past in our portfolio"
-  },
-  "about": {
-    "landing": {
-      "subtitle": "about asrr",
-      "title": "Meet the team",
-      "content": "We at asrr still need to think of all the text that goes here. Lorem ipsum test talk text need to still be filled in."
-    },
-    "more": "ASRR was founded in 2016, starting out as a webdesign company. We combine our broad areas of expertise gathered during our studies and apply it to all things software. Combining that with strong connections to many skilled developers, engineers and designers we deliver what ASRR stands for: High quality service and efficient work speeds at a very affordable price.",
-    "founders": "Founders",
-    "team": {
-      "headline": "About team headline tag line 1 lala lala",
-      "content": "We at asrr still need to think of all the text that goes here. Lorem ipsum test talk text need to still be filled in. We at asrr still need to think of all the text that goes here. Lorem ipsum test talk text need to still be filled in. 123"
+      "title": "The services we provide",
+      "text": "ASRR is more than just a company, we offer the most exclusive services such as"
     }
   },
-  "services": {
-    "choice-helper": {
-      "title": "How can we help you?",
-      "subtitle": "The amount of choices in IT services and solutions can be quite daunting, which is why we created a nifty little tool to help you decide what you need.",
-      "service": {
-        "software": {
-          "title": "Software Development"
-        },
-        "hardware": {
-          "title": "Hardware Development"
-        },
-        "workers": {
-          "title": "Detachering"
-        }
-      }
-    },
-    "subtitle": "Expertise at every step of the process",
-    "title": "Services",
-    "content": "The steps along the way are bla blalala la and alala yes no no",
-    "headline": "Innovative where needed, robust where it matters",
-    "section": "Services",
-    "web": {
-      "name": "Web Design",
-      "description": "We create beautiful and responsive websites using HTML, CSS, JavaScript and frameworks like ReactJS and Polymer. We can create everything from a simple static image with some information for your clients, to complex webshops with automated systems, integrating seamlessly with our custom back-ends or an existing API you might have already."
-    },
-    "app": {
-      "name": "App Design",
-      "description": "We deliver both custom iOS and Android applications. Using React-Native, we can create apps orders of magnitudes quicker than the conventional way, with native components and custom integrations with your or our servers."
-    },
-    "desktop": {
-      "name": "Desktop Applications",
-      "description": "Using C# and Windows Forms, we can automate and improve your workflow. We have created custom applications in the past for clients who, for example needed access to a custom database and to be reminded of certain tasks, while also giving them the ability to analyze their portfolio. The more time we save you by automating your daily tasks, the more money you will save on personnel costs, and lets you focus on the things that matter."
-    },
-    "backend": {
-      "name": "Back-End Applications",
-      "description": "Every system needs a brain. Think of login systems, a social media platform and webshops. This is where a back-end application comes in. Our custom back-ends are RESTful, which means that they can be seen as a contained API. This in turn lets you connect them to your existing systems, an app, a website, a desktop application or even open them up for the public if you so desire. These back-ends are usually written in Java or C#, and can then be hosted on a virtual private server, or a dedicated server."
-    },
-    "data-analysis": {
-      "name": "Big Data",
-      "description": "You hear about it everywhere, Big Data, but what can it do for you? Applying the more analytical side of our skill set, we can create complex algorithms and models to create insights in customer behaviors, but also get some conclusive results from big data sets such as an intellectual property database or data scraped from the web."
-    },
-    "database": {
-      "name": "Database Design and Setup",
-      "description": "Every company needs data storage. However, ordinary file systems are often cluttered and don't allow for easy filtering. Furthermore, with complex projects, simple file systems simply won't allow you to achieve your goals. This is where databases come in. We use SQL, SQLite and MongoDB to manage and store your data, which can then be accessed using a custom back-end"
-    },
-    "bim": {
-      "name": "AutoDesk/BIM Plugins",
-      "description": "Using C# we can create custom plugins for AutoDesk applications, such as Revit."
-    },
-    "vps": {
-      "name": "Virtual Private Servers",
-      "description": "We offer various custom tailored servers, that can cloud compute any intensive programs you might have, or even host a back-end server application to handle any API requests. We specialize in both setting up and maintaining these cloud computers."
-    },
-    "consultancy": {
-      "name": "Consultancy",
-      "description": "As software development and integrations is what we specialize in, we can offer various forms of advice for both internal work flow setups, and solving complex IT jobs"
-    }
-  },
-  "portfolio": {
-    "headline": "Take a look at some of the work we've done before",
-    "subtitle": "We've had various projects in diverse fields. Feel free to contact us if you have any questions about what we did, or how we can help you!",
-    "clientHeadline": "Some of the companies we've worked for",
-    "clientSubtitle": "Click on a logo to go to their website",
-    "achievements": {
-      "headline": "What we've done so far",
-      "happy": "Happy Customers",
-      "commercial": "Commercial Websites",
-      "pageViews": "Cumulative Page Views",
-      "fullStack": "Full Stack Web Shops",
-      "sideProjects": "Community Side Projects",
-      "upTime": "Hours uptime since setup"
-    },
-    "businessCases": {
-      "headline": "Business Cases",
-      "form": {
-        "name": "FORM Architecture and Engineering",
-        "features": {
-          "1": "Server Setup",
-          "2": "Continuous Deployment",
-          "3": "Back-End Shell"
-        },
-        "description": {
-          "1": "For FORM, we set up a windows server. As most of our client data is confidential, we can't say much about the contents of this server. What we can tell is what we've done. First off, we set up the server from scratch, providing remote desktop capabilities, opening up the correct ports for API access and installing the required programs.",
-          "2": "Next, we set up one of our continuous deployment systems for their internal product. This system automatically closes the program using the code and downloads the latest version whenever a new stable build is available on their private GitHub repository. The project is then built locally in the required folder and is automatically signed. After all tests have passed, the back-end spins up again and is ready to handle requests again."
-        }
-      }
-    },
-    "features": "Features",
-    "websites": "Websites",
-    "desktop": "Desktop Applications"
-  },
-  "contact": {
-    "headline": "Get in touch!",
-    "subtitle": "Every project is different, and we'll offer a unique solution for you. That's why you should not hesitate to contact us with a problem you might have, and we'll offer some free advice. We are very flexible in both the fields in which the project can be applied, as wel as offering a package that fits your financial situation",
-    "phone": {
-      "name": "Call us!",
-      "description": "Feel free to call us with any questions or further inquiries."
-    },
-    "social": {
-      "name": "Find us on social media",
-      "description": "You can send us a message using Facebook Messenger and one of our colleagues will get back to you shortly."
-    },
-    "mail": {
-      "name": "Mail us",
-      "description": "You can always send an email to the company wide contact channel."
-    }
-  },
+
   "work": {
     "portfolio": {
       "title": "Our portfolio",
@@ -191,34 +34,34 @@
         },
         "section": {
           "title": "Building a virtual environment with remote desktop",
-          "subtitle": "Creating a powerful virtual environment",
-          "text_1": ""
+          "subtitle_1": "Privacy first",
+          "text_1": "Due to very strict security policies at BP, its sister organization NWO needed a separate work environment. To do this, we built a cutting-edge server from scratch, which outperforms servers 2-3x its price tag. "
         }
       },
       "Form": {
         "client": "Form Architecture",
         "card": {
-          "title": "Form: BIM automation",
-          "text": "For our client Form we created revit plugins which..."
+          "title": "BIM automation and Revit plugins.",
+          "text": "For our client Form we created Revit plugins which..."
         },
         "section": {
-          "title": "Form: BIM automation",
-          "subtitle": "Creating a powerful virtual environment",
+          "title": "BIM automation and Revit plugins",
+          "subtitle_1": "Creating a powerful virtual environment",
           "text_1": "The industry standard for designing and engineering architectural structures in this day and age is based on a BIM workflow using Autodesk Revit. With a housing market where prices keep increasing, cutting costs where possible is a necessity.\n",
           "text_2": "Working together with FORM, we helped build an automated home configurator. The challenge was twofold; automate actions within Revit, and create an environment that was scalable up to an Enterprise level with multiple Revit workers to handle incoming requests.\n",
           "text_3": "The biggest challenge proved to be making Revit, a program that tends to crash at crucial times, stable enough to get a reliable output. To do this, we created an intricate system, with a main \"brain\", a \"thin client\" and the Revit worker. The brain is an enterprise level spring boot application, able to receive thousands of requests a second and safely storing them in an Azure database. The brain then chooses which physical or cloud machine is up to the task of handling the request, and sends the configurations one by one to a thin client. This thin client is responsible for two things: interaction with Revit and keeping Revit working as it should. If Revit crashes it automatically restarts, and if an error within Revit is caught, it's relayed back to the brain to give the end user insights on a dashboard.\n"
         }
       },
       "Hes": {
-        "client": "Hes",
+        "client": "Hes Internationals",
         "card": {
           "title": "Real time logistics insight",
           "text": "Get insights in your logistics with this real-time tracker"
         },
         "section": {
-          "title": "Hes: Real time logistics tracker.",
-          "subtitle": "In larger companies the disconnection between management and reality can often be a difficult problem to tackle. To help give more insights about such a large scale project, we created the Delivery Tracker. This application helps workers sign off the status of different parts in a large scale operation. ",
-          "text_1": "This data is then automatically analyzed and stored in a database. Using PowerBI, we created a dashboard that shows planned vs. actuals, steel to be delivered, and other key values for the management."
+          "title": "Real time logistics tracker.",
+          "text_1": "In larger companies the disconnection between management and reality can often be a difficult problem to tackle. To help give more insights about such a large scale project, we created the Delivery Tracker. This application helps workers sign off the status of different parts in a large scale operation. ",
+          "text_2": "This data is then automatically analyzed and stored in a database. Using PowerBI, we created a dashboard that shows planned vs. actuals, steel to be delivered, and other key values for the management."
         }
       }
     }
