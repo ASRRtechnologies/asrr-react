@@ -34,8 +34,10 @@ class Header extends Component {
 		let currentScrollPos = window.pageYOffset
 		let documentHeight = window.document.body.clientHeight
 		let bottomPage = window.innerHeight + window.pageYOffset
-
-		this.headerBorder.current.style.width = `${(bottomPage /documentHeight) * 100}%`
+		console.log(window.document.body.getBoundingClientRect().height)
+		// this.headerBorder.current.style.width = `27%`
+		this.headerBorder.current.style.width = `${(currentScrollPos /
+			(documentHeight - (bottomPage - currentScrollPos))) * 100}%`
 
 		if (currentScrollPos < 100) {
 			// this.header.current.style.opacity = "0";
