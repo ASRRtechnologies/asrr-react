@@ -35,8 +35,7 @@ class Header extends Component {
 		let documentHeight = window.document.body.clientHeight
 		let bottomPage = window.innerHeight + window.pageYOffset
 
-		this.headerBorder.current.style.width = `${(currentScrollPos /
-			(documentHeight - (bottomPage - currentScrollPos))) * 100}%`
+		this.headerBorder.current.style.width = `${(bottomPage /documentHeight) * 100}%`
 
 		if (currentScrollPos < 100) {
 			// this.header.current.style.opacity = "0";
@@ -116,7 +115,7 @@ class Header extends Component {
 								'header.services')}</NavLink>
 							</li>
 							<li onClick={this.closeMenu}><NavLink activeClassName='active-link'
-																  to="/team">{this.props.t('header.about')}</NavLink>
+																  to="/about">{this.props.t('header.about')}</NavLink>
 							</li>
 							{/*<li onClick={this.closeMenu}><NavLink activeClassName='active-link'*/}
 							{/*to="/careers">{this.props.t("header.careers")}</NavLink>*/}

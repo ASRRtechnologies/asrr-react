@@ -52,6 +52,7 @@ import Footer2 from '../shared/header/Footer2'
 import ServicePage from '../services/ServicePage'
 import WorkSection from '../work/worksections/WorkSection'
 import {portfolioImages} from "../shared/PortfolioImages";
+import Construction from '../../routes/Construction'
 library.add(faWhatsapp, faLanguage, faImages, faCogs, faUsers, faChevronCircleDown, faPhone, faEnvelope, faHtml5, faCss3Alt, faJs, faJava, faWindows, faLinux, faGithub, faGit, faReact, faAndroid, faAppStoreIos, faApple, faNode, faNodeJs, faPaypal, faFacebook, faTwitter, faSnapchat, faAws, faChrome, faLinkedin);
 
 const NoMatch = ({location}) => (
@@ -100,11 +101,10 @@ class App extends Component {
 			<Switch>
 				<Route path="/" exact   render={(props) =><Home data={this.handlePagination}/>}/>
 				<Route path="/work" exact component={Work}/>
-				<Route path="/services" component={Services}/>
-				<Route path="/team" component={About}/>
+				<Route path="/services"  render={(props) =><Construction text="This page is under construction..."/>}/>
+				<Route path="/about"  render={(props) =><Construction text="This page is under construction..."/>}/>
 				<Route path="/contact" component={Contact}/>
 				<Route path="/Languages" component={Languages}/>
-				<Route path="/service/desktop" component={ServicePage}/>
 				<Route path='/github' component={() => window.location = "https://github.com/ASRRWebdesign"}/>
 				<Route path="/work/hes"  render={(props) =><WorkSection data={portfolioImages.Hes} name="Hes"/>}/>
 				<Route path="/work/nwo"  render={(props) =><WorkSection data={portfolioImages.NWO} name="NWO"/>}/>

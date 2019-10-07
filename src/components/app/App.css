@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import "../shared/landing/LandingText.css";
 @import "../shared/landing/MobileLanding.css";
-@import "../shared/general-header.css";
 @import "../../components/work/WorkCard.css";
 @import "../../components/work/WorkGrid.css";
 @import "../shared/header/Navigation.css";
@@ -28,14 +27,24 @@
 
 html {
     scroll-behavior: smooth;
+    min-height: 100%;
+    height:auto;
   }
 
 body {
     font-family: 'Poppins', serif;
     background-color: #1A1A1A;
+    min-height: 100%;
+    height:auto;
+    margin:0;
     /*padding-top: 80px;*/
     color: #343434;
     overflow-x: hidden;
+}
+
+#App, #root{
+    height:100%;
+    min-height: 100%;
 }
 :root {
     --tintColor: #49cf86;

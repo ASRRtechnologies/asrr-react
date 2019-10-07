@@ -2,8 +2,7 @@ import React, {Component} from 'react';
 import Fade from "react-reveal/Fade";
 import NewLanding from "../components/shared/NewLanding";
 import TeamPictures from "../components/team/TeamPictures";
-import LightTextBox from "../components/shared/LightTextBox";
-//
+ //
 // const founders = [
 // 	{
 // 		name: "Amar",
@@ -91,9 +90,7 @@ class About extends Component {
 				<Fade bottom>
 					<NewLanding name="about.landing"/>
 					<TeamPictures/>
-					<LightTextBox name="about.team"/>
-					{/*<CoreValues/>*/}
-					{/*<ASRR3D/>*/}
+
 				</Fade>
 			</div>
 		);
