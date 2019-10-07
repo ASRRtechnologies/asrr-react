@@ -593,6 +593,12 @@
     }
 
 
+    .section-container h2 {
+        max-width: 300px;
+        text-align: center;
+    }
+
+
     .section-services-grid {
         flex-direction: column;
         display: flex;

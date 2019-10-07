@@ -3,11 +3,38 @@ import logo from "../../../assets/images/logo.svg";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import background from "../../../assets/images/backgrounds/footer-bck.jpg";
 import DescriptionDiv from "../../home/DescriptionDiv";
+import Language from '../../../utils/Language'
+import { getLanguage } from 'react-multi-lang'
+import nlFlag from '../../../assets/images/flags/nl.svg'
+import enFlag from '../../../assets/images/flags/en.svg'
 
 class Footer2 extends Component {
+
+    constructor(props) {
+        super(props);
+        this.footer = React.createRef();
+    }
+
+    getHeight = () => {
+        let footerHeight = this.footer.current.offsetHeight;
+        let footerTop = this.footer.current.getBoundingClientRect().top;
+        // console.log(footerPosition);
+        // console.log(documentHeight);
+        this.props.height(footerHeight, footerTop);
+    };
+
+    componentDidMount() {
+        document.addEventListener("scroll", this.getHeight);
+    };
+
+    componentWillUnmount() {
+        document.removeEventListener("scroll", this.getHeight);
+    }
+
+
     render() {
         return (
-            <div className="footer-container">
+            <div ref={this.footer} className="footer-container">
                 <div className="footer-grid-container">
                     <div>
                         <img className="footer-logo" src={logo} alt="logo"/>

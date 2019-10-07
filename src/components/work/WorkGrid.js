@@ -53,7 +53,6 @@ class WorkGrid extends Component {
                             })}
                         </div>
                     </div>
-                    <ContactShortcut/>
                 </div>
             </div>
         );

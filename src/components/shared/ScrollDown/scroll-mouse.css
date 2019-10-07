@@ -2,6 +2,7 @@
     position: absolute;
     bottom: 5%;
     left:50%;
+    transform: translateX(-50%);
 }
 
 .scroll-down-mouse-container:hover{
@@ -175,4 +176,10 @@
     0%   { opacity: 0; }
     50%  { opacity: .5; }
     100% { opacity: 1; }
+}
+
+@media screen and (max-width: 600px) {
+    .scroll-down-mouse-container{
+        bottom: 15%;
+    }
 }

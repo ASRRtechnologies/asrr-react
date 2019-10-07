@@ -13,6 +13,7 @@ class Header extends Component {
     constructor(props) {
         super(props);
         this.header = React.createRef();
+        this.headerBorder = React.createRef();
         this.state = {
             menuOpen: false,
             header: "",
@@ -32,6 +33,10 @@ class Header extends Component {
     headerScroll = () => {
         this.setState({prevScrollprops: window.pageYOffset});
         let currentScrollPos = window.pageYOffset;
+        let documentHeight = window.document.body.clientHeight;
+        let bottomPage = window.innerHeight + window.pageYOffset;
+
+        this.headerBorder.current.style.width = `${(bottomPage / documentHeight) * 100}%`
 
         if(currentScrollPos  < 100 ) {
             // this.header.current.style.opacity = "0";
@@ -72,7 +77,6 @@ class Header extends Component {
 
 
     componentDidMount() {
-
         document.addEventListener("scroll", this.headerScroll);
 
         if (getLanguage().toString() === 'nl') {
@@ -80,7 +84,6 @@ class Header extends Component {
         } else if (getLanguage().toString() === 'en') {
             this.setState({languageImage: enFlag});
         }
-
     };
 
     componentWillUnmount() {
@@ -92,6 +95,7 @@ class Header extends Component {
 
         return (
             <div ref={this.header} className="navigation-container">
+                <div  ref={this.headerBorder} className="navigation-border"> </div>
                 <div className="navigation-wrapper">
 
                     <div  onClick={this.closeMenu} className="logo-wrapper"><NavLink to="/"><img className="logo" src={this.state.logoBlack ? logoBlack : logo}

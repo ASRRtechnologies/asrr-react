@@ -73,6 +73,8 @@ class App extends Component {
 			header: true,
 			preload: true,
 			data:[],
+			footerHeight:"",
+			footerTop:""
 		}
 		Language.initialize();
 	}
@@ -81,19 +83,26 @@ class App extends Component {
 		this.setState({data:{...this.state.data,[name]:data}});
 	};
 
+	getHeight = (height, position) => {
+		this.setState({footerHeight:height, footerTop:position});
+ 	}
+
 	componentDidMount(){
-		this.setState({preload:false});
+		setTimeout(
+			function() {
+				this.setState({preload:false});
+			}
+			.bind(this),
+			2000
+		);
 	}
 
 	render() {
 
 		const currentPath = window.location.pathname;
 		return <div className={this.state.preload ? "App pre-load": "App"}>
-			<Header/>
-
-
+			<Header footerHeight={this.state.footerHeight} footerTop={this.state.footerTop}/>
 			{/*<ScrollPosition data={this.state.data}/>*/}
-
 			<Switch>
 				<Route path="/" exact   render={(props) =><Home data={this.handlePagination}/>}/>
 				<Route path="/work" exact component={Work}/>
@@ -109,10 +118,8 @@ class App extends Component {
 				<Route component={NoMatch}/>
 				<Route component={renderHeader} />
 			</Switch>
-
 			<Fade bottom>
-				{/*<Footer/>*/}
-				<Footer2/>
+				<Footer2 height={this.getHeight}/>
 			</Fade>
 		</div>;
 	}

@@ -5,7 +5,8 @@ import developer from "../../assets/images/home/programming.jpg";
 import management from "../../assets/images/home/management.jpg";
 import innovative from "../../assets/images/home/nasa.jpg";
 
-import developerIcon from "../../assets/images/home/management.svg"
+import managementIcon from "../../assets/images/home/management.svg"
+import valueIcon from "../../assets/images/home/badge.svg"
 import Fade from "react-reveal/Fade";
 import {getScrollPosition} from "../shared/Functions";
 
@@ -13,15 +14,15 @@ class Section4 extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            icon:developerIcon,
-            word: "developers",
+            icon:valueIcon,
+            word: "value",
             image: developer,
             color: "#FF8080"
         };
     }
 
-    changeView = (name, image, color) => {
-        this.setState({word: name, image: image, color: color});
+    changeView = (name, image, icon) => {
+        this.setState({word: name, image: image, icon:icon});
         this.forceUpdate();
     };
 
@@ -41,6 +42,11 @@ class Section4 extends Component {
     // }
 
     render() {
+        const data = [
+            {name:"value", image:developer, icon:valueIcon},
+            {name:"management", image:developer, icon:managementIcon},
+            {name:"developers", image:developer, icon:valueIcon}
+        ]
         return (
                 <div id="about" className="section-container " key={this.state.word}>
                     <div className="services-wrapper" style={{backgroundImage:`${this.props.backgroundColor}`, color:`${this.props.color}`}}>
@@ -79,15 +85,15 @@ class Section4 extends Component {
                                     lastest of the lastest techniques.
                                 </p>
                                 <div className="section-value-key">
-                                    <a onClick={() => {
-                                        this.changeView("developers", developer, "#FF8080")
-                                    }} style={{fontWeight:this.state.word ==="developers"? "bold": ""}}>We are developers</a>
-                                    <a onClick={() => {
-                                        this.changeView("innovative", innovative, "#455878")
-                                    }}style={{fontWeight:this.state.word ==="innovative"? "bold": ""}}>We are innovative</a>
-                                    <a onClick={() => {
-                                        this.changeView("management", management)
-                                    }} style={{fontWeight:this.state.word ==="management"? "bold": ""}}>We are management</a>
+                                    {data.map((data, i) =>{
+                                        return <React.Fragment>
+                                            <a data-aos="fade" data-aos-delay={i * 150} data-aos-easing="ease-in-out"
+                                               data-aos-anchor-placement="top"
+                                               data-aos-duration="600" onClick={() => {
+                                                this.changeView(data.name, data.image, data.icon)
+                                            }} style={{fontWeight:this.state.word ===data.name ? "bold": ""}}>We are {data.name}</a>
+                                        </React.Fragment>
+                                    })}
                                 </div>
                             </div>
                         </div>
