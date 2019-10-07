@@ -14,15 +14,6 @@ class Footer2 extends Component {
         super(props);
         this.footer = React.createRef();
     }
-
-    getHeight = () => {
-        let footerHeight = this.footer.current.offsetHeight;
-        let footerTop = this.footer.current.getBoundingClientRect().top;
-        // console.log(footerPosition);
-        // console.log(documentHeight);
-        this.props.height(footerHeight, footerTop);
-    };
-
     componentDidMount() {
         document.addEventListener("scroll", this.getHeight);
     };

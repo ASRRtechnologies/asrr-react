@@ -73,8 +73,6 @@ class App extends Component {
 			header: true,
 			preload: true,
 			data:[],
-			footerHeight:"",
-			footerTop:""
 		}
 		Language.initialize();
 	}
@@ -82,10 +80,6 @@ class App extends Component {
 	handlePagination = (data, name) => {
 		this.setState({data:{...this.state.data,[name]:data}});
 	};
-
-	getHeight = (height, position) => {
-		this.setState({footerHeight:height, footerTop:position});
- 	}
 
 	componentDidMount(){
 		setTimeout(
@@ -101,7 +95,7 @@ class App extends Component {
 
 		const currentPath = window.location.pathname;
 		return <div className={this.state.preload ? "App pre-load": "App"}>
-			<Header footerHeight={this.state.footerHeight} footerTop={this.state.footerTop}/>
+			<Header/>
 			{/*<ScrollPosition data={this.state.data}/>*/}
 			<Switch>
 				<Route path="/" exact   render={(props) =><Home data={this.handlePagination}/>}/>
