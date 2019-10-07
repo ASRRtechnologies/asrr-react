@@ -1,12 +1,11 @@
 import React, {Component} from 'react';
-import Form from "../../assets/images/work/form/form_logo.svg";
-import Hes from "../../assets/images/work/hes/HES-logo-dark.png";
+
 import ValueCards from "../home/ValueCards";
 import NavLink from "react-router-dom/NavLink";
 import {translate} from 'react-multi-lang'
-import laptop from "../../assets/images/work/hes/hes-macbook-cropped.png";
-import desktop from "../../assets/images/work/nwo/nwo-desktop.png";
-import house from "../../assets/images/work/form/architect-building.jpg"
+import Hes from "../../assets/images/work/hes/hes-mobile.png";
+import NWO from "../../assets/images/work/nwo/nwo-laptop-cropped.png";
+import Form from "../../assets/images/work/form/form_logo.svg"
 import ContactShortcut from "../shared/ContactShortcut";
 
 class WorkGrid extends Component {
@@ -18,17 +17,17 @@ class WorkGrid extends Component {
             {
                 name: "NWO",
                 url:"nwo",
-				image:desktop
+				image:NWO
             },
             {
                 name: "Hes",
                 url:"hes",
-				image: laptop,
+				image: Hes,
             },
             {
                 name: "Form",
                 url:"form",
-                image:house,
+                image:Form,
             },
         ];
 

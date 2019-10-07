@@ -45,14 +45,6 @@ class Section5 extends Component {
                                 or stop by and say hi.
                             </p>
                             <InputBox getValue={this.handleChange} placeholder="ASRR" name="name" title="name"/>
-                            <InputBox getValue={this.handleChange} placeholder="ASRR Tech" name="email" title="email"/>
-                            <textarea
-                                rows={this.state.rows}
-                                value={this.state.value}
-                                placeholder={'message'}
-                                className={'textarea'}
-                                onChange={e => this.handleChange("message", e.target.value)}
-                            />
                             <div data-aos="fade-up" data-aos-delay="600" data-aos-easing="ease-in-out"
                                  data-aos-anchor-placement="top"
                                  data-aos-duration="600" className="section-button">

@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { Form, Input, TextArea } from 'semantic-ui-react'
 
 class InputBox extends Component {
 
@@ -50,13 +51,27 @@ class InputBox extends Component {
 
     render() {
         return (
-            <div style={{width:"100%", marginTop:"30px"}}>
-                <label className="field a-field a-field_a3">
-                    <input className="field__input a-field__input" placeholder={this.props.placeholder} onChange={e => this.handleMail(e, this.props.name)} required/>
-                    <span className="a-field__label-wrap">
-                    <span className="a-field__label">{this.props.title}</span>
-                    </span>
-                </label>
+            <div style={{width:"100%"}}>
+                <Form fluid>
+                    <Form.Field required >
+                        <label>First Name</label>
+                        <input placeholder='first name' />
+                    </Form.Field>
+                    <Form.Field>
+                        <label>Last Name</label>
+                        <input placeholder='last name' />
+                    </Form.Field>
+                    <Form.Field required>
+                        <label>Email</label>
+                        <input placeholder='email' />
+                    </Form.Field>
+                    <Form.Field
+                        id='form-textarea-control-opinion'
+                        control={TextArea}
+                        label=''
+                        placeholder='message'
+                    />
+                </Form>
             </div>
         );
     }

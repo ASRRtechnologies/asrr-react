@@ -3,7 +3,7 @@ import landingForm from '../../assets/images/work/form/building-overlay.png'
 import landingHes from '../../assets/images/work/hes/hes-mobile.png'
 
 
-import landingNWO from '../../assets/images/work/nwo/nwo-login-laptop.png';
+import landingNWO from '../../assets/images/work/nwo/test.png';
 
 
 export const portfolioImages = {
