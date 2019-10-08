@@ -52,7 +52,7 @@ class InputBox extends Component {
     render() {
         return (
             <div style={{width:"100%"}}>
-                <Form fluid>
+                <Form action="mailto:contact@asrr.nl" method="post" enctype="text/plain" fluid>
                     <Form.Field required >
                         <label>First Name</label>
                         <input placeholder='first name' />

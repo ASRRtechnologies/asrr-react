@@ -44,7 +44,7 @@ class WorkGrid extends Component {
                             {data.map((data, i) => {
                                 return <NavLink to={`work/${data.url}`} exact>
                                     <div className=" value-card-padding flex-center" key={data.key} >
-                                        <ValueCards cover="cover" title={t(`work.portfolio.${data.name}.card.title`)}
+                                        <ValueCards client={t(`work.portfolio.${data.name}.client`)} title={t(`work.portfolio.${data.name}.card.title`)}
                                                     text={t(`work.portfolio.${data.name}.card.text`)}
                                                     to={`work/${data.url}`} image={data.image}/>
                                     </div>

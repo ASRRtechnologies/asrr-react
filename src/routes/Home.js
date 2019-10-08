@@ -1,14 +1,10 @@
 import React, { Component } from 'react'
-import Hes from '../assets/images/clients/hes.png'
-import Form from '../assets/images/clients/form_logo-diap.svg'
-import VW from '../assets/images/clients/Logo_VolkerWessels logo.png'
 import Landing from '../components/shared/landing/Landing'
 import Section from '../components/home/Section'
 import Section2 from '../components/home/Section2'
 import Section3 from '../components/home/Section3'
 import Section4 from '../components/home/Section4'
 import Section5 from '../components/home/Section5'
-import ValueCards from '../components/work/WorkGrid'
 import { translate } from 'react-multi-lang'
 
 class Home extends Component {
@@ -34,7 +30,7 @@ class Home extends Component {
 	}
 
 	render () {
-		const { t, data } = this.props
+		const { t,} = this.props
 		return (
 			<div>
 				<Landing/>

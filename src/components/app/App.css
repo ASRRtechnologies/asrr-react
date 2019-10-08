@@ -252,3 +252,49 @@ hr {
     }
 
 }
+
+.read-more-button {
+    color: #4D429F;
+}
+
+.learn-more-arrow {
+    margin-top:15px;
+    position: relative;
+    display: inline-block !important;
+    width:auto;
+    align-items: center !important;
+}
+
+.learn-more-arrow::before {
+    position: absolute;
+    top:0;
+    right:-10px;
+    content:"\2192";
+    color:black;
+    display: flex !important;
+    width:auto;
+    align-items: center !important;
+    transition: all 400ms cubic-bezier(.17,.67,.61,1.5);
+}
+
+.learn-more-arrow:hover{
+    cursor: pointer;
+}
+
+.learn-more-arrow:hover::before
+{
+    transform: translateX(10px);
+}
+
+.learn-more-arrow:hover p
+{
+    /*color: #0a0878;*/
+    color: #ff3855;
+}
+
+
+.learn-more-arrow p{
+    display: inline;
+    padding: 0 10px 0 0;
+
+}

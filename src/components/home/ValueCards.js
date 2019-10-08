@@ -3,7 +3,7 @@ import NavLink from "react-router-dom/NavLink";
 
 class ValueCards extends Component {
     render() {
-        const {image, title, text, height, to, cover} = this.props;
+        const {image, title, text, client, height, to, cover} = this.props;
         return (
             <div className="value-cards-wrapper">
                 <div className="value-image-cards-wrapper">
@@ -13,7 +13,7 @@ class ValueCards extends Component {
                     </div>
                 </div>
                 <div>
-                    <h2>Hes International</h2>
+                    <h2>{client}</h2>
                     <h3>{title}</h3>
                     {/*<p>{text}</p>*/}
                     <NavLink exact to={to}>

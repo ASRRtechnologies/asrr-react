@@ -1,10 +1,6 @@
 import React, { Component } from 'react'
-import { Spring, Trail, Transition, Keyframes, animated, config } from 'react-spring/renderprops'
-import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons'
+import { Keyframes, Spring } from 'react-spring/renderprops'
 import { NavHashLink as NavLink } from 'react-router-hash-link'
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSpaceShuttle } from '@fortawesome/free-solid-svg-icons/faSpaceShuttle'
 import ScrollDown from '../ScrollDown/ScrollDown'
 
 const Trailing = Keyframes.Trail(async next => {
