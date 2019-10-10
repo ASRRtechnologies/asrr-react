@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import phone from "../../assets/images/work/hes/hes-phone.png";
+import phone from "../../assets/images/work/hes/hes-phone_optimized.png";
 import AOS from 'aos';
 import {getScrollPosition} from "../shared/Functions";
 import laptop from "../../assets/images/home/nwo-laptop-login.png";

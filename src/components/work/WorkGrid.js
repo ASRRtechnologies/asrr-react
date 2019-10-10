@@ -3,8 +3,8 @@ import React, {Component} from 'react';
 import ValueCards from "../home/ValueCards";
 import NavLink from "react-router-dom/NavLink";
 import {translate} from 'react-multi-lang'
-import Hes from "../../assets/images/work/hes/hes-mobile.png";
-import NWO from "../../assets/images/work/nwo/nwo-laptop-cropped.png";
+import Hes from "../../assets/images/work/hes/hes-mobile_optimized.png";
+import NWO from "../../assets/images/work/nwo/nwo-laptop-cropped_optimized.png";
 import Form from "../../assets/images/work/form/form_logo.svg"
 import ContactShortcut from "../shared/ContactShortcut";
 

@@ -12,6 +12,7 @@ class Header extends Component {
 	constructor (props) {
 		super(props)
 		this.header = React.createRef()
+		this.hamburger = React.createRef()
 		this.headerBorder = React.createRef()
 		this.state = {
 			menuOpen: false,
@@ -22,7 +23,21 @@ class Header extends Component {
 	}
 
 	menuOpen = () => {
-		this.setState({ menuOpen: !this.state.menuOpen })
+		this.setState({ menuOpen: !this.state.menuOpen }, () => {
+				//Slight delay to Change header color after menu has opened
+				setTimeout(this.checkHeaderColor, 300)
+			},
+		)
+	}
+
+	checkHeaderColor = () => {
+		if (this.state.menuOpen) {
+			this.hamburger.current.style.backgroundColor = 'white'
+			this.setState({ logoBlack: false })
+		} else {
+			this.hamburger.current.style.backgroundColor = 'black'
+			this.setState({ logoBlack: true })
+		}
 	}
 
 	closeMenu = () => {
@@ -40,25 +55,15 @@ class Header extends Component {
 			(documentHeight - (bottomPage - currentScrollPos))) * 100}%`
 
 		if (currentScrollPos < 100) {
-			// this.header.current.style.opacity = "0";
 			this.header.current.style.backgroundColor = 'transparent'
-			this.header.current.style.color = 'black'
+			this.hamburger.current.style.backgroundColor = 'black'
 			this.setState({ logoBlack: true })
 		} else {
 			// this.header.current.style.opacity = 1;
 			this.header.current.style.backgroundColor = '#1a1a1a'
-			this.header.current.style.color = 'white'
+			this.hamburger.current.style.backgroundColor = 'white'
 			this.setState({ logoBlack: false })
 		}
-
-		// if(!this.state.menuOpen){
-		//     if (this.state.prevScrollpos > currentScrollPos) {
-		//         this.header.current.style.top = "0";
-		//     }
-		//     else if(currentScrollPos > 600) {
-		//         this.header.current.style.top = "-80px";
-		//     }
-		// }
 		this.setState({ prevScrollpos: currentScrollPos })
 	}
 
@@ -139,7 +144,7 @@ class Header extends Component {
 								: 'menu-overlay bottom'}></div>
 					</div>
 
-					<div style={{visibility:"hidden"}} className="translate-wrapper">
+					<div style={{ visibility: 'hidden' }} className="translate-wrapper">
 						{/*eslint-disable-next-line*/}
 						<a className="translate-button rounded" onClick={Header.handleFlagClick} role="button"
 						   style={{ padding: '0' }}>
@@ -150,7 +155,8 @@ class Header extends Component {
 
 					<ul id="mobile-navigation" className="hamburger-wrapper">
 						<div onClick={this.menuOpen} className="hamburger-box">
-							<div className={this.state.menuOpen ? 'hamburger-open hamburger-line' : 'hamburger-line'}>
+							<div ref={this.hamburger}
+								 className={this.state.menuOpen ? 'hamburger-open hamburger-line' : 'hamburger-line'}>
 							</div>
 						</div>
 					</ul>
