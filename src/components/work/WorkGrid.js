@@ -1,38 +1,34 @@
 import React, {Component} from 'react';
-
 import ValueCards from "../home/ValueCards";
 import NavLink from "react-router-dom/NavLink";
 import {translate} from 'react-multi-lang'
-import Hes from "../../assets/images/work/hes/hes-mobile_optimized.png";
-import NWO from "../../assets/images/work/nwo/nwo-laptop-cropped_optimized.png";
-import Form from "../../assets/images/work/form/form_logo.svg"
-import ContactShortcut from "../shared/ContactShortcut";
+import {portfolioImages} from '../shared/PortfolioImages'
 
 class WorkGrid extends Component {
     render() {
-
         const {t} = this.props;
-
         const data = [
             {
                 name: "NWO",
                 url:"nwo",
-				image:NWO
+				image:portfolioImages.NWO.landing,
+                overlay: portfolioImages.NWO.overlay
             },
             {
                 name: "Hes",
                 url:"hes",
-				image: Hes,
+				image: portfolioImages.Hes.landing,
+                overlay: portfolioImages.Hes.overlay
             },
             {
                 name: "Form",
                 url:"form",
-                image:Form,
+                image:portfolioImages.Form.landing,
+                overlay: portfolioImages.Form.overlay
             },
         ];
 
         return (
-            // This div for the background color because inner div has a max-width of 1500px
             <div style={{backgroundColor: this.props.backgroundColor}}>
                 <div className="section-container" id="work">
                     <div className="services-wrapper margin-work">
@@ -46,7 +42,7 @@ class WorkGrid extends Component {
                                     <div className=" value-card-padding flex-center" key={data.key} >
                                         <ValueCards client={t(`work.portfolio.${data.name}.client`)} title={t(`work.portfolio.${data.name}.card.title`)}
                                                     text={t(`work.portfolio.${data.name}.card.text`)}
-                                                    to={`work/${data.url}`} image={data.image}/>
+                                                    to={`work/${data.url}`} image={data.image} overlay={data.overlay}/>
                                     </div>
                                 </NavLink>
                             })}

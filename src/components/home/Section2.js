@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
-// import phone from "../../assets/images/home/remote.jpg";
-import laptop from '../../assets/images/work/nwo/nwo-laptop-cropped_optimized.png'
 import AOS from 'aos'
 import NavLink from 'react-router-dom/NavLink'
+import {portfolioImages} from '../shared/PortfolioImages'
 
 class Section2 extends Component {
     constructor(props) {
@@ -25,7 +24,7 @@ class Section2 extends Component {
                         <div className="section-image-wrapper">
                             <img data-aos="fade-up" data-aos-easing="ease-in-out"
                                  data-aos-anchor-placement="top"
-                                 data-aos-duration="600" data-aos-delay="400" src={laptop}/>
+                                 data-aos-duration="600" data-aos-delay="400" src={portfolioImages.Hes.landing}/>
                         </div>
                     </div>
                     <div className="section-cover-text">

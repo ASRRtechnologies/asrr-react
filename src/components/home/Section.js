@@ -1,8 +1,6 @@
 import React, {Component} from "react";
-import phone from "../../assets/images/work/hes/hes-phone_optimized.png";
 import AOS from 'aos';
-import {getScrollPosition} from "../shared/Functions";
-import laptop from "../../assets/images/home/nwo-laptop-login.png";
+import {portfolioImages} from '../shared/PortfolioImages'
 import NavLink from "react-router-dom/NavLink";
 
 class Section extends Component {
@@ -29,7 +27,6 @@ class Section extends Component {
     // }
 
     render() {
-
         return (
             <div id="home-page-work" className="section-container white-gray mobile-no-gradient">
                 <div className="services-wrapper" style={{backgroundImage:`${this.props.backgroundColor}`, color:`${this.props.color}`}}>
@@ -50,7 +47,6 @@ class Section extends Component {
                                    data-aos-duration="600">
                                     {this.props.text}
                                 </p>
-
                                 <NavLink exact to={'/work'}>
                                     <span data-aos="fade-right" data-aos-delay="400" data-aos-easing="ease-in-out"
                                           data-aos-anchor-placement="top"
@@ -68,7 +64,7 @@ class Section extends Component {
                         <div className="section-image-wrapper flex-end">
                             <img data-aos="fade-up" data-aos-easing="ease-in-out"
                                  data-aos-anchor-placement="top"
-                                 data-aos-duration="600" data-aos-delay="400" src={phone}/>
+                                 data-aos-duration="600" data-aos-delay="400" src={portfolioImages.NWO.landing}/>
                         </div>
                     </div>
                 </div>

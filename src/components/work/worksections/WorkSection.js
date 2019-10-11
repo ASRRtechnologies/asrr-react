@@ -1,12 +1,10 @@
 import React, { Component } from 'react'
 import AOS from 'aos'
-import landing from '../../../assets/images/work/hes/hes-mobile.png'
 import video from '../../../assets/images/work/hes/iphone.mp4'
-import Browser from '../../../assets/images/work/hes/hes-mobile.png'
 import Carousel, { Dots } from '@brainhubeu/react-carousel'
 import { translate } from 'react-multi-lang'
 
-// import ArrowCarousel from '../../ArrowCarousel'
+import ArrowCarousel from '../../ArrowCarousel'
 
 class WorkSection extends Component {
 	constructor (props) {
@@ -54,20 +52,19 @@ class WorkSection extends Component {
 						</div>
 
 						<Carousel infinite arrows>
-							<img className="work-section-carousel-image" src={landing}/>
-							<img className="work-section-carousel-image" src={landing}/>
-							<img className="work-section-carousel-image" src={landing}/>
+							{this.props.data.images.map((data, i) => {
+								return<img className="work-section-carousel-image" src={data.image} alt={data.alt}/>
+							})}
 						</Carousel>
-
 					</div>
 				</div>
 				<div style={{backgroundColor:"white"}} className="work-section-padding">
 					<div className="work-section-wrapper">
 
 						<Carousel infinite arrows>
-							<img className="work-section-carousel-image" src={landing}/>
-							<img className="work-section-carousel-image" src={landing}/>
-							<img className="work-section-carousel-image" src={landing}/>
+							{/*<img className="work-section-carousel-image" src={landing}/>*/}
+							{/*<img className="work-section-carousel-image" src={landing}/>*/}
+							{/*<img className="work-section-carousel-image" src={landing}/>*/}
 						</Carousel>
 
 						<div>

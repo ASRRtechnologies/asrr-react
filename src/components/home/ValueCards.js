@@ -1,15 +1,18 @@
 import React, {Component} from "react";
 import NavLink from "react-router-dom/NavLink";
+import {portfolioImages} from '../shared/PortfolioImages'
 
 class ValueCards extends Component {
     render() {
-        const {image, title, text, client, height, to, cover} = this.props;
+        const {image, title, text, client, overlay, to, cover} = this.props;
         return (
             <div className="value-cards-wrapper">
                 <div className="value-image-cards-wrapper">
                     <div className="value-cards-image"
                          style={{backgroundImage: `url(${image})`, backgroundSize:cover}}>
-
+                    </div>
+                    <div className="value-cards-image overlay"
+                         style={{backgroundImage: `url(${overlay})`, backgroundSize:cover}}>
                     </div>
                 </div>
                 <div>
