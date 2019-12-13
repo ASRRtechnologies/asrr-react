@@ -14,7 +14,7 @@
     "browser-locale": "^1.0.3",
     "gh-pages": "^2.0.1",
     "jquery": "^3.4.0",
-    "npm": "^6.4.1",
+    "npm": "^6.13.4",
     "react": "^16.5.2",
     "react-cookies": "^0.1.0",
     "react-countup": "^4.0.0-alpha.6",
